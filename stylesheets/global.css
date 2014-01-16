@@ -1,0 +1,280 @@
+::selection {
+  color: black;
+}
+
+html {
+  background-color: rgb(240, 240, 240);
+  background-image: url('/images/patterns/margin.png');
+  font-size: 16px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(245, 245, 245);
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body > header {
+  min-height: 200px;
+}
+
+/* Radiotopia splash */
+body > header > hgroup h1 {
+  widows: 1280px;
+  height: 320px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body > header > hgroup h1 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('/images/radiotopia/splash.png') no-repeat left top;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* PRX top cap */
+body > header > hgroup h2 {
+  height: 40px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body > header > hgroup h2 a {
+  height: 100%;
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url('/images/prx/topcap.png') no-repeat center 8px;
+}
+
+body > header > nav {
+  height: 120px;
+  background: white;
+  width: 1028px;
+  margin: 0 auto;
+}
+
+body > header > nav a {
+  display: inline-block;
+  margin: 0 10px;
+  width: 232px;
+  text-decoration: none;
+}
+
+body > header > nav a h1 {
+  color: hsl(193, 47%, 43%);
+  font-family: 'HelveticaNeue-CondensedBold';
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 36px 0 0 0;
+  letter-spacing: 0.15em;
+  border: 0;
+  padding: 0;
+}
+
+body > header > nav a h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  color: hsl(0,0%,30%);
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body > div {
+  min-height: 200px;
+}
+
+body > footer {
+  background: white;
+  min-height: 200px;
+}
+
+body > footer > div {
+  width: 1028px;
+  margin: 0 auto;
+}
+
+body > footer section {
+  display: block;
+  float: left;
+  width: 180px;
+  overflow: auto;
+}
+
+#underwriters {
+  width: 568px;
+}
+
+#underwriters ul {
+  list-style: none;
+  margin: 0 0 0 20px;
+  border: 0;
+  padding: 0;
+}
+
+#underwriters ul li {
+  display: block;
+  float: left;
+}
+
+#underwriters ul li img {
+  padding: 10px;
+}
+
+#underwriters ul li:first-child img {
+  padding-top: 27px;
+}
+
+#underwriters ul li:last-child img {
+  padding-top: 36px;
+}
+
+#connect a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: hsl(193, 47%, 43%);
+  border-radius: 16px;
+}
+
+#connect a:nth-of-type(1) {
+  margin: 0 0 0 20px;
+}
+
+#contact p {
+  font-size: 0.8em;
+  margin: 0 0 3px 20px;
+}
+
+body > footer section h1 {
+  text-transform: uppercase;
+  font-size: 0.875em;
+  font-family: 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, sans-serif;
+  margin: 30px 0 16px 20px;
+}
+
+/* Forms */
+
+body > div > form {
+  width: 988px;
+  margin: 36px auto 20px;
+}
+
+body > div > form h1 {
+  font-family: 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 3em;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body > div > form h2 {
+  font-family: 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 0.875em;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 8px 0 0 0;
+  padding: 0;
+  border: 0;
+}
+
+body > div > form hr {
+  margin: 24px 0;
+}
+
+body > div > form p {
+  width: 820px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 1.125em;
+  line-height: 1.5em;
+}
+
+/* Show cards */
+
+#shows {
+  overflow: auto;
+  margin: 0 auto;
+  border: 0;
+  padding: 0;
+  list-style: none;
+  width: 1048px;
+}
+
+#shows li {
+  width: 504px;
+  height: 382px;
+  position: relative;
+  background: white;
+  float: left;
+  margin: 20px 10px;
+}
+
+#shows li img {
+  display: block;
+  float: left;
+  width: 168px;
+  height: 168px;
+  margin: 30px 0 0 0;
+}
+
+#shows li a {
+  display: block;
+  float: left;
+  width: 300px;
+  color: hsl(193, 47%, 43%);
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 0.75em;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 30px 0 0 18px;
+}
+
+#shows li h1 {
+  display: block;
+  float: left;
+  margin: 4px 0 0 18px;
+  padding: 0;
+  border: 0;
+  width: 300px;
+}
+
+#shows li p {
+  display: block;
+  float: left;
+  margin: 6px 0 14px 18px;
+  padding: 0;
+  border: 0;
+  width: 300px;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 0.75em;
+  line-height: 1.65em;
+}
+
+#shows li .prx-embed-proxy {
+  width: 100%;
+  height: 135px;
+  background: hsla(0, 0%, 35%, 1.0);
+  clear: both;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 0;
+}
