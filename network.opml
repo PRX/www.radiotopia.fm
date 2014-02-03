@@ -9,6 +9,11 @@
   </head>
   <body>
     <outline text="99% Invisible" xmlUrl="http://feeds.99percentinvisible.org/99percentinvisible" />
+    <outline text="Love+Radio" xmlUrl="http://feed.loveandradio.org/loveplusradio" />
     <outline text="Strangers" xmlUrl="http://feeds.kcrw.com/kcrw/sg" />
+    <outline text="The Truth" xmlUrl="http://feeds.feedburner.com/thetruthapm" />
+    <outline text="Benjamen Walker’s Theory of Everything" xmlUrl="http://feeds.prx.org/toe" />
+    <outline text="Radio Diaries" xmlUrl="http://www.npr.org/rss/podcast.php?id=510288" />
+    <outline text="Fugitive Waves" xmlUrl="" />
   </body>
 </opml>
