@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<opml version="1.0">
+<opml version="2.0">
   <head>
     <title>Radiotopia</title>
     <dateCreated>Mon, 27 Jan 2014 03:24:18 GMT</dateCreated>
-    <dateModified>Mon, 27 Jan 2015 04:01:23 GMT</dateModified>
+    <dateModified>Fri, 14 Mar 2014 22:43:47 GMT</dateModified>
     <ownerName>PRX</ownerName>
     <ownerEmail>help@radiotopia.fm</ownerEmail>
+    <ownerId>http://www.radiotopia.fm</ownerId>
+    <docs>http://dev.opml.org/spec2.html</docs>
   </head>
   <body>
     <outline text="99% Invisible" xmlUrl="http://feeds.99percentinvisible.org/99percentinvisible" />
     <outline text="Love+Radio" xmlUrl="http://feed.loveandradio.org/loveplusradio" />
     <outline text="Strangers" xmlUrl="http://feeds.kcrw.com/kcrw/sg" />
     <outline text="The Truth" xmlUrl="http://feeds.feedburner.com/thetruthapm" />
-    <outline text="Benjamen Walker’s Theory of Everything" xmlUrl="http://feeds.prx.org/toe" />
+    <outline text="Benjamen Walker's Theory of Everything" xmlUrl="http://feeds.prx.org/toe" />
     <outline text="Radio Diaries" xmlUrl="http://www.npr.org/rss/podcast.php?id=510288" />
     <outline text="Fugitive Waves" xmlUrl="http://feeds.fugitivewaves.org/fugitivewaves" />
   </body>
