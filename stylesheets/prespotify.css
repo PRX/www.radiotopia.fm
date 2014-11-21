@@ -215,15 +215,11 @@ body > footer a {
 }
 
 #underwriters ul li img[src='/images/knight/underwriter.png'] {
-  padding-top: 18px;
+  padding-top: 36px;
 }
 
 #underwriters ul li img[src='/images/mailchimp/underwriter@2x.png'] {
-  padding-top: 18px;
-}
-
-#underwriters ul li img[src='/images/spotify/underwriter.png'] {
-  padding-top: 10px;
+  padding-top: 36px;
 }
 
 #connect a {
