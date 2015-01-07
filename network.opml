@@ -17,5 +17,7 @@
     <outline text="Benjamen Walker's Theory of Everything" xmlUrl="http://feeds.prx.org/toe" />
     <outline text="Radio Diaries" xmlUrl="http://www.npr.org/rss/podcast.php?id=510288" />
     <outline text="Fugitive Waves" xmlUrl="http://feeds.fugitivewaves.org/fugitivewaves" />
+    <outline text="The Heart" xmlUrl="http://feeds.theheartradio.org/TheHeartRadio" />
+    <outline text="Criminal" xmlUrl="http://feeds.feedburner.com/CriminalShow" />
   </body>
 </opml>
