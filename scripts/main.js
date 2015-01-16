@@ -29,7 +29,7 @@ $(function() {
         soundManager.createSound({
           id: sndmanID,
           url: audioURL,
-          autoLoad: false,
+          autoLoad: true,
           autoPlay: false,
           onload: function() {
             $('button', el).click(function(ev) {
