@@ -26,15 +26,16 @@ $(function() {
 
         managers.push(sndmanID);
 
+	$('button', el).click(function(ev) {
+	  togglePlayer(managers, sndmanID);
+	});
+
         soundManager.createSound({
           id: sndmanID,
           url: audioURL,
-          autoLoad: true,
+          autoLoad: false,
           autoPlay: false,
           onload: function() {
-            $('button', el).click(function(ev) {
-              togglePlayer(managers, sndmanID);
-            });
           },
           onpause: function() {
             $('.player').addClass('paused').removeClass('playing');
