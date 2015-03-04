@@ -19,5 +19,6 @@
     <outline text="Fugitive Waves" xmlUrl="http://feeds.fugitivewaves.org/fugitivewaves" />
     <outline text="The Heart" xmlUrl="http://feeds.theheartradio.org/TheHeartRadio" />
     <outline text="Criminal" xmlUrl="http://feeds.feedburner.com/CriminalShow" />
+    <outline text="Mortified" xmlUrl="http://feeds.getmortified.com/MortifiedPod" />
   </body>
 </opml>
