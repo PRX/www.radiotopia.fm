@@ -108,7 +108,8 @@ body > header > nav a {
   text-decoration: none;
 }
 
-body > header > nav a[href='#shows'] {
+body > header > nav a[href='#shows'],
+body > header > nav a[href='http://radio.radiotopia.fm'] {
   background-image: url('/images/icons/heart@2x.png');
   background-repeat: no-repeat;
   background-size: 35px 41px;
