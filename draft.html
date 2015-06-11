@@ -18,7 +18,7 @@
     <title>Radiotopia</title>
 
     <link rel="stylesheet" href="/stylesheets/reset.css">
-    <link rel="stylesheet" href="/stylesheets/spotify.css">
+    <link rel="stylesheet" href="/stylesheets/global.css">
     <link rel="stylesheet" href="/stylesheets/brandfont.css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -34,8 +34,8 @@
         </h1>
       </hgroup>
       <nav>
-        <a href="#shows">
-          <h1>Shows</h1>
+        <a class="listen" href="http://radio.radiotopia.fm?utm_campaign=passive&utm_source=radiotopia.fm&utm_medium=Navbar">
+          <h1>Listen</h1>
         </a>
         <a href="#about">
           <h1>About</h1>
@@ -70,6 +70,28 @@
               <img src="/images/99pi/cover@2x.png" alt="">
               <h1>Holdout</h1>
               <h2>by Roman Mars</h2>
+              <div class="progress"></div>
+            </hgroup>
+          </div>
+        </li>
+
+        <!-- ================================== Song Exploder ===================================== -->
+        <li>
+          <img src="/images/songexploder/cover@2x.png" alt="">
+          <a href="http://songexploder.net/">songexploder.net</a>
+          <a href="http://feed.songexploder.net/SongExploder" class="rss"></a>
+          <a href="https://itunes.apple.com/us/podcast/song-exploder/id788236947?at=10l9zE" class="itunes"></a>
+          <h1>Song Exploder</h1>
+	  <p>Song Exploder is a podcast where musicians take apart their songs, and piece by piece, tell the story of how they were made. It gives listeners the chance to learn about the creative process, and to hear a recording in an entirely new way. It will change the way you listen to music.</p>
+          <div class="player paused" id="songexploder-player" data-audio-url="http://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/songexploder/SongExploder38.mp3">
+            <hgroup>
+              <button>
+                <img src="/images/buttons/play@2x.png" width="65" alt="" class="player-play">
+                <img src="/images/buttons/pause@2x.png" width="65" alt="" class="player-pause">
+              </button>
+              <img src="/images/songexploder/cover@2x.png" alt="">
+              <h1>tUnE-yArDs - Water Fountain</h1>
+              <h2>by Hrishikesh Hirway</h2>
               <div class="progress"></div>
             </hgroup>
           </div>
@@ -250,7 +272,7 @@
               </button>
               <img src="/images/toe/cover@2x.png" alt="">
               <h1>1984 (the year not the book)</h1>
-              <h2>by Benjamin Walker</h2>
+              <h2>by Benjamen Walker</h2>
               <div class="progress"></div>
             </hgroup>
           </div>
@@ -347,6 +369,7 @@
             <option value="Criminal">Criminal </option>
             <option value="The Allusionist">The Allusionist </option>
             <option value="Mortified">Mortified </option>
+            <option value="Song Exploder">Song Exploder </option>
           </select></p></td></tr>
           <tr><td><input type="hidden" name="on2" value="I also listen to"><p>I also listen to:</p>
             <p><select name="os2">
@@ -362,6 +385,7 @@
             <option value="Criminal">Criminal </option>
             <option value="The Allusionist">The Allusionist </option>
             <option value="Mortified">Mortified </option>
+            <option value="Song Exploder">Song Exploder </option>
           </select></p></td></tr>
           <tr><td><input type="hidden" name="on3" value="and"><p>and:</p>
             <p><select name="os3">
@@ -377,6 +401,7 @@
             <option value="Criminal">Criminal </option>
             <option value="The Allusionist">The Allusionist </option>
             <option value="Mortified">Mortified </option>
+            <option value="Song Exploder">Song Exploder </option>
           </select></p></td></tr>
           </table>
         </div>
