@@ -141,6 +141,14 @@ body > header > nav a[href='#donate'] {
   padding-bottom: 15px;
 }
 
+body > header > nav a[class='commitchange-donate'] {
+  background-image: url('/images/icons/money@2x.png');
+  background-repeat: no-repeat;
+  background-size: 13px 42px;
+  background-position: 40px 36px;
+  padding-bottom: 15px;
+}
+
 @font-face { font-family: 'HelveticaNCB'; font-weight: bold; src: local(HelveticaNeue-CondensedBold); }
 
 body > header > nav a h1 {
@@ -492,4 +500,31 @@ body > div > form p {
 
 #sponsor {
   margin: 130px 0;
+}
+
+/* CSS text over image overlay */
+.pic {
+  float: left;
+  margin: 30px 0 0 0;
+  display: inline-block;
+  width:168px;
+  height:168px;
+  background: url(/images/memorypalace/cover.png) no-repeat;
+}
+
+.text {
+  width:468px;
+  height:168px;
+  background:#FFF;
+  opacity:0;
+}
+
+.pic:hover .text {
+  opacity:0.8;
+  text-align:none;
+  color:#000000;
+  font-size:14px;
+  /* font-weight:700; */
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  padding:30px;
 }
