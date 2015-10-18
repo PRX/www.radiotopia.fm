@@ -12,13 +12,16 @@
   <body>
     <outline text="99% Invisible" xmlUrl="http://feeds.99percentinvisible.org/99percentinvisible" />
     <outline text="Love+Radio" xmlUrl="http://feed.loveandradio.org/loveplusradio" />
-    <outline text="Strangers" xmlUrl="http://feeds.kcrw.com/kcrw/sg" />
+    <outline text="Strangers" xmlUrl="http://feeds.strangersnomore.org/StrangersNoMore" />
     <outline text="The Truth" xmlUrl="http://feeds.feedburner.com/thetruthapm" />
     <outline text="Benjamen Walker's Theory of Everything" xmlUrl="http://feeds.prx.org/toe" />
-    <outline text="Radio Diaries" xmlUrl="http://www.npr.org/rss/podcast.php?id=510288" />
+    <outline text="Radio Diaries" xmlUrl="http://feed.radiodiaries.org/radio-diaries" />
     <outline text="Fugitive Waves" xmlUrl="http://feeds.fugitivewaves.org/fugitivewaves" />
     <outline text="The Heart" xmlUrl="http://feeds.theheartradio.org/TheHeartRadio" />
     <outline text="Criminal" xmlUrl="http://feeds.feedburner.com/CriminalShow" />
     <outline text="Mortified" xmlUrl="http://feeds.getmortified.com/MortifiedPod" />
+    <outline text="The Allusionist" xmlUrl="http://feeds.theallusionist.org/Allusionist" />
+    <outline text="the memory palace" xmlUrl="https://feeds.feedburner.com/thememorypalace" />
+    <outline text="Song Exploder" xmlUrl="http://feed.songexploder.net/SongExploder" />
   </body>
 </opml>
