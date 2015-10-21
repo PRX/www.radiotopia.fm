@@ -141,7 +141,7 @@ body > header > nav a[href='#donate'] {
   padding-bottom: 15px;
 }
 
-body > header > nav a[class='commitchange-donate'] {
+body > header > nav a.commitchange-donate {
   background-image: url('/images/icons/money@2x.png');
   background-repeat: no-repeat;
   background-size: 13px 42px;
