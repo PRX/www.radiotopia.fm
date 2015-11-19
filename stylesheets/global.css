@@ -147,6 +147,7 @@ body > header > nav a.commitchange-donate {
   background-size: 13px 42px;
   background-position: 40px 36px;
   padding-bottom: 15px;
+  overflow: initial; /* needed for Chrome and Firefox to offset Commit Change CSS */
 }
 
 @font-face { font-family: 'HelveticaNCB'; font-weight: bold; src: local(HelveticaNeue-CondensedBold); }
@@ -228,6 +229,10 @@ body > footer a {
 }
 
 #underwriters ul li img[src='/images/mailchimp/underwriter@2x.png'] {
+  padding-top: 18px;
+}
+
+#underwriters ul li img[src='/images/adzerk/underwriter@2x.png'] {
   padding-top: 18px;
 }
 
