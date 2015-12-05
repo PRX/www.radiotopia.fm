@@ -21,7 +21,7 @@
     <outline text="Criminal" xmlUrl="http://feeds.feedburner.com/CriminalShow" />
     <outline text="Mortified" xmlUrl="http://feeds.getmortified.com/MortifiedPod" />
     <outline text="The Allusionist" xmlUrl="http://feeds.theallusionist.org/Allusionist" />
-    <outline text="the memory palace" xmlUrl="https://feeds.feedburner.com/thememorypalace" />
+    <outline text="the memory palace" xmlUrl="http://feeds.thememorypalace.us/thememorypalace" />
     <outline text="Song Exploder" xmlUrl="http://feed.songexploder.net/SongExploder" />
   </body>
 </opml>
