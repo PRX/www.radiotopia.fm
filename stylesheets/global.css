@@ -104,7 +104,7 @@ body > header > nav {
 body > header > nav a {
   display: inline-block;
   margin: 0 10px;
-  width: 232px;
+  width: 140px;
   text-decoration: none;
 }
 
@@ -115,6 +115,7 @@ body > header > nav a.listen {
   background-size: 35px 41px;
   background-position: 28px 38px;
   padding-bottom: 15px;
+  padding-left: 40px;
 }
 
 body > header > nav a[href='#about'] {
@@ -123,6 +124,7 @@ body > header > nav a[href='#about'] {
   background-size: 28px 50px;
   background-position: 32px 30px;
   padding-bottom: 15px;
+  padding-left: 40px;
 }
 
 body > header > nav a[href='#sponsor'] {
@@ -131,6 +133,15 @@ body > header > nav a[href='#sponsor'] {
   background-size: 40px 56px;
   background-position: 14px 26px;
   padding-bottom: 15px;
+  padding-left: 50px;
+}
+
+body > header > nav a.shop {
+  background-image: url('/images/icons/cart@2x.png');
+  background-repeat: no-repeat;
+  background-position: 14px 26px;
+  padding-bottom: 15px;
+  padding-left: 40px;
 }
 
 body > header > nav a[href='#donate'] {
@@ -139,6 +150,7 @@ body > header > nav a[href='#donate'] {
   background-size: 13px 42px;
   background-position: 40px 36px;
   padding-bottom: 15px;
+  padding-left: 40px;
 }
 
 body > header > nav a.commitchange-donate {
@@ -147,6 +159,7 @@ body > header > nav a.commitchange-donate {
   background-size: 13px 42px;
   background-position: 40px 36px;
   padding-bottom: 15px;
+  padding-left: 40px;
   overflow: initial; /* needed for Chrome and Firefox to offset Commit Change CSS */
 }
 
