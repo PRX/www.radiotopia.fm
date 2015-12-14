@@ -11,3 +11,13 @@ The canonical [CNAME](https://github.com/PRX/radiotopia.fm/blob/gh-pages/CNAME) 
 ### Media
 
 There is an [S3 bucket](https://console.aws.amazon.com/s3/home?region=us-east-1&bucket=media.radiotopia.fm&prefix=) for hosting media and files that are too large to check in to Git, which is available at [`media.radiotopia.fm`](http://media.radiotopia.fm/).
+
+### Paths
+
+The following are paths that should be maintained in perpetuity.
+
+- `/` Homepage
+- `/radiopia` Redirect to homepage, or the homepage is `/` is being used for something else
+- `/newsletter` Newsletter signup form
+- `/spotify` End-point for Spotify ads
+- `/rewards` Donor exclusive content
