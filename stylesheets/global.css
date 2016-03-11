@@ -30,7 +30,7 @@ body > header {
   position: relative;
 }
 
-body > header #best-of {
+body > header #hanger {
   position: absolute;
   bottom: 120px;
   right: 0;
@@ -39,7 +39,7 @@ body > header #best-of {
   overflow: hidden;
 }
 
-body > header #best-of a {
+body > header #hanger a {
   position: absolute;
   top: 140px;
   left: -60px;
