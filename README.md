@@ -17,7 +17,10 @@ There is an [S3 bucket](https://console.aws.amazon.com/s3/home?region=us-east-1&
 The following are paths that should be maintained in perpetuity.
 
 - `/` Homepage
-- `/radiopia` Redirect to homepage, or the homepage is `/` is being used for something else
+- `/radiotopia` Redirect to homepage, or the homepage if `/` is being used for something else
 - `/newsletter` Newsletter signup form
 - `/spotify` End-point for Spotify ads
 - `/rewards` Donor exclusive content
+- `/podquest` Podquest information page
+- `/press-kit` Press kit
+- `/ace` Radiotopia Live @ Ace Hotel
