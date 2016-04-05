@@ -64,6 +64,34 @@ body > header #hanger a {
   to { background-color: #ed9839; box-shadow: 0 0 9px #333; }
 }
 
+body > header #hanger2 {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 260px;
+  height: 260px;
+  overflow: hidden;
+}
+
+body > header #hanger2 a {
+  position: absolute;
+  top: 110px;
+  left: -90px;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: bold;
+  color: white;
+  padding: 9px 0 7px;
+  display: block;
+  transform: rotate(-45deg);
+  text-align: center;
+  width: 400px;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
 /* Radiotopia splash */
 body > header > hgroup h1 {
   widows: 1280px;
