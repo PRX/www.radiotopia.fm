@@ -14,7 +14,7 @@ There is an [S3 bucket](https://console.aws.amazon.com/s3/home?region=us-east-1&
 
 ### Paths
 
-The following are paths that should be maintained in perpetuity.
+The following are paths that should be maintained in perpetuity. (GitHub redirects to paths with a trailing slash)
 
 - `/` Homepage
 - `/radiotopia` Redirect to homepage, or the homepage if `/` is being used for something else
