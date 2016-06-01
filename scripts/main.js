@@ -26,9 +26,9 @@ $(function() {
 
         managers.push(sndmanID);
 
-	$('button', el).click(function(ev) {
-	  togglePlayer(managers, sndmanID);
-	});
+        $('button', el).click(function(ev) {
+          togglePlayer(managers, sndmanID);
+        });
 
         soundManager.createSound({
           id: sndmanID,
@@ -55,7 +55,7 @@ $(function() {
           },
           whileplaying: function() {
             var p = (this.position / this.duration);
-            $('.progress', el).css('width', (p * 98));
+            $('.progress', el).css('width', (p * 98) + '%');
           },
           volume: 100
         });
