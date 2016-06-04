@@ -1,6 +1,6 @@
 # Radiotopia
 
-[`www.radiotopia.fm`](http://www.radiopia.fm) is static website hosted with [GitHub Pages](https://pages.github.com/). Any changes checked into GitHub will automatically be **live** and **available to the public**.
+[`www.radiotopia.fm`](http://www.radiopia.fm) is static website hosted with [GitHub Pages](https://pages.github.com/) behind a CloudFront CDN. Any changes checked into GitHub will automatically be **live** and **available to the public**. 
 
 ### Domains
 
