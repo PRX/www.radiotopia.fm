@@ -1,6 +1,12 @@
 # Radiotopia
 
-[`www.radiotopia.fm`](http://www.radiopia.fm) is static website hosted with [GitHub Pages](https://pages.github.com/) behind a CloudFront CDN. Any changes checked into GitHub will automatically be **live** and **available to the public**. 
+
+
+[`www.radiotopia.fm`](https://www.radiopia.fm) is static website hosted on S# behind a CloudFront CDN. Any changes checked into GitHub will automatically be **live** and **available to the public**.
+
+The S3 bucket and GitHub repository are kept in sync with an automatically-triggered Snap CI pipeline, which runs:
+
+`aws s3 sync . s3://www.radiotopia.fm --acl private --region us-east-1 --delete --exclude ".git/*"``
 
 ### Domains
 
@@ -20,17 +26,11 @@ Both `radiotopia.com` and `www.radiotopia.com` are configured to redirect to `ww
 
 They do not handle `https` traffic.
 
-#### radiotopia.fm
+#### www.radiotopia.fm
 
-In order to support TLS for `www.radiotopia.fm`, which is not natively possible with GitHub Pages, the site is run through a CloudFront distribution that does support TLS.
+The CloudFront distribution for `www.radiotopia.fm` uses the `www.radiotopia.fm` S3 bucket as its origin. It enforces the `Redirect HTTP to HTTPS` _viewer protocol policy_, so all traffic to the site is secure.
 
-The DNS record for `www.radiotopia.fm` is aliased to a CloudFront distribution which has `prx.github.io/www.radiotopia.fm` as it's origin. Use of the `github.io` domain (as opposed to a custom `CNAME`) allows the connection between the CDN and the origin to be secure (which is enforced with the `HTTPS Only` _origin protocol policy_).
-
-The `Redirect HTTP to HTTPS` _viewer protocol policy_ of the CloudFront distribution `301` redirects `http://www.radiotopia.fm` to `https`.
-
-A similar setup is used for `radio.radiotopia.fm`.
-
-In order to properly handle requests to `http://radiotopia.fm` and `https://radiotopia.fm` a `radiotopia.fm` S3 bucket with a redirection policy exists. The bucket **cannot** be aliased directly, since `https` connections would fail. Instead, a CloudFront distribution with a certificate for `radiotopia.fm` is used, whose origin is the S3 bucket. It must be configured to use the _static website_ URL for the bucket, with an _origin protocol policy_ of `HTTP Only`. This is a limitation of how CloudFront and S3 interact.
+In order to properly handle requests to the apex domain `http://radiotopia.fm` and `https://radiotopia.fm` a `radiotopia.fm` S3 bucket with a redirection policy exists. The bucket **cannot** be aliased directly, since `https` connections would fail (a limitation of S3 static site hosting). Instead, a CloudFront distribution with a certificate for `radiotopia.fm` is used, whose origin is the S3 bucket. It must be configured to use the _static website_ URL for the bucket, with an _origin protocol policy_ of `HTTP Only`. This is a limitation of how CloudFront and S3 interact.
 
 ### Paths
 
