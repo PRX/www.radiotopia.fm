@@ -1,6 +1,6 @@
 # Radiotopia
 
-
+[![Build Status](https://snap-ci.com/6VBopMdYAgQUlIn9B89kMD9zdhSsKkUoX91SNRvSQLM/build_image)](https://snap-ci.com/PRX/www.radiotopia.fm/branch/master)
 
 [`www.radiotopia.fm`](https://www.radiopia.fm) is static website hosted on S# behind a CloudFront CDN. Any changes checked into GitHub will automatically be **live** and **available to the public**.
 
@@ -8,9 +8,11 @@ The S3 bucket and GitHub repository are kept in sync with an automatically-trigg
 
 `aws s3 sync . s3://www.radiotopia.fm --acl private --region us-east-1 --delete --exclude ".git/*"``
 
+`www.radiotopia.fm` should never be served over insecure HTTP as long as it is accepting donations.
+
 ### Domains
 
-The canonical [CNAME](https://github.com/PRX/radiotopia.fm/blob/gh-pages/CNAME) is `www.radiotopia.fm`, with the apex domain `radiotopia.fm` being handled [automatically by GitHub](https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/). `radiotopia.com` and `*.radiotopia.com` both redirect to `www.radiotopia.fm`; those are configured in [Route 53](https://console.aws.amazon.com/route53/home?region=us-east-1#resource-record-sets:Z28Z0CFFSO2E98) and [S3](https://console.aws.amazon.com/s3/home?region=us-east-1&bucket=www.radiotopia.com&prefix=).
+The canonical hostname for the site is `www.radiotopia.fm`, with the apex domain `radiotopia.fm` setup to redirect there. `radiotopia.com` and `www.radiotopia.com` both redirect to `www.radiotopia.fm`; those are configured in [Route 53](https://console.aws.amazon.com/route53/home?region=us-east-1#resource-record-sets:Z28Z0CFFSO2E98) and [S3](https://console.aws.amazon.com/s3/home?region=us-east-1&bucket=www.radiotopia.com&prefix=).
 
 `radiotopia.fm` is registered with [101domain](https://my.101domain.com/), and `radiotopia.com` is registered with [Hover](https://www.hover.com/).
 
@@ -28,7 +30,7 @@ They do not handle `https` traffic.
 
 #### www.radiotopia.fm
 
-The CloudFront distribution for `www.radiotopia.fm` uses the `www.radiotopia.fm` S3 bucket as its origin. It enforces the `Redirect HTTP to HTTPS` _viewer protocol policy_, so all traffic to the site is secure.
+The CloudFront distribution for `www.radiotopia.fm` uses the `www.radiotopia.fm` S3 bucket as its origin. It enforces the `Redirect HTTP to HTTPS` _viewer protocol policy_, so all traffic to the site is secure. To support index documents on path (e.g. `/podquest`) the origin must be the S3 static website endpoint.
 
 In order to properly handle requests to the apex domain `http://radiotopia.fm` and `https://radiotopia.fm` a `radiotopia.fm` S3 bucket with a redirection policy exists. The bucket **cannot** be aliased directly, since `https` connections would fail (a limitation of S3 static site hosting). Instead, a CloudFront distribution with a certificate for `radiotopia.fm` is used, whose origin is the S3 bucket. It must be configured to use the _static website_ URL for the bucket, with an _origin protocol policy_ of `HTTP Only`. This is a limitation of how CloudFront and S3 interact.
 
