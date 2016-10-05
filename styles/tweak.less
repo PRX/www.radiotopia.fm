@@ -1,0 +1,332 @@
+
+/* Header */
+
+// tweak: { "type" : "color", "title" : "Header Background Color", "category" : "Site Header", "target" : "body:not(.has-banner-image) #header" }
+@headerBgColor: #1B1B1B;
+
+// tweak: { "type" : "checkbox", "title" : "Transparent Header", "label" : "Transparent on Banner Images", "active" : "true", "category" : "Site Header", "target" : "#header" }
+
+// tweak: { "type" : "font", "title" : "Site Title Font", "category" : "Site Header", "showOnlyWhenPresent" : "#siteTitle", "target" : "#siteTitle", "loadAllVariants" : "true" }
+.site-title-font {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+// tweak: { "type" : "color", "title" : "Site Title Color", "category" : "Site Header", "showOnlyWhenPresent" : "#siteTitle", "target" : "#siteTitle" }
+@siteTitleColor: #FFF;
+
+// tweak: { "type" : "value", "title" : "Logo Container Width", "min" : 50, "max" : 500, "step" : 5, "category" : "Site Header", "target" : "#logoImage", "showOnlyWhenPresent" : "#logoImage", "js": "true" }
+@logoContainerWidth: 150px;
+
+// tweak: { "type" : "value", "title" : "Site Title Container Width", "min" : 50, "max" : 500, "step" : 5, "category" : "Site Header", "target" : "#siteTitle", "showOnlyWhenPresent" : "#siteTitle", "js": "true" }
+@siteTitleContainerWidth: 255px;
+
+
+/* Navigation */
+
+// tweak: { "type" : "font", "title" : "Nav Link Font", "category" : "Site Navigation", "target" : "body:not(.force-mobile-nav) #mainNavWrapper, #sidecarNav" }
+.nav-font {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+// tweak: { "type" : "color", "title" : "Nav Link Color", "category" : "Site Navigation", "target" : "body:not(.force-mobile-nav) #mainNavWrapper, #sidecarNav" }
+@navColor: #666;
+
+// tweak: { "type" : "color", "title" : "Nav Link (Active)", "category" : "Site Navigation", "target" : "body:not(.force-mobile-nav) #mainNavWrapper, #sidecarNav" }
+@navActiveColor: #EEE;
+
+// tweak: { "type" : "checkbox", "title" : "Enable Nav Button", "active" : "false", "category" : "Site Navigation", "target" : "body:not(.force-mobile-nav) #mainNavWrapper, #sidecarNav" }
+
+// tweak: { "category": "Site Navigation", "title": "Nav Button Style", "type": "dropdown", "options": ["Solid", "Outline", "Raised"], "default": "Solid", "showOnlyWhenPresent": ".enable-nav-button", "target" : "body:not(.force-mobile-nav) #mainNavigation > div:not(.folder):last-child a, #mobileNavigation > div:not(.folder):last-child a" }
+
+// tweak: { "category": "Site Navigation", "title": "Nav Button Corner Style", "type": "dropdown", "options": ["Square", "Rounded", "Pill"], "default": "Square", "showOnlyWhenPresent": ".enable-nav-button", "target" : "body:not(.force-mobile-nav) #mainNavigation > div:not(.folder):last-child a, #mobileNavigation > div:not(.folder):last-child a"  }
+
+// tweak: { "category": "Site Navigation", "title": "Nav Button Color", "type": "color", "showOnlyWhenPresent": ".enable-nav-button", "target" : "body:not(.force-mobile-nav) #mainNavigation > div:not(.folder):last-child a, #mobileNavigation > div:not(.folder):last-child a" }
+@navButtonColor: #ededed;
+
+// tweak: { "category": "Site Navigation", "title": "Nav Button Text Color", "type": "color", "showOnlyWhenPresent": "body:not(.nav-button-style-outline).enable-nav-button", "target" : "body:not(.force-mobile-nav) #mainNavigation > div:not(.folder):last-child a, #mobileNavigation > div:not(.folder):last-child a" }
+@navButtonTextColor: #181818;
+
+// tweak: { "category": "Site Navigation", "title": "Nav Button Font", "type": "font", "showOnlyWhenPresent": ".enable-nav-button", "target" : "body:not(.force-mobile-nav) #mainNavigation > div:not(.folder):last-child a, #mobileNavigation > div:not(.folder):last-child a" }
+.nav-button-font {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+/* Banner */
+
+// tweak: { "type" : "color", "title" : "Banner Overlay Color", "category" : "Banner Section", "target" : ".banner-thumbnail-wrapper, .sqs-featured-posts-gallery, #promotedGalleryWrapper, .promoted-gallery-wrapper", "showOnlyWhenPresent" : ".banner-thumbnail-wrapper, .sqs-featured-posts-gallery, #promotedGalleryWrapper .sqs-gallery, .blog-item-wrapper, .promoted-gallery-wrapper .sqs-gallery"  }
+@overlayColor: rgba(0, 0, 0, 0.3);
+
+// tweak: { "type" : "font", "title" : "Banner Heading Font", "category" : "Banner Section", "target" : ".banner-thumbnail-wrapper, .sqs-featured-posts-gallery, #promotedGalleryWrapper, .promoted-gallery-wrapper", "showOnlyWhenPresent" : ".desc-wrapper, .sqs-featured-posts-gallery, #promotedGalleryWrapper .sqs-gallery, .blog-item-wrapper, .promoted-gallery-wrapper .sqs-gallery" }
+.banner-heading-font {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  letter-spacing: 0px;
+  text-transform: none;
+  line-height: 1em;
+}
+
+// tweak: { "type" : "color", "title" : "Banner Heading Color", "category" : "Banner Section", "target" : ".banner-thumbnail-wrapper, .sqs-featured-posts-gallery, #promotedGalleryWrapper, .promoted-gallery-wrapper", "showOnlyWhenPresent" : ".desc-wrapper, .sqs-featured-posts-gallery, #promotedGalleryWrapper .sqs-gallery, .blog-item-wrapper, .promoted-gallery-wrapper .sqs-gallery" }
+@bannerHeadingColor: #FFF;
+
+// tweak: { "type" : "font", "title" : "Banner Text Font", "category" : "Banner Section", "target" : ".banner-thumbnail-wrapper, .sqs-featured-posts-gallery, #promotedGalleryWrapper, .promoted-gallery-wrapper", "showOnlyWhenPresent" : ".desc-wrapper, .sqs-featured-posts-gallery, #promotedGalleryWrapper .sqs-gallery, .blog-item-wrapper, .promoted-gallery-wrapper .sqs-gallery" }
+.banner-text-font {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: 0px;
+  text-transform: none;
+  line-height: 1.5em;
+}
+
+// tweak: { "type" : "color", "title" : "Banner Text Color", "category" : "Banner Section", "target" : ".banner-thumbnail-wrapper, .sqs-featured-posts-gallery, #promotedGalleryWrapper, .promoted-gallery-wrapper", "showOnlyWhenPresent" : ".desc-wrapper, .sqs-featured-posts-gallery, #promotedGalleryWrapper .sqs-gallery, .blog-item-wrapper, .promoted-gallery-wrapper .sqs-gallery" }
+@bannerTextColor: #FFF;
+
+// tweak: { "category": "Banner Section", "title": "Banner Button Style", "type": "dropdown", "options": ["Solid", "Outline", "Raised"], "default": "Solid", "showOnlyWhenPresent": ".has-description .desc-wrapper p:last-child > a, .sqs-gallery-block-slideshow .meta-description p:last-child > a", "target" : ".desc-wrapper p:last-child > a, .meta-description p:last-child > a" }
+
+// tweak: { "category": "Banner Section", "title": "Banner Button Corner Style", "type": "dropdown", "options": ["Square", "Rounded", "Pill"], "default": "Square", "showOnlyWhenPresent": ".has-description .desc-wrapper p:last-child > a, .sqs-gallery-block-slideshow .meta-description p:last-child > a", "target": ".desc-wrapper p:last-child > a, .meta-description p:last-child > a"  }
+
+// tweak: { "category": "Banner Section", "title": "Banner Button Color", "type": "color", "showOnlyWhenPresent": ".has-description .desc-wrapper p:last-child > a, .sqs-gallery-block-slideshow .meta-description p:last-child > a", "target": ".desc-wrapper p:last-child > a, .meta-description p:last-child > a" }
+@bannerButtonColor: #ededed;
+
+// tweak: { "category": "Banner Section", "title": "Banner Button Text Color", "type": "color", "showOnlyWhenPresent": "body:not(.banner-button-style-outline) .has-description .desc-wrapper p:last-child > a, .sqs-gallery-block-slideshow .meta-description p:last-child > a", "target": ".desc-wrapper p:last-child > a, .meta-description p:last-child > a" }
+@bannerButtonTextColor: #181818;
+
+// tweak: { "category": "Banner Section", "title": "Banner Button Font", "type": "font", "showOnlyWhenPresent": ".has-description .desc-wrapper p:last-child > a, .sqs-gallery-block-slideshow .meta-description p:last-child > a", "target": ".desc-wrapper p:last-child > a, .meta-description p:last-child > a" }
+.banner-button-font {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+/* Main Content */
+
+// tweak: { "type" : "color", "title" : "Page Background", "category" : "Main Content", "target" : "#siteWrapper" }
+@pageBgColor: #fff;
+
+// tweak: { "type" : "font", "title" : "Page Text Font", "category" : "Main Content", "target" : "body:not(.collection-type-index) #content p, .collection-type-index .page-content p", "loadAllVariants" : "true" }
+.body-font {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 1.6em;
+}
+
+// tweak: { "type" : "color", "title" : "Page Text Color", "category" : "Main Content", "target" : "body:not(.collection-type-index) #content p, .collection-type-index .page-content p" }
+@pageTextColor: #666;
+
+// tweak: { "type" : "color", "title" : "Page Link Color", "category" : "Main Content", "target" : "body:not(.collection-type-index) #content .html-block a, body:not(.collection-type-index) #content .entry-more-link a, .collection-type-index .page-content .html-block a, .collection-type-index .page-content .entry-more-link a, .summary-excerpt a" }
+@pageLinkColor: #14AAFF;
+
+// tweak: { "type" : "color", "title" : "Page Meta Color", "category" : "Main Content", "target" : "body:not(.collection-type-index) #content .meta-above-title, body:not(.collection-type-index) #content .meta-below-title, .collection-type-index .page-content .meta-above-title, .collection-type-index .page-content .meta-below-title, .summary-info-item" }
+@pageMetaColor: #666666;
+
+// tweak: { "type" : "font", "title" : "Heading 1 Font", "category" : "Main Content", "target" : "body:not(.collection-type-index) #content h1, .collection-type-index .page-content h1, .entry-title" }
+.heading1-font {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  letter-spacing: 0px;
+  text-transform: none;
+  line-height: 1.2em;
+}
+
+// tweak: { "type" : "color", "title" : "Heading 1 Color", "category" : "Main Content", "target" : "body:not(.collection-type-index) #content h1, .collection-type-index .page-content h1, .entry-title" }
+@heading1Color: #111;
+
+// tweak: { "type" : "font", "title" : "Heading 2 Font", "category" : "Main Content", "target" : "body:not(.collection-type-index) #content h2, .collection-type-index .page-content h2" }
+.heading2-font {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  letter-spacing: 0px;
+  text-transform: none;
+  line-height: 1.2em;
+}
+
+// tweak: { "type" : "color", "title" : "Heading 2 Color", "category" : "Main Content", "target" : "body:not(.collection-type-index) #content h2, .collection-type-index .page-content h2" }
+@heading2Color: #666;
+
+// tweak: { "type" : "font", "title" : "Heading 3 Font", "category" : "Main Content", "target" : "body:not(.collection-type-index) #content h3, .collection-type-index .page-content h3" }
+.heading3-font {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  letter-spacing: 0px;
+  text-transform: none;
+  line-height: 1.2em;
+}
+
+// tweak: { "type" : "color", "title" : "Heading 3 Color", "category" : "Main Content", "target" : "body:not(.collection-type-index) #content h3, .collection-type-index .page-content h3" }
+@heading3Color: #666;
+
+// tweak: { "type" : "font", "title" : "Quote Font", "category" : "Main Content", "target" : ".quote-block", "showOnlyWhenPresent" : ".quote-block" }
+.quote-font {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 27px;
+  letter-spacing: 0px;
+  line-height: 1.65em;
+}
+
+// tweak: { "type" : "color", "title" : "Quote Color", "category" : "Main Content", "target" : ".quote-block", "showOnlyWhenPresent" : ".quote-block" }
+@quoteColor: #AAA;
+
+
+
+/* Blog */
+
+// tweak: { "category" : "Blog", "title" : "Banner Slideshow Controls", "type" : "dropdown", "options" : [ "Arrows", "None" ], "default" : "Arrows", "js": "true", "target" : ".sqs-featured-posts-gallery", "showOnlyWhenPresent" : ".sqs-featured-posts-gallery" }
+
+// tweak: { "category" : "Blog", "title" : "Meta Priority", "type" : "dropdown", "options" : [ "Date", "Category", "Author", "None" ], "default" : "Date", "target" : ".collection-type-blog #page", "showOnlyWhenPresent" : ".collection-type-blog" }
+
+// tweak: { "category" : "Blog", "title" : "Center Entry Title & Meta", "type" : "checkbox", "active" : "false", "target" : "article header", "showOnlyWhenPresent" : ".hide-blog-sidebar" }
+
+// tweak: { "category" : "Blog", "title" : "Hide Entry Author", "type" : "checkbox", "active" : "true", "target" : ".collection-type-blog #page", "showOnlyWhenPresent" : ".collection-type-blog:not(.meta-priority-author)" }
+
+// tweak: { "category" : "Blog", "title" : "Hide List Entry Footer", "type" : "checkbox", "active" : "true", "target" : ".collection-type-blog #page", "showOnlyWhenPresent" : ".collection-type-blog" }
+
+
+
+/* Summary Block */
+
+// tweak: { "category" : "Summary Block", "title" : "Summary Block Title Font", "type" : "font", "target" : ".summary-header-text, .summary-title", "showOnlyWhenPresent" : ".summary-title, .summary-title-link" }
+.summary-heading-font {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+// tweak: { "category" : "Summary Block", "title" : "Summary Block Title Color", "type" : "color", "target" : ".summary-header-text, .summary-title", "showOnlyWhenPresent" : ".summary-title, .summary-title-link" }
+@summaryHeadingColor: #666;
+
+
+
+/* Sidebar */
+
+// tweak: { "type" : "checkbox", "title" : "Hide Products Sidebar", "label" : "Hide Product Category Nav", "active" : "false", "category" : "Sidebar", "target" : ".collection-type-products #page", "showOnlyWhenPresent" : "#categoryNav" }
+
+// tweak: { "type" : "checkbox", "title" : "Hide Page Sidebar", "active" : "false", "category" : "Sidebar", "target" : ".collection-type-page #page", "showOnlyWhenPresent" : "#folderNav" }
+
+// tweak: { "type" : "checkbox", "title" : "Hide Sidebar Title", "active" : "false", "category" : "Sidebar", "target" : ".collection-type-page #page", "showOnlyWhenPresent" : ".collection-type-page:not(.hide-page-sidebar) .folder-nav, .collection-type-products:not(.hide-products-sidebar) .category-nav" }
+
+// tweak: { "category": "Sidebar", "title": "Sub Nav Title Font", "type": "font", "showOnlyWhenPresent": ".collection-type-page:not(.hide-page-sidebar):not(.hide-sidebar-title) .folder-nav, .collection-type-products:not(.hide-products-sidebar):not(.hide-sidebar-title) .category-nav", "target": "#page, nav.folder-nav, nav.category-nav" }
+.subnav-title-font {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+// tweak: { "type" : "color", "title" : "Sub Nav Title Color", "category" : "Sidebar", "showOnlyWhenPresent": ".collection-type-page:not(.hide-page-sidebar):not(.hide-sidebar-title) .folder-nav, .collection-type-products:not(.hide-products-sidebar):not(.hide-sidebar-title) .category-nav", "target": "#page, nav.folder-nav, nav.category-nav" }
+@subNavTitleColor: #111;
+
+// tweak: { "category": "Sidebar", "title": "Sub Nav Link Font", "type": "font", "showOnlyWhenPresent": ".collection-type-page:not(.hide-page-sidebar) .folder-nav, .collection-type-products:not(.hide-products-sidebar) .category-nav", "target": "#page, nav.folder-nav, nav.category-nav" }
+.subnav-link-font {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+// tweak: { "type" : "color", "title" : "Sub Nav Link Color", "category" : "Sidebar", "showOnlyWhenPresent": ".collection-type-page:not(.hide-page-sidebar) .folder-nav, .collection-type-products:not(.hide-products-sidebar) .category-nav", "target": "#page, nav.folder-nav, nav.category-nav" }
+@subNavLinkColor: #444;
+
+// tweak: { "type" : "color", "title" : "Sub Nav Link (Active)", "category" : "Sidebar", "showOnlyWhenPresent": ".collection-type-page:not(.hide-page-sidebar) .folder-nav, .collection-type-products:not(.hide-products-sidebar) .category-nav", "target": "#page, nav.folder-nav, nav.category-nav" }
+@subNavActiveColor: #111;
+
+
+// tweak: { "type" : "checkbox", "title" : "Hide Blog Sidebar", "active" : "false", "category" : "Sidebar", "target" : ".collection-type-blog #page", "showOnlyWhenPresent" : ".collection-type-blog" }
+
+
+
+/* PreFooter */
+
+// tweak: { "type" : "color", "title" : "Pre Footer Background", "category" : "PreFooter", "target" : "#preFooter" }
+@preFooterBgColor: #DDD;
+
+// tweak: { "type" : "color", "title" : "Pre Footer Text Color", "category" : "PreFooter", "target" : "#preFooter" }
+@preFooterTextColor: #444;
+
+
+/* Footer */
+
+// tweak: { "type" : "color", "title" : "Footer Background", "category" : "Footer", "target" : "#footer" }
+@footerBgColor: #1B1B1B;
+
+// tweak: { "type" : "color", "title" : "Footer Text Color", "category" : "Footer", "target" : "#footer" }
+@footerTextColor: #FFF;
+
+// tweak: { "type" : "font", "title" : "Footer Nav Font", "category" : "Footer", "target" : "#footer, #secondaryNavigation", "showOnlyWhenPresent" : "#secondaryNavigation" }
+.footer-nav-font {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+// tweak: { "type" : "color", "title" : "Footer Nav Link Color", "category" : "Footer", "target" : "#footer, #secondaryNavigation", "showOnlyWhenPresent" : "#secondaryNavigation" }
+@footerNavLinkColor: #FFF;
+
+// tweak: { "type" : "color", "title" : "Footer Nav Link (Active)", "category" : "Footer", "target" : "#footer, #secondaryNavigation", "showOnlyWhenPresent" : "#secondaryNavigation" }
+@footerNavActiveColor: #CCC;
+
+// tweak: { "type" : "font", "title" : "Site Info Font", "category" : "Footer", "target" : "#footer, #siteInfo", "showOnlyWhenPresent" : "body:not(.hide-site-info) #siteInfo" }
+.site-info-font {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+// tweak: { "type" : "color", "title" : "Site Info Color", "category" : "Footer", "target" : "#footer, #siteInfo", "showOnlyWhenPresent" : "body:not(.hide-site-info) #siteInfo" }
+@siteInfoColor: #FFF;
+
+// tweak: { "type" : "checkbox", "title" : "Center Navigation / Info", "active" : "false", "category" : "Footer", "target" : "#footer, #secondaryNavigation", "showOnlyWhenPresent" : "#secondaryNavigation, #siteInfo" }
+
+// tweak: { "type" : "checkbox", "title" : "Hide Site Info", "active" : "false", "category" : "Footer", "target" : "#footer, #siteInfo", "showOnlyWhenPresent" : "#siteInfo" }
+

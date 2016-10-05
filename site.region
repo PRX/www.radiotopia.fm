@@ -1,0 +1,269 @@
+<!doctype html>
+<html class="touch-styles">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    {.if template.mobileStylesEnabled}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {.end}
+    {squarespace-headers}
+    <script>/* Must be below squarespace-headers */(function(){var e='ontouchstart'in window||navigator.msMaxTouchPoints;var t=document.documentElement;if(!e&&t){t.className=t.className.replace(/touch-styles/,'')}})()
+    </script>
+  </head>
+
+  <body id="{squarespace.page-id}" class="{squarespace.page-classes}{.if item}{.section item}{.if productType}{.or}{.background-source-video?} has-banner-image item-main-image{.or}{.main-image?} has-banner-image item-main-image{.end}{.end}{.end}{.end}{.or}{.section collection}{.collectionTypeNameEquals? index}{.section collections}{.section 0}{.background-source-video?} has-banner-image index-page{.or}{.main-image?} has-banner-image index-page{.end}{.end}{.end}{.end}{.or}{.background-source-video?} has-banner-image general-page{.or}{.main-image?} has-banner-image general-page{.end}{.end}{.end}{.end}{.end}">
+    <input type="checkbox" name="mobile-nav-toggle" id="mobileNavToggle" class="mobile-nav-toggle-box hidden" /><a href="#" class="body-overlay"></a>
+    <div class="sqs-announcement-bar-dropzone"></div>
+    <div id="sidecarNav">
+      <squarespace:navigation navigationId="mainNav" template="mobile-navigation" />
+    </div>
+    <div id="siteWrapper" class="clearfix">
+
+      <div class="sqs-cart-dropzone"></div>
+
+      <header id="header" class="show-on-scroll" data-offset-el=".index-section" data-offset-behavior="bottom" role="banner">
+        <div class="header-inner">
+          {.section website}<div id="{.if logoImageUrl}logoWrapper{.or}siteTitleWrapper{.end}" class="wrapper" data-content-field="site-title">
+            {.section logoImageUrl}
+              <h1 id="logoImage"><a href="/"><img src="{logoImageUrl}?format=1500w" alt="{siteTitle}" /></a></h1>
+            {.or}
+              <h1 id="siteTitle" class="site-title"><a href="/">{siteTitle}</a></h1>
+            {.end}
+          </div>{.end}<!-- comment the linebreak between these two elements because science
+          --><label for="mobileNavToggle" class="mobile-nav-toggle-label"><div class="top-bar"></div><div class="middle-bar"></div><div class="bottom-bar"></div></label><label for="mobileNavToggle" class="mobile-nav-toggle-label fixed-nav-toggle-label"><div class="top-bar"></div><div class="middle-bar"></div><div class="bottom-bar"></div></label><!-- comment the linebreak between these two elements because science
+          --><div id="headerNav"><squarespace:navigation navigationId="mainNav" template="navigation" /></div>
+        </div>
+      </header>
+
+      {.if item}
+        {.section item}
+          {.if productType}
+          {.or}
+            {.if startDate}
+              {.main-image?}
+                <div class="banner-thumbnail-wrapper" data-content-field="main-image">
+                  <div class="color-overlay"></div>
+                  <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
+                </div>
+              {.end}
+            {.or}
+              {.main-image?}
+                <div class="banner-thumbnail-wrapper" data-content-field="main-image">
+                  <div class="color-overlay"></div>
+                  <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
+                  <div class="blog-item-wrapper">
+                    <div class="title-desc-wrapper">
+                      <time class="dt-published published post-date" datetime="{addedOn|date %F}" pubdate>{addedOn|date %B %e, %Y}</time>
+                      <div class="post-category">{.section categories}{.repeated section @}<a href="{collection.fullUrl}?category={@|url-encode}">{@}</a>{.alternates with}, {.end}{.end}</div>
+                      <div class="post-author"><a href="{collection.fullUrl}?author={author.id}">{.section author}{displayName}{.end}</a></div>
+                      {.section title}<div class="post-title">{@}</div>{.end}
+                    </div>
+                  </div>
+                </div>
+              {.end}
+            {.end}
+          {.end}
+        {.end}
+      {.or}
+        {.section collection}
+          {.collectionTypeNameEquals? gallery}
+          {.or}
+            {.collectionTypeNameEquals? index}
+            {.or}
+              {.collectionTypeNameEquals? page}
+                <div id="promotedGalleryWrapper" class="sqs-layout promoted-gallery-wrapper"><div class="row"><div class="col"></div></div></div>
+                {.background-source-video?}
+                    <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image" data-collection-id="{collection.id}" data-edit-main-image="Banner" data-annotation-alignment="bottom left">
+                      <div class="color-overlay"></div>
+                      <figure id="thumbnail" class="loading content-fill">
+                        {@|apply sqs-video-background.block}
+                      </figure>
+                      {.if description}<div class="desc-wrapper" data-collection-id="{id}">{description}</div>{.end}
+                    </div>
+                {.or}
+                  {.main-image?}
+                    <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image" data-collection-id="{collection.id}" data-edit-main-image="Banner" data-annotation-alignment="bottom left">
+                      {.section mainImage}
+                      <div class="color-overlay"></div>
+                      <figure id="thumbnail" class="loading content-fill">
+                        <img {@|image-meta} />
+                      </figure>
+                      {.end}
+                      {.if description}<div class="desc-wrapper" data-collection-id="{id}">{description}</div>{.end}
+                    </div>
+                  {.end}
+                {.end}
+              {.or}
+                {.collectionTypeNameEquals? blog}
+                  <squarespace:query collection="{collection.urlId}" featured="true" limit="5">
+                  {.section items}
+                    <div class="sqs-featured-posts-gallery">
+
+                      <div class="gallery-wrapper">
+
+                        <!--FULL SIZE IMAGES-->
+
+                        <div class="slides-controls">
+                          <div class="posts">
+                            {.repeated section @}
+
+                              <!--SLIDE-->
+
+                              <div class="post{.main-image?}{.or} no-main-image{.end} content-fill" data-slide-id="{id}">
+
+                                <div class="title-desc-wrapper">
+                                  <time class="dt-published published post-date" datetime="{addedOn|date %F}" pubdate>{addedOn|date %B %e, %Y}</time>
+                                  <div class="post-category">{.section categories}{.repeated section @}{@}{.alternates with}, {.end}{.end}</div>
+                                  <div class="post-author">{.section author}{displayName}{.end}</div>
+                                  {.section title}<div class="post-title"><a href="{fullUrl}">{@|truncate 48}</a></div>{.end}
+                                  {.excerpt?}<div class="post-excerpt">{excerpt}</div>{.end}
+                                  <a href="{fullUrl}" class="view-post"></a>
+                                </div>
+
+                                <div class="color-overlay"></div>
+
+                                {.main-image?}
+                                  <img data-load="viewport" {@|image-meta}>
+                                {.end}
+                              </div>
+
+                            {.end}
+                          </div>
+
+                          {.section 1}
+                            <!--PREVIOUS/NEXT CONTROLS-->
+                            <span class="arrow previous-slide"></span>
+                            <span class="arrow next-slide"></span>
+                          {.end}
+
+                          <!--CIRCLES-->
+                          <div class="circles gallery-nav">
+                            {.repeated section @}
+                              <span class="circle"></span>
+                            {.end}
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  {.or}
+                    {.section collection}
+
+                      {.background-source-video?}
+                        <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image">
+                          <div class="color-overlay"></div>
+                          <figure id="thumbnail" class="loading content-fill">
+                            {@|apply sqs-video-background.block}
+                          </figure>
+                          {.if description}<div class="desc-wrapper" data-content-field="description">{description}</div>{.end}
+                        </div>
+                      {.or}
+                        {.section mainImage}
+                          <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image">
+                            <div class="color-overlay"></div>
+                            <figure id="thumbnail" class="loading content-fill">
+                              <img {@|image-meta} />
+                            </figure>
+                            {.if description}<div class="desc-wrapper" data-content-field="description">{description}</div>{.end}
+                          </div>
+                        {.end}
+                      {.end}
+
+                    {.end}
+                  {.end}
+                  </squarespace:query>
+                {.or}
+
+                  {.background-source-video?}
+                    <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image">
+                      <div class="color-overlay"></div>
+                      <figure id="thumbnail" class="loading content-fill">
+                        {@|apply sqs-video-background.block}
+                      </figure>
+                      {.if description}<div class="desc-wrapper" data-content-field="description">{description}</div>{.end}
+                    </div>
+                  {.or}
+                    {.section mainImage}
+                      <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image">
+                        <div class="color-overlay"></div>
+                        <figure id="thumbnail" class="loading content-fill">
+                          <img {@|image-meta} />
+                        </figure>
+                        {.if description}<div class="desc-wrapper" data-content-field="description">{description}</div>{.end}
+                      </div>
+                    {.end}
+                  {.end}
+
+                {.end}
+              {.end}
+            {.end}
+          {.end}
+        {.end}
+      {.end}
+
+
+      {.section categoryFilter}
+      <p class="filter-heading filter-by-category">
+        <a href="{collection.fullUrl}"><span>{@|safe}</span></a>
+      </p>
+      {.end}
+      {.section tagFilter}
+      <p class="filter-heading filter-by-tag">
+        <a href="{collection.fullUrl}"><span>{@|safe}</span></a>
+      </p>
+      {.end}
+      {.if authorFilter}
+      <p class="filter-heading filter-by-author">
+        <a href="{collection.fullUrl}"><span>{author.displayName}</span></a>
+      </p>
+      {.end}
+
+      <main id="page" role="main">
+        {.section collection}
+        {.collectionTypeNameEquals? products}{.section categories}<div id="categoryNav">
+          <input type="checkbox" name="category-nav-toggle" id="categoryNavToggle" class="category-nav-toggle hidden" />
+          <label for="categoryNavToggle" class="category-nav-toggle-label" onclick></label>
+          <nav class="category-nav">
+            <ul class="category-nav-links">
+              <li class="nav-section-label">{navigationTitle}</li>
+              <li class="filter"><a>Filter{.if categoryFilter}: {categoryFilter}{.end}</a></li>
+              <li{.if categoryFilter}{.or} class="active-link all"{.end}><a href="{fullUrl}">All</a></li>
+              {.repeated section @}
+              <li{.equal? categoryFilter @} class="active-link"{.end}><a href="{fullUrl}?category={@|url-encode}">{@}</a></li>
+              {.end}
+            </ul>
+          </nav>
+        </div>{.end}{.end}<!-- comment the linebreak between these two elements because science
+        -->{.collectionTypeNameEquals? page}<!-- comment the linebreak between these two elements because science
+        --><squarespace:folder-navigation template="folder-navigation" />{.end}{.end}<!-- comment the linebreak between these two elements because science
+        --><div id="content" class="main-content" data-content-field="main-content" data-collection-id="{collection.id}" {.equal? collection.typeName "gallery"}{.or}{.equal? collection.typeName "index"}{.or}data-edit-main-image="Banner"{.end}{.end}>
+         {squarespace.main-content}
+        </div><!-- comment the linebreak between these two elements because science
+        -->{.section collection}{.collectionTypeNameEquals? blog}<aside id="rightSidebar" role="complementary">
+          <squarespace:block-field class="open-block-field" id="blogBlocks-{id}" columns="12" label="Blog Sidebar Content" />
+        </aside>
+        {.end}
+        {.end}
+      </main>
+
+      <div id="preFooter">
+        <div class="pre-footer-inner">
+          <squarespace:block-field id="preFooterBlocks" columns="12" label="Pre-Footer Content" />
+        </div>
+      </div>
+
+      <footer id="footer" role="contentinfo">
+        <div class="footer-inner">
+          <div class="nav-wrapper back-to-top-nav"><nav><div class="back-to-top"><a href="#header">Back to Top</a></div></nav></div>
+          <squarespace:navigation navigationId="secondaryNav" template="secondary-navigation" />
+          {.if website.location.addressTitle || website.location.addressLine1 || website.location.addressLine2 || website.location.addressCountry}<div id="siteInfo">{.or}{.if websiteSettings.contactPhoneNumber || websiteSettings.contactEmail}<div id="siteInfo">{.end}{.end}{.section website}{.section location}{.if addressTitle || addressLine1 || addressLine2 || addressCountry}<span class="site-address">{.end}{.if addressTitle}{addressTitle}{.end}{.if addressLine1}{.if addressTitle}, {.end}{addressLine1}{.end}{.if addressLine2}{.if addressTitle || addressLine1}, {.or}{.end}{addressLine2}{.end}{.if addressCountry}{.if addressTitle || addressLine1 || addressLine2}, {.end}{addressCountry}{.end}{.if addressTitle || addressLine1 || addressLine2 || addressCountry}</span>{.end}{.end}{.end}{.section websiteSettings}{.if contactPhoneNumber}<span rel="tel" class="site-phone">{contactPhoneNumber}</span>{.end}{.if contactEmail}<a href="mailto:{contactEmail}" class="site-email"><span>{contactEmail}</span></a>{.end}{.end}{.if website.location.addressTitle || website.location.addressLine1 || website.location.addressLine2 || website.location.addressCountry}</div>{.or}{.if websiteSettings.contactPhoneNumber || websiteSettings.contactEmail}</div>{.end}{.end}
+          <squarespace:block-field id="footerBlocks" columns="12" label="Footer Content" />
+        </div>
+      </footer>
+
+    </div>
+
+    <squarespace:script src="site-bundle.js" combo="false" />
+    {squarespace-footers}
+
+  </body>
+</html>

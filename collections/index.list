@@ -1,0 +1,35 @@
+{.section collection}
+  <!-- Create index sections -->
+
+  {.repeated section collections}
+  <div id="{urlId}" class="index-section{.section mainContent}{.or} empty{.end}" data-url-id="{urlId}" data-collection-id="{id}" data-edit-main-image="Banner">
+    <div class="promoted-gallery-wrapper"></div>
+    {.background-source-video?}
+        <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image">
+          <div class="color-overlay"></div>
+          <figure id="thumbnail" class="loading content-fill">
+            {@|apply sqs-video-background.block}
+          </figure>
+          {.if description}<div class="desc-wrapper" data-content-field="description">{description}</div>{.end}
+        </div>
+    {.or}
+      {.section mainImage}
+        <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image">
+          <div class="color-overlay"></div>
+          <figure id="thumbnail" class="loading content-fill">
+            <img {@|image-meta} />
+          </figure>
+          {.if description}<div class="desc-wrapper" data-content-field="description">{description}</div>{.end}
+        </div>
+      {.end}
+    {.end}
+
+    <div class="index-section-wrapper page-content">
+      <div class="content-inner{.section mainContent} has-content{.end}" data-content-field="main-content">
+        {mainContent}
+      </div>
+    </div>
+  </div>
+  {.end}
+
+{.end}
