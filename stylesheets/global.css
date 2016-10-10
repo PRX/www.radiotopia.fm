@@ -113,7 +113,7 @@ body > header > hgroup h1 a {
   display: block;
   width: 100%;
   height: 100%;
-  background: url('/images/radiotopia/splash.png') no-repeat center top;
+  background: url('/images/radiotopia/splash-2016.jpg') no-repeat center top;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -132,7 +132,7 @@ body > header > hgroup.kickstarter h1 a {
 @media  only screen and (min-device-pixel-ratio: 2),
     only screen and (min-resolution: 192dpi) {
   body > header > hgroup h1 a {
-    background-image: url('/images/radiotopia/splash@2x.png');
+    background-image: url('/images/radiotopia/splash-2016@2x.jpg');
     background-size: 1280px 380px;
   }
 }
