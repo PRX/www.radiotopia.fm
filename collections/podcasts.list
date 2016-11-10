@@ -1,0 +1,33 @@
+{.repeated section items}
+
+    <!--WRAPPER-->
+
+    <article id="post-{id}" class="{@|item-classes}" data-item-id="{id}">
+
+      <!--POST TILE-->
+
+      <h1 class="title" data-content-field="title">
+        {.passthrough?}
+          <a href="{sourceUrl}" target="_blank">{title}</a>
+        {.or}
+          <a href="{fullUrl}">{title}</a>
+        {.end}
+      </h1>
+
+      <!--EXCERPT OR BODY-->
+
+      {.if excerpt}
+        {excerpt}
+        <a class="link" href="{fullUrl}">Read More</a>
+      {.or}
+
+      <!--MAIN CONTENT-->
+        {body}
+
+      {.end}
+
+    </article>
+
+  {.or}
+    No podcasts available.
+  {.end}
