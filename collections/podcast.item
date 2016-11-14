@@ -8,15 +8,24 @@
 
     <h1 class="title" data-content-field="title">
       {.passthrough?}
-        <a href="{sourceUrl}" target="_blank">{title}</a>
+        <a href="{sourceUrl}" target="_blank">{customContent.podcastTitle}</a>
       {.or}
-        <a href="{fullUrl}">{title}</a>
+        <a href="{fullUrl}">{customContent.podcastTitle}</a>
       {.end}
     </h1>
 
     <!--MAIN CONTENT-->
 
-    {body}
+    <p>{customContent.podcastLink}</p>
+
+    <section>
+      <p>{customContent.podcastDescription}</p>
+    </section>
+
+    <section>
+      <h3>{customContent.podcastHosts}</h3>
+      <p>{customContent.podcastMeetTheHosts}</p>
+    </section>
 
   </article>
 
