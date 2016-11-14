@@ -19,12 +19,7 @@
     <p>{customContent.podcastLink}</p>
 
     <section>
-      <p>{customContent.podcastDescription}</p>
-    </section>
 
-    <section>
-      <h3>{customContent.podcastHosts}</h3>
-      <p>{customContent.podcastMeetTheHosts}</p>
     </section>
 
   </article>
