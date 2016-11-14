@@ -22,7 +22,7 @@
       {.or}
 
       <!--MAIN CONTENT-->
-      Hello world
+        {customContent.podcastTitle}
 
       {.end}
 
