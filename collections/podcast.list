@@ -24,11 +24,6 @@
       <!--MAIN CONTENT-->
         {customContent.podcastTitle}
 
-        {customContent.podcastLink}
-        {customContent.podcastDescription}
-        {customContent.podcastHosts}
-        {customContent.podcastMeetTheHosts}
-
       {.end}
 
     </article>
