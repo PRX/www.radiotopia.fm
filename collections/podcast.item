@@ -7,11 +7,7 @@
     <!--POST TILE-->
 
     <h1 class="title" data-content-field="title">
-      {.passthrough?}
-        <a href="{sourceUrl}" target="_blank">{customContent.podcastTitle}</a>
-      {.or}
-        <a href="{fullUrl}">{customContent.podcastTitle}</a>
-      {.end}
+      <p>{customContent.podcastTitle}</p>
     </h1>
 
     <!--MAIN CONTENT-->
