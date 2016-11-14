@@ -22,7 +22,7 @@
       {.or}
 
       <!--MAIN CONTENT-->
-        {body}
+      Hello world
 
       {.end}
 
