@@ -12,13 +12,12 @@
     </h1>
 
     <!--MAIN CONTENT-->
+    <section>
 
     <p>{customContent.podcastLink}</p>
     <p>{customContent.podcastDescription}</p>
     <p>{customContent.podcastHosts}</p>
     <p>{customContent.podcastMeetTheHosts}</p>
-
-    <section>
 
     </section>
 
