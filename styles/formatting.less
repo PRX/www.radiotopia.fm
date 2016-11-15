@@ -1,0 +1,40 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html { -webkit-font-smoothing: antialiased; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  max-width: 100%;
+}
+
+a,
+a:active,
+a:link {
+  text-decoration: none;
+  color: white;
+  .css3-transition(color, .325s);
+
+  &:hover {
+    color: red;
+    .css3-transition(color, .325s);
+  }
+}
+
+#outer {
+
+}
+
+header {
+  margin: auto;
+  width: 95% !important;
+}
+
+footer {
+
+}
