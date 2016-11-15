@@ -6,22 +6,31 @@
 
 html { -webkit-font-smoothing: antialiased; }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  max-width: 100%;
+body {
+  background: transparent !important;
+}
+
+#siteWrapper {
+  background-color: @blue !important;
+  color: @white !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: @white !important;
 }
 
 a,
 a:active,
 a:link {
   text-decoration: none;
-  color: white;
+  color: @white !important;
   .css3-transition(color, .325s);
 
   &:hover {
-    color: red;
+    color: @light_blue !important;
     .css3-transition(color, .325s);
   }
 }
@@ -31,6 +40,7 @@ a:link {
 }
 
 header {
+  background: transparent !important;
   margin: auto;
   width: 95% !important;
 }
