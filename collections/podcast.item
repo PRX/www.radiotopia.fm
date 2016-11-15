@@ -8,15 +8,15 @@
 
     <h1 class="title" data-content-field="title">
       <p>{customContent.podcastTitle}</p>
-      <p>{customContent.podcastLink}</p>
-      <p>{customContent.podcastDescription}</p>
-      <p>{customContent.podcastHosts}</p>
-      <p>{customContent.podcastMeetTheHosts}</p>
+
     </h1>
 
     <!--MAIN CONTENT-->
 
     <p>{customContent.podcastLink}</p>
+    <p>{customContent.podcastDescription}</p>
+    <p>{customContent.podcastHosts}</p>
+    <p>{customContent.podcastMeetTheHosts}</p>
 
     <section>
 
