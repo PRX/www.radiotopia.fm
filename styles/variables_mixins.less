@@ -1,0 +1,65 @@
+/*
+  Colors
+*/
+@red: #ff0000;
+@black: #000;
+@gray: #7d7d7d;
+@white: #fff;
+@med_gray: #6d6e71;
+@dark_gray: #4d4c4c;
+
+/*
+  Base sizing
+*/
+@font_base: 16px;
+
+/*
+  Defaults
+*/
+@bg_color: #fff;
+@main_text_color: @black;
+
+@a_link: @white;
+@a_visited: @white;
+@a_hover: @red;
+
+
+/*
+  Mixins
+*/
+.css3-transition(@attr, @duration) {
+  transition: @attr @duration ease-in-out;
+  -moz-transition: @attr @duration ease-in-out;
+  -webkit-transition: @attr @duration ease-in-out;
+}
+
+.clearfix {
+  &:before,
+  &:after {
+    content:"";
+    display: table;
+  }
+  &:after { clear:both; }
+  & { *zoom:1; }
+}
+
+.allcaps(@tracking) {
+  text-transform: uppercase;
+  letter-spacing: @tracking;
+}
+
+/*
+  ==========
+  Fonts.com
+  ==========
+
+*/
+
+
+/*
+  Breakpoint mixin
+*/
+@mobile: ~"only screen and (max-width: 767px)";
+@tablet-desktop: ~"only screen and (min-width: 768px)";
+@tablet: ~"only screen and (min-width: 768px) and (max-width: 1170px)";
+@desktop: ~"only screen and (min-width: 1171px)";
