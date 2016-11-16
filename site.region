@@ -34,6 +34,8 @@
         </div>
       </header>
 
+      <squarespace:block-field id="siteLogo" columns="12" label="Site Logo" />
+
       {.if item}
         {.section item}
           {.if productType}

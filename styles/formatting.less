@@ -61,9 +61,18 @@ footer {
   }
 
   .footer-nav {
-    float: right;
-    width: 80%;
-    padding-top: 1em !important;
+
+    @media @tablet {
+      float: right;
+      width: 75%;
+      padding-top: 1em !important;
+    }
+
+    @media @desktop {
+      float: right;
+      width: 80%;
+      padding-top: 1em !important;
+    }
   }
 
   #footerBlocks {
@@ -72,23 +81,42 @@ footer {
       width: 19%;
     }
 
+    @media @tablet {
+      margin-right: 2%;
+    }
+
     .sqs-block-image .image-block-outer-wrapper:not(.image-block-v2) .intrinsic {
       margin: 0 !important;
     }
   }
 
   .folder {
-    vertical-align: top !important;
-    width: 24.5%;
+    margin-bottom: 2em !important;
+
+    @media @tablet {
+      vertical-align: top !important;
+      width: 45%;
+    }
+
+    @media @desktop {
+      vertical-align: top !important;
+      width: 24.5%;
+    }
+    label {
+      text-align: left;
+    }
   }
 
   .subnav {
     background-color: transparent !important;
+    height: auto !important;
+    left: auto !important;
+    padding: 0 !important;
     position: relative !important;
     text-align: left !important;
     transform: none !important;
     right: auto !important;
-    left: auto !important;
+    max-height: none !important;
 
     &>div {
       opacity: 1 !important;
