@@ -47,25 +47,17 @@ header {
 
 footer {
   margin: auto;
-  width: 95% !important;
+  width: 80% !important;
+
+  @media @tablet-desktop {
+    width: 95% !important;
+  }
 
   .footer-inner {
+    max-width: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
     .clearfix();
-  }
-
-  .subnav {
-    height: auto !important;
-    opacity: 1 !important;
-  }
-
-  #secondaryNavigation {
-    height: auto !important;
-    opacity: 1 !important;
-  }
-
-  .folder {
-    height: auto !important;
-    opacity: 1 !important;
   }
 
   .footer-nav {
@@ -75,7 +67,42 @@ footer {
   }
 
   #footerBlocks {
-    float: left;
-    width: 19%;
+    @media @tablet-desktop {
+      float: left;
+      width: 19%;
+    }
+
+    .sqs-block-image .image-block-outer-wrapper:not(.image-block-v2) .intrinsic {
+      margin: 0 !important;
+    }
   }
+
+  .folder {
+    vertical-align: top !important;
+    width: 24.5%;
+  }
+
+  .subnav {
+    background-color: transparent !important;
+    position: relative !important;
+    text-align: left !important;
+    transform: none !important;
+    right: auto !important;
+    left: auto !important;
+
+    &>div {
+      opacity: 1 !important;
+
+      a {
+        padding: 0 !important;
+      }
+    }
+  }
+
+  #secondaryNavigation {
+    label {
+      padding: 0 !important;
+    }
+  }
+
 }
