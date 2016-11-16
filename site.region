@@ -34,7 +34,7 @@
         </div>
       </header>
 
-      <squarespace:block-field id="siteLogo" columns="12" label="Site Logo" />
+      <squarespace:block-field id="homeLogo" columns="12" label="Home Logo" />
 
       {.if item}
         {.section item}
