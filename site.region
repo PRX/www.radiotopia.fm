@@ -40,8 +40,6 @@
 
       <squarespace:block-field id="homeLogoSubtitle" columns="12" label="Home Logo Subtitle" />
 
-      <squarespace:block-field id="testimonialCarousel" columns="12" label="Testimonial Carousel" />
-
       {.if item}
         {.section item}
           {.if productType}
@@ -252,6 +250,9 @@
         {.end}
         {.end}
       </main>
+
+
+      <squarespace:block-field id="testimonialCarousel" columns="12" label="Testimonial Carousel" />
 
       <div id="preFooter">
         <div class="pre-footer-inner">
