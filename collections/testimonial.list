@@ -24,7 +24,7 @@
       <!--MAIN CONTENT-->
         {customContent.testimonialContent}
 
-        {customContent.testimonialBackgroundImage}
+        {customContent.testimonialBackgroundImage.assetUrl}
 
       {.end}
 
