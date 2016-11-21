@@ -256,7 +256,7 @@
 
       <squarespace:block-field id="newsAndEventsHeader" columns="12" label="News and Events Header" />
 
-      <squarespace:query collection="events-list" template="event" columns="12" /> <!-- columns to 6? -->
+      <squarespace:query collection="events" template="event" columns="12" /> <!-- columns to 6? -->
 
       <div id="preFooter">
         <div class="pre-footer-inner">
