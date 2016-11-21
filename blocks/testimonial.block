@@ -1,11 +1,9 @@
 {.repeated section items}
-  {.custom-content.testimonial-content?}
-    <div class="testimonial">
-      <p>{customContent.testimonialContent}</p>
+  <div class="testimonial">
+    <p>{customContent.testimonialContent}</p>
 
-      <p>{customContent.testimonialBackgroundImage.assetUrl</p>
+    <p>{customContent.testimonialBackgroundImage.assetUrl</p>
 
-      <p>{customContent.testimonialAuthor</p>
-    </div>
-  {.end}
+    <p>{customContent.testimonialAuthor</p>
+  </div>
 {.end}
