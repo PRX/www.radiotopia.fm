@@ -1,12 +1,14 @@
 {.repeated section items}
   <section class="testimonials">
     <article class="testimonial-item">
-      {customContent.testimonialContent.html}
+      <div class="testimonial-content">
+        <div class="content-body">{customContent.testimonialContent.html}</div>
+
+        <p class="testimonial-author">{customContent.testimonialAuthor}</p>
+        <p class="testimonial-twitter-handle">{customContent.testimonialTwitterHandle}</p>
+      </div>
 
       <img class="testimonial-image" src={customContent.testimonialBackgroundImage.assetUrl}/>
-
-      <p class="testimonial-author">{customContent.testimonialAuthor}</p>
-      <p class="testimonial-twitter-handle">{customContent.testimonialTwitterHandle}</p>
     </article>
   </section>
 {.end}

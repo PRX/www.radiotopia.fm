@@ -79,3 +79,43 @@ header {
     width: 25%;
   }
 }
+
+.testimonials {
+  margin: auto;
+  width: 80% !important;
+
+  @media @tablet-desktop {
+    width: 95% !important;
+  }
+
+  .testimonial-item {
+    position: relative;
+    margin-bottom: 40px;
+    .clearfix();
+
+    .testimonial-content {
+      position: absolute;
+    }
+
+    .testimonial-image {
+      float: right;
+    }
+  }
+
+  .testimonial-author {
+    font-size: .875em;
+    margin: 0 0 .25em 0;
+  }
+
+  .testimonial-twitter-handle {
+    font-size: .75em;
+    margin: 0 0 .25em 0;
+  }
+
+  .content-body {
+    p {
+      font-size: 2.25em;
+      margin: 0 0 .5em 0;
+    }
+  }
+}
