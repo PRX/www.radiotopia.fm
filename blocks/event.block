@@ -1,12 +1,14 @@
 {.repeated section items}
-  <section class="events">
-    <div class="event-content">
-<!--       <div class="content-body">{testimonialContent.html}</div>
+  {.if upcoming}
+    <section class="events">
+      <div class="event-content">
+        <p class="event-date">{startDate}</p>
+        <p class="event-title">{title}</p>
 
-      <p class="testimonial-author">{testimonialAuthor}</p>
-      <p class="testimonial-twitter-handle">{testimonialTwitterHandle}</p> -->
-    </div>
+        <div class="event-content">{excerpt}</div>
+      </div>
 
-    <!-- <img class="testimonial-image" src={customContent.testimonialBackgroundImage.assetUrl}/> -->
-  </section>
+      <img class="testimonial-image" src={assetUrl}/>
+    </section>
+  {.end}
 {.end}
