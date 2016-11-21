@@ -1,6 +1,6 @@
 {.repeated section items}
   <div class="testimonial">
-    <p>{customContent.testimonialContent}</p>
+    <p>{customContent.testimonialContent.html}</p>
 
     <p>{customContent.testimonialBackgroundImage.assetUrl}</p>
 
