@@ -252,7 +252,7 @@
       </main>
 
 
-      <squarespace:block-field id="testimonialCarousel" columns="12" label="Testimonial Carousel" />
+      <squarespace:query collection="testimonial" template="testimonial" columns="12" />
 
       <div id="preFooter">
         <div class="pre-footer-inner">
