@@ -254,6 +254,10 @@
 
       <squarespace:query collection="testimonial" template="testimonial" columns="12" />
 
+      <squarespace:block-field id="newsAndEventsHeader" columns="12" label="News and Events Header" />
+
+      <squarespace:query collection="events" template="events" columns="12" /> <!-- columns to 6? -->
+
       <div id="preFooter">
         <div class="pre-footer-inner">
           <squarespace:block-field id="preFooterBlocks" columns="12" label="Pre-Footer Content" />
