@@ -1,14 +1,13 @@
 {.repeated section items}
-  {.if upcoming}
     <section class="events">
       <div class="event-content">
         <p class="event-date">{startDate}</p>
         <p class="event-title">{title}</p>
 
-        <div class="event-content">{excerpt}</div>
+        <div class="event-body">{body}</div>
+        <div class="event-excerpt">{excerpt}</div>
       </div>
 
       <img class="testimonial-image" src={assetUrl}/>
     </section>
-  {.end}
 {.end}
