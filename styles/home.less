@@ -1,0 +1,81 @@
+header {
+  background: transparent !important;
+  margin: auto;
+  width: 95% !important;
+}
+
+#homeLogo {
+  width: 60%;
+  margin-left: 19%;
+}
+
+#homeLogoAudioPlayer {
+  padding-top: 2%;
+
+  .sqs-audio-embed {
+    width: 60%;
+    margin: auto;
+    position: relative;
+
+    @media @tablet {
+      width: 50%;
+    }
+
+    @media @desktop {
+      width: 30%;
+    }
+
+    &::before {
+      content: "";
+      border-top: 2px solid @white;
+      left: -60px;
+      margin-top: -1px;
+      top: 50%;
+      position: absolute;
+      width: 40px;
+
+      @media @tablet-desktop {
+        left: -80px;
+        width: 60px;
+      }
+    }
+
+    &::after {
+      content: "";
+      border-top: 2px solid @white;
+      right: -60px;
+      margin-top: -1px;
+      top: 50%;
+      position: absolute;
+      visibility: visible;
+      width: 40px;
+
+      @media @tablet-desktop {
+        right: -80px;
+        width: 60px;
+      }
+    }
+
+    .action {
+      background-color: #F9A052;
+    }
+
+    .labels {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .secondary-controls {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+#homeLogoSubtitle {
+  width: 50%;
+  margin: auto;
+  padding-top: 2%;
+
+  @media @tablet-desktop {
+    width: 25%;
+  }
+}
