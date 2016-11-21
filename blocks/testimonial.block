@@ -2,8 +2,9 @@
   <div class="testimonial">
     <p>{customContent.testimonialContent.html}</p>
 
-    <p>{customContent.testimonialBackgroundImage.assetUrl}</p>
+    <img src={customContent.testimonialBackgroundImage.assetUrl}/>
 
     <p>{customContent.testimonialAuthor}</p>
+    <p>{customContent.testimonialTwitterHandle}</p>
   </div>
 {.end}
