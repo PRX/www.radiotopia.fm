@@ -1,0 +1,12 @@
+{.repeated section items}
+  <section class="news">
+    <div class="news-content">
+      <p class="news-title">{title}</p>
+
+      <div class="news-body">{body}</div>
+      <div class="news-excerpt">{excerpt}</div>
+    </div>
+
+    <img class="news-image" src={assetUrl}/>
+  </section>
+{.end}

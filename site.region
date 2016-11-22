@@ -258,6 +258,8 @@
 
       <squarespace:query collection="events" template="event" columns="12" />
 
+      <squarespace:query collection="news" template="event" columns="12" />
+
       <div id="preFooter">
         <div class="pre-footer-inner">
           <squarespace:block-field id="preFooterBlocks" columns="12" label="Pre-Footer Content" />

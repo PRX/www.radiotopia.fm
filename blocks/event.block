@@ -1,13 +1,14 @@
 {.repeated section items}
-    <section class="events">
-      <div class="event-content">
-        <p class="event-date">{startDate}</p>
-        <p class="event-title">{title}</p>
+  <section class="events">
+    <div class="event-content">
+      <p class="event-date">{startDate}</p>
+      <p class="event-title">{title}</p>
+      <p class="event-location">{location}</p>
 
-        <div class="event-body">{body}</div>
-        <div class="event-excerpt">{excerpt}</div>
-      </div>
+      <div class="event-body">{body}</div>
+      <div class="event-excerpt">{excerpt}</div>
+    </div>
 
-      <img class="testimonial-image" src={assetUrl}/>
-    </section>
+    <img class="event-image" src={assetUrl}/>
+  </section>
 {.end}
