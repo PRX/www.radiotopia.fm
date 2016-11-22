@@ -129,6 +129,66 @@ header {
   }
 }
 
-#newsAndEventsHeader {
+#news-and-events-header {
   font-size: 2em;
+}
+
+.news-and-events-container {
+  position: relative;
+}
+
+.news {
+  float: left;
+  width: 43%;
+  padding-right: 4%;
+  margin-left: 5%;
+  border-right: 1px #789DA6 solid;
+
+  .news-item {
+    height: 75%;
+  }
+
+  .news-image {
+    float: left;
+    .clearfix();
+  }
+
+  .news-content {
+    float: right;
+    .clearfix();
+
+    .news-date {
+      font-size: .66em;
+      color: @orange;
+      font-weight: bold;
+    }
+
+    .news-title {
+      font-size: 1.5em;
+    }
+
+    .news-excerpt {
+      font-size: .88em;
+      font-family: 'Roboto';
+    }
+  }
+}
+
+.events {
+  width: 45%;
+  float: right;
+
+  .event-item {
+    height: 75%;
+  }
+
+  .event-image {
+    float: left;
+    .clearfix();
+  }
+
+  .event-content {
+    float: right;
+    .clearfix();
+  }
 }
