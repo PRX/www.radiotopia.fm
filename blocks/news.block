@@ -1,12 +1,14 @@
 {.repeated section items}
   <section class="news">
-    <div class="news-content">
-      <p class="news-title">{title}</p>
+    <article class="news-item">
+      <div class="news-content">
+        <p class="news-date">{addedOn}</p>
+        <p class="news-title">{title}</p>
 
-      <div class="news-body">{body}</div>
-      <div class="news-excerpt">{excerpt}</div>
-    </div>
+        <div class="news-excerpt">{excerpt}</div>
+      </div>
 
-    <img class="news-image" src={assetUrl}/>
+      <img class="news-image" src={assetUrl}/>
+    </article>
   </section>
 {.end}
