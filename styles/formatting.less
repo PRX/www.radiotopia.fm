@@ -35,8 +35,38 @@ a:link {
   }
 }
 
-#outer {
+#siteWrapper {
+  .slick-slider {
+    margin: auto;
+    position: relative;
+    width: 80%;
 
+    .slick-prev {
+      background: url("/assets/arrow-prev.png") transparent no-repeat center center;
+      border: none;
+      height: 32px;
+      left: -75px;
+      margin-top: -25px;
+      outline: none;
+      position: absolute;
+      text-indent: -999em;
+      top: 50%;
+      width: 32px;
+    }
+
+    .slick-next {
+      background: url("/assets/arrow-next.png") transparent no-repeat center center;
+      border: none;
+      height: 32px;
+      margin-top: -25px;
+      outline: none;
+      position: absolute;
+      text-indent: -999em;
+      top: 50%;
+      right: -75px;
+      width: 32px;
+    }
+  }
 }
 
 

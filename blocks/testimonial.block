@@ -1,5 +1,5 @@
-{.repeated section items}
-  <section class="testimonials">
+<section class="testimonials">
+  {.repeated section items}
     <article class="testimonial-item">
       <div class="testimonial-content">
         <div class="content-body">{customContent.testimonialContent.html}</div>
@@ -10,5 +10,5 @@
 
       <img class="testimonial-image" src={customContent.testimonialBackgroundImage.assetUrl}/>
     </article>
-  </section>
-{.end}
+  {.end}
+</section>

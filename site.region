@@ -280,5 +280,18 @@
     <squarespace:script src="site-bundle.js" combo="false" />
     {squarespace-footers}
 
+
+    <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <squarespace:script src="vendor/slick.min.js" combo="false" />
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.testimonials').slick();
+      });
+    </script>
   </body>
 </html>
