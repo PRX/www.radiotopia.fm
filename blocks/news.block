@@ -2,7 +2,7 @@
   <section class="news">
     <article class="news-item">
       <div class="news-content">
-        <p class="news-date">{addedOn}</p>
+        <p class="news-date">{addedOn|date %A, %B, %d}</p>
         <p class="news-title">{title}</p>
 
         <div class="news-excerpt">{excerpt}</div>

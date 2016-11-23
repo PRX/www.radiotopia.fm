@@ -251,7 +251,6 @@
         {.end}
       </main>
 
-
       <squarespace:query collection="testimonial" template="testimonial" columns="12" />
 
       <squarespace:block-field id="news-and-events-header" columns="12" label="News and Events Header" />
@@ -288,9 +287,11 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
     <squarespace:script src="vendor/slick.min.js" combo="false" />
+    <squarespace:script src="homepage.js" combo="false" />
     <script type="text/javascript">
       $(document).ready(function(){
         $('.testimonials').slick();
+        RadiotopiaHome.initialize();
       });
     </script>
   </body>
