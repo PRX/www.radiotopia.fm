@@ -290,7 +290,14 @@
     <squarespace:script src="homepage.js" combo="false" />
     <script type="text/javascript">
       $(document).ready(function(){
-        $('.testimonials').slick();
+        $('.testimonials').slick({
+          responsive: [{
+            breakpoint: 640,
+            settings: {
+              arrows: false
+            }
+          }]
+        });
         RadiotopiaHome.initialize();
       });
     </script>

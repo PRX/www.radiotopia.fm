@@ -85,6 +85,7 @@ header {
   .testimonial-item {
     position: relative;
     margin-bottom: 40px;
+    overflow: hidden;
     .clearfix();
 
     .testimonial-content {
@@ -95,6 +96,11 @@ header {
       left: 0;
       position: absolute;
       z-index: 100;
+
+      @media @mobile {
+        margin: 0 5%;
+        width: 90%;
+      }
     }
 
     .testimonial-image {
