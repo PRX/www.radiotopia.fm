@@ -105,8 +105,22 @@ header {
 
   .content-body {
     p {
-      font-size: 2.25em;
+      font-size: 1.25em;
       margin: 0 0 .5em 0;
+    }
+
+    @media @tablet {
+      p {
+        font-size: 1.75em;
+        margin: 0 0 .5em 0;
+      }
+    }
+
+    @media @desktop {
+      p {
+        font-size: 2.25em;
+        margin: 0 0 .5em 0;
+      }
     }
   }
 
