@@ -1,13 +1,11 @@
 var RadiotopiaHome = {
   initialize: function() {
-    RadiotopiaHome.bind();
+    RadiotopiaHome.hideSecondNewsStory();
   },
-  bind: function() {
-    if ($('.events').length === 0) {
-      $('.events').remove();
-    } else if ($('.events').length > 1) {
-      var nextEvent = $('.event-item').first();
-      nextEvent.nextAll('article').remove();
-    } else {};
+  hideSecondNewsStory: function() {
+    if ($('.events').length !== 0) {
+      var firstNewsStory = $('.news-item').first();
+      firstNewsStory.next('article').remove();
+    }
   }
 }

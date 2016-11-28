@@ -254,10 +254,13 @@
       <squarespace:query collection="testimonial" template="testimonial" columns="12" />
 
       <squarespace:block-field id="news-and-events-header" columns="12" label="News and Events Header" />
-      <div class="news-and-events-container">
-        <squarespace:query collection="events" limit="1" template="event" columns="12" />
-
-        <squarespace:query collection="news" limit="1" template="news" columns="12" />
+      <div class="news-and-events-container" id="news-and-events-container">
+        <div id="news-container">
+          <squarespace:query collection="news" limit="2" template="news" columns="12" />
+        </div>
+        <div id="events-container">
+          <squarespace:query collection="events" limit="1" template="event" columns="12" />
+        </div>
       </div>
       <div id="preFooter">
         <div class="pre-footer-inner">
@@ -298,7 +301,9 @@
             }
           }]
         });
-        RadiotopiaHome.initialize();
+        $('#events-container').change(function() {
+          RadiotopiaHome.initialize();
+        })
       });
     </script>
   </body>

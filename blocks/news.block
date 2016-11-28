@@ -1,5 +1,5 @@
-{.repeated section items}
-  <section class="news">
+<section class="news">
+  {.repeated section items}
     <article class="news-item">
       <div class="news-content">
         <p class="news-date">{addedOn|date %A, %B, %d}</p>
@@ -10,5 +10,5 @@
 
       <img class="news-image" src={assetUrl}/>
     </article>
-  </section>
-{.end}
+  {.end}
+</section>
