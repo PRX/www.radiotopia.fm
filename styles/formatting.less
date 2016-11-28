@@ -39,7 +39,7 @@ a:link {
   .slick-slider {
     margin: auto;
     position: relative;
-    width: 80%;
+    width: 82%;
 
     .slick-prev {
       background: url("/assets/arrow-prev.png") transparent no-repeat center center;
@@ -62,6 +62,7 @@ a:link {
       outline: none;
       position: absolute;
       text-indent: -999em;
+      text-indent: -999em;
       top: 50%;
       right: -75px;
       width: 32px;
@@ -69,14 +70,28 @@ a:link {
   }
 }
 
+header {
+  background: transparent !important;
+  margin: auto;
+  padding: 0 !important;
+  width: 80% !important;
 
+  @media @tablet-desktop {
+    width: 90% !important;
+  }
+}
+
+.section-headline {
+  font-size: 2em;
+  text-align: center;
+}
 
 footer {
   margin: auto;
   width: 80% !important;
 
   @media @tablet-desktop {
-    width: 95% !important;
+    width: 90% !important;
   }
 
   a,
