@@ -255,10 +255,11 @@
 
       <squarespace:block-field id="news-and-events-header" columns="12" label="News and Events Header" />
       <div class="news-and-events-container" id="news-and-events-container">
-        <div id="news-container">
-          <squarespace:query collection="news" limit="2" template="news" columns="12" />
+        <div id="left-column">
+          <squarespace:query collection="news" limit="1" template="news" columns="12" />
         </div>
-        <div id="events-container">
+        <div id="right-column">
+          <squarespace:query collection="news" limit="1" skip="1" template="news" columns="12" />
           <squarespace:query collection="events" limit="1" template="event" columns="12" />
         </div>
       </div>
@@ -301,7 +302,7 @@
             }
           }]
         });
-        $('#events-container').change(function() {
+        $('#right-column').change(function() {
           RadiotopiaHome.initialize();
         })
       });
