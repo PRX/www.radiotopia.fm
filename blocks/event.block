@@ -1,16 +1,18 @@
-<section class="events">
+<section class="events" >
   {.repeated section items}
       <article class="event-item">
+        <div class="event-date">
+          <div class="cal-icon">
+            <p class="event-month">{startDate|date %b}</p>
+            <p class="event-day">{startDate|date %d}</p>
+          </div>
+        </div>
         <div class="event-content">
           <p class="event-header">Event</p>
-          <p class="event-date">{startDate|date %A, %B, %d}</p>
           <p class="event-title">{title}</p>
           <p class="event-location">{location}</p>
-
           <div class="event-excerpt">{excerpt}</div>
         </div>
-
-        <img class="event-image" src={assetUrl}/>
       </article>
   {.end}
 </section>
