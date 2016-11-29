@@ -253,7 +253,7 @@
 
       <squarespace:query collection="testimonial" template="testimonial" columns="12" />
 
-      <squarespace:block-field id="news-and-events-header" columns="12" label="News and Events Header" />
+      <squarespace:block-field id="news-and-events-header" class="section-headline" columns="12" label="News and Events Header" />
       <div class="news-and-events-container" id="news-and-events-container">
         <div id="left-column">
           <squarespace:query collection="news" limit="1" template="news" columns="12" />

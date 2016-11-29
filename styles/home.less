@@ -156,8 +156,7 @@
 .news {
   border-right: 1px @orange solid;
   float: left;
-  padding-right: 3%;
-  padding-top: 2.25em;
+  padding: 2.25em 3% 2.25em 0;
   width: 50%;
 
   .news-item {
@@ -176,19 +175,20 @@
 
     .news-date {
       color: @orange;
-      font-size: .66em;
-      font-weight: bold;
-      margin: -0.9375em 0 1em 0;
+      font-family: 'Roboto';
+      font-size: 0.75em;
+      font-weight: 500;
+      margin: -0.9375em 0 0.75em 0;
       text-transform: uppercase;
     }
 
     .news-title {
-      font-size: 1.5em;
-      margin: 0 0 0.25em 0;
+      font-size: 1.25em;
+      margin: 0 0 0.4375em 0;
     }
 
     .news-excerpt {
-      font-size: .88em;
+      font-size: 0.875em;
       font-family: 'Roboto';
 
       h1, h2, p {
@@ -200,7 +200,7 @@
 
 .events {
   float: right;
-  padding-left: 4%;
+  padding-left: 7%;
   padding-top: 2.25em;
   width: 50%;
 
@@ -210,19 +210,63 @@
 
   .event-date {
     float: left;
-    margin-right: 6%;
-    width: 41%;
+    margin-right: 13%;
 
     .cal-icon {
       background: url("/assets/calendar-icon.png") transparent no-repeat center center;
       background-size: 120px 128px;
+      padding-top: 2em;
       height: 128px;
       width: 120px;
+    }
+
+    .event-month {
+      font-size: 0.75em;
+      font-weight: 700;
+      margin: 0 0 0.25em 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .event-day {
+      font-size: 3em;
+      font-weight: 500;
+      margin: 0 0 0 0;
+      text-align: center;
     }
   }
 
   .event-content {
     float: left;
     width: 53%;
+
+    .event-header {
+      color: @orange;
+      font-family: 'Roboto';
+      font-size: 0.75em;
+      font-weight: 500;
+      margin: -0.5em 0 0 0;
+      text-transform: uppercase;
+    }
+
+    .event-title {
+      font-size: 1.25em;
+      margin: 0 0 0.4375em 0;
+    }
+
+    .event-location {
+      font-size: 0.875em;
+      font-family: 'Roboto';
+      margin: 0;
+    }
+
+    .event-excerpt {
+      font-size: 0.875em;
+      font-family: 'Roboto';
+
+      h1, h2, p {
+        margin: 0 0 0.25em 0;
+      }
+    }
   }
 }
