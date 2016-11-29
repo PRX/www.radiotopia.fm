@@ -264,7 +264,9 @@
         </div>
       </div>
 
-      <squarespace:block-field id="donate-and-sponsor-section" columns="12" label="Donate and Sponsor Section" />
+      <squarespace:block-field id="donateNow" columns="7" label="Donate Now" />
+
+      <squarespace:block-field id="becomeSponsor" columns="5" label="Become a Sponsor" />
 
       <div id="preFooter">
         <div class="pre-footer-inner">
