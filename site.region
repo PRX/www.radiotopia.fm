@@ -263,7 +263,7 @@
             </div>
           </div>
 
-      <squarespace:block-field class="support-container" columns="12" label="Support and Donate" />
+      <squarespace:block-field class="support-container" id="support-container" columns="12" label="Support and Donate" />
 
       <div class="support-container">
         <div class="support-left-column">
