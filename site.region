@@ -274,7 +274,7 @@
             <p>Make a one time donation now or become a sustaining, monthly contributor.</p>
           </div>
           <div class="support-section-button">
-            <a href="#">Donate Now</a>
+            <a href="#" class="support-button">Donate Now</a>
           </div>
         </div>
 
@@ -287,7 +287,7 @@
             <p>Learn why more and more savvy marketers are including podcast sponsorship in their marketing mix.</p>
           </div>
           <div class="support-section-button">
-            <a href="#">Become a Sponsor</a>
+            <a href="#" class="support-button">Become a Sponsor</a>
           </div>
         </div>
       </div>
