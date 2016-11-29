@@ -263,7 +263,15 @@
             </div>
           </div>
 
-          <squarespace:block-field class="support-container" id="support-container" columns="12" label="Support and Donate" />
+          <div class="support-container">
+            <div class="support-left-column">
+              <squarespace:block-field class="support-radiotopia" id="support-radiotopia" columns="12" label="Support Radiotopia" />
+            </div>
+
+            <div class="support-right-column">
+              <squarespace:block-field class="sponsor-radiotopia" id="sponsor-radiotopia" columns="12" label="Become a Sponsor" />
+            </div>
+          </div>
 
           <div id="preFooter">
             <div class="pre-footer-inner">

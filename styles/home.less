@@ -336,8 +336,26 @@
   a,
   a:active,
   a:link,
+  a:active,
   a:hover {
     text-decoration: none !important;
     color: @dark_blue !important;
+  }
+
+  .support-left-column {
+    width: 50%;
+    float: left;
+    border-right: 1px @light_blue solid;
+    padding: 3em 5% 3em 0;
+    text-align: center;
+    .clearfix();
+  }
+
+  .support-right-column {
+    width: 50%;
+    float: right;
+    text-align: center;
+    padding: 3em 0 3em 5%;
+    .clearfix();
   }
 }
