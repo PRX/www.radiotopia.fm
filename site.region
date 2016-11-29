@@ -268,8 +268,8 @@
           <div class="support-radiotopia-icon">
             <img src="/assets/support-icon.png">
           </div>
-          <div class="section-headline" id="support-section-header">
-            <p>Support Radiotopia</p>
+          <div id="support-section-header">
+            <p class="section-headline">Support Radiotopia</p>
           </div>
           <div class="support-section-body">
             <p>Make a one time donation now or become a sustaining, monthly contributor.</p>
@@ -283,8 +283,8 @@
           <div class="become-sponsor-icon">
             <img src="/assets/sponsor-icon.png">
           </div>
-          <div class="section-headline" id="support-section-header">
-            <p>Become a Sponsor</p>
+          <div id="support-section-header">
+            <p class="section-headline">Become a Sponsor</p>
           </div>
           <div class="support-section-body">
             <p>Learn why more and more savvy marketers are including podcast sponsorship in their marketing mix.</p>
