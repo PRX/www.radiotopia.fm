@@ -263,13 +263,15 @@
           <squarespace:query collection="events" limit="1" template="event" columns="12" />
         </div>
       </div>
+
+      <squarespace:block-field id="donate-and-sponsor-section" columns="12" label="Donate and Sponsor Section" />
+
       <div id="preFooter">
         <div class="pre-footer-inner">
           <squarespace:block-field id="preFooterBlocks" columns="12" label="Pre-Footer Content" />
         </div>
       </div>
 
-      <squarespace:block-field id="donate-and-sponsor-section" columns="12" label="Donate and Sponsor Section" />
 
       <footer id="footer" role="contentinfo">
         <div class="footer-inner">
