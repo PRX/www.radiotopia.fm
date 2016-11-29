@@ -1,6 +1,6 @@
 #homeLogo {
   width: 60%;
-  margin-left: 19%;
+  margin-left: 20%;
 }
 
 #homeLogoAudioPlayer {
@@ -74,6 +74,11 @@
   }
 }
 
+#content {
+  max-width: 1020px;
+  padding: 96px 32px;
+}
+
 .testimonials {
 
   .testimonial-item {
@@ -139,32 +144,46 @@
 }
 
 #news-and-events-header {
-  margin-bottom: 2em;
-}
-
-.news-and-events-container {
-  margin: 0 auto;
-  position: relative;
-  width: 80%;
-  .clearfix();
 
   @media @tablet-desktop {
-    width: 90% !important;
+    margin-bottom: 1.75em;
   }
 }
 
-.left-column .news {
-  border-right: 1px @light_blue solid;
-}
+.news-and-events-container {
+  margin-bottom: 1em;
+  position: relative;
+  .clearfix();
 
-.right-column .news {
-  display: none;
+  .left-column {
+    @media @tablet-desktop {
+      border-right: 1px @orange solid;
+      float: left;
+      width: 50%;
+    }
+  }
+
+  .right-column {
+    @media @tablet-desktop {
+      float: right;
+      padding-left: 3%;
+      width: 47%;
+    }
+
+    .news,
+    .events {
+      display: none;
+    }
+  }
 }
 
 .news {
-  float: left;
-  padding: 2.25em 3% 2.25em 0;
-  width: 50%;
+  padding: 1em 3% 1em 0;
+  width: 100%;
+
+  @media @tablet-desktop {
+    padding: 2.25em 3% 2.25em 0;
+  }
 
   .news-item {
     .clearfix();
@@ -185,8 +204,12 @@
       font-family: 'Roboto';
       font-size: 0.75em;
       font-weight: 500;
-      margin: -0.9375em 0 0.75em 0;
+      margin: -0.5em 0 0 0;
       text-transform: uppercase;
+
+      @media @tablet-desktop {
+        margin-bottom: 0.75em;
+      }
     }
 
     .news-title {
@@ -205,15 +228,13 @@
   }
 }
 
-.right-column .events {
-  display: none;
-}
-
 .events {
-  float: right;
-  padding-left: 7%;
-  padding-top: 2.25em;
-  width: 50%;
+  padding-top: 1em;
+  width: 100%;
+
+  @media @tablet-desktop {
+    padding-top: 2.25em;
+  }
 
   .event-item:not(:first-child) {
     display: none;
@@ -224,7 +245,7 @@
 
   .event-date {
     float: left;
-    margin-right: 13%;
+    margin-right: 6%;
 
     .cal-icon {
       background: url("/assets/calendar-icon.png") transparent no-repeat center center;
@@ -232,21 +253,39 @@
       padding-top: 2em;
       height: 128px;
       width: 120px;
+
+      @media @tablet {
+        background-size: 90px 96px;
+        padding-top: 1.5em;
+        height: 96px;
+        width: 90px;
+      }
     }
 
     .event-month {
       font-size: 0.75em;
       font-weight: 700;
-      margin: 0 0 0.25em 0;
+      line-height: initial;
+      margin: 0;
       text-align: center;
       text-transform: uppercase;
+
+      @media @tablet {
+        font-size: 0.735em;
+        margin: 0;
+      }
     }
 
     .event-day {
-      font-size: 3em;
+      font-size: 2.875em;
       font-weight: 500;
-      margin: 0 0 0 0;
+      line-height: 1em;
+      margin: -0.0625em 0 0 0;
       text-align: center;
+
+      @media @tablet {
+        font-size: 2em;
+      }
     }
   }
 
@@ -261,6 +300,10 @@
       font-weight: 500;
       margin: -0.5em 0 0 0;
       text-transform: uppercase;
+
+      @media @tablet-desktop {
+        margin-bottom: 0.75em;
+      }
     }
 
     .event-title {

@@ -10,11 +10,6 @@ body {
   background: transparent !important;
 }
 
-#siteWrapper {
-  background-color: @blue !important;
-  color: @white !important;
-}
-
 h1,
 h2,
 h3,
@@ -36,10 +31,16 @@ a:link {
 }
 
 #siteWrapper {
+  background-color: @blue !important;
+  color: @white !important;
+  position: relative;
+
   .slick-slider {
-    margin: auto;
     position: relative;
-    width: 82%;
+
+    @media @tablet-desktop {
+      margin: 0 75px;
+    }
 
     .slick-prev {
       background: url("/assets/arrow-prev.png") transparent no-repeat center center;
@@ -70,13 +71,33 @@ a:link {
   }
 }
 
+#page {
+  background: url("/assets/radiotopia-stars-bg.png") transparent no-repeat top center;
+  background-size: 100%;
+  background-attachment: fixed;
+  max-width: none !important;
+  padding: 100px 0 !important;
+
+  .inner {
+    margin: 0 auto;
+    width: 80% !important;
+
+    @media @tablet-desktop {
+      width: 90% !important;
+    }
+  }
+}
+
 header {
   background: transparent !important;
+  left: 10% !important;
   margin: auto;
   padding: 0 !important;
+  position: absolute !important;
   width: 80% !important;
 
   @media @tablet-desktop {
+    left: 5% !important;
     width: 90% !important;
   }
 }
@@ -84,6 +105,7 @@ header {
 .section-headline {
   font-size: 2em;
   font-weight: 500;
+  line-height: initial;
   text-align: center;
 }
 
