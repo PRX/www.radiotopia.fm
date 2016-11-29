@@ -264,10 +264,9 @@
         </div>
       </div>
 
-      <div class="donate-and-sponsor-container">
-        <div class="donate-left-column">
-          <div class="support-radiotopia-icon">
-          </div>
+      <div class="support-container">
+        <div class="support-left-column">
+          <div class="support-radiotopia-icon"></div>
           <div class="section-headline" id="support-section-header">
             <p>Support Radiotopia</p>
           </div>
@@ -275,11 +274,21 @@
             <p>Make a one time donation now or become a sustaining, monthly contributor.</p>
           </div>
           <div class="support-section-button">
-            <a href="#">DONATE NOW</a>
+            <a href="#">Donate Now</a>
           </div>
         </div>
-        <div class="donate-right-column">
 
+        <div class="support-right-column">
+          <div class="become-sponsor-icon"></div>
+          <div class="section-headline" id="support-section-header">
+            <p>Become a Sponsor</p>
+          </div>
+          <div class="support-section-body">
+            <p>Learn why more and more savvy marketers are including podcast sponsorship in their marketing mix.</p>
+          </div>
+          <div class="support-section-button">
+            <a href="#">Become a Sponsor</a>
+          </div>
         </div>
       </div>
 
