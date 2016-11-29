@@ -264,9 +264,24 @@
         </div>
       </div>
 
-      <squarespace:block-field id="donateNow" columns="7" label="Donate Now" />
+      <div class="donate-and-sponsor-container">
+        <div class="donate-left-column">
+          <div class="support-radiotopia-icon">
+          </div>
+          <div class="section-headline" id="support-section-header">
+            <p>Support Radiotopia</p>
+          </div>
+          <div class="support-section-body">
+            <p>Make a one time donation now or become a sustaining, monthly contributor.</p>
+          </div>
+          <div class="support-section-button">
+            <a href="#">DONATE NOW</a>
+          </div>
+        </div>
+        <div class="donate-right-column">
 
-      <squarespace:block-field id="becomeSponsor" columns="5" label="Become a Sponsor" />
+        </div>
+      </div>
 
       <div id="preFooter">
         <div class="pre-footer-inner">
@@ -308,7 +323,9 @@
             }
           }]
         });
-        RadiotopiaHome.initialize();
+        $('#right-column').change(function() {
+          RadiotopiaHome.initialize();
+        })
       });
     </script>
   </body>
