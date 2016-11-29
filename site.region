@@ -265,7 +265,9 @@
 
       <div class="support-container">
         <div class="support-left-column">
-          <div class="support-radiotopia-icon"></div>
+          <div class="support-radiotopia-icon">
+            <img src="/assets/support-icon.png">
+          </div>
           <div class="section-headline" id="support-section-header">
             <p>Support Radiotopia</p>
           </div>
@@ -278,7 +280,9 @@
         </div>
 
         <div class="support-right-column">
-          <div class="become-sponsor-icon"></div>
+          <div class="become-sponsor-icon">
+            <img src="/assets/sponsor-icon.png">
+          </div>
           <div class="section-headline" id="support-section-header">
             <p>Become a Sponsor</p>
           </div>
