@@ -1,11 +1,10 @@
 var RadiotopiaHome = {
   initialize: function() {
-    RadiotopiaHome.hideSecondNewsStory();
+    RadiotopiaHome.checkEventDate();
   },
-  hideSecondNewsStory: function() {
-    if ($('.events').length !== 0) {
-      var firstNewsStory = $('.news-item').first();
-      firstNewsStory.next('article').remove();
-    }
+  checkEventDate: function() {
+    var d = new Date();
+    var current = d.getTime();
+    // compare current to event startDate
   }
 }
