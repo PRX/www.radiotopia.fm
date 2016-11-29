@@ -331,9 +331,7 @@
             }
           }]
         });
-        $('#right-column').change(function() {
-          RadiotopiaHome.initialize();
-        })
+        RadiotopiaHome.initialize();
       });
     </script>
   </body>
