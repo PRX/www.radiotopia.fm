@@ -345,11 +345,13 @@
 
     a,
     a:active,
-    a:link,
-    a:active,
-    a:hover {
+    a:link {
       text-decoration: none !important;
       color: @dark_blue !important;
+
+      &:hover {
+        color: @dark_blue !important;
+      }
     }
   }
 
