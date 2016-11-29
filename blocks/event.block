@@ -1,6 +1,6 @@
 <section class="events" >
   {.repeated section items}
-      <article class="event-item">
+      <article class="event-item" data-date="{startDate}">
         <div class="event-date">
           <div class="cal-icon">
             <p class="event-month">{startDate|date %b}</p>
