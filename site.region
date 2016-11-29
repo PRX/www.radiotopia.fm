@@ -269,6 +269,8 @@
         </div>
       </div>
 
+      <squarespace:block-field id="donate-and-sponsor-section" columns="12" label="Donate and Sponsor Section" />
+
       <footer id="footer" role="contentinfo">
         <div class="footer-inner">
           <div class="nav-wrapper back-to-top-nav"><nav><div class="back-to-top"><a href="#header">Back to Top</a></div></nav></div>
