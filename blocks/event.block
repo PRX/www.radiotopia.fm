@@ -10,7 +10,8 @@
         <div class="event-content">
           <p class="event-header">Event</p>
           <p class="event-title">{title}</p>
-          <p class="event-location">{location}</p>
+          <p class="event-location">{location.addressTitle}</p>
+          <p class="event-location">{location.addressLine2}</p>
           <div class="event-excerpt">{excerpt}</div>
         </div>
       </article>
