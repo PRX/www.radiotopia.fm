@@ -263,6 +263,8 @@
             </div>
           </div>
 
+      <squarespace:block-field class="support-container" columns="12" label="Support and Donate" />
+
       <div class="support-container">
         <div class="support-left-column">
           <div class="support-radiotopia-icon">
