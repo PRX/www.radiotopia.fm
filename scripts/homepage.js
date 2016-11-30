@@ -23,9 +23,9 @@ var RadiotopiaHome = {
   parallaxScroll: function() {
   	var supportPosition = $('#support-container').offset();
    	var supportOffset = supportPosition.top - Radiotopia.client.height;
-   	var backgroundOffset = (supportOffset - Radiotopia.client.scrollPosition) * .01 + 10;
+   	var backgroundOffset = (supportOffset - Radiotopia.client.scrollPosition) * .1;
   	if (Radiotopia.client.scrollPosition > supportOffset) {
-  		$('.parallax').css('top', backgroundOffset+'em');
+  		$('.parallax').css('top', backgroundOffset+'px');
   	}
   }
 }
