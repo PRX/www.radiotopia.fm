@@ -13,11 +13,19 @@ var RadiotopiaHome = {
 	    var eventDate = $('.events .event-item:first-child').attr('data-date');
 
 	    if (eventDate > current) {
-	    	console.log("has future events");
 	    	$('.right-column .events').show();
 	    } else {
 	    	$('.right-column .news').show();
 	    }
 		}, 2000);
+  },
+
+  parallaxScroll: function() {
+  	var supportPosition = $('#support-container').offset();
+   	var supportOffset = supportPosition.top - Radiotopia.client.height;
+   	var backgroundOffset = (supportOffset - Radiotopia.client.scrollPosition) * .01 + 10;
+  	if (Radiotopia.client.scrollPosition > supportOffset) {
+  		$('.parallax').css('top', backgroundOffset+'em');
+  	}
   }
 }

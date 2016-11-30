@@ -78,7 +78,7 @@ a:link {
   max-width: none !important;
   padding: 143px 0 0 !important;
 
-  .inner {
+  &>.inner {
     margin: 0 auto;
     width: 80% !important;
 
@@ -113,14 +113,11 @@ header {
   display: none !important;
 }
 
+footer#footer {
+  background-color: @darkest_blue;
+}
+
 footer {
-  margin: auto;
-  width: 80% !important;
-
-  @media @tablet-desktop {
-    width: 90% !important;
-  }
-
   a,
   a:active,
   a:link,
@@ -134,11 +131,16 @@ footer {
     max-width: none !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
+    margin: auto;
+    width: 80% !important;
     .clearfix();
+
+    @media @tablet-desktop {
+      width: 90% !important;
+    }
   }
 
   .footer-nav {
-
     @media @tablet {
       float: right;
       width: 75%;

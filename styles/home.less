@@ -329,9 +329,27 @@
 }
 
 .support-container {
-  width: 85%;
-  margin: auto;
-  .clearfix();
+  padding-bottom: 25em;
+  position: relative;
+
+  .parallax {
+    position: absolute;
+    top: 5em;
+    left: 0;
+    z-index: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .inner {
+    width: 75%;
+    margin: auto;
+    position: relative;
+    z-index: 10;
+    .clearfix();
+  }
 
   a,
   a:active,
@@ -397,4 +415,9 @@
     text-decoration: none !important;
     color: @dark_blue !important;
   }
+}
+
+.supported-by-container {
+  background-color: @med_blue;
+  height: 15em;
 }

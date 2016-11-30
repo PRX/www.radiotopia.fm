@@ -262,8 +262,14 @@
               <squarespace:query collection="events" limit="1" template="event" columns="12" />
             </div>
           </div>
+        </div>
 
-          <div class="support-container">
+
+        <div class="support-container" id="support-container">
+          <div class="parallax">
+            <img src="/assets/radiotopia-footer-parallax-bg.png" />
+          </div>
+          <div class="inner">
             <div class="support-left-column">
               <squarespace:block-field class="support-radiotopia" id="support-radiotopia" columns="12" label="Support Radiotopia" />
             </div>
@@ -273,17 +279,20 @@
             </div>
           </div>
 
-          <div class="sponsor-logos">
-            <squarespace:block-field class="sponsor-logos" id="sponsor-logos" columns="12" label="Sponsor Logos" />
-          </div>
-
-          <div id="preFooter">
-            <div class="pre-footer-inner">
-              <squarespace:block-field id="preFooterBlocks" columns="12" label="Pre-Footer Content" />
-            </div>
-          </div>
+                    
         </div>
+		<div class="sponsor-logos">
+          <squarespace:block-field class="sponsor-logos" id="sponsor-logos" columns="12" label="Sponsor Logos" />
+        </div>
+        <div class="supported-by-container"></div>
       </main>
+      <div id="preFooter">
+        <div class="pre-footer-inner">
+          <squarespace:block-field id="preFooterBlocks" columns="12" label="Pre-Footer Content" />
+        </div>
+      </div>
+
+
       <footer id="footer" role="contentinfo">
         <div class="footer-inner">
           <div class="nav-wrapper back-to-top-nav"><nav><div class="back-to-top"><a href="#header">Back to Top</a></div></nav></div>
@@ -305,7 +314,10 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
     <squarespace:script src="vendor/slick.min.js" combo="false" />
+    <squarespace:script src="vendor/underscore-min.js" combo="false" />
+    <squarespace:script src="main.js" combo="false" />
     <squarespace:script src="homepage.js" combo="false" />
+
     <script type="text/javascript">
       $(document).ready(function(){
         $('.testimonials').slick({
@@ -316,6 +328,7 @@
             }
           }]
         });
+        Radiotopia.initialize();
         RadiotopiaHome.initialize();
       });
     </script>
