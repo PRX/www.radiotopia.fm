@@ -4,20 +4,24 @@
 
   <article id="post-{id}" class="{@|item-classes}" data-item-id="{id}">
 
+  <div class="banner-image-container">
+    <p>banner image here</p>
+    <img src="{customContent.bannerImage.assetUrl}">
+  </div>
+
     <!--POST TILE-->
 
     <h1 class="title" data-content-field="title">
       <p>{customContent.podcastTitle}</p>
-
     </h1>
 
     <!--MAIN CONTENT-->
     <section>
 
     <p>{customContent.podcastLink}</p>
-    <p>{customContent.podcastDescription}</p>
+    {customContent.podcastDescription.html}
     <p>{customContent.podcastHosts}</p>
-    <p>{customContent.podcastMeetTheHosts}</p>
+    {customContent.podcastMeetTheHosts.html}
 
     </section>
 
