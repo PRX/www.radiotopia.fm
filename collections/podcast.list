@@ -14,18 +14,6 @@
         {.end}
       </h1>
 
-      <!--EXCERPT OR BODY-->
-
-      {.if excerpt}
-        {excerpt}
-        <a class="link" href="{fullUrl}">Read More</a>
-      {.or}
-
-      <!--MAIN CONTENT-->
-        {customContent.podcastTitle}
-
-      {.end}
-
     </article>
 
   {.or}
