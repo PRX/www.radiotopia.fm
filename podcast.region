@@ -177,11 +177,11 @@
           </div>
           <div class="inner">
             <div class="support-left-column">
-              <squarespace:block-field class="support-radiotopia" id="support-radiotopia" columns="12" label="Support Radiotopia" />
+              <squarespace:block-field class="support-podcast" id="support-podcast" columns="12" label="Support Podcast" />
             </div>
 
             <div class="support-right-column">
-              <squarespace:block-field class="sponsor-radiotopia" id="sponsor-radiotopia" columns="12" label="Become a Sponsor" />
+              <squarespace:block-field class="sponsor-podcast" id="sponsor-podcast" columns="12" label="Become a Sponsor" />
             </div>
           </div>
         </div>
