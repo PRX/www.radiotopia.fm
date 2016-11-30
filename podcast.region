@@ -35,36 +35,6 @@
       </header>
       <main id="page" role="main">
         <div class="inner">
-          {.if item}
-            {.section item}
-              {.if productType}
-              {.or}
-                {.if startDate}
-                  {.main-image?}
-                    <div class="banner-thumbnail-wrapper" data-content-field="main-image">
-                      <div class="color-overlay"></div>
-                      <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
-                    </div>
-                  {.end}
-                {.or}
-                  {.main-image?}
-                    <div class="banner-thumbnail-wrapper" data-content-field="main-image">
-                      <div class="color-overlay"></div>
-                      <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
-                      <div class="blog-item-wrapper">
-                        <div class="title-desc-wrapper">
-                          <time class="dt-published published post-date" datetime="{addedOn|date %F}" pubdate>{addedOn|date %B %e, %Y}</time>
-                          <div class="post-category">{.section categories}{.repeated section @}<a href="{collection.fullUrl}?category={@|url-encode}">{@}</a>{.alternates with}, {.end}{.end}</div>
-                          <div class="post-author"><a href="{collection.fullUrl}?author={author.id}">{.section author}{displayName}{.end}</a></div>
-                          {.section title}<div class="post-title">{@}</div>{.end}
-                        </div>
-                      </div>
-                    </div>
-                  {.end}
-                {.end}
-              {.end}
-            {.end}
-          {.or}
             {.section collection}
               {.collectionTypeNameEquals? gallery}
               {.or}
@@ -147,60 +117,17 @@
 
                         </div>
                       {.or}
-                        {.section collection}
 
-                          {.background-source-video?}
-                            <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image">
-                              <div class="color-overlay"></div>
-                              <figure id="thumbnail" class="loading content-fill">
-                                {@|apply sqs-video-background.block}
-                              </figure>
-                              {.if description}<div class="desc-wrapper" data-content-field="description">{description}</div>{.end}
-                            </div>
-                          {.or}
-                            {.section mainImage}
-                              <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image">
-                                <div class="color-overlay"></div>
-                                <figure id="thumbnail" class="loading content-fill">
-                                  <img {@|image-meta} />
-                                </figure>
-                                {.if description}<div class="desc-wrapper" data-content-field="description">{description}</div>{.end}
-                              </div>
-                            {.end}
-                          {.end}
-
-                        {.end}
                       {.end}
                       </squarespace:query>
                     {.or}
 
-                      {.background-source-video?}
-                        <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image">
-                          <div class="color-overlay"></div>
-                          <figure id="thumbnail" class="loading content-fill">
-                            {@|apply sqs-video-background.block}
-                          </figure>
-                          {.if description}<div class="desc-wrapper" data-content-field="description">{description}</div>{.end}
-                        </div>
-                      {.or}
-                        {.section mainImage}
-                          <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image">
-                            <div class="color-overlay"></div>
-                            <figure id="thumbnail" class="loading content-fill">
-                              <img {@|image-meta} />
-                            </figure>
-                            {.if description}<div class="desc-wrapper" data-content-field="description">{description}</div>{.end}
-                          </div>
-                        {.end}
-                      {.end}
 
                     {.end}
                   {.end}
                 {.end}
               {.end}
             {.end}
-          {.end}
-
 
           {.section categoryFilter}
           <p class="filter-heading filter-by-category">
