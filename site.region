@@ -264,7 +264,6 @@
           </div>
         </div>
 
-
         <div class="support-container" id="support-container">
           <div class="parallax">
             <img src="/assets/radiotopia-footer-parallax-bg.png" />
@@ -278,13 +277,11 @@
               <squarespace:block-field class="sponsor-radiotopia" id="sponsor-radiotopia" columns="12" label="Become a Sponsor" />
             </div>
           </div>
-
-                    
         </div>
-		<div class="sponsor-logos">
+
+    		<div class="sponsor-logos">
           <squarespace:block-field class="sponsor-logos" id="sponsor-logos" columns="12" label="Sponsor Logos" />
         </div>
-        <div class="supported-by-container"></div>
       </main>
       <div id="preFooter">
         <div class="pre-footer-inner">
