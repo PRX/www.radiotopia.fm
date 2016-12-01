@@ -170,29 +170,6 @@
           </aside>
           {.end}
           {.end}
-
-        <div class="support-container" id="support-container">
-          <div class="parallax">
-            <img src="/assets/radiotopia-footer-parallax-bg.png" />
-          </div>
-          <div class="inner">
-            <div class="support-left-column">
-              <squarespace:block-field class="support-podcast" id="support-podcast" columns="12" label="Support Podcast" />
-            </div>
-
-            <div class="support-right-column">
-              <squarespace:block-field class="sponsor-podcast" id="sponsor-podcast" columns="12" label="Become a Sponsor" />
-            </div>
-          </div>
-        </div>
-
-        <div class="sponsor-logos">
-          <squarespace:block-field class="sponsor-logos" id="sponsor-logos" columns="12" label="Sponsor Logos" />
-        </div>
-
-        <div class="recent-tweets">
-          <squarespace:block-field class="recent-tweets" id="recent-tweets" columns="12" label="Recent Tweets" />
-        </div>
       </main>
 
       <div id="preFooter">
@@ -222,23 +199,12 @@
     crossorigin="anonymous"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-    <squarespace:script src="vendor/slick.min.js" combo="false" />
     <squarespace:script src="vendor/underscore-min.js" combo="false" />
     <squarespace:script src="main.js" combo="false" />
-    <squarespace:script src="homepage.js" combo="false" />
 
     <script type="text/javascript">
       $(document).ready(function(){
-        $('.testimonials').slick({
-          responsive: [{
-            breakpoint: 640,
-            settings: {
-              arrows: false
-            }
-          }]
-        });
         Radiotopia.initialize();
-        RadiotopiaHome.initialize();
       });
     </script>
   </body>

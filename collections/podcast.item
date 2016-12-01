@@ -4,24 +4,72 @@
 
   <article id="post-{id}" class="{@|item-classes}" data-item-id="{id}">
 
-  <div class="banner-image-container">
-    <p>banner image here</p>
-    <img src="{customContent.bannerImage.assetUrl}">
-  </div>
-
     <!--POST TILE-->
 
-    <h1 class="title" data-content-field="title">
-      <p>{customContent.podcastTitle}</p>
-    </h1>
+
 
     <!--MAIN CONTENT-->
     <section>
 
-    <p>{customContent.podcastLink}</p>
-    {customContent.podcastDescription.html}
-    <p>{customContent.podcastHosts}</p>
-    {customContent.podcastMeetTheHosts.html}
+    <div class="banner-image-container">
+      <img src="{customContent.bannerImage.assetUrl}">
+    </div>
+
+    <div class="header-container">
+      <div class="podcast-left-column">
+        <div class="podcast-artwork">
+          <img src="{customContent.showArt.assetUrl}">
+        </div>
+      </div>
+
+      <div class="podcast-center-column">
+        <h1 class="title" data-content-field="title">
+          <p>{customContent.podcastTitle}</p>
+        </h1>
+        <div class="podcast-link-container">
+          <p class="podcast-link">Listen at {customContent.podcastLink}</p>
+        </div>
+        <div class="podcast-description">
+          {customContent.podcastDescription.html}
+        </div>
+      </div>
+
+      <div class="podcast-right-column">
+        <div class="podcast-subscribe">
+          <p class="podcast-listen">Listen</p>
+          <squarespace:block-field class="podcast-subscribe-button" id="podcast-subscribe-button" columns="4" label="Subscribe Button" />
+        </div>
+        <div class="social-buttons">
+          <squarespace:block-field class="podcast-social-buttons" id="podcast-social-buttons" columns="4" label="Social Buttons" />
+        </div>
+      </div>
+    </div>
+
+    <div class="hosts-container">
+      <img src="{customContent.hostsImage.assetUrl}">
+      <p>{customContent.podcastHosts}</p>
+      {customContent.podcastMeetTheHosts.html}
+    </div>
+
+    <div class="support-container" id="support-container">
+      <div class="inner">
+        <div class="support-left-column">
+          <squarespace:block-field class="support-podcast" id="support-podcast" columns="12" label="Support Podcast" />
+        </div>
+
+        <div class="support-right-column">
+          <squarespace:block-field class="sponsor-podcast" id="sponsor-podcast" columns="12" label="Become a Sponsor" />
+        </div>
+      </div>
+    </div>
+
+    <div class="sponsor-logos">
+      <squarespace:block-field class="podcast-sponsor-logos" id="podcast-sponsor-logos" columns="12" label="Podcast Sponsor Logos" />
+    </div>
+
+    <div class="recent-tweets">
+      <squarespace:block-field class="recent-tweets" id="recent-tweets" columns="12" label="Recent Tweets" />
+    </div>
 
     </section>
 
