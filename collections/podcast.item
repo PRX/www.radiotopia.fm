@@ -45,10 +45,17 @@
       </div>
     </div>
 
+    <div class="starter-episodes-container">
+      <squarespace:block-field class="podcast-starter-episodes" id="podcast-starter-episodes" columns="12" label="Starter Episodes" />
+    </div>
+
     <div class="hosts-container">
       <img src="{customContent.hostsImage.assetUrl}">
-      <p>{customContent.podcastHosts}</p>
-      {customContent.podcastMeetTheHosts.html}
+      <div class="hosts-content">
+        <p>{customContent.podcastHosts}</p>
+        <p class="host-title">{customContent.podcastHostsTitle}</p>
+        {customContent.podcastMeetTheHosts.html}
+      </div>
     </div>
 
     <div class="support-container" id="support-container">
