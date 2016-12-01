@@ -27,7 +27,7 @@
           <p>{customContent.podcastTitle}</p>
         </h1>
         <div class="podcast-link-container">
-          <p class="podcast-link">Listen at {customContent.podcastLink}</p>
+          <a href="{customContent.podcastLink}">Listen at {customContent.podcastLink}</a>
         </div>
         <div class="podcast-description">
           {customContent.podcastDescription.html}
