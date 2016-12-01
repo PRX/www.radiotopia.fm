@@ -50,10 +50,10 @@
     </div>
 
     <div class="hosts-container">
-      <img src="{customContent.hostsImage.assetUrl}">
+      <img src="{customContent.hostsImage.assetUrl}" class="hosts-image">
       <div class="hosts-content">
-        <p>{customContent.podcastHosts}</p>
-        <p class="host-title">{customContent.podcastHostsTitle}</p>
+        <p class=hosts>{customContent.podcastHosts}</p>
+        <p class="hosts-title">{customContent.podcastHostsTitle}</p>
         {customContent.podcastMeetTheHosts.html}
       </div>
     </div>
