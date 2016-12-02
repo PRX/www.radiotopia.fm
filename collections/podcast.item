@@ -23,7 +23,6 @@
               <img src="{customContent.showArt.assetUrl}">
             </div>
           </div>
-          <p>hello there</p>
           <div class="podcast-center-column">
             <h1 class="title" data-content-field="title">
               <p>{customContent.podcastTitle}</p>
