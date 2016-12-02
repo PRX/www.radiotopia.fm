@@ -34,7 +34,7 @@
         </div>
       </header>
       <main id="page" role="main">
-        <div class="inner">
+        <div class="inner podcast-detail-inner">
             {.section collection}
               {.collectionTypeNameEquals? gallery}
               {.or}
