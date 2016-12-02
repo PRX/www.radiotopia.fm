@@ -11,8 +11,15 @@
     <!--MAIN CONTENT-->
     <section>
 
-      <div class="banner-image-container">
-        <img src="{customContent.bannerImage.assetUrl}">
+    <div class="banner-image-container" id="test">
+      <img src="{customContent.bannerImage.assetUrl}">
+    </div>
+
+    <div class="header-container">
+      <div class="podcast-left-column">
+        <div class="podcast-artwork">
+          <img src="{customContent.showArt.assetUrl}">
+        </div>
       </div>
 
       <div class="podcast-wrapper">
