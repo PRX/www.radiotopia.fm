@@ -29,8 +29,25 @@
   }
 
   .header-container {
-    display: flex;
-    // inline block && float everything to left
+    .podcast-left-column {
+      float: left;
+    }
+
+    .podcast-center-column {
+      display: inline-block;
+      width: 43%;
+      margin-left: 2em;
+
+      .title {
+        p {
+          margin: 0;
+        }
+      }
+    }
+
+    .podcast-right-column {
+      float: right;
+    }
 
     #podcast-subscribe-button {
       a,

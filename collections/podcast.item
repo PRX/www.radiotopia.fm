@@ -18,12 +18,13 @@
       <div class="background-wrapper">
         <div class="podcast-wrapper">
           <div class="header-container">
-            <div class="podcast-left-column">
+            <div class="podcast-column podcast-left-column">
               <div class="podcast-artwork">
                 <img src="{customContent.showArt.assetUrl}">
               </div>
             </div>
-            <div class="podcast-center-column">
+
+            <div class="podcast-column podcast-center-column">
               <h1 class="title" data-content-field="title">
                 <p>{customContent.podcastTitle}</p>
               </h1>
@@ -35,12 +36,13 @@
               </div>
             </div>
 
-            <div class="podcast-right-column">
+            <div class="podcast-column podcast-right-column">
               <div class="podcast-subscribe">
                 <p class="podcast-listen">Listen</p>
                 <squarespace:block-field class="podcast-subscribe-button" id="podcast-subscribe-button" columns="4" label="Subscribe Button" />
               </div>
               <div class="social-buttons">
+                <p class="podcast-connect">Connect</p>
                 <squarespace:block-field class="podcast-social-buttons" id="podcast-social-buttons" columns="4" label="Social Buttons" />
               </div>
             </div>
