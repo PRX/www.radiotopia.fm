@@ -22,6 +22,9 @@
               <div class="podcast-artwork">
                 <img src="{customContent.showArt.assetUrl}">
               </div>
+              <div class="trailer-button">
+                <a href=""></a>
+              </div>
             </div>
 
             <div class="podcast-column podcast-center-column">
@@ -29,7 +32,7 @@
                 <p>{customContent.podcastTitle}</p>
               </h1>
               <div class="podcast-link-container">
-                <a href="{customContent.podcastLink}">Listen at {customContent.podcastLink}</a>
+                <a href="http://{customContent.podcastLink}">Listen at {customContent.podcastLink}</a>
               </div>
               <div class="podcast-description">
                 {customContent.podcastDescription.html}
