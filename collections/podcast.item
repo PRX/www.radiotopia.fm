@@ -23,7 +23,7 @@
                 <img src="{customContent.showArt.assetUrl}">
               </div>
               <div class="trailer-button">
-                <a href=""></a>
+                <a href="#"><img src="/assets/play-trailer-button.png"></a>
               </div>
             </div>
 
