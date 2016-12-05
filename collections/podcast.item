@@ -15,71 +15,73 @@
       <img src="{customContent.bannerImage.assetUrl}">
     </div>
 
-      <div class="podcast-wrapper">
+      <div class="background-wrapper">
+        <div class="podcast-wrapper">
 
-        <div class="header-container">
-          <div class="podcast-left-column">
-            <div class="podcast-artwork">
-              <img src="{customContent.showArt.assetUrl}">
+          <div class="header-container">
+            <div class="podcast-left-column">
+              <div class="podcast-artwork">
+                <img src="{customContent.showArt.assetUrl}">
+              </div>
+            </div>
+            <div class="podcast-center-column">
+              <h1 class="title" data-content-field="title">
+                <p>{customContent.podcastTitle}</p>
+              </h1>
+              <div class="podcast-link-container">
+                <a href="{customContent.podcastLink}">Listen at {customContent.podcastLink}</a>
+              </div>
+              <div class="podcast-description">
+                {customContent.podcastDescription.html}
+              </div>
+            </div>
+
+            <div class="podcast-right-column">
+              <div class="podcast-subscribe">
+                <p class="podcast-listen">Listen</p>
+                <squarespace:block-field class="podcast-subscribe-button" id="podcast-subscribe-button" columns="4" label="Subscribe Button" />
+              </div>
+              <div class="social-buttons">
+                <squarespace:block-field class="podcast-social-buttons" id="podcast-social-buttons" columns="4" label="Social Buttons" />
+              </div>
             </div>
           </div>
-          <div class="podcast-center-column">
-            <h1 class="title" data-content-field="title">
-              <p>{customContent.podcastTitle}</p>
-            </h1>
-            <div class="podcast-link-container">
-              <a href="{customContent.podcastLink}">Listen at {customContent.podcastLink}</a>
-            </div>
-            <div class="podcast-description">
-              {customContent.podcastDescription.html}
+
+          <div class="podcast-starter-episodes-container">
+            <squarespace:block-field class="podcast-starter-episodes-header" id="podcast-starter-episodes-header" columns="12" label="Starter Episodes Header" />
+            <squarespace:block-field class="podcast-starter-episodes" id="podcast-starter-episodes" columns="12" label="Starter Episodes" />
+          </div>
+
+          <div class="hosts-container">
+            <img src="{customContent.hostsImage.assetUrl}" class="hosts-image">
+            <div class="hosts-content">
+              <p class=hosts>{customContent.podcastHosts}</p>
+              <p class="hosts-title">{customContent.podcastHostsTitle}</p>
+              {customContent.podcastMeetTheHosts.html}
             </div>
           </div>
 
-          <div class="podcast-right-column">
-            <div class="podcast-subscribe">
-              <p class="podcast-listen">Listen</p>
-              <squarespace:block-field class="podcast-subscribe-button" id="podcast-subscribe-button" columns="4" label="Subscribe Button" />
-            </div>
-            <div class="social-buttons">
-              <squarespace:block-field class="podcast-social-buttons" id="podcast-social-buttons" columns="4" label="Social Buttons" />
-            </div>
-          </div>
-        </div>
+          <div class="support-container" id="support-container">
+            <div class="inner">
+              <div class="support-left-column">
+                <squarespace:block-field class="support-podcast" id="support-podcast" columns="12" label="Support Podcast" />
+              </div>
 
-        <div class="podcast-starter-episodes-container">
-          <squarespace:block-field class="podcast-starter-episodes-header" id="podcast-starter-episodes-header" columns="12" label="Starter Episodes Header" />
-          <squarespace:block-field class="podcast-starter-episodes" id="podcast-starter-episodes" columns="12" label="Starter Episodes" />
-        </div>
-
-        <div class="hosts-container">
-          <img src="{customContent.hostsImage.assetUrl}" class="hosts-image">
-          <div class="hosts-content">
-            <p class=hosts>{customContent.podcastHosts}</p>
-            <p class="hosts-title">{customContent.podcastHostsTitle}</p>
-            {customContent.podcastMeetTheHosts.html}
-          </div>
-        </div>
-
-        <div class="support-container" id="support-container">
-          <div class="inner">
-            <div class="support-left-column">
-              <squarespace:block-field class="support-podcast" id="support-podcast" columns="12" label="Support Podcast" />
-            </div>
-
-            <div class="support-right-column">
-              <squarespace:block-field class="sponsor-podcast" id="sponsor-podcast" columns="12" label="Become a Sponsor" />
+              <div class="support-right-column">
+                <squarespace:block-field class="sponsor-podcast" id="sponsor-podcast" columns="12" label="Become a Sponsor" />
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="sponsor-logos">
-          <squarespace:block-field class="podcast-sponsor-logos" id="podcast-sponsor-logos" columns="12" label="Podcast Sponsor Logos" />
-        </div>
+          <div class="sponsor-logos">
+            <squarespace:block-field class="podcast-sponsor-logos" id="podcast-sponsor-logos" columns="12" label="Podcast Sponsor Logos" />
+          </div>
 
-        <div class="recent-tweets">
-          <squarespace:block-field class="recent-tweets" id="recent-tweets" columns="12" label="Recent Tweets" />
-        </div>
+          <div class="recent-tweets">
+            <squarespace:block-field class="recent-tweets" id="recent-tweets" columns="12" label="Recent Tweets" />
+          </div>
 
+        </div>
       </div>
     </section>
   </article>
