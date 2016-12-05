@@ -39,7 +39,8 @@
             <div class="podcast-column podcast-right-column">
               <div class="podcast-subscribe">
                 <p class="podcast-listen">Listen</p>
-                <a href="#" class="podcast-subscribe-button">Subscribe</a> <!-- change href to link to itunes podcast url -->
+                <!-- change href to link to itunes podcast url -->
+                <a href="#" class="podcast-subscribe-button">Subscribe</a>
               </div>
               <div class="social-buttons">
                 <p class="podcast-connect">Connect</p>

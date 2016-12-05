@@ -43,13 +43,40 @@
           margin: 0;
         }
       }
+
+      .podcast-description {
+        font-family: 'Roboto';
+        font-weight: 200;
+      }
     }
 
     .podcast-right-column {
       float: right;
+
+      .social-buttons {
+        img {
+          width: 44px;
+          height: 44px;
+        }
+
+        .facebook-button {
+          float: left;
+          width: 33%;
+        }
+
+        .twitter-button {
+          display: inline-block;
+          width: 33%;
+        }
+
+        .instagram-button {
+          float: right;
+          width: 33%;
+        }
+      }
     }
 
-    #podcast-subscribe-button {
+    .podcast-subscribe {
       a,
       a:active,
       a:link,
@@ -58,6 +85,11 @@
         text-decoration: none !important;
         color: white !important;
         background-color: #789DA6 !important;
+        border-radius: 3px;
+        font-size: .775em;
+        font-weight: 700;
+        padding: 21px 34px;
+        font-family: "Roboto";
       }
     }
   }
