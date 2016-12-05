@@ -44,10 +44,14 @@
               <div class="social-buttons">
                 <p class="podcast-connect">Connect</p>
                 <div class="facebook-button">
-
+                  <img src="/assets/facebook.png">
                 </div>
-                <div class="twitter-button"></div>
-                <div class="instagram-button"></div>
+                <div class="twitter-button">
+                  <img src="/assets/twitter.png">
+                </div>
+                <div class="instagram-button">
+                  <img src="/assets/instagram.png">
+                </div>
               </div>
             </div>
           </div>
