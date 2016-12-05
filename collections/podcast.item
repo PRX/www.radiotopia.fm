@@ -39,7 +39,7 @@
             <div class="podcast-column podcast-right-column">
               <div class="podcast-subscribe">
                 <p class="podcast-listen">Listen</p>
-                <squarespace:block-field class="podcast-subscribe-button" id="podcast-subscribe-button" columns="4" label="Subscribe Button" />
+                <a href="#" class="podcast-subscribe-button">Subscribe</a> <!-- change href to link to itunes podcast url -->
               </div>
               <div class="social-buttons">
                 <p class="podcast-connect">Connect</p>
