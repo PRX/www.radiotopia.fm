@@ -43,7 +43,11 @@
               </div>
               <div class="social-buttons">
                 <p class="podcast-connect">Connect</p>
-                <squarespace:block-field class="podcast-social-buttons" id="podcast-social-buttons" columns="4" label="Social Buttons" />
+                <div class="facebook-button">
+
+                </div>
+                <div class="twitter-button"></div>
+                <div class="instagram-button"></div>
               </div>
             </div>
           </div>
