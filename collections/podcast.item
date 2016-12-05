@@ -17,7 +17,6 @@
 
       <div class="background-wrapper">
         <div class="podcast-wrapper">
-
           <div class="header-container">
             <div class="podcast-left-column">
               <div class="podcast-artwork">
@@ -80,7 +79,6 @@
           <div class="recent-tweets">
             <squarespace:block-field class="recent-tweets" id="recent-tweets" columns="12" label="Recent Tweets" />
           </div>
-
         </div>
       </div>
     </section>
