@@ -16,7 +16,7 @@
     <div id="sidecarNav">
       <squarespace:navigation navigationId="mainNav" template="mobile-navigation" />
     </div>
-    <div id="siteWrapper" class="clearfix">
+    <div id="siteWrapper" class="clearfix podcast-detail">
 
       <div class="sqs-cart-dropzone"></div>
 
