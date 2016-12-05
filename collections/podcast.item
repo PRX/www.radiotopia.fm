@@ -44,14 +44,15 @@
               </div>
               <div class="social-buttons">
                 <p class="podcast-connect">Connect</p>
+                <!-- Change hrefs to respective social media urls -->
                 <div class="facebook-button">
-                  <img src="/assets/facebook.png">
+                  <a href="#"><img src="/assets/facebook.png"></a>
                 </div>
                 <div class="twitter-button">
-                  <img src="/assets/twitter.png">
+                  <a href="#"><img src="/assets/twitter.png"></a>
                 </div>
                 <div class="instagram-button">
-                  <img src="/assets/instagram.png">
+                  <a href="#"><img src="/assets/instagram.png"></a>
                 </div>
               </div>
             </div>
