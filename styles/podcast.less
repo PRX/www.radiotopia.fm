@@ -226,4 +226,65 @@
       }
     }
   }
+
+  .support-container {
+    padding-bottom: 5em;
+    position: relative;
+
+    .inner {
+      width: 75%;
+      margin: auto;
+      position: relative;
+      z-index: 10;
+      .clearfix();
+    }
+
+    a,
+    a:active,
+    a:link,
+    a:active,
+    a:hover {
+      text-decoration: none !important;
+      color: @dark_blue !important;
+    }
+
+    .support-left-column {
+      width: 50%;
+      float: left;
+      border-right: 1px @light_blue solid;
+      padding: 3em 5% 3em 0;
+      text-align: center;
+      .clearfix();
+
+      // TODO: Remove this, change field to markdown
+      p:first-child {
+        font-size: 2em;
+        font-weight: 500;
+      }
+
+      p:nth-child(2) {
+        font-family: 'Roboto';
+        font-weight: 400;
+      }
+    }
+
+    .support-right-column {
+      width: 50%;
+      float: right;
+      text-align: center;
+      padding: 3em 0 3em 5%;
+      .clearfix();
+
+
+      p:first-child {
+        font-size: 2em;
+        font-weight: 500;
+      }
+
+      p:nth-child(2) {
+        font-family: 'Roboto';
+        font-weight: 400;
+      }
+    }
+  }
 }
