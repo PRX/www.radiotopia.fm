@@ -28,8 +28,8 @@
             </div>
 
             <div class="podcast-column podcast-center-column">
-              <h1 class="title" data-content-field="title">
-                <p>{customContent.podcastTitle}</p>
+              <h1 class="title">
+                {customContent.podcastTitle}
               </h1>
               <div class="podcast-link-container">
                 <a href="http://{customContent.podcastLink}">Listen at {customContent.podcastLink}</a>
