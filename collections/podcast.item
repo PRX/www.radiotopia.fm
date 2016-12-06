@@ -42,12 +42,10 @@
             <div class="podcast-column podcast-right-column">
               <div class="podcast-subscribe">
                 <p class="podcast-listen">Listen</p>
-                <!-- change href to link to itunes podcast url -->
                 <a href="{customContent.podcastItunesUrl}" class="podcast-subscribe-button">Subscribe</a>
               </div>
               <div class="social-buttons">
                 <p class="podcast-connect">Connect</p>
-                <!-- Change hrefs to respective social media urls -->
                 <div class="facebook-button">
                   <a href="{customContent.podcastFacebookUrl}"><img src="/assets/facebook.png"></a>
                 </div>
