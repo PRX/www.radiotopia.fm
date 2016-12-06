@@ -23,7 +23,7 @@
                 <img src="{customContent.showArt.assetUrl}">
               </div>
               <div class="trailer-button">
-                <a href="#"><img src="/assets/play-trailer-button.png"></a>
+                <a href="{customContent.podcastTrailerUrl}"><img src="/assets/play-trailer-button.png"></a>
               </div>
             </div>
 
@@ -43,19 +43,19 @@
               <div class="podcast-subscribe">
                 <p class="podcast-listen">Listen</p>
                 <!-- change href to link to itunes podcast url -->
-                <a href="#" class="podcast-subscribe-button">Subscribe</a>
+                <a href="{customContent.podcastItunesUrl}" class="podcast-subscribe-button">Subscribe</a>
               </div>
               <div class="social-buttons">
                 <p class="podcast-connect">Connect</p>
                 <!-- Change hrefs to respective social media urls -->
                 <div class="facebook-button">
-                  <a href="#"><img src="/assets/facebook.png"></a>
+                  <a href="{customContent.podcastFacebookUrl}"><img src="/assets/facebook.png"></a>
                 </div>
                 <div class="twitter-button">
-                  <a href="#"><img src="/assets/twitter.png"></a>
+                  <a href="{customContent.podcastTwitterUrl}"><img src="/assets/twitter.png"></a>
                 </div>
                 <div class="instagram-button">
-                  <a href="#"><img src="/assets/instagram.png"></a>
+                  <a href="{customContent.podcastInstragramUrl}"><img src="/assets/instagram.png"></a>
                 </div>
               </div>
             </div>
