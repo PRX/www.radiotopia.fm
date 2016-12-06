@@ -66,10 +66,14 @@
             <squarespace:block-field class="podcast-starter-episodes" id="{customContent.podcastUrlTitle}-podcast-starter-episodes" columns="12" label="Starter Episodes" />
           </div>
 
+          <div class="hosts-header">
+            <squarespace:block-field class="hosts-header-block" id="hosts-header-block" columns="12" label="Hosts Header" />
+          </div>
+
           <div class="hosts-container">
             <img src="{customContent.hostsImage.assetUrl}" class="hosts-image">
             <div class="hosts-content">
-              <p class=hosts>{customContent.podcastHosts}</p>
+              <p class="hosts">{customContent.podcastHosts}</p>
               <p class="hosts-title">{customContent.podcastHostsTitle}</p>
               {customContent.podcastMeetTheHosts.html}
             </div>
