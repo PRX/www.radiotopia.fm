@@ -73,8 +73,10 @@
           <div class="hosts-container">
             <img src="{customContent.hostsImage.assetUrl}" class="hosts-image">
             <div class="hosts-content">
-              <p class="hosts">{customContent.podcastHosts}</p>
-              <p class="hosts-title">{customContent.podcastHostsTitle}</p>
+              <div class="hosts">
+                <p>{customContent.podcastHosts}</p>
+                <p class="hosts-title">{customContent.podcastHostsTitle}</p>
+              </div>
               {customContent.podcastMeetTheHosts.html}
             </div>
           </div>
