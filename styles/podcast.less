@@ -30,80 +30,94 @@
 
   .header-container {
     margin-bottom: 10em;
+    .clearfix();
 
     .podcast-left-column {
       float: left;
+      padding-right: 3.5%;
+      width: 21%;
 
       .podcast-artwork {
         margin-bottom: 0.625em;
 
         img {
-          width: 200px;
-          height: 200px;
+          max-width: 200px;
+          width: 100%;
         }
       }
 
       .trailer-button {
         img {
+          max-width: 200px;
           width: 100%;
         }
       }
     }
 
     .podcast-center-column {
-      display: inline-block;
-      width: 43%;
-      margin-left: 2em;
+      float: left;
+      width: 48%;
 
       .title {
-        font-size: 2.1875em;
-        margin: 0;
+        font-size: 1.9375em;
+        margin: 0 0 0.4em 0;
       }
 
-      .podcast-description {
-        font-family: Roboto-Light;
-        font-weight: 100;
-        font-size: 1.125em;
+      .podcast-link-container {
+        a,
+        a:active,
+        a:link {
+          color: @light_blue !important;
+          font-size: 0.75em;
+          letter-spacing: 0.175em;
+          text-transform: uppercase;
+          word-wrap: break-word;
+
+          &:hover {
+            color: @white !important;
+            .css3-transition(color, .325s);
+          }
+        }
+      }
+
+      .podcast-description p {
+        font-weight: 300;
+        font-size: 1em;
       }
     }
 
     .podcast-right-column {
       float: right;
+      width: 22%;
 
       .podcast-subscribe {
-        margin-bottom: 3em;
+        margin-bottom: 2.5em;
       }
 
       p.podcast-listen {
-        font-family: SofiaProMedium;
-        font-size: 1.5em;
+        font-family: "Sofia Pro";
+        font-size: 1.25em;
+        font-weight: 500;
+        margin: 0.5em 0 0.375em;
       }
 
       p.podcast-connect {
-        font-family: SofiaProMedium;
-        font-size: 1.5em;
-        margin: .5em 0!important;
+        font-family: "Sofia Pro";
+        font-size: 1.25em;
+        font-weight: 500;
+        margin: 0 0 0.5em;
       }
 
       .social-buttons {
-        img {
-          width: 44px;
-          height: 44px;
-        }
-
-        .facebook-button {
+        .icon {
           float: left;
-          width: 33%;
+          padding-right: 4%;
+          width: 23%;
         }
 
-        .twitter-button {
-          display: inline-block;
-          width: 33%;
-        }
-
-        .instagram-button {
-          float: right;
-          width: 33%;
+        img {
+          max-width: 44px;
+          width: 100%;
         }
       }
     }
@@ -121,10 +135,13 @@
         background-color: #789DA6 !important;
         border-radius: 6px;
         font-size: .75em;
-        padding: 12px 60px;
         font-family: 'Roboto';
         font-weight: 500;
         letter-spacing: 2px;
+        padding: 10px 0;
+        max-width: 17.25em;
+        display: block;
+        text-align: center;
       }
     }
   }
