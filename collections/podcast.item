@@ -77,28 +77,28 @@
                 <p>{customContent.podcastHosts}</p>
                 <p class="hosts-title">{customContent.podcastHostsTitle}</p>
               </div>
-              {customContent.podcastMeetTheHosts.html}
+              <div class="hosts-description">{customContent.podcastMeetTheHosts.html}</div>
             </div>
           </div>
 
           <div class="support-container" id="support-container">
             <div class="inner">
               <div class="support-left-column">
-                <squarespace:block-field class="support-podcast" id="support-podcast" columns="12" label="Support Podcast" />
+                <squarespace:block-field class="{customContent.podcastUrlTitle}-support-podcast" id="{customContent.podcastUrlTitle}-support-podcast" columns="12" label="Support Podcast" />
               </div>
 
               <div class="support-right-column">
-                <squarespace:block-field class="sponsor-podcast" id="sponsor-podcast" columns="12" label="Become a Sponsor" />
+                <squarespace:block-field class="{customContent.podcastUrlTitle}-sponsor-podcast" id="{customContent.podcastUrlTitle}-sponsor-podcast" columns="12" label="Become a Sponsor" />
               </div>
             </div>
           </div>
 
           <div class="sponsor-logos">
-            <squarespace:block-field class="podcast-sponsor-logos" id="podcast-sponsor-logos" columns="12" label="Podcast Sponsor Logos" />
+            <squarespace:block-field class="{customContent.podcastUrlTitle}-podcast-sponsor-logos" id="{customContent.podcastUrlTitle}-podcast-sponsor-logos" columns="12" label="Podcast Sponsor Logos" />
           </div>
 
           <div class="recent-tweets">
-            <squarespace:block-field class="recent-tweets" id="recent-tweets" columns="12" label="Recent Tweets" />
+            <squarespace:block-field class="{customContent.podcastUrlTitle}-recent-tweets" id="{customContent.podcastUrlTitle}-recent-tweets" columns="12" label="Recent Tweets" />
           </div>
         </div>
       </div>
