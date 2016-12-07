@@ -195,10 +195,11 @@
     background: url("/assets/orange-bolt.png") transparent no-repeat center top;
     background-size: 4.5em;
     margin: auto;
-    margin-bottom: 143px;
+    margin-bottom: 2em;
     padding-top: 2.5em;
 
     @media @tablet-desktop  {
+      margin-bottom: 143px;
       padding-top: 5em;
       width: 65%;
     }
@@ -246,7 +247,7 @@
   }
 
   .hosts-header {
-    margin-bottom: 2.5em;
+    margin-bottom: 1em;
 
     @media @tablet-desktop {
       margin-bottom: 3.75em;
@@ -264,6 +265,8 @@
   }
 
   .hosts-container {
+    margin-bottom: 2em;
+
     @media @tablet-desktop {
       margin: auto;
       margin-bottom: 6em;
@@ -271,7 +274,9 @@
       .clearfix();
     }
 
-    .hosts-image {
+    img.hosts-image {
+      margin-bottom: 1em;
+
       @media @tablet-desktop {
         float: left;
         padding-right: 7.25%;
@@ -321,11 +326,14 @@
     position: relative;
 
     .inner {
-      width: 75%;
       margin: auto;
       position: relative;
       z-index: 10;
       .clearfix();
+
+      @media @tablet-desktop {
+        width: 91%;
+      }
     }
 
     a,
@@ -343,43 +351,53 @@
       letter-spacing: 2px;
     }
 
+    h2 {
+      font-size: 1.875em;
+      font-weight: 300;
+      text-transform: none;
+      padding-bottom: 1.25em;
+      position: relative;
+
+      &::after {
+        background: url("/assets/orange-bolt.png") transparent no-repeat center center;
+        background-size: 80px 17px;
+        bottom: 0;
+        content: "";
+        height: 17px;
+        left: 50%;
+        margin-left: -40px;
+        position: absolute;
+        width: 80px;
+      }
+    }
+
+    p {
+      font-family: 'roboto';
+      font-weight: 300;
+    }
+
     .support-left-column {
-      width: 50%;
       float: left;
-      border-right: 1px @light_blue solid;
-      padding: 3em 5% 3em 0;
+      padding: 1em 0 1em 0;
       text-align: center;
       .clearfix();
 
-      h2 {
-        font-size: 2em;
-        font-weight: 300;
-        text-transform: none;
-      }
-
-      p {
-        font-family: 'roboto';
-        font-weight: 300;
+      @media @tablet-desktop {
+        border-right: 1px @light_blue solid;
+        padding: 3em 5% 3em 0;
+        width: 50%;
       }
     }
 
     .support-right-column {
-      width: 50%;
       float: right;
       text-align: center;
-      padding: 3em 0 3em 5%;
+      padding: 1em 0 1em 0;
       .clearfix();
 
-
-      h2 {
-        font-size: 2em;
-        font-weight: 300;
-        text-transform: none;
-      }
-
-      p {
-        font-family: 'roboto';
-        font-weight: 300;
+      @media @tablet-desktop {
+        padding: 3em 0 3em 5%;
+        width: 50%;
       }
     }
   }
