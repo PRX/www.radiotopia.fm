@@ -29,13 +29,22 @@
   }
 
   .header-container {
-    margin-bottom: 10em;
+    margin-bottom: 3em;
     .clearfix();
 
+    @media @tablet-desktop {
+      margin-bottom: 5em;
+    }
+
     .podcast-left-column {
-      float: left;
-      padding-right: 3.5%;
-      width: 21%;
+      margin-bottom: 2em;
+
+      @media @tablet-desktop {
+        float: left;
+        margin: 0;
+        padding-right: 3.5%;
+        width: 21%;
+      }
 
       .podcast-artwork {
         margin-bottom: 0.625em;
@@ -55,8 +64,13 @@
     }
 
     .podcast-center-column {
-      float: left;
-      width: 48%;
+      margin-bottom: 2em;
+
+      @media @tablet-desktop {
+        float: left;
+        margin: 0;
+        width: 48%;
+      }
 
       .title {
         font-size: 1.9375em;
@@ -87,28 +101,54 @@
     }
 
     .podcast-right-column {
-      float: right;
-      width: 22%;
+      .clearfix();
+
+      @media @tablet-desktop {
+        float: right;
+        width: 22%;
+      }
 
       .podcast-subscribe {
-        margin-bottom: 2.5em;
+        @media @mobile {
+          float: left;
+          padding-right: 5%;
+          width: 50%;
+        }
+
+        @media @tablet-desktop {
+          margin-bottom: 2.5em;
+        }
       }
 
       p.podcast-listen {
         font-family: "Sofia Pro";
         font-size: 1.25em;
         font-weight: 500;
-        margin: 0.5em 0 0.375em;
+        margin: 0 0 0.25em;
+
+        @media @tablet-desktop {
+          margin: 0.5em 0 0.375em;
+        }
       }
 
       p.podcast-connect {
         font-family: "Sofia Pro";
         font-size: 1.25em;
         font-weight: 500;
-        margin: 0 0 0.5em;
+        margin: 0 0 0.25em;
+
+        @media @tablet-desktop {
+          margin: 0 0 0.5em;
+        }
       }
 
       .social-buttons {
+        @media @mobile {
+          float: left;
+          padding-right: 5%;
+          width: 50%;
+        }
+
         .icon {
           float: left;
           padding-right: 4%;
@@ -138,18 +178,30 @@
         font-family: 'Roboto';
         font-weight: 500;
         letter-spacing: 2px;
-        padding: 10px 0;
-        max-width: 17.25em;
+        padding: 5px 0;
+        max-width: 9em;
         display: block;
         text-align: center;
+
+        @media @tablet-desktop  {
+          max-width: 17.25em;
+          padding: 10px 0;
+        }
       }
     }
   }
 
   .podcast-starter-episodes-container {
-    width: 65%;
+    background: url("/assets/orange-bolt.png") transparent no-repeat center top;
+    background-size: 4.5em;
     margin: auto;
     margin-bottom: 143px;
+    padding-top: 2.5em;
+
+    @media @tablet-desktop  {
+      padding-top: 5em;
+      width: 65%;
+    }
 
     .podcast-starter-episodes-header {
       h2 {
@@ -165,15 +217,14 @@
     .sqs-audio-embed {
       margin: auto;
       position: relative;
-      width: 90%;
 
-      // @media @tablet {
-      //   width: 100%;
-      // }
+      @media @tablet-desktop {
+        width: 90%;
+      }
 
-      // @media @desktop {
-      //   width: 100%;
-      // }
+      .sqs-widgets-audio-player.dark {
+        background: rgba(0,0,0,.05);
+      }
 
       .action {
         background-color: #F9A052;
@@ -209,16 +260,28 @@
   }
 
   .hosts-container {
-    margin-left: 15%;
     margin-bottom: 7em;
 
+    @media @tablet-desktop {
+      margin: auto;
+      width: 72%;
+      .clearfix();
+    }
+
     .hosts-image {
-      display: inline-block;
+      @media @tablet-desktop {
+        float: left;
+        padding-right: 7.25%;
+        width: 27%;
+      }
     }
 
     .hosts-content {
-      display: inline-block;
-      width: 60%;
+
+      @media @tablet-desktop {
+        float: left;
+        width: 70%;
+      }
     }
 
     .hosts {
