@@ -65,7 +65,7 @@
           </div>
 
           <div>
-            {customContent.podcastFacebookUrl?}
+            {.customContent.podcastFacebookUrl?}
               <p>Hello there</p>
             {.end}
           </div>
