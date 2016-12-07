@@ -64,8 +64,8 @@
             <squarespace:block-field class="podcast-starter-episodes" id="{customContent.podcastUrlTitle}-podcast-starter-episodes" columns="12" label="Starter Episodes" />
           </div>
 
-          {.section customContent.podcastFacebookUrl?}
-            {@}
+          {.if customContent.podcastFacebookUrl}
+            <p>hello world</p>
           {.end}
 
           <div class="hosts-header">
