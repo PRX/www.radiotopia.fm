@@ -136,7 +136,7 @@
         margin: 0 0 0.25em;
 
         @media @tablet-desktop {
-          margin: 0.5em 0 0.375em;
+          margin: .5em 0 0.5626em;
         }
 
       }
@@ -148,7 +148,7 @@
         margin: 0 0 0.25em;
 
         @media @tablet-desktop {
-          margin: 0 0 0.5em;
+          margin: 0 0 0.5625em;
         }
       }
 
@@ -218,7 +218,7 @@
       h2 {
         text-align: center;
         font-family: "sofia-pro";
-        font-size: 2em;
+        font-size: 1.875em;
         font-weight: 300;
         text-transform: none !important;
         margin-bottom: 1em;
@@ -267,7 +267,7 @@
       h2 {
         text-align: center;
         font-family: "sofia-pro";
-        font-size: 2em;
+        font-size: 1.875em;
         font-weight: 300;
         text-transform: none !important;
       }
@@ -424,7 +424,7 @@
     }
 
     h2 {
-      font-size: 2em;
+      font-size: 1.875em;
       font-weight: 300;
       text-transform: none;
       text-align: center;
@@ -434,10 +434,75 @@
 
   .recent-tweets {
     h2 {
-      font-size: 2em;
+      font-size: 1.875em;
       font-weight: 300;
       text-transform: none;
       text-align: center;
+      padding-bottom: 2.187em;
+      position: relative;
+
+      &::after {
+        background: url("/assets/twitter-title-icon.png") transparent no-repeat center center;
+        background-size: 128px 31px;
+        bottom: 0.187em;
+        content: "";
+        height: 31px;
+        left: 50%;
+        margin-left: -64px;
+        position: absolute;
+        width: 128px;
+      }
+    }
+
+    .tweet-list {
+      margin: auto;
+      width: 85%;
+      .clearfix();
+
+      .tweet {
+
+        @media @tablet-desktop {
+          float: left;
+          padding-top: 2.75em;
+          padding-bottom: 2.75em;
+          width: 50%;
+        }
+
+        &:nth-child(odd) {
+          @media @tablet-desktop {
+            border-right: 1px @light_blue solid;
+            padding-right: 4%;
+          }
+        }
+
+        &:nth-child(even) {
+          @media @tablet-desktop {
+            padding-left: 4%;
+          }
+        }
+      }
+
+      .tweet-text {
+        font-family: "roboto";
+        font-weight: 100;
+        font-size: 1em;
+
+        a,
+        a:active,
+        a:link {
+          color: @light_blue !important;
+          font-size: 0.75em;
+          letter-spacing: 0.175em;
+          font-weight: 500;
+          text-transform: uppercase;
+          word-wrap: break-word;
+
+          &:hover {
+            color: @white !important;
+            .css3-transition(color, .325s);
+          }
+        }
+      }
     }
   }
 }
