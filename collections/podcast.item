@@ -46,9 +46,6 @@
               </div>
               <div class="social-buttons">
                 <p class="podcast-connect">Connect</p>
-                {customContent.podcastFacebookUrl?}
-                  <p>Hello there</p>
-                {.end}
                 <div class="facebook-button icon">
                   <a href="{customContent.podcastFacebookUrl}"><img src="/assets/facebook.png"></a>
                 </div>
@@ -65,6 +62,12 @@
           <div class="podcast-starter-episodes-container">
             <squarespace:block-field class="podcast-starter-episodes-header" id="podcast-starter-episodes-header" columns="12" label="Starter Episodes Header" />
             <squarespace:block-field class="podcast-starter-episodes" id="{customContent.podcastUrlTitle}-podcast-starter-episodes" columns="12" label="Starter Episodes" />
+          </div>
+
+          <div>
+            {customContent.podcastFacebookUrl?}
+              <p>Hello there</p>
+            {.end}
           </div>
 
           <div class="hosts-header">
