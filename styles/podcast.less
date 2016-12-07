@@ -482,6 +482,26 @@
         }
       }
 
+      .tweet-from {
+        margin: 0 0 0.25em 0 !important;
+
+        a,
+        a:active,
+        a:link {
+          color: @orange !important;
+          font-size: 0.75em;
+          font-family: "sofia-pro";
+          letter-spacing: 0.175em;
+          font-weight: 300;
+          word-wrap: break-word;
+
+          &:hover {
+            color: @white !important;
+            .css3-transition(color, .325s);
+          }
+        }
+      }
+
       .tweet-text {
         font-family: "roboto";
         font-weight: 100;
