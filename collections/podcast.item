@@ -46,7 +46,7 @@
               </div>
               <div class="social-buttons">
                 <p class="podcast-connect">Connect</p>
-                {.if customContent.podcastFacebookUrl?}
+                {customContent.podcastFacebookUrl?}
                   <p>Hello there</p>
                 {.end}
                 <div class="facebook-button icon">
