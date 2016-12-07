@@ -46,6 +46,9 @@
               </div>
               <div class="social-buttons">
                 <p class="podcast-connect">Connect</p>
+                {.if customContent.podcastFacebookUrl?}
+                  <p>Hello there</p>
+                {.end}
                 <div class="facebook-button icon">
                   <a href="{customContent.podcastFacebookUrl}"><img src="/assets/facebook.png"></a>
                 </div>
