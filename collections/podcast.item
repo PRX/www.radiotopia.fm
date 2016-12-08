@@ -116,21 +116,25 @@
             <p>{customContent.podcastTitle}</p>
           </div>
         </div>
-        <!-- code icons for subscriptions, remember order -->
         <div class="modal-icons">
+          {.if customContent.podcastRPUrl}
+            <div class="radio-public-button subscribe-icon">
+              <a href="http://{customContent.podcastRPUrl}"><img src="/assets/radio-public.png"></a>
+            </div>
+          {.end}
+          {.if customContent.podcastStitcherUrl}
+            <div class="stitcher-button subscribe-icon">
+              <a href="http://{customContent.podcastStitcherUrl}"><img src="/assets/stitcher-logo.png"></a>
+            </div>
+          {.end}
           {.if customContent.podcastItunesUrl}
-            <div class="facebook-button icon">
+            <div class="itunes-button subscribe-icon">
               <a href="http://{customContent.podcastItunesUrl}"><img src="/assets/itunes-logo.png"></a>
             </div>
           {.end}
-          {.if customContent.podcastTwitterUrl}
-            <div class="twitter-button icon">
-              <a href="http://{customContent.podcastTwitterUrl}"><img src="/assets/twitter.png"></a>
-            </div>
-          {.end}
-          {.if customContent.podcastInstagramUrl}
-            <div class="instagram-button icon">
-              <a href="http://{customContent.podcastInstragramUrl}"><img src="/assets/instagram.png"></a>
+          {.if customContent.podcastGooglePlayUrl}
+            <div class="google-play-button subscribe-icon">
+              <a href="http://{customContent.podcastGooglePlayUrl}"><img src="/assets/google-play-logo.png"></a>
             </div>
           {.end}
         </div>
