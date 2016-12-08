@@ -108,7 +108,12 @@
       </div>
 
       <div class="subscribe-modal">
-
+        <div class="subscribe-header">
+          <h2>Subscribe To</h2>
+        </div>
+        <div class="subscribe-title">
+          <p>{customContent.podcastTitle}</p>
+        </div>
       </div>
     </section>
   </article>
