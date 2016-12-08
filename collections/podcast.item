@@ -116,8 +116,23 @@
             <p>{customContent.podcastTitle}</p>
           </div>
         </div>
+        <!-- code icons for subscriptions, remember order -->
         <div class="modal-icons">
-
+          {.if customContent.podcastItunesUrl}
+            <div class="facebook-button icon">
+              <a href="http://{customContent.podcastItunesUrl}"><img src="/assets/itunes-logo.png"></a>
+            </div>
+          {.end}
+          {.if customContent.podcastTwitterUrl}
+            <div class="twitter-button icon">
+              <a href="http://{customContent.podcastTwitterUrl}"><img src="/assets/twitter.png"></a>
+            </div>
+          {.end}
+          {.if customContent.podcastInstagramUrl}
+            <div class="instagram-button icon">
+              <a href="http://{customContent.podcastInstragramUrl}"><img src="/assets/instagram.png"></a>
+            </div>
+          {.end}
         </div>
       </div>
     </section>
