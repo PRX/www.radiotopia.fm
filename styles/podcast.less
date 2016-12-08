@@ -539,19 +539,45 @@
     background-size: 100%;
     width: 780px;
     height: 400px;
-    left: 50%;
-    top: 50%;
-    margin-right: -390px;
 
+    // style fonts, get scott for buttons
     .subscribe-header {
       h2 {
         text-align: center;
+        padding-top: 75px;
       }
     }
 
     .subscribe-body {
       p {
         text-align: center;
+      }
+    }
+
+    .modal-icons {
+      @media @mobile {
+        float: left;
+        padding-right: 5%;
+        width: 50%;
+      }
+
+      .subscribe-icon {
+        float: left;
+        padding-right: 7%;
+        width: 23%;
+      }
+
+      img {
+        max-width: 175px;
+        width: 100%;
+      }
+
+      .radio-public-button {
+        img {
+          max-width: 59px;
+          width: 100%;
+          margin-left: 65px;
+        }
       }
     }
   }
