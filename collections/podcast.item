@@ -46,15 +46,21 @@
               </div>
               <div class="social-buttons">
                 <p class="podcast-connect">Connect</p>
-                <div class="facebook-button icon">
-                  <a href="http://{customContent.podcastFacebookUrl}"><img src="/assets/facebook.png"></a>
-                </div>
-                <div class="twitter-button icon">
-                  <a href="http://{customContent.podcastTwitterUrl}"><img src="/assets/twitter.png"></a>
-                </div>
-                <div class="instagram-button icon">
-                  <a href="http://{customContent.podcastInstragramUrl}"><img src="/assets/instagram.png"></a>
-                </div>
+                {.if customContent.podcastFacebookUrl}
+                  <div class="facebook-button icon">
+                    <a href="http://{customContent.podcastFacebookUrl}"><img src="/assets/facebook.png"></a>
+                  </div>
+                {.end}
+                {.if customContent.podcastTwitterUrl}
+                  <div class="twitter-button icon">
+                    <a href="http://{customContent.podcastTwitterUrl}"><img src="/assets/twitter.png"></a>
+                  </div>
+                {.end}
+                {.if customContent.podcastInstagramUrl}
+                  <div class="instagram-button icon">
+                    <a href="http://{customContent.podcastInstragramUrl}"><img src="/assets/instagram.png"></a>
+                  </div>
+                {.end}
               </div>
             </div>
           </div>
@@ -63,10 +69,6 @@
             <squarespace:block-field class="podcast-starter-episodes-header" id="podcast-starter-episodes-header" columns="12" label="Starter Episodes Header" />
             <squarespace:block-field class="podcast-starter-episodes" id="{customContent.podcastUrlTitle}-podcast-starter-episodes" columns="12" label="Starter Episodes" />
           </div>
-
-          {.if customContent.podcastFacebookUrl}
-            <p>hello world</p>
-          {.end}
 
           <div class="hosts-header">
             <squarespace:block-field class="hosts-header-block" id="hosts-header-block" columns="12" label="Hosts Header" />
