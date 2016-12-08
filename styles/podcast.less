@@ -433,11 +433,6 @@
   }
 
   .recent-tweets {
-    margin-bottom: 2em;
-
-    @media @tablet-desktop {
-      margin-bottom: 5.25em;
-    }
 
     h2 {
       font-size: 1.875em;
@@ -461,9 +456,14 @@
     }
 
     .tweet-list {
-      margin: auto;
+      margin: 0 auto 2em;
       width: 85%;
       .clearfix();
+
+      @media @tablet-desktop {
+        margin-bottom: 5.25em;
+      }
+
 
       .tweet {
 
@@ -517,12 +517,6 @@
         a:active,
         a:link {
           color: @light_blue !important;
-          font-size: 1em;
-          font-family: "roboto";
-          font-weight: 100;
-          letter-spacing: 0.175em;
-          font-weight: 500;
-          text-transform: uppercase;
           word-wrap: break-word;
 
           &:hover {
@@ -536,9 +530,11 @@
 
   .modal-wrapper {
     background-color: rgba(0, 0, 0, 0.75);
-    position: fixed;
+    display: none; //
+
     height: 100%;
     left: 0;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
