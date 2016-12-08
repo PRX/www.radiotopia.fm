@@ -534,11 +534,23 @@
     }
   }
 
+  .modal-wrapper {
+    background-color: rgba(255, 255, 255, 0.25);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+  }
+
   .subscribe-modal {
     background: url("/assets/subscribe-modal-background.png") transparent no-repeat top center;
     background-size: 100%;
-    width: 780px;
     height: 400px;
+    left: 50%;
+    margin: -200px 0 0 -390px;
+    position: absolute;
+    top: 50%;
+    width: 780px;
 
     // style fonts, get scott for buttons
     .subscribe-header {
@@ -565,16 +577,12 @@
     }
 
     .modal-icons {
-      @media @mobile {
-        float: left;
-        padding-right: 5%;
-        width: 50%;
-      }
+      text-align: center;
+      .clearfix();
 
       .subscribe-icon {
-        float: left;
+        display: inline-block;
         padding-right: 5%;
-        margin-right: 15px;
         width: 23%;
       }
 

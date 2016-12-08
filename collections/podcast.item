@@ -107,38 +107,42 @@
         </div>
       </div>
 
-      <div class="subscribe-modal">
-        <div class="modal-words">
-          <div class="subscribe-header">
-            <h2>Subscribe To</h2>
+      <div class="modal-wrapper">
+        <div class="subscribe-modal">
+          <div class="modal-words">
+            <div class="subscribe-header">
+              <h2>Subscribe To</h2>
+            </div>
+            <div class="subscribe-body">
+              <p>{customContent.podcastTitle}</p>
+            </div>
           </div>
-          <div class="subscribe-body">
-            <p>{customContent.podcastTitle}</p>
+          <div class="modal-icons">
+            {.if customContent.podcastRPUrl}
+              <div class="radio-public-button subscribe-icon">
+                <a href="http://{customContent.podcastRPUrl}"><img src="/assets/radio-public.png"></a>
+              </div>
+            {.end}
+            {.if customContent.podcastStitcherUrl}
+              <div class="stitcher-button subscribe-icon">
+                <a href="http://{customContent.podcastStitcherUrl}"><img src="/assets/stitcher-logo.png"></a>
+              </div>
+            {.end}
+            {.if customContent.podcastItunesUrl}
+              <div class="itunes-button subscribe-icon">
+                <a href="http://{customContent.podcastItunesUrl}"><img src="/assets/itunes-logo.png"></a>
+              </div>
+            {.end}
+            {.if customContent.podcastGooglePlayUrl}
+              <div class="google-play-button subscribe-icon">
+                <a href="http://{customContent.podcastGooglePlayUrl}"><img src="/assets/google-play-logo.png"></a>
+              </div>
+            {.end}
           </div>
-        </div>
-        <div class="modal-icons">
-          {.if customContent.podcastRPUrl}
-            <div class="radio-public-button subscribe-icon">
-              <a href="http://{customContent.podcastRPUrl}"><img src="/assets/radio-public.png"></a>
-            </div>
-          {.end}
-          {.if customContent.podcastStitcherUrl}
-            <div class="stitcher-button subscribe-icon">
-              <a href="http://{customContent.podcastStitcherUrl}"><img src="/assets/stitcher-logo.png"></a>
-            </div>
-          {.end}
-          {.if customContent.podcastItunesUrl}
-            <div class="itunes-button subscribe-icon">
-              <a href="http://{customContent.podcastItunesUrl}"><img src="/assets/itunes-logo.png"></a>
-            </div>
-          {.end}
-          {.if customContent.podcastGooglePlayUrl}
-            <div class="google-play-button subscribe-icon">
-              <a href="http://{customContent.podcastGooglePlayUrl}"><img src="/assets/google-play-logo.png"></a>
-            </div>
-          {.end}
         </div>
       </div>
+
+
     </section>
   </article>
 
