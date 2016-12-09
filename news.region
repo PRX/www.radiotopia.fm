@@ -42,14 +42,14 @@
               {.main-image?}
                 <div class="banner-thumbnail-wrapper" data-content-field="main-image">
                   <div class="color-overlay"></div>
-                  <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
+                  <figure id="thumbnail" class="loading"><img {@|image-meta} /></figure>
                 </div>
               {.end}
             {.or}
               {.main-image?}
                 <div class="banner-thumbnail-wrapper" data-content-field="main-image">
                   <div class="color-overlay"></div>
-                  <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
+                  <figure id="thumbnail" class="loading"><img {@|image-meta} /></figure>
                   <div class="blog-item-wrapper">
                     <div class="title-desc-wrapper">
                       <time class="dt-published published post-date" datetime="{addedOn|date %F}" pubdate>{addedOn|date %B %e, %Y}</time>
@@ -84,7 +84,7 @@
                     <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image" data-collection-id="{collection.id}" data-edit-main-image="Banner" data-annotation-alignment="bottom left">
                       {.section mainImage}
                       <div class="color-overlay"></div>
-                      <figure id="thumbnail" class="loading content-fill">
+                      <figure id="thumbnail" class="loading">
                         <img {@|image-meta} />
                       </figure>
                       {.end}
@@ -160,7 +160,7 @@
                         {.section mainImage}
                           <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image">
                             <div class="color-overlay"></div>
-                            <figure id="thumbnail" class="loading content-fill">
+                            <figure id="thumbnail" class="loading">
                               <img {@|image-meta} />
                             </figure>
                             {.if description}<div class="desc-wrapper" data-content-field="description">{description}</div>{.end}
@@ -185,7 +185,7 @@
                     {.section mainImage}
                       <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image">
                         <div class="color-overlay"></div>
-                        <figure id="thumbnail" class="loading content-fill">
+                        <figure id="thumbnail" class="loading">
                           <img {@|image-meta} />
                         </figure>
                         {.if description}<div class="desc-wrapper" data-content-field="description">{description}</div>{.end}
