@@ -543,26 +543,18 @@
       display: flex;
       height: 100%;
       justify-content: center;
-      position: relative;
       width: 100%;
     }
 
     @media @tablet-desktop {
       padding: 0;
     }
-
-    .close-modal {
-      background: url("/assets/close-icon.png") transparent no-repeat center center;
-      background-size: 30px;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
   }
 
   .subscribe-modal {
     background: url("/assets/subscribe-modal-background.png") transparent no-repeat center center;
     background-size: cover;
+    position: relative;
     width: 100%;
 
     @media @tablet {
@@ -574,6 +566,16 @@
       background-size: 100%;
       height: 400px;
       width: 780px;
+    }
+
+    .close-modal {
+      background: url("/assets/close-icon.png") transparent no-repeat center center;
+      background-size: 24px;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      height: 32px;
+      width: 32px;
     }
 
     .subscribe-header {
