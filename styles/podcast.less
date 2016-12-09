@@ -552,6 +552,11 @@
     background-size: cover;
     width: 100%;
 
+    @media @tablet {
+      height: 325px;
+      width: 600px;
+    }
+
     @media @desktop {
       background-size: 100%;
       height: 400px;
@@ -565,7 +570,7 @@
         font-size: .75em;
         font-weight: 700;
 
-        @media @tablet-desktop {
+        @media @desktop {
           padding-top: 86px;
         }
       }
@@ -622,7 +627,12 @@
       }
 
       .radio-public-button {
-        @media @tablet-desktop {
+        @media @tablet {
+          padding-right: 5%;
+          width: 15%;
+        }
+
+        @media @desktop {
           padding-right: 5%;
           width: 16%;
         }
@@ -633,21 +643,35 @@
       }
 
       .stitcher-button {
-        @media @tablet-desktop {
+        @media @tablet {
+          padding-right: 7%;
+          width: 27%;
+        }
+
+        @media @desktop {
           padding-right: 7%;
           width: 28%;
         }
       }
 
       .itunes-button {
-        @media @tablet-desktop {
+        @media @tablet {
+          padding-right: 6%;
+          width: 27%;
+        }
+
+        @media @desktop {
           padding-right: 6%;
           width: 28%;
         }
       }
 
       .google-play-button {
-        @media @tablet-desktop {
+        @media @tablet {
+          width: 25%;
+        }
+
+        @media @desktop {
           width: 26%;
         }
       }

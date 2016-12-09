@@ -49,6 +49,7 @@
 
     .section-headline {
       font-family: "sofia-pro";
+      margin-bottom: 1em;
       text-align: left;
 
       &#events-title,
@@ -63,6 +64,12 @@
       }
     }
 
+    .news-item {
+      border-bottom: 2px solid @light_blue;
+      margin-bottom: 1em;
+      padding-bottom: 1em;
+    }
+
     .news-image {
       display: none;
     }
@@ -70,7 +77,7 @@
     .news-date {
       color: @orange;
       font-family: 'Roboto';
-      font-size: 0.75em;
+      font-size: 0.667em;
       font-weight: 500;
       margin: -0.5em 0 0 0;
       text-transform: uppercase;
@@ -81,16 +88,122 @@
     }
 
     .news-title {
-      font-size: 1.25em;
+      font-size: 1.555em;
+      font-family: "sofia-pro";
+      font-weight: 400;
       margin: 0 0 0.4375em 0;
     }
 
     .news-excerpt {
-      font-size: 0.875em;
+      font-size: 1.333em;
       font-family: 'Roboto';
+      line-height: initial;
 
       h1, h2, p {
         margin: 0 0 0.25em 0;
+      }
+    }
+
+    .events {
+      padding-top: 1em;
+      width: 100%;
+
+      @media @tablet-desktop {
+        padding-top: 2.25em;
+      }
+
+      .event-item:not(:first-child) {
+        display: none;
+      }
+
+
+
+      .event-item {
+        .clearfix();
+      }
+
+      .event-date {
+        float: left;
+        margin-right: 6%;
+
+        .cal-icon {
+          background: url("/assets/calendar-icon.png") transparent no-repeat center center;
+          background-size: 120px 128px;
+          padding-top: 2em;
+          height: 128px;
+          width: 120px;
+
+          @media @tablet {
+            background-size: 90px 96px;
+            padding-top: 1.5em;
+            height: 96px;
+            width: 90px;
+          }
+        }
+
+        .event-month {
+          font-size: 0.75em;
+          font-weight: 700;
+          line-height: initial;
+          margin: 0;
+          text-align: center;
+          text-transform: uppercase;
+
+          @media @tablet {
+            font-size: 0.735em;
+            margin: 0;
+          }
+        }
+
+        .event-day {
+          font-size: 2.875em;
+          font-weight: 500;
+          line-height: 1em;
+          margin: -0.0625em 0 0 0;
+          text-align: center;
+
+          @media @tablet {
+            font-size: 2em;
+          }
+        }
+      }
+
+      .event-content {
+        float: left;
+        width: 53%;
+
+        .event-header {
+          color: @orange;
+          font-family: 'Roboto';
+          font-size: 0.75em;
+          font-weight: 500;
+          margin: -0.5em 0 0 0;
+          text-transform: uppercase;
+
+          @media @tablet-desktop {
+            margin-bottom: 0.75em;
+          }
+        }
+
+        .event-title {
+          font-size: 1.25em;
+          margin: 0 0 0.4375em 0;
+        }
+
+        .event-location {
+          font-size: 0.875em;
+          font-family: 'Roboto';
+          margin: 0;
+        }
+
+        .event-excerpt {
+          font-size: 0.875em;
+          font-family: 'Roboto';
+
+          h1, h2, p {
+            margin: 0 0 0.25em 0;
+          }
+        }
       }
     }
   }
