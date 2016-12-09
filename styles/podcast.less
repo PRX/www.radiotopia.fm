@@ -530,9 +530,6 @@
   .modal-wrapper {
     background-color: rgba(0, 0, 0, 0.75);
     // display: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100%;
     left: 0;
     padding: 0 5%;
@@ -541,6 +538,11 @@
     width: 100%;
     z-index: 1000;
 
+    .inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     @media @tablet-desktop {
       padding: 0;
