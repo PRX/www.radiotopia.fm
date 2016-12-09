@@ -285,12 +285,12 @@
           <squarespace:block-field class="sponsor-logos" id="sponsor-logos" columns="12" label="Sponsor Logos" />
         </div>
       </main>
+
       <div id="preFooter">
         <div class="pre-footer-inner">
           <squarespace:block-field id="preFooterBlocks" columns="12" label="Pre-Footer Content" />
         </div>
       </div>
-
 
       <footer id="footer" role="contentinfo">
         <div class="footer-inner">
