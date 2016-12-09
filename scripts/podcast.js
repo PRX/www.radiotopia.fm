@@ -9,5 +9,9 @@ var RadiotopiaPodcast = {
       e.preventDefault();
       $('#modal-wrapper').fadeIn();
     });
+
+    $('*[data-behavior="close-modal"]').on('click', function() {
+      $('#modal-wrapper').fadeOut();
+    });
   }
 }

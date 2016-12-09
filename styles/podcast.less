@@ -539,15 +539,24 @@
     z-index: 1000;
 
     .inner {
-      display: flex;
       align-items: center;
-      justify-content: center;
+      display: flex;
       height: 100%;
+      justify-content: center;
+      position: relative;
       width: 100%;
     }
 
     @media @tablet-desktop {
       padding: 0;
+    }
+
+    .close-modal {
+      background: url("/assets/close-icon.png") transparent no-repeat center center;
+      background-size: 30px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
     }
   }
 

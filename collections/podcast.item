@@ -110,6 +110,7 @@
       <div id="modal-wrapper">
         <div class="inner">
           <div class="subscribe-modal">
+            <div class="close-modal" data-behavior="close-modal"></div>
             <div class="modal-words">
               <div class="subscribe-header">
                 <h2>Subscribe To</h2>
