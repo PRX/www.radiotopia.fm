@@ -107,7 +107,7 @@
         </div>
       </div>
 
-      <div class="modal-wrapper">
+      <div id="modal-wrapper">
         <div class="inner">
           <div class="subscribe-modal">
             <div class="modal-words">
