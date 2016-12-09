@@ -230,7 +230,7 @@
                 <squarespace:query collection="events" limit="2" template="event" columns="12" />
               </div>
               <div class="twitter-wrapper">
-                <squarespace:block-field id="events-title" class="section-headline" label="Events Title" />
+                <squarespace:block-field id="twitter-title" class="section-headline" label="Twitter Title" />
                 <div class="recent-tweets">
                   <squarespace:block-field class="news-tweets" id="news-tweets" columns="12" label="Recent Tweets" />
                 </div>
