@@ -223,11 +223,12 @@
             <div class="left-column">
             <squarespace:block-field id="news-title" class="section-headline" label="News Title" />
               <squarespace:query collection="news" limit="10" template="news" columns="12" />
+              <button class="load-more" data-behavior="load-more-news">Load More News</button>
             </div>
             <div class="right-column">
               <div class="events-wrapper">
                 <squarespace:block-field id="events-title" class="section-headline" label="Events Title" />
-                <squarespace:query collection="events" limit="2" template="event" columns="12" />
+                <squarespace:query collection="events" limit="2" template="news-event" columns="12" />
               </div>
               <div class="twitter-wrapper">
                 <squarespace:block-field id="twitter-title" class="section-headline" label="Twitter Title" />

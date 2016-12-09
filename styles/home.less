@@ -1,4 +1,8 @@
 #siteWrapper.home {
+  header {
+    background: transparent !important;
+  }
+
   #page {
     background: url("/assets/radiotopia-stars-bg.png") transparent no-repeat top center;
     background-size: 100%;
@@ -250,6 +254,19 @@
 
         h1, h2, p {
           margin: 0 0 0.25em 0;
+        }
+
+        a,
+        a:active,
+        a:link {
+          text-decoration: none;
+          color: @light_blue !important;
+          .css3-transition(color, .325s);
+
+          &:hover {
+            color: @white !important;
+            .css3-transition(color, .325s);
+          }
         }
       }
     }

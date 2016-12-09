@@ -72,16 +72,19 @@ a:link {
 }
 
 header {
-  background: transparent !important;
-  left: 10% !important;
   margin: auto;
   padding: 0 !important;
   position: absolute !important;
-  width: 80% !important;
+  .gradient-background();
 
-  @media @tablet-desktop {
-    left: 5% !important;
-    width: 90% !important;
+  .header-inner {
+    margin: auto;
+    padding: 20px 0 70px;
+    width: 80% !important;
+
+    @media @tablet-desktop {
+      width: 90% !important;
+    }
   }
 }
 
@@ -94,6 +97,12 @@ header {
 
 #preFooter {
   display: none !important;
+}
+
+.banner-image-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
 }
 
 footer#footer {

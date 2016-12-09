@@ -1,0 +1,18 @@
+<section class="events" >
+  {.repeated section items}
+      <article class="event-item" data-date="{startDate}">
+        <div class="event-date">
+          <div class="cal-icon">
+            <p class="event-month">{startDate|date %b}</p>
+            <p class="event-day">{startDate|date %d}</p>
+          </div>
+        </div>
+        <div class="event-content">
+          <p class="event-header">{startDate|date %b. %d, %G}</p>
+          <p class="event-title">{title}</p>
+          <p class="event-location">{location.addressTitle}</p>
+          <p class="event-location">{location.addressLine2}</p>
+        </div>
+      </article>
+  {.end}
+</section>
