@@ -28,4 +28,54 @@
       }
     }
   }
+
+  .news-content {
+    .clearfix();
+
+    .left-column {
+      @media @tablet-desktop {
+        float: left;
+        padding-right: 5%;
+        width: 66%;
+      }
+    }
+
+    .right-column {
+      @media @tablet-desktop {
+        float: left;
+        width: 33%;
+      }
+    }
+
+    .news-image {
+      display: none;
+    }
+
+    .news-date {
+      color: @orange;
+      font-family: 'Roboto';
+      font-size: 0.75em;
+      font-weight: 500;
+      margin: -0.5em 0 0 0;
+      text-transform: uppercase;
+
+      @media @tablet-desktop {
+        margin-bottom: 0.75em;
+      }
+    }
+
+    .news-title {
+      font-size: 1.25em;
+      margin: 0 0 0.4375em 0;
+    }
+
+    .news-excerpt {
+      font-size: 0.875em;
+      font-family: 'Roboto';
+
+      h1, h2, p {
+        margin: 0 0 0.25em 0;
+      }
+    }
+  }
 }

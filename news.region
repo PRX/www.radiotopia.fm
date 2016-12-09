@@ -218,31 +218,26 @@
 
       <main id="page" role="main">
         <div class="inner">
-          {.section collection}
-          {.collectionTypeNameEquals? products}{.section categories}<div id="categoryNav">
-            <input type="checkbox" name="category-nav-toggle" id="categoryNavToggle" class="category-nav-toggle hidden" />
-            <label for="categoryNavToggle" class="category-nav-toggle-label" onclick></label>
-            <nav class="category-nav">
-              <ul class="category-nav-links">
-                <li class="nav-section-label">{navigationTitle}</li>
-                <li class="filter"><a>Filter{.if categoryFilter}: {categoryFilter}{.end}</a></li>
-                <li{.if categoryFilter}{.or} class="active-link all"{.end}><a href="{fullUrl}">All</a></li>
-                {.repeated section @}
-                <li{.equal? categoryFilter @} class="active-link"{.end}><a href="{fullUrl}?category={@|url-encode}">{@}</a></li>
-                {.end}
-              </ul>
-            </nav>
-          </div>{.end}{.end}<!-- comment the linebreak between these two elements because science
-          -->{.collectionTypeNameEquals? page}<!-- comment the linebreak between these two elements because science
-          --><squarespace:folder-navigation template="folder-navigation" />{.end}{.end}<!-- comment the linebreak between these two elements because science
-          --><div id="content" class="main-content" data-content-field="main-content" data-collection-id="{collection.id}" {.equal? collection.typeName "gallery"}{.or}{.equal? collection.typeName "index"}{.or}data-edit-main-image="Banner"{.end}{.end}>
-           {squarespace.main-content}
-          </div><!-- comment the linebreak between these two elements because science
-          -->{.section collection}{.collectionTypeNameEquals? blog}<aside id="rightSidebar" role="complementary">
-            <squarespace:block-field class="open-block-field" id="blogBlocks-{id}" columns="12" label="Blog Sidebar Content" />
-          </aside>
-          {.end}
-          {.end}
+
+          <div class="news-content">
+            <div class="left-column">
+            <squarespace:block-field id="news-title" class="section-headline" label="News Title" />
+              <squarespace:query collection="news" limit="10" template="news" columns="12" />
+            </div>
+            <div class="right-column">
+              <div class="events-wrapper">
+                <squarespace:block-field id="events-title" class="section-headline" label="Events Title" />
+                <squarespace:query collection="events" limit="2" template="event" columns="12" />
+              </div>
+              <div class="twitter-wrapper">
+                <squarespace:block-field id="events-title" class="section-headline" label="Events Title" />
+                <div class="recent-tweets">
+                  <squarespace:block-field class="news-tweets" id="news-tweets" columns="12" label="Recent Tweets" />
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
       </main>
 
