@@ -42,7 +42,7 @@
             <div class="podcast-column podcast-right-column">
               <div class="podcast-subscribe">
                 <p class="podcast-listen">Listen</p>
-                <a href="{customContent.podcastItunesUrl}" class="podcast-subscribe-button">Subscribe</a>
+                <a href="#" class="podcast-subscribe-button" data-behavior="open-modal">Subscribe</a>
               </div>
               <div class="social-buttons">
                 <p class="podcast-connect">Connect</p>
