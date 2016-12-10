@@ -24,7 +24,7 @@
       width: 80% !important;
 
       @media @tablet-desktop {
-        width: 86% !important;
+        width: 90% !important;
       }
     }
   }
@@ -35,15 +35,15 @@
     .left-column {
       @media @tablet-desktop {
         float: left;
-        padding-right: 5%;
-        width: 66%;
+        padding-right: 7%;
+        width: 70%;
       }
     }
 
     .right-column {
       @media @tablet-desktop {
         float: left;
-        width: 33%;
+        width: 30%;
       }
     }
 
@@ -68,6 +68,10 @@
       border-bottom: 2px solid @light_blue;
       margin-bottom: 2.875em;
       padding-bottom: 2.5em;
+
+      &:nth-of-type(n+4) {
+        display: none;
+      }
     }
 
     .news-image {
@@ -131,6 +135,8 @@
       text-align: center;
       outline: none;
       border: none;
+      margin: auto;
+      width: 320px;
 
       @media @tablet-desktop  {
         padding: 10px 20px;
@@ -149,7 +155,7 @@
         margin-bottom: 1em;
         .clearfix();
 
-        &:nth-of-type(n+2) {
+        &:nth-of-type(n+3) {
           display: none;
         }
       }
@@ -157,6 +163,11 @@
       .event-date {
         float: left;
         margin-right: 6%;
+
+        @media @tablet {
+          float: none;
+          margin: 0 0 1em 0;
+        }
 
         .cal-icon {
           background: url("/assets/calendar-icon.png") transparent no-repeat center center;
@@ -204,6 +215,11 @@
         float: left;
         width: 53%;
 
+        @media @tablet {
+          clear: left;
+          width: 100%;
+        }
+
         .event-header {
           color: @orange;
           font-family: 'Roboto';
@@ -212,7 +228,7 @@
           margin: -0.5em 0 0 0;
           text-transform: uppercase;
 
-          @media @tablet-desktop {
+          @media @desktop {
             margin-bottom: 0.75em;
           }
         }
@@ -220,11 +236,16 @@
         .event-title {
           font-size: 1.25em;
           margin: 0 0 0.4375em 0;
+
+          @media @tablet {
+            margin-bottom: 0.125em;
+          }
         }
 
         .event-location {
           font-size: 0.875em;
           font-family: 'Roboto';
+          line-height: initial;
           margin: 0;
         }
 
@@ -234,6 +255,60 @@
 
           h1, h2, p {
             margin: 0 0 0.25em 0;
+          }
+        }
+      }
+    }
+
+    .news-tweets {
+      .tweet-list {
+        .tweet-avatar-wrapper {
+          @media @tablet {
+            float: none;
+          }
+        }
+
+        .tweet-text-wrapper {
+          @media @tablet {
+            margin: 0;
+          }
+        }
+
+        .tweet-from {
+          margin: 0 0 0.25em 0 !important;
+
+          a,
+          a:active,
+          a:link {
+            color: @orange !important;
+            font-size: 0.75em;
+            font-family: "sofia-pro";
+            letter-spacing: 0.175em;
+            font-weight: 300;
+            word-wrap: break-word;
+
+            &:hover {
+              color: @white !important;
+              .css3-transition(color, .325s);
+            }
+          }
+        }
+
+        .tweet-text {
+          font-family: "roboto";
+          font-weight: 100;
+          font-size: 1em;
+
+          a,
+          a:active,
+          a:link {
+            color: @light_blue !important;
+            word-wrap: break-word;
+
+            &:hover {
+              color: @white !important;
+              .css3-transition(color, .325s);
+            }
           }
         }
       }

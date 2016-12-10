@@ -222,7 +222,7 @@
           <div class="news-content">
             <div class="left-column">
             <squarespace:block-field id="news-title" class="section-headline" label="News Title" />
-              <squarespace:query collection="news" limit="10" template="news" columns="12" />
+              <squarespace:query collection="news" limit="100" template="news" columns="12" />
               <button class="load-more" data-behavior="load-more-news">Load More News</button>
             </div>
             <div class="right-column">
@@ -232,9 +232,7 @@
               </div>
               <div class="twitter-wrapper">
                 <squarespace:block-field id="twitter-title" class="section-headline" label="Twitter Title" />
-                <div class="recent-tweets">
-                  <squarespace:block-field class="news-tweets" id="news-tweets" columns="12" label="Recent Tweets" />
-                </div>
+                <squarespace:block-field class="news-tweets" id="news-tweets" columns="12" label="Recent Tweets" />
               </div>
 
             </div>
@@ -262,5 +260,19 @@
     <squarespace:script src="site-bundle.js" combo="false" />
     {squarespace-footers}
 
+    <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <squarespace:script src="vendor/underscore-min.js" combo="false" />
+    <squarespace:script src="news.js" combo="false" />
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        RadiotopiaNews.initialize();
+      });
+    </script>
   </body>
 </html>
