@@ -39,9 +39,9 @@
 
           <squarespace:block-field id="homeLogoAudioPlayer" columns="12" label="Home Logo Audio Player" />
 
-          <squarespace:block-field id="homeLogoVideoPlayer" columns="12" label="Home Logo Video Player" />
-
           <squarespace:block-field id="homeLogoSubtitle" columns="12" label="Home Logo Subtitle" />
+
+          <squarespace:block-field id="homeLogoVideoPlayer" columns="12" label="Home Logo Video Player" />
 
           {.if item}
             {.section item}
