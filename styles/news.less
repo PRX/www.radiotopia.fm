@@ -33,8 +33,11 @@
     .clearfix();
 
     .left-column {
+      margin-bottom: 2em;
+
       @media @tablet-desktop {
         float: left;
+        margin-bottom: 0;
         padding-right: 7%;
         width: 70%;
       }
@@ -49,28 +52,49 @@
 
     .section-headline {
       font-family: "sofia-pro";
-      margin-bottom: 0.875em;
+      font-size: 1em;
+      margin-bottom: 0.25em;
       text-align: left;
+
+      @media @tablet-desktop {
+        line-height: 1.49em;
+        margin-bottom: 0.875em;
+      }
 
       &#events-title,
       &#twitter-title {
-        font-size: 1.375em;
+        h1,
+        h2,
+        p {
+          font-size: 1.375em;
+        }
       }
 
       h1,
       h2,
       p {
-        font-size: 1em;
+        font-size: 2em;
+      }
+    }
+
+    .news {
+      @media @desktop {
+        padding-top: 2.25em;
       }
     }
 
     .news-item {
       border-bottom: 2px solid @light_blue;
-      margin-bottom: 2.875em;
-      padding-bottom: 2.5em;
+      margin-bottom: 1.5em;
+      padding-bottom: 1.25em;
 
       &:nth-of-type(n+4) {
         display: none;
+      }
+
+      @media @tablet-desktop {
+        margin-bottom: 2.875em;
+        padding-bottom: 2.5em;
       }
     }
 
@@ -147,8 +171,13 @@
       padding-top: 1em;
       width: 100%;
 
-      @media @tablet-desktop {
+      @media @tablet {
+        padding-top: 0;
+      }
+
+      @media @desktop {
         padding-top: 2.25em;
+        margin-bottom: 3.5em;
       }
 
       .event-item {
@@ -163,6 +192,7 @@
       .event-date {
         float: left;
         margin-right: 6%;
+        margin-bottom: 1em;
 
         @media @tablet {
           float: none;
@@ -262,6 +292,12 @@
 
     .news-tweets {
       .tweet-list {
+        .tweet {
+          @media @tablet {
+            margin-bottom: 1em;
+          }
+        }
+
         .tweet-avatar-wrapper {
           @media @tablet {
             float: none;
