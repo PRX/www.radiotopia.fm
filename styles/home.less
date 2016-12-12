@@ -411,12 +411,15 @@
     }
 
     .support-left-column {
-      width: 50%;
-      float: left;
-      border-right: 1px @light_blue solid;
-      padding: 3em 5% 3em 0;
       text-align: center;
       .clearfix();
+
+      @media @tablet-desktop {
+        border-right: 1px @light_blue solid;
+        float: left;
+        padding: 3em 5% 3em 0;
+        width: 50%;
+      }
 
       h2 {
         font-size: 2em;
@@ -431,12 +434,14 @@
     }
 
     .support-right-column {
-      width: 50%;
-      float: right;
       text-align: center;
-      padding: 3em 0 3em 5%;
       .clearfix();
 
+      @media @tablet-desktop {
+        float: right;
+        padding: 3em 0 3em 5%;
+        width: 50%;
+      }
 
       h2 {
         font-size: 2em;
