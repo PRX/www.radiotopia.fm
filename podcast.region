@@ -170,15 +170,16 @@
           </aside>
           {.end}
           {.end}
-        <div class="survey-monkey-wrapper">
-          <p>hello world</p>
-        </div>
       </main>
 
       <div id="preFooter">
         <div class="pre-footer-inner">
           <squarespace:block-field id="preFooterBlocks" columns="12" label="Pre-Footer Content" />
         </div>
+      </div>
+
+      <div class="survey-monkey-wrapper">
+        <p>hello world</p>
       </div>
 
       <footer id="footer" role="contentinfo">
