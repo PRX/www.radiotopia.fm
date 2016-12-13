@@ -12,6 +12,17 @@ var Radiotopia = {
 
     var throttledScroll = _.throttle(Radiotopia.scrollHandler, 50);
     $(window).scroll(throttledScroll);
+
+    $('#secondaryNavigation .folder').last().find('.subnav').append('<div><a href="#" data-behavior="open-modal">Sign Up For Newsletter</a></div>');
+
+    $('*[data-behavior="open-modal"]').on('click', function(e) {
+      e.preventDefault();
+      $('#modal-wrapper').fadeIn();
+    });
+
+    $('*[data-behavior="close-modal"]').on('click', function() {
+      $('#modal-wrapper').fadeOut();
+    });
   },
 
   resizeHandler: function() {

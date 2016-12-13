@@ -99,6 +99,84 @@ header {
   display: none !important;
 }
 
+#modal-wrapper {
+  background-color: rgba(0, 0, 0, 0.75);
+  display: none;
+  height: 100%;
+  left: 0;
+  padding: 0 5%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  .inner {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+  }
+
+  @media @tablet-desktop {
+    padding: 0;
+  }
+
+  .close-modal {
+    background: url("/assets/close-icon.png") transparent no-repeat center center;
+    background-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 32px;
+    width: 32px;
+    z-index: 100;
+  }
+}
+
+#mc_embed_signup {
+  padding: 1em;
+  position: relative;
+  width: 100%;
+
+  @media @tablet-desktop {
+    padding: 3em 2em;
+    width: 50%;
+  }
+
+  form {
+    padding: 0 !important;
+  }
+
+  h2 {
+    font-size: 1.75em;
+    width: 80%;
+
+    @media @tablet-desktop {
+      width: 100%;
+    }
+  }
+
+  .input-group {
+    .clearfix();
+
+    @media @tablet-desktop {
+      margin-bottom: 0.5em;
+    }
+
+    ul li {
+      float: left;
+      width: 50%;
+    }
+  }
+
+
+  .mc-field-group.input-group label {
+    padding-left: 0.5em;
+  }
+}
+
 .banner-image-container::after {
   content: "";
   position: absolute;
