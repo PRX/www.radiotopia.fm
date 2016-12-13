@@ -1,4 +1,6 @@
 #siteWrapper.home {
+  overflow: hidden;
+
   header {
     background: transparent !important;
   }
@@ -391,12 +393,18 @@
 
     .parallax {
       position: absolute;
-      top: 5em;
+      top: -6em;
       left: 0;
+      width: 100%;
       z-index: 0;
 
-      img {
-        width: 100%;
+      svg {
+        position: absolute;
+        width: 200%;
+
+        @media @tablet-desktop {
+          width: 100%;
+        }
       }
     }
 
@@ -481,6 +489,7 @@
       font-family: "sofia-pro";
       font-size: 2em;
       font-weight: 500;
+      line-height: 1.2em;
     }
 
     a,
@@ -497,5 +506,9 @@
       font-weight: 600;
       letter-spacing: 2px;
     }
+  }
+
+  footer#footer {
+    position: relative;
   }
 }
