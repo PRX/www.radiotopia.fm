@@ -170,7 +170,9 @@
           </aside>
           {.end}
           {.end}
-          {@|apply newsletter-signup.block}
+        <div class="survey-monkey-wrapper">
+          <p>hello world</p>
+        </div>
       </main>
 
       <div id="preFooter">
