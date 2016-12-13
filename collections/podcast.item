@@ -71,7 +71,7 @@
           </div>
 
           <div class="hosts-header">
-            <squarespace:block-field class="hosts-header-block" id="hosts-header-block" columns="12" label="Hosts Header" />
+            <squarespace:block-field class="{customContent.podcastUrlTitle}-hosts-header-block" id="{customContent.podcastUrlTitle}-hosts-header-block" columns="12" label="Hosts Header" />
           </div>
 
           <div class="hosts-container">
@@ -88,16 +88,19 @@
           <div class="support-container" id="support-container">
             <div class="inner">
               <div class="support-left-column">
-                <squarespace:block-field class="{customContent.podcastUrlTitle}-support-podcast" id="{customContent.podcastUrlTitle}-support-podcast" columns="12" label="Support Podcast" />
+                <squarespace:block-field class="support-podcast" id="support-podcast" columns="12" label="Template Support Podcast Block" />
+                <squarespace:block-field class="{customContent.podcastUrlTitle}-support-podcast" id="{customContent.podcastUrlTitle}-support-podcast" columns="12" label="Unique Support Podcast Block" />
               </div>
 
               <div class="support-right-column">
-                <squarespace:block-field class="{customContent.podcastUrlTitle}-sponsor-podcast" id="{customContent.podcastUrlTitle}-sponsor-podcast" columns="12" label="Become a Sponsor" />
+                <squarespace:block-field class="sponsor-podcast" id="sponsor-podcast" columns="12" label="Template Become a Sponsor Block" />
+                <squarespace:block-field class="{customContent.podcastUrlTitle}-sponsor-podcast" id="{customContent.podcastUrlTitle}-sponsor-podcast" columns="12" label="Unique Become a Sponsor Block" />
               </div>
             </div>
           </div>
 
           <div class="sponsor-logos">
+            <squarespace:block-field class="universal-podcast-sponsor-logos" id="universal-podcast-sponsor-logos" columns="12" label="Universal Podcast Sponsor Logos" />
             <squarespace:block-field class="{customContent.podcastUrlTitle}-podcast-sponsor-logos" id="{customContent.podcastUrlTitle}-podcast-sponsor-logos" columns="12" label="Podcast Sponsor Logos" />
           </div>
 
