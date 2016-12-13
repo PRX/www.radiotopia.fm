@@ -10,7 +10,11 @@
     background-size: 100%;
     background-attachment: fixed;
     max-width: none !important;
-    padding: 143px 0 0 !important;
+    padding: 110px 0 0 !important;
+
+    @media @tablet-desktop {
+      padding: 143px 0 0 !important;
+    }
 
     &>.inner {
       margin: 0 auto;
@@ -23,16 +27,25 @@
   }
 
   #homeLogo {
-    width: 60%;
-    margin-left: 20%;
-    margin-bottom: 1.375em;
+    margin: auto;
+    margin-bottom: 1em;
+    width: 90%;
+
+    @media @tablet-desktop {
+      margin-bottom: 1.375em;
+      width: 60%;
+    }
   }
 
   #homeLogoAudioPlayer {
-    margin-bottom: 1.375em;
+    margin-bottom: 1em;
+
+    @media @tablet-desktop {
+      margin-bottom: 1.375em;
+    }
 
     .sqs-audio-embed {
-      width: 60%;
+      width: 90%;
       margin: auto;
       position: relative;
 
@@ -45,31 +58,25 @@
       }
 
       &::before {
-        content: "";
-        border-top: 2px solid @white;
-        left: -60px;
-        margin-top: -1px;
-        top: 50%;
-        position: absolute;
-        width: 40px;
-
         @media @tablet-desktop {
+          content: "";
+          border-top: 2px solid @white;
+          margin-top: -1px;
+          top: 50%;
+          position: absolute;
           left: -80px;
           width: 60px;
         }
       }
 
       &::after {
-        content: "";
-        border-top: 2px solid @white;
-        right: -60px;
-        margin-top: -1px;
-        top: 50%;
-        position: absolute;
-        visibility: visible;
-        width: 40px;
-
         @media @tablet-desktop {
+          content: "";
+          border-top: 2px solid @white;
+          margin-top: -1px;
+          top: 50%;
+          position: absolute;
+          visibility: visible;
           right: -80px;
           width: 60px;
         }
@@ -105,23 +112,43 @@
   }
 
   #homeLogoSubtitle {
-    width: 50%;
+    width: 90%;
     margin: auto;
 
-    @media @tablet-desktop {
+    @media @tablet {
+      width: 50%;
+    }
+
+    @media @desktop {
       width: 25%;
     }
   }
 
   #content {
     max-width: 1020px;
-    padding: 96px 0;
+    padding: 0;
     width: 95%;
     margin: auto;
+
+    @media @tablet {
+      padding: 35px 0;
+    }
+
+    @media @desktop {
+      padding: 96px 0;
+    }
   }
 
   .testimonials {
-    margin-bottom: 8em;
+    margin-bottom: 1em;
+
+    @media @tablet {
+      margin-bottom: 4em;
+    }
+
+    @media @desktop {
+      margin-bottom: 8em;
+    }
 
     .testimonial-item {
       position: relative;
@@ -197,9 +224,17 @@
   }
 
   .news-and-events-container {
-    margin-bottom: 8.5em;
+    margin-bottom: 3em;
     position: relative;
     .clearfix();
+
+    @media @tablet {
+      margin-bottom: 5em;
+    }
+
+    @media @desktop {
+      margin-bottom: 8.5em;
+    }
 
     .left-column {
       @media @tablet-desktop {
@@ -388,8 +423,12 @@
   }
 
   .support-container {
-    padding-bottom: 5em;
+    padding-bottom: 0;
     position: relative;
+
+    @media @desktop {
+      padding-bottom: 5em;
+    }
 
     .parallax {
       position: absolute;
@@ -479,9 +518,13 @@
 
   .sponsor-logos {
     background-color: @med_blue;
-    padding: 2.125em 10% 2.5em;
+    padding: 1em 10% 1.5em;
 
-    @media @tablet-desktop {
+    @media @tablet {
+      padding: 2em 5% 2em;
+    }
+
+    @media @desktop {
       padding: 4.375em 5% 5em;
     }
 
