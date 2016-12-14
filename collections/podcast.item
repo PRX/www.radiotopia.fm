@@ -105,7 +105,7 @@
 
           <div class="sponsor-logos">
             <squarespace:block-field class="universal-podcast-sponsor-logos" id="universal-podcast-sponsor-logos" columns="12" label="Universal Podcast Sponsor Logos" />
-            <squarespace:block-field class="{customContent.podcastUrlTitle}-podcast-sponsor-logos" id="{customContent.podcastUrlTitle}-podcast-sponsor-logos" columns="12" label="Podcast Sponsor Logos" />
+            <squarespace:block-field class="{customContent.podcastUrlTitle}-podcast-sponsor-logos" id="{customContent.podcastUrlTitle}-podcast-sponsor-logos" columns="12" label="Unique Podcast Sponsor Logos" />
           </div>
 
           <div class="recent-tweets">
