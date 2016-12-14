@@ -93,7 +93,7 @@
                 </div>
                 <squarespace:block-field class="{customContent.podcastUrlTitle}-support-podcast" id="{customContent.podcastUrlTitle}-support-podcast" columns="12" label="Unique Support Podcast Title Block" />
                 <squarespace:block-field class="support-podcast-description" id="support-podcast-description" columns="12" label="Template Support Podcast Description" />
-                <a href="http://{customContent.podcastDonateUrl}">Donate Now</a>
+                <a href="https://{customContent.podcastDonateUrl}">Donate Now</a>
               </div>
 
               <div class="support-right-column">
