@@ -35,6 +35,33 @@ a:link {
   color: @white !important;
   position: relative;
 
+  &.general {
+    header {
+      background: transparent !important;
+    }
+
+    #page {
+      background: url("/assets/radiotopia-stars-bg.png") transparent no-repeat top center;
+      background-size: 100%;
+      background-attachment: fixed;
+      max-width: none !important;
+      padding: 110px 0 0 !important;
+
+      @media @tablet-desktop {
+        padding: 143px 0 0 !important;
+      }
+
+      &>.inner {
+        margin: 0 auto;
+        width: 80% !important;
+
+        @media @tablet-desktop {
+          width: 90% !important;
+        }
+      }
+    }
+  }
+
   .slick-slider {
     position: relative;
 

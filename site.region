@@ -23,7 +23,7 @@
     <div id="sidecarNav">
       <squarespace:navigation navigationId="mainNav" template="mobile-navigation" />
     </div>
-    <div id="siteWrapper" class="clearfix home">
+    <div id="siteWrapper" class="clearfix general">
 
       <div class="sqs-cart-dropzone"></div>
 
@@ -42,14 +42,6 @@
       </header>
       <main id="page" role="main">
         <div class="inner">
-          <squarespace:block-field id="homeLogo" columns="12" label="Home Logo" />
-
-          <squarespace:block-field id="homeLogoAudioPlayer" columns="12" label="Home Logo Audio Player" />
-
-          <squarespace:block-field id="homeLogoSubtitle" columns="12" label="Home Logo Subtitle" />
-
-          <squarespace:block-field id="homeLogoVideoPlayer" columns="12" label="Home Logo Video Player" />
-
           {.if item}
             {.section item}
               {.if productType}
@@ -258,36 +250,6 @@
           </aside>
           {.end}
           {.end}
-
-          <squarespace:query collection="testimonial" template="testimonial" columns="12" />
-
-          <squarespace:block-field id="news-and-events-header" class="section-headline" columns="12" label="News and Events Header" />
-          <div class="news-and-events-container" id="news-and-events-container">
-            <div class="left-column">
-              <squarespace:query collection="news" limit="1" template="news" columns="12" />
-            </div>
-            <div class="right-column">
-              <squarespace:query collection="news" limit="1" skip="1" template="news" columns="12" />
-              <squarespace:query collection="events" limit="1" template="event" columns="12" />
-            </div>
-          </div>
-        </div>
-
-        <div class="support-container" id="support-container">
-          {@|apply parallax.block}
-          <div class="inner">
-            <div class="support-left-column">
-              <squarespace:block-field class="support-radiotopia" id="support-radiotopia" columns="12" label="Support Radiotopia" />
-            </div>
-
-            <div class="support-right-column">
-              <squarespace:block-field class="sponsor-radiotopia" id="sponsor-radiotopia" columns="12" label="Become a Sponsor" />
-            </div>
-          </div>
-        </div>
-
-    		<div class="sponsor-logos">
-          <squarespace:block-field class="sponsor-logos" id="sponsor-logos" columns="12" label="Sponsor Logos" />
         </div>
       </main>
 
@@ -296,8 +258,6 @@
           <squarespace:block-field id="preFooterBlocks" columns="12" label="Pre-Footer Content" />
         </div>
       </div>
-
-      {@|apply news-letter.block}
 
       <footer id="footer" role="contentinfo">
         <div class="footer-inner">
@@ -315,25 +275,5 @@
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
     crossorigin="anonymous"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-    <squarespace:script src="vendor/slick.min.js" combo="false" />
-    <squarespace:script src="vendor/underscore-min.js" combo="false" />
-    <squarespace:script src="main.js" combo="false" />
-    <squarespace:script src="homepage.js" combo="false" />
-
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('.testimonials').slick({
-          responsive: [{
-            breakpoint: 640,
-            settings: {
-              arrows: false
-            }
-          }]
-        });
-        Radiotopia.initialize();
-        RadiotopiaHome.initialize();
-      });
-    </script>
   </body>
 </html>
