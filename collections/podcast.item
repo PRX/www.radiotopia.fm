@@ -98,7 +98,8 @@
 
               <div class="support-right-column">
                 <squarespace:block-field class="sponsor-podcast" id="sponsor-podcast" columns="12" label="Template Become a Sponsor Block" />
-                <squarespace:block-field class="{customContent.podcastUrlTitle}-sponsor-podcast" id="{customContent.podcastUrlTitle}-sponsor-podcast" columns="12" label="Unique Become a Sponsor Button" />
+                <!-- <squarespace:block-field class="{customContent.podcastUrlTitle}-sponsor-podcast" id="{customContent.podcastUrlTitle}-sponsor-podcast" columns="12" label="Unique Become a Sponsor Button" /> -->
+                <a href="mailto:{customContent.podcastSponsorEmail}">Become a Sponsor</a>
               </div>
             </div>
           </div>
