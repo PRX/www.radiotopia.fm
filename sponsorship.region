@@ -236,6 +236,8 @@
             <div class="listeners-engage-left-column">
               <squarespace:block-field class="open-block-field" id="listeners-engage-left" columns="12" label="Listeners Engage Left Column" />
             </div>
+
+            <!-- How to handle the legend for the bar chart? -->
             <div class="listeners-engage-right-column">
               <squarespace:block-field class="open-block-field" id="listeners-engage-right" columns="12" label="Listeners Engage Right Column" />
             </div>
