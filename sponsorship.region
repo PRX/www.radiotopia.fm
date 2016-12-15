@@ -16,7 +16,7 @@
     <div id="sidecarNav">
       <squarespace:navigation navigationId="mainNav" template="mobile-navigation" />
     </div>
-    <div id="siteWrapper" class="clearfix news">
+    <div id="siteWrapper" class="clearfix sponsorship">
 
       <div class="sqs-cart-dropzone"></div>
 
@@ -219,9 +219,8 @@
       <main id="page" role="main">
         <div class="inner">
 
-          <div class="sponsorship-content">
+          <div class="sponsorship-headline-wrapper">
             <squarespace:block-field id="sponsorship-headline" class="section-headline" label="Sponsorship Headline" />
-
           </div>
         </div>
       </main>
