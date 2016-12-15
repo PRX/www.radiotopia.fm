@@ -221,6 +221,11 @@
 
           <div class="sponsorship-headline-wrapper">
             <squarespace:block-field id="sponsorship-headline" class="section-headline" label="Sponsorship Headline" />
+            <a href="mailto:#">Become a Sponsor</a>
+          </div>
+
+          <div class="why-advertise-wrapper">
+            <squarespace:block-field class="open-block-field" id="why-advertise" columns="12" label="Why Advertise" />
           </div>
         </div>
       </main>
