@@ -227,6 +227,57 @@
           <div class="why-advertise-wrapper">
             <squarespace:block-field class="open-block-field" id="why-advertise" columns="12" label="Why Advertise" />
           </div>
+
+          <div class="podcasts-are-the-future-wrapper">
+            <squarespace:block-field class="open-block-field" id="podcasts-are-the-future" columns="12" label="Podcasts are the Future" />
+          </div>
+
+          <div class="listeners-engage-wrapper">
+            <div class="listeners-engage-left-column">
+              <squarespace:block-field class="open-block-field" id="listeners-engage-left" columns="12" label="Listeners Engage Left Column" />
+            </div>
+            <div class="listeners-engage-right-column">
+              <squarespace:block-field class="open-block-field" id="listeners-engage-right" columns="12" label="Listeners Engage Right Column" />
+            </div>
+          </div>
+
+          <div class="solar-system-wrapper">
+            <squarespace:block-field class="open-block-field" id="solar-system-text" columns="12" label="Solar System Text" />
+            <squarespace:block-field class="open-block-field" id="solar-system-image" columns="12" label="Solar System Image" />
+          </div>
+
+          <div class="best-customers-wrapper">
+            <squarespace:block-field class="open-block-field" id="best-customers-text" columns="12" label="Best Customers Text" />
+            <squarespace:block-field class="open-block-field" id="best-customers-images" columns="12" label="Best Customers Images" />
+          </div>
+
+          <div class="loyal-listeners-wrapper">
+            <div class="loyal-listeners-left-column">
+              <squarespace:block-field class="open-block-field" id="loyal-listeners-left" columns="12" label="Loyal Listeners Left Column" />
+            </div>
+            <div class="loyal-listeners-right-column">
+              <squarespace:block-field class="open-block-field" id="loyal-listeners-right" columns="12" label="Loyal Listeners Right Column" />
+            </div>
+          </div>
+
+          <div class="pay-attention-engage-wrapper">
+            <squarespace:block-field class="open-block-field" id="pay-attention-engage-text" columns="12" label="Pay Attention and Engage Text" />
+            <squarespace:block-field class="open-block-field" id="pay-attention-engage-images" columns="12" label="Pay Attention and Engage Images" />
+          </div>
+
+          <div class="monthly-downloads-wrapper">
+            <squarespace:block-field class="open-block-field" id="monthly-downloads-text" columns="12" label="Monthly Downloads Text" />
+            <squarespace:block-field class="open-block-field" id="monthly-downloads-image" columns="12" label="Monthly Downloads Image" />
+          </div>
+
+          <div class="become-sponsor-bottom-banner">
+            <squarespace:block-field class="open-block-field" id="bottom-banner-text" columns="12" label="Bottom Banner Text" />
+          </div>
+
+          <div class="podcasts-grid-wrapper">
+
+
+          </div>
         </div>
       </main>
 
