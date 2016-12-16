@@ -23,6 +23,26 @@
   .sponsorship-banner-wrapper {
     position: relative;
 
+    .smooth-scroll {
+      font-size: 0.75em;
+      text-transform: uppercase;
+      margin-top: 1em;
+      position: relative;
+      margin-right: 20px;
+
+      &::after {
+        content: "";
+        background: url("/assets/scroll-arrow.png") transparent no-repeat center center;
+        background-size: 14px;
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        right: -20px;
+        top: 50%;
+        margin-top: -7px;
+      }
+    }
+
     .sponsorship-headline-wrapper {
       align-items: center;
       display: flex;

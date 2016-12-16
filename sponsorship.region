@@ -222,13 +222,12 @@
           <div class="sponsorship-headline-wrapper">
             <squarespace:block-field id="sponsorship-headline" class="sponsorship-headline" label="Sponsorship Headline" />
             <a class="button" href="mailto:#">Become a Sponsor</a>
+            <a href="#" class="smooth-scroll" data-behavior="smooth-scroll" data-target="section-1-wrapper">Or Learn Why You Should</a>
           </div>
-
         </div>
 
         <div class="inner">
-
-          <div class="section-1-wrapper">
+          <div class="section-1-wrapper" id="section-1-wrapper">
             <div class="section-1-image-wrapper">
               <squarespace:block-field class="open-block-field" id="section-1-image" columns="12" label="Section 1 Image" />
             </div>
@@ -366,7 +365,14 @@
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
     crossorigin="anonymous"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
     <squarespace:script src="vendor/underscore-min.js" combo="false" />
+    <squarespace:script src="vendor/jquery.scrollTo.min.js" combo="false" />
+    <squarespace:script src="sponsorship.js" combo="false" />
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        RadiotopiaSponsorship.initialize();
+      });
+    </script>
   </body>
 </html>
