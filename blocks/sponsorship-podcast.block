@@ -2,15 +2,15 @@
   {.repeated section items}
     <article class="podcast-item">
       <div class="left-column">
-        <img class="podcast-artwork-image" src={showArt.assetUrl} />
+        <img class="podcast-artwork-image" src={customContent.showArt.assetUrl} />
       </div>
       <div class="right-column">
-        <img class="podcast-host-image" src={hostsImage.assetUrl} />
-        <h2 class="podcast-title">{podcastTitle}</h2>
-        <p class="podcast-host">{podcastHosts}</p>
+        <img class="podcast-host-image" src={customContent.hostsImage.assetUrl} />
+        <h2 class="podcast-title">{customContent.podcastTitle}</h2>
+        <p class="podcast-host">{customContent.podcastHosts}</p>
         <div class="sponsorship-podcast-links">
           <a href="mailto:#">Sponsor Contact</a>
-          <a href="http://jeremy-jackson-3tr3.squarespace.com{fullUrl}"></a>
+          <a href="http://jeremy-jackson-3tr3.squarespace.com{customContent.fullUrl}"></a>
         </div>
       </div>
 
