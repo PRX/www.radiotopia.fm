@@ -1,7 +1,16 @@
 #siteWrapper.sponsorship {
+  background: url("/assets/radiotopia-stars-bg.png") transparent no-repeat top center;
+  background-size: 100%;
+  background-attachment: fixed;
+
   .banner-thumbnail-wrapper {
+    background-color: transparent;
     padding: 0;
     overflow: visible !important;
+
+    .color-overlay {
+      background-color: transparent;
+    }
 
     #thumbnail {
       position: static;
@@ -15,10 +24,6 @@
   }
 
   #page {
-    background: url("/assets/radiotopia-stars-bg.png") transparent no-repeat top center;
-    background-size: 100%;
-    background-attachment: fixed;
-    max-width: none !important;
     padding: 50px 0 !important;
 
     &>.inner {
