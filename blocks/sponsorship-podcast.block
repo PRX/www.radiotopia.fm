@@ -1,0 +1,5 @@
+<section class="sponsorship-page-podcasts">
+  {.repeated section items}
+    <p>hello world!</p>
+  {.end}
+</section>
