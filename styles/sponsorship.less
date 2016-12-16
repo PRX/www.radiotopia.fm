@@ -25,10 +25,15 @@
 
     .smooth-scroll {
       font-size: 0.75em;
+      display: block;
       text-transform: uppercase;
       margin-top: 1em;
       position: relative;
-      margin-right: 20px;
+      margin: 0 auto;
+
+      @media @tablet-desktop {
+        margin: 0 20px 0 0;
+      }
 
       &::after {
         content: "";
@@ -44,14 +49,16 @@
     }
 
     .sponsorship-headline-wrapper {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      justify-content: center;
-      position: absolute;
-      top: 0;
-      width: 100%;
+      @media @tablet-desktop {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+      }
     }
 
     .sponsorship-banner-image {
@@ -67,10 +74,14 @@
         width: 76.5%;
         margin: auto;
         margin-bottom: 1em;
-        font-size: 2.25em;
+        font-size: 1.125em;
         text-transform: none !important;
         letter-spacing: 1px;
         text-align: center;
+
+        @media @tablet-desktop {
+          font-size: 2.25em;
+        }
       }
     }
   }
@@ -80,12 +91,63 @@
     padding: 0 !important;
 
     &>.inner {
-      margin: 0 auto;
-      padding: 50px 0 !important;
-      width: 80% !important;
+      padding: 150px 0 !important;
+
+      h2 {
+        color: @orange;
+        font-size: 1em;
+        font-family: "sofia-pro";
+        font-weight: 500;
+        text-transform: initial;
+
+        @media @tablet-desktop {
+          font-size: 2em;
+        }
+      }
+
+      p {
+        font-family: "sofia-pro";
+        font-size: 0.5em;
+
+        @media @tablet-desktop {
+          font-size: 1em;
+        }
+
+        &.caption {
+
+        }
+      }
+    }
+
+    .section-1-wrapper {
+      margin-bottom: 1em;
 
       @media @tablet-desktop {
-        width: 90% !important;
+        align-items: center;
+        display: flex;
+        margin-bottom: 3em;
+      }
+
+      .section-1-image-wrapper {
+        @media @tablet-desktop {
+          padding-right: 6%;
+          width: 45%;
+        }
+      }
+
+      .section-1-text-wrapper {
+        @media @tablet-desktop {
+          width: 42%;
+        }
+      }
+    }
+
+    .section-2-wrapper {
+      margin: 0 auto 3em;
+      width: 80%;
+
+      @media @tablet-desktop {
+        width: 70%;
       }
     }
   }
