@@ -229,7 +229,8 @@
           </div>
 
           <div class="podcasts-are-the-future-wrapper">
-            <squarespace:block-field class="open-block-field" id="podcasts-are-the-future" columns="12" label="Podcasts are the Future" />
+            <squarespace:block-field class="open-block-field" id="podcasts-are-the-future-text" columns="12" label="Podcasts are the Future Text" />
+            <squarespace:block-field class="open-block-field" id="podcasts-are-the-future-chart" columns="12" label="Podcasts are the Future Chart" />
           </div>
 
           <div class="listeners-engage-wrapper">
