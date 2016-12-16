@@ -235,6 +235,7 @@
           <div class="podcasts-are-the-future-wrapper">
             <squarespace:block-field class="open-block-field" id="podcasts-are-the-future-text" columns="12" label="Podcasts are the Future Text" />
             <squarespace:block-field class="open-block-field" id="podcasts-are-the-future-chart" columns="12" label="Podcasts are the Future Chart" />
+            <squarespace:block-field class="open-block-field" id="podcasts-are-the-future-caption" columns="12" label="Podcasts are the Future Caption" />
           </div>
 
           <div class="listeners-engage-wrapper">
@@ -242,9 +243,9 @@
               <squarespace:block-field class="open-block-field" id="listeners-engage-left" columns="12" label="Listeners Engage Left Column" />
             </div>
 
-            <!-- How to handle the legend for the bar chart? -->
             <div class="listeners-engage-right-column">
               <squarespace:block-field class="open-block-field" id="listeners-engage-right" columns="12" label="Listeners Engage Right Column" />
+              <squarespace:block-field class="open-block-field" id="listeners-engage-right-caption" columns="12" label="Listeners Engage Right Column Caption" />
             </div>
           </div>
 
@@ -255,12 +256,27 @@
 
           <div class="best-customers-wrapper">
             <squarespace:block-field class="open-block-field" id="best-customers-text" columns="12" label="Best Customers Text" />
-            <squarespace:block-field class="open-block-field" id="best-customers-images" columns="12" label="Best Customers Images" />
+
+            <div class="best-customers-image-1-wrapper">
+              <squarespace:block-field class="open-block-field" id="best-customers-image-1" columns="12" label="Best Customers Image 1" />
+            </div>
+            <div class="best-customers-image-2-wrapper">
+              <squarespace:block-field class="open-block-field" id="best-customers-image-2" columns="12" label="Best Customers Image 2" />
+            </div>
+            <div class="best-customers-image-3-wrapper">
+              <squarespace:block-field class="open-block-field" id="best-customers-image-3" columns="12" label="Best Customers Image 3" />
+            </div>
+            <div class="best-customers-image-4-wrapper">
+              <squarespace:block-field class="open-block-field" id="best-customers-image-4" columns="12" label="Best Customers Image 4" />
+            </div>
+
+            <squarespace:block-field class="open-block-field" id="best-customers-caption" columns="12" label="Best Customers Caption" />
           </div>
 
           <div class="loyal-listeners-wrapper">
             <div class="loyal-listeners-left-column">
               <squarespace:block-field class="open-block-field" id="loyal-listeners-left" columns="12" label="Loyal Listeners Left Column" />
+              <squarespace:block-field class="open-block-field" id="loyal-listeners-left-caption" columns="12" label="Loyal Listeners Left Column Caption" />
             </div>
             <div class="loyal-listeners-right-column">
               <squarespace:block-field class="open-block-field" id="loyal-listeners-right" columns="12" label="Loyal Listeners Right Column" />
@@ -269,7 +285,21 @@
 
           <div class="pay-attention-engage-wrapper">
             <squarespace:block-field class="open-block-field" id="pay-attention-engage-text" columns="12" label="Pay Attention and Engage Text" />
-            <squarespace:block-field class="open-block-field" id="pay-attention-engage-images" columns="12" label="Pay Attention and Engage Images" />
+
+            <div class="pay-attention-engage-image-1-wrapper">
+              <squarespace:block-field class="open-block-field" id="pay-attention-engage-image-1" columns="12" label="Pay Attention and Engage Image 1" />
+            </div>
+            <div class="pay-attention-engage-image-2-wrapper">
+              <squarespace:block-field class="open-block-field" id="pay-attention-engage-image-2" columns="12" label="Pay Attention and Engage Image 2" />
+            </div>
+            <div class="pay-attention-engage-image-3-wrapper">
+              <squarespace:block-field class="open-block-field" id="pay-attention-engage-image-3" columns="12" label="Pay Attention and Engage Image 3" />
+            </div>
+            <div class="pay-attention-engage-image-4-wrapper">
+              <squarespace:block-field class="open-block-field" id="pay-attention-engage-image-4" columns="12" label="Pay Attention and Engage Image 4" />
+            </div>
+
+            <squarespace:block-field class="open-block-field" id="pay-attention-engage-caption" columns="12" label="Pay Attention and Engage Caption" />
           </div>
 
           <div class="monthly-downloads-wrapper">
