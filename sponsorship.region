@@ -218,8 +218,8 @@
 
       <main id="page" role="main">
         <div class="inner">
-
-          <div class="sponsorship-headline-wrapper">
+          <div class="sponsorship-banner-wrapper">
+            <squarespace:block-field id="sponsorship-banner-image" class="section-banner-image" label="Sponsorship Banner Image" />
             <squarespace:block-field id="sponsorship-headline" class="section-headline" label="Sponsorship Headline" />
             <a href="mailto:#">Become a Sponsor</a>
           </div>
