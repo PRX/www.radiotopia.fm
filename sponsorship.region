@@ -228,87 +228,109 @@
 
         <div class="inner">
 
-          <div class="why-advertise-wrapper">
-            <squarespace:block-field class="open-block-field" id="why-advertise" columns="12" label="Why Advertise" />
-          </div>
-
-          <div class="podcasts-are-the-future-wrapper">
-            <squarespace:block-field class="open-block-field" id="podcasts-are-the-future-text" columns="12" label="Podcasts are the Future Text" />
-            <squarespace:block-field class="open-block-field" id="podcasts-are-the-future-chart" columns="12" label="Podcasts are the Future Chart" />
-            <squarespace:block-field class="open-block-field" id="podcasts-are-the-future-caption" columns="12" label="Podcasts are the Future Caption" />
-          </div>
-
-          <div class="listeners-engage-wrapper">
-            <div class="listeners-engage-left-column">
-              <squarespace:block-field class="open-block-field" id="listeners-engage-left" columns="12" label="Listeners Engage Left Column" />
+          <div class="section-1-wrapper">
+            <div class="section-1-image-wrapper">
+              <squarespace:block-field class="open-block-field" id="section-1-image" columns="12" label="Section 1 Image" />
             </div>
-
-            <div class="listeners-engage-right-column">
-              <squarespace:block-field class="open-block-field" id="listeners-engage-right" columns="12" label="Listeners Engage Right Column" />
-              <squarespace:block-field class="open-block-field" id="listeners-engage-right-caption" columns="12" label="Listeners Engage Right Column Caption" />
+            <div class="section-1-text-wrapper">
+              <squarespace:block-field class="open-block-field" id="section-1-text" columns="12" label="Section 1 Text" />
             </div>
           </div>
 
-          <div class="solar-system-wrapper">
-            <squarespace:block-field class="open-block-field" id="solar-system-text" columns="12" label="Solar System Text" />
-            <squarespace:block-field class="open-block-field" id="solar-system-image" columns="12" label="Solar System Image" />
-          </div>
-
-          <div class="best-customers-wrapper">
-            <squarespace:block-field class="open-block-field" id="best-customers-text" columns="12" label="Best Customers Text" />
-
-            <div class="best-customers-image-1-wrapper">
-              <squarespace:block-field class="open-block-field" id="best-customers-image-1" columns="12" label="Best Customers Image 1" />
+          <div class="section-2-wrapper">
+            <div class="section-2-text-wrapper">
+              <squarespace:block-field class="open-block-field" id="section-2-text" columns="12" label="Section 2 Text" />
             </div>
-            <div class="best-customers-image-2-wrapper">
-              <squarespace:block-field class="open-block-field" id="best-customers-image-2" columns="12" label="Best Customers Image 2" />
+            <div class="section-2-image-wrapper">
+              <squarespace:block-field class="open-block-field" id="section-2-image" columns="12" label="Section 2 Image" />
             </div>
-            <div class="best-customers-image-3-wrapper">
-              <squarespace:block-field class="open-block-field" id="best-customers-image-3" columns="12" label="Best Customers Image 3" />
-            </div>
-            <div class="best-customers-image-4-wrapper">
-              <squarespace:block-field class="open-block-field" id="best-customers-image-4" columns="12" label="Best Customers Image 4" />
-            </div>
-
-            <squarespace:block-field class="open-block-field" id="best-customers-caption" columns="12" label="Best Customers Caption" />
-          </div>
-
-          <div class="loyal-listeners-wrapper">
-            <div class="loyal-listeners-left-column">
-              <squarespace:block-field class="open-block-field" id="loyal-listeners-left" columns="12" label="Loyal Listeners Left Column" />
-              <squarespace:block-field class="open-block-field" id="loyal-listeners-left-caption" columns="12" label="Loyal Listeners Left Column Caption" />
-            </div>
-            <div class="loyal-listeners-right-column">
-              <squarespace:block-field class="open-block-field" id="loyal-listeners-right" columns="12" label="Loyal Listeners Right Column" />
+            <div class="section-2-caption-wrapper">
+              <squarespace:block-field class="open-block-field" id="section-2-caption caption" columns="12" label="Section 2 Caption" />
             </div>
           </div>
 
-          <div class="pay-attention-engage-wrapper">
-            <squarespace:block-field class="open-block-field" id="pay-attention-engage-text" columns="12" label="Pay Attention and Engage Text" />
-
-            <div class="pay-attention-engage-image-1-wrapper">
-              <squarespace:block-field class="open-block-field" id="pay-attention-engage-image-1" columns="12" label="Pay Attention and Engage Image 1" />
-            </div>
-            <div class="pay-attention-engage-image-2-wrapper">
-              <squarespace:block-field class="open-block-field" id="pay-attention-engage-image-2" columns="12" label="Pay Attention and Engage Image 2" />
-            </div>
-            <div class="pay-attention-engage-image-3-wrapper">
-              <squarespace:block-field class="open-block-field" id="pay-attention-engage-image-3" columns="12" label="Pay Attention and Engage Image 3" />
-            </div>
-            <div class="pay-attention-engage-image-4-wrapper">
-              <squarespace:block-field class="open-block-field" id="pay-attention-engage-image-4" columns="12" label="Pay Attention and Engage Image 4" />
+          <div class="section-3-wrapper">
+            <div class="section-3-left-column-wrapper">
+              <squarespace:block-field class="open-block-field" id="section-3-left-column" columns="12" label="Section 3 Left Column" />
             </div>
 
-            <squarespace:block-field class="open-block-field" id="pay-attention-engage-caption" columns="12" label="Pay Attention and Engage Caption" />
+            <div class="section-3-right-column-wrapper">
+              <squarespace:block-field class="open-block-field" id="section-3-right-column" columns="12" label="Section 3 Right Column" />
+              <div class="section-3-right-caption-wrapper">
+                <squarespace:block-field class="open-block-field" id="section-3-right-caption caption" columns="12" label="Section 3 Right Column Caption" />
+              </div>
+            </div>
           </div>
 
-          <div class="monthly-downloads-wrapper">
-            <squarespace:block-field class="open-block-field" id="monthly-downloads-text" columns="12" label="Monthly Downloads Text" />
-            <squarespace:block-field class="open-block-field" id="monthly-downloads-image" columns="12" label="Monthly Downloads Image" />
+          <div class="section-4-wrapper">
+            <div class="section-4-text-wrapper">
+              <squarespace:block-field class="open-block-field" id="section-4-text" columns="12" label="Section 4 Text" />
+            </div>
+            <div class="section-4-image-wrapper">
+              <squarespace:block-field class="open-block-field" id="section-4-image" columns="12" label="Section 4 Image" />
+            </div>
           </div>
 
-          <div class="become-sponsor-bottom-banner">
+          <div class="section-5-wrapper">
+            <squarespace:block-field class="open-block-field" id="section-5-text" columns="12" label="Section 5 Text" />
+
+            <div class="section-5-image-1-wrapper">
+              <squarespace:block-field class="open-block-field" id="section-5-image-1" columns="12" label="Section 5 Image 1" />
+            </div>
+            <div class="section-5-image-2-wrapper">
+              <squarespace:block-field class="open-block-field" id="section-5-image-2" columns="12" label="Section 5 Image 2" />
+            </div>
+            <div class="section-5-image-3-wrapper">
+              <squarespace:block-field class="open-block-field" id="section-5-image-3" columns="12" label="Section 5 Image 3" />
+            </div>
+            <div class="section-5-image-4-wrapper">
+              <squarespace:block-field class="open-block-field" id="section-5-image-4" columns="12" label="Section 5 Image 4" />
+            </div>
+
+            <div class="section-5-caption-wrapper">
+              <squarespace:block-field class="open-block-field" id="section-5-caption caption" columns="12" label="Section 5 Caption" />
+            </div>
+          </div>
+
+          <div class="section-6-wrapper">
+            <div class="section-6-left-column">
+              <squarespace:block-field class="open-block-field" id="section-6-left" columns="12" label="Section 6 Left Column" />
+              <div class="section-6-caption-wrapper">
+                <squarespace:block-field class="open-block-field" id="section-6-left-caption caption" columns="12" label="Section 6 Left Column Caption" />
+              </div>
+            </div>
+            <div class="section-6-right-column">
+              <squarespace:block-field class="open-block-field" id="section-6-right" columns="12" label="Section 6 Right Column" />
+            </div>
+          </div>
+
+          <div class="section-7-wrapper">
+            <squarespace:block-field class="open-block-field" id="section-7-text" columns="12" label="Section 7 Text" />
+
+            <div class="section-7-image-1-wrapper">
+              <squarespace:block-field class="open-block-field" id="section-7-image-1" columns="12" label="Section 7 Image 1" />
+            </div>
+            <div class="section-7-image-2-wrapper">
+              <squarespace:block-field class="open-block-field" id="section-7-image-2" columns="12" label="Section 7 Image 2" />
+            </div>
+            <div class="section-7-image-3-wrapper">
+              <squarespace:block-field class="open-block-field" id="section-7-image-3" columns="12" label="Section 7 Image 3" />
+            </div>
+            <div class="section-7-image-4-wrapper">
+              <squarespace:block-field class="open-block-field" id="section-7-image-4" columns="12" label="Section 7 Image 4" />
+            </div>
+
+            <squarespace:block-field class="open-block-field" id="section-7-caption" columns="12" label="Section 7 Caption" />
+          </div>
+
+          <div class="section-8-wrapper">
+            <squarespace:block-field class="open-block-field" id="section-8-text" columns="12" label="Section 8 Text" />
+            <squarespace:block-field class="open-block-field" id="section-8-image" columns="12" label="Section 8 Image" />
+          </div>
+
+          <div class="section-9-bottom-banner">
             <squarespace:block-field class="open-block-field" id="bottom-banner-text" columns="12" label="Bottom Banner Text" />
+            <a class="button" href="mailto:#">Become a Sponsor</a>
           </div>
 
           <div class="podcasts-grid-wrapper">
