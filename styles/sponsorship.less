@@ -3,70 +3,70 @@
   background-size: 100%;
   background-attachment: fixed;
 
-  .banner-thumbnail-wrapper {
-    background-color: transparent;
-    padding: 0;
-    overflow: visible !important;
+  a.button,
+  a.button:active,
+  a.button:link,
+  a.button:active,
+  a.button:hover {
+    text-decoration: none !important;
+    text-transform: uppercase;
+    color: @dark_blue !important;
+    background-color: #FFF;
+    border-radius: 6px;
+    font-size: .75em;
+    padding: 12px 30px;
+    font-family: 'roboto';
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
 
-    .color-overlay {
-      background-color: transparent;
+  .sponsorship-banner-wrapper {
+    position: relative;
+
+    .sponsorship-headline-wrapper {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      width: 100%;
     }
 
-    #thumbnail {
-      position: static;
-
+    .sponsorship-banner-image {
       img {
         display: block;
         width: 100%;
         opacity: .3;
       }
     }
+
+    .sponsorship-headline {
+      h2 {
+        width: 76.5%;
+        margin: auto;
+        margin-bottom: 1em;
+        font-size: 2.25em;
+        text-transform: none !important;
+        letter-spacing: 1px;
+        text-align: center;
+      }
+    }
   }
 
   #page {
-    padding: 50px 0 !important;
+    max-width: none !important;
+    padding: 0 !important;
 
     &>.inner {
       margin: 0 auto;
+      padding: 50px 0 !important;
       width: 80% !important;
 
       @media @tablet-desktop {
         width: 90% !important;
       }
-    }
-
-    .sponsorship-headline-wrapper {
-      text-align: center;
-
-      h2 {
-        width: 76.5%;
-        margin: auto;
-        margin-bottom: 1em;
-        font-size: 1em;
-        text-transform: none !important;
-        letter-spacing: 1px;
-      }
-
-      a,
-      a:active,
-      a:link,
-      a:active,
-      a:hover {
-        text-decoration: none !important;
-        text-transform: uppercase;
-        color: @dark_blue !important;
-        background-color: #FFF;
-        border-radius: 6px;
-        font-size: .75em;
-        padding: 12px 30px;
-        font-family: 'roboto';
-        font-weight: 500;
-        letter-spacing: 2px;
-      }
-    }
-
-    div {
-      margin-bottom: 1em;
     }
   }
 

@@ -217,12 +217,16 @@
       {.end}
 
       <main id="page" role="main">
-        <div class="inner">
-          <div class="sponsorship-banner-wrapper">
-            <squarespace:block-field id="sponsorship-banner-image" class="section-banner-image" label="Sponsorship Banner Image" />
-            <squarespace:block-field id="sponsorship-headline" class="section-headline" label="Sponsorship Headline" />
-            <a href="mailto:#">Become a Sponsor</a>
+        <div class="sponsorship-banner-wrapper">
+          <squarespace:block-field id="sponsorship-banner-image" class="sponsorship-banner-image" label="Sponsorship Banner Image" />
+          <div class="sponsorship-headline-wrapper">
+            <squarespace:block-field id="sponsorship-headline" class="sponsorship-headline" label="Sponsorship Headline" />
+            <a class="button" href="mailto:#">Become a Sponsor</a>
           </div>
+
+        </div>
+
+        <div class="inner">
 
           <div class="why-advertise-wrapper">
             <squarespace:block-field class="open-block-field" id="why-advertise" columns="12" label="Why Advertise" />
