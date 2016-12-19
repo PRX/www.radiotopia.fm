@@ -151,23 +151,67 @@
       }
     }
     .sponsorship-page-podcasts {
+      margin-left: 7%;
+
       .podcast-item {
-        .left-column.podcast-art-wrapper {
-          width: 200px;
-          display: block;
+        width: 513px;
+        margin-bottom: 64px;
 
-          img {
-            width: 100%;
-          }
-        }
+        .podcast-wrapper {
+          .left-column {
+            width: 39%;
+            position: relative;
 
-        .right-column {
-          .podcast-host-image-wrapper {
-            width: 90px;
-            display: block;
-
-            img {
+            .podcast-art-wrapper {
               width: 100%;
+              padding-top: 6%;
+              position: absolute;
+
+              img {
+                width: 100%;
+              }
+            }
+          }
+
+          .right-column {
+            width: 80%;
+            border: solid 1px white;
+            margin-left: 19%;
+            padding-left: 26%;
+
+            .podcast-host-image-wrapper {
+              width: 90px;
+              display: inline-block;
+
+              img {
+                width: 100%;
+              }
+            }
+
+            h2.podcast-title {
+              color: @orange !important;
+              font-size: 1em;
+              font-weight: 700;
+            }
+
+            p.podcast-host {
+              font-size: 1em;
+              font-weight: 400;
+            }
+
+            .sponsorship-links {
+              a,
+              a:active,
+              a:link,
+              a:active,
+              a:hover {
+                text-decoration: none !important;
+                color: @light_blue !important;
+                font-size: 1em;
+                font-family: 'roboto';
+                font-weight: 400;
+                letter-spacing: 2px;
+              }
             }
           }
         }
