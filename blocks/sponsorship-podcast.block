@@ -1,11 +1,13 @@
 <section class="sponsorship-page-podcasts">
   {.repeated section items}
     <article class="podcast-item">
-      <div class="left-column">
+      <div class="left-column podcast-art-wrapper">
         <img class="podcast-artwork-image" src={customContent.showArt.assetUrl} />
       </div>
       <div class="right-column">
-        <img class="podcast-host-image" src={customContent.hostsImage.assetUrl} />
+        <div class="podcast-host-image-wrapper">
+          <img class="podcast-host-image" src={customContent.hostsImage.assetUrl} />
+        </div>
         <h2 class="podcast-title">{customContent.podcastTitle}</h2>
         <p class="podcast-host">{customContent.podcastHosts}</p>
         <div class="sponsorship-podcast-links">
