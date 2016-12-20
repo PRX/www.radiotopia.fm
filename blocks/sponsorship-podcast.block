@@ -18,6 +18,7 @@
             <a href="mailto:#">Sponsor Contact</a>
             <a href="localhost:9000{fullUrl}">Learn More</a>
           </div>
+          <squarespace:block-field class="open-block-field" id="{customContent.podcastUrlTitle}" columns="12" label="Podcasts Grid Audio Block" />
         </div>
       </div>
     </article>
