@@ -95,12 +95,10 @@
 
       h2 {
         color: @orange !important;
-        font-size: 1em;
+        font-size: 1.25em;
         font-family: "sofia-pro";
         font-weight: 500;
         text-transform: initial;
-        text-align: center;
-        margin-bottom: 2.375em;
 
         @media @tablet-desktop {
           font-size: 2em;
@@ -109,7 +107,9 @@
 
       p {
         font-family: "sofia-pro";
-        font-size: 0.5em;
+        font-size: 0.75em;
+        line-height: initial;
+        margin: 0;
 
         @media @tablet-desktop {
           font-size: 1em;
@@ -131,15 +131,25 @@
       }
 
       .section-1-image-wrapper {
+        padding-right: 6%;
+
         @media @tablet-desktop {
-          padding-right: 6%;
           width: 45%;
         }
       }
 
       .section-1-text-wrapper {
+        margin: auto;
+        width: 80%;
+
         @media @tablet-desktop {
-          width: 42%;
+          width: 50%;
+        }
+
+        h2 {
+          @media @tablet-desktop {
+            margin-bottom: 0.625em;
+          }
         }
       }
     }
@@ -155,6 +165,11 @@
 
     .section-9-bottom-banner {
       margin-bottom: 2em;
+    }
+
+    #podcasts-grid-header h2 {
+      text-align: center;
+      margin-bottom: 2.375em;
     }
 
     .sponsorship-page-podcasts {
