@@ -18,9 +18,9 @@
             <a href="mailto:#">Sponsor Contact</a>
             <a href="localhost:9000{fullUrl}">Learn More</a>
           </div>
-          <div class="podcast-grid-audio-block-wrapper">
-            <squarespace:block-field class="open-block-field" id="{customContent.podcastUrlTitle}" columns="12" label="Podcasts Grid Unique Audio Block" />
-          </div>
+        </div>
+        <div class="podcast-grid-audio-block-wrapper">
+          <squarespace:block-field class="open-block-field" id="{customContent.podcastUrlTitle}" columns="12" label="Podcasts Grid Unique Audio Block" />
         </div>
       </div>
     </article>
