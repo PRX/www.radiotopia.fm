@@ -94,7 +94,7 @@
       padding: 150px 0 !important;
 
       h2 {
-        color: @orange;
+        color: @orange !important;
         font-size: 1em;
         font-family: "sofia-pro";
         font-weight: 500;
@@ -242,6 +242,36 @@
               }
             }
           }
+        }
+      }
+
+      .sqs-audio-embed {
+        margin: auto;
+        position: relative;
+
+        @media @tablet-desktop {
+          width: 90%;
+        }
+
+        .sqs-widgets-audio-player.dark {
+          background: rgba(0,0,0,.05);
+        }
+
+        .action {
+          background-color: #F9A052;
+        }
+
+        .labels {
+          background-color: rgba(255, 255, 255, 0.3);
+          font-family: "sofia-pro";
+          font-size: .875em;
+        }
+
+        .secondary-controls {
+          background-color: rgba(255, 255, 255, 0.3);
+          font-family: "sofia-pro";
+          font-size: .875em;
+          vertical-align: bottom;
         }
       }
     }

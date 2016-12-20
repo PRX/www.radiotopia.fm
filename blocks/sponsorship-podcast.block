@@ -20,7 +20,7 @@
           </div>
         </div>
         <div class="podcast-grid-audio-block-wrapper">
-          <squarespace:block-field class="open-block-field" id="{customContent.podcastUrlTitle}" columns="12" label="Podcasts Grid Audio Block" />
+          <squarespace:block-field class="open-block-field" id="{customContent.podcastUrlTitle}" columns="12" label="Podcasts Grid Unique Audio Block" />
         </div>
       </div>
     </article>
