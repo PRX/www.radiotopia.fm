@@ -259,58 +259,90 @@
     }
 
     .section-5-wrapper {
+      margin: auto;
+      width: 90%;
+
+      @media @tablet-desktop {
+        width: 85%;
+      }
+
       .section-5-text-wrapper {
-        margin: 0 auto 6em;
+        margin: 0 auto 1em;
+
+        @media @tablet-desktop {
+          margin: 0 auto 6em;
+        }
 
         h2 {
-          width: 81%;
           margin: 0 auto .5em;
         }
 
         p {
-          width: 55%;
           margin: auto;
+
+          @media @tablet {
+            width: 80%;
+          }
+
+          @media @desktop {
+            width: 64%;
+          }
         }
       }
 
       .section-5-image-wrapper {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 85%;
-        margin: 0 auto 2em;
-        .clearfix();
+
+        @media @tablet-desktop {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin: 0 auto 1em;
+        }
 
         .section-5-image-1-wrapper {
-          width: 38.5%;
-          margin-bottom: 6.4em;
-          margin-right: 10.6%;
-          margin-left: 3%;
+
+          @media @tablet-desktop {
+            width: 38.5%;
+            margin-bottom: 6.4em;
+            margin-right: 10.6%;
+            margin-left: 3%;
+          }
         }
 
         .section-5-image-2-wrapper {
-          width: 47%;
-          margin-bottom: 4em;
+
+          @media @tablet-desktop {
+            width: 47%;
+            margin-bottom: 4em;
+          }
         }
 
         .section-5-image-3-wrapper {
-          width: 42%;
-          margin-bottom: 1em;
-          margin-right: 9%;
-          margin-left: 2.5%;
+
+          @media @tablet-desktop {
+            width: 42%;
+            margin-bottom: 1em;
+            margin-right: 8.2%;
+            margin-left: 2.5%;
+          }
         }
 
         .section-5-image-4-wrapper {
-          width: 36%;
-          margin-bottom: 1em;
+
+          @media @tablet-desktop {
+            width: 44.2%;
+            margin-bottom: 1em;
+          }
         }
       }
 
       .section-5-caption-wrapper {
         p {
-          width: 55%;
-          margin: 0 auto 13em;
-          text-align: center;
+          @media @tablet-desktop {
+            width: 55%;
+            margin: 0 auto 13em;
+            text-align: center;
+          }
         }
       }
     }
