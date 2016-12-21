@@ -243,7 +243,7 @@
             <div class="section-2-image-wrapper">
               <squarespace:block-field class="open-block-field" id="section-2-image" columns="12" label="Section 2 Image" />
             </div>
-            <div class="section-2-caption-wrapper">
+            <div class="section-2-caption-wrapper caption-wrapper">
               <squarespace:block-field class="open-block-field" id="section-2-caption caption" columns="12" label="Section 2 Caption" />
             </div>
           </div>
@@ -255,7 +255,7 @@
 
             <div class="section-3-right-column-wrapper">
               <squarespace:block-field class="open-block-field" id="section-3-right-column" columns="12" label="Section 3 Right Column" />
-              <div class="section-3-right-caption-wrapper">
+              <div class="section-3-right-caption-wrapper caption-wrapper">
                 <squarespace:block-field class="open-block-field" id="section-3-right-caption caption" columns="12" label="Section 3 Right Column Caption" />
               </div>
             </div>
@@ -286,7 +286,7 @@
               <squarespace:block-field class="open-block-field" id="section-5-image-4" columns="12" label="Section 5 Image 4" />
             </div>
 
-            <div class="section-5-caption-wrapper">
+            <div class="section-5-caption-wrapper caption-wrapper">
               <squarespace:block-field class="open-block-field" id="section-5-caption caption" columns="12" label="Section 5 Caption" />
             </div>
           </div>
@@ -294,7 +294,7 @@
           <div class="section-6-wrapper">
             <div class="section-6-left-column">
               <squarespace:block-field class="open-block-field" id="section-6-left" columns="12" label="Section 6 Left Column" />
-              <div class="section-6-caption-wrapper">
+              <div class="section-6-caption-wrapper caption-wrapper">
                 <squarespace:block-field class="open-block-field" id="section-6-left-caption caption" columns="12" label="Section 6 Left Column Caption" />
               </div>
             </div>
