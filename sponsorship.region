@@ -308,7 +308,9 @@
           </div>
 
           <div class="section-7-wrapper">
-            <squarespace:block-field class="open-block-field" id="section-7-text" columns="12" label="Section 7 Text" />
+            <div class="section-7-text-wrapper">
+              <squarespace:block-field class="open-block-field" id="section-7-text" columns="12" label="Section 7 Text" />
+            </div>
 
             <div class="section-7-image-1-wrapper">
               <squarespace:block-field class="open-block-field" id="section-7-image-1" columns="12" label="Section 7 Image 1" />
