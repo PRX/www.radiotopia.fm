@@ -41,19 +41,34 @@ a:link {
       background: transparent !important;
     }
 
+    .banner-thumbnail-wrapper {
+      padding: 0;
+
+      #thumbnail {
+        position: static;
+
+        img {
+          display: block;
+          position: static !important;
+          width: 100%;
+        }
+      }
+    }
+
     #page {
       background: url("/assets/radiotopia-stars-bg.png") transparent no-repeat top center;
       background-size: 100%;
       background-attachment: fixed;
       max-width: none !important;
-      padding: 110px 0 3em !important;
+      padding: 0 0 3em !important;
 
       @media @tablet-desktop {
-        padding: 143px 0 5em !important;
+        padding: 0 0 5em !important;
       }
 
       &>.inner {
         margin: 0 auto;
+        padding-top: 3em;
         width: 80% !important;
 
         @media @tablet-desktop {
