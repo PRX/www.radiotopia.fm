@@ -223,6 +223,10 @@
               <squarespace:block-field id="about-logo" class="about-logo" label="About Logo" />
               <squarespace:block-field id="about-description" class="about-description" label="About Description" />
             </div>
+            <div class="intro-footer">
+              <squarespace:block-field id="intro-social-icons" class="intro-social-icons" label="Intro Social Icons" />
+              <squarespace:block-field id="intro-media-kit" class="intro-media-kit" label="Media Kit" />
+            </div>
 
           </div>
         </div>
