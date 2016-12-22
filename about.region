@@ -16,7 +16,7 @@
     <div id="sidecarNav">
       <squarespace:navigation navigationId="mainNav" template="mobile-navigation" />
     </div>
-    <div id="siteWrapper" class="clearfix news">
+    <div id="siteWrapper" class="clearfix about">
 
       <div class="sqs-cart-dropzone"></div>
 
@@ -218,24 +218,12 @@
 
       <main id="page" role="main">
         <div class="inner">
-
-          <div class="news-content">
-            <div class="left-column">
-            <squarespace:block-field id="news-title" class="section-headline" label="News Title" />
-              <squarespace:query collection="news" limit="100" template="news" columns="12" />
-              <button class="load-more" data-behavior="load-more-news">Load More News</button>
+          <div class="about-content">
+            <div class="intro">
+              <squarespace:block-field id="about-logo" class="about-logo" label="About Logo" />
+              <squarespace:block-field id="about-description" class="about-description" label="About Description" />
             </div>
-            <div class="right-column">
-              <div class="events-wrapper">
-                <squarespace:block-field id="events-title" class="section-headline" label="Events Title" />
-                <squarespace:query collection="events" limit="2" template="news-event" columns="12" />
-              </div>
-              <div class="twitter-wrapper">
-                <squarespace:block-field id="twitter-title" class="section-headline" label="Twitter Title" />
-                <squarespace:block-field class="news-tweets" id="news-tweets" columns="12" label="Recent Tweets" />
-              </div>
 
-            </div>
           </div>
         </div>
       </main>
