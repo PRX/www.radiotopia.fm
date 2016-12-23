@@ -168,37 +168,116 @@
   }
 
   .our-team {
-    ul {
-      display: flex;
-      justify-content: space-between;
+    padding-top: 5em;
+    position: relative;
+
+    @media @tablet-desktop {
+      padding-top: 10em;
     }
 
-    .item {
-      width: 20%;
+    &::before {
+      background: url("/assets/orange-bolt.png") transparent no-repeat center center;
+      background-size: 80px;
+      content: "";
+      height: 17px;
+      left: 50%;
+      margin-left: -40px;
+      position: absolute;
+      top: 2em;
+      width: 80px;
 
-      .image {
-        max-width: 160px;
-        margin: auto;
+      @media @tablet-desktop {
+        top: 4.25em;
+      }
+    }
+
+    .section-title {
+      margin-bottom: 1em;
+
+      @media @tablet-desktop {
+        margin-bottom: 2.5em;
       }
 
       h1 {
-        font-size: .778em;
+        font-size: 2em;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      padding: 0;
+      justify-content: space-around;
+
+      @media @tablet {
+        width: 75%;
+      }
+
+      @media @desktop {
+        justify-content: space-between;
+        width: 85%;
+      }
+    }
+
+    .item {
+      list-style: none;
+      margin-bottom: 2em;
+      width: 40%;
+
+
+      @media @desktop {
+        width: 20%;
+      }
+
+      .image {
+        max-width: 160px;
+        margin: 0 auto 0.75em;
+        width: 100%;
+
+        @media @tablet-desktop {
+          margin-bottom: 1em;
+        }
+
+        .sqs-block {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+        }
+      }
+
+      h1 {
+        font-size: .675em;
         font-weight: 700;
         line-height: initial;
         margin: 0;
         text-align: center;
         text-transform: uppercase;
+
+        @media @tablet-desktop {
+          font-size: .778em;
+        }
       }
 
       p {
         color: @orange;
-        font-size: .778em;
+        font-size: .675em;
         font-family: "sofia-pro";
         font-weight: 700;
         line-height: initial;
         margin: 0;
         text-align: center;
         text-transform: uppercase;
+
+        @media @tablet-desktop {
+          font-size: .778em;
+        }
+      }
+
+      .caption .sqs-block {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
       }
     }
   }
