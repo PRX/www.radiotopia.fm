@@ -251,7 +251,7 @@
             <div class="listen-apps">
               <squarespace:block-field id="listen-apps-section-title" class="section-title" label="Listen to Radiotopia Title" />
               <div class="app-wrapper">
-                <squarespace:block-field id="app-content" class="app-content" label="Apps" />
+                <squarespace:block-field id="app-content" class="app-content" columns="12" label="Apps" />
               </div>
             </div>
           </div>
