@@ -17,7 +17,11 @@
     background-size: 100%;
     background-attachment: fixed;
     max-width: none !important;
-    padding: 70px 0 !important;
+    padding: 35px 0 !important;
+
+    @media @tablet-desktop {
+      padding: 70px 0 !important;
+    }
 
     &>.inner {
       margin: 0 auto;
@@ -30,31 +34,78 @@
   }
 
   .about-content {
+
+    .intro {
+      margin-bottom: 0.375em;
+
+      @media @tablet-desktop {
+        margin-bottom: 0.625em;
+      }
+    }
+
     .about-logo {
-      width: 50%;
+      width: 75%;
       max-width: 450px;
-      margin: 0 auto 4em;
+      margin: 0 auto 1em;
+
+      @media @tablet-desktop {
+        margin: 0 auto 4em;
+        width: 50%;
+      }
     }
 
     .about-description {
       margin: auto;
       text-align: center;
-      width: 80%;
+
+      @media @tablet-desktop {
+        width: 80%;
+      }
 
       p {
-        font-size: 1.334em;
-        line-height: 1.365em;
-        margin: 0 0 2em;
+        font-size: 1.125em;
+        line-height: initial;
+        margin: 0 0 1em;
+
+        @media @tablet-desktop {
+          font-size: 1.334em;
+          line-height: 1.365em;
+          margin: 0 0 2em;
+        }
+      }
+
+      a,
+      a:active,
+      a:link,
+      a:visited {
+        color: @light_blue !important;
+
+        &:hover {
+          color: @white !important;
+        }
       }
     }
 
     .intro-footer {
 
+      @media @tablet-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
     .intro-social-icons {
+      text-align: center;
+
+      @media @tablet-desktop {
+        margin-right: 2em;
+      }
 
       ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
         .clearfix();
 
         li {
@@ -67,26 +118,53 @@
           }
 
           &>a {
-            background-size: 44px;
             display: inline-block;
             text-indent: -999em;
             height: 44px;
             width: 44px;
+
+            &.facebook {
+              background: url("/assets/facebook-circle.png") transparent no-repeat center center;
+              background-size: 44px;
+            }
+
+            &.twitter {
+              background: url("/assets/twitter-circle.png") transparent no-repeat center center;
+              background-size: 44px;
+            }
+
+            &.instagram {
+              background: url("/assets/instagram-circle.png") transparent no-repeat center center;
+              background-size: 44px;
+            }
           }
         }
       }
+    }
 
-      a.facebook {
-        background: url("/assets/facebook-circle.png") transparent no-repeat center center;
+    .intro-media-kit {
+      text-align: center;
+
+      a,
+      a:active,
+      a:link,
+      a:visited {
+        background: url("/assets/download-arrow.png") transparent no-repeat center left;
+        background-size: 17px;
+        color: @light_blue !important;
+        font-size: 0.75em;
+        font-weight: 700;
+        height: 19px;
+        padding-left: 27px;
+        text-transform: uppercase;
+        width: 17px;
+
+        &:hover {
+          color: @white !important;
+        }
       }
 
-      a.twitter {
-        background: url("/assets/twitter-circle.png") transparent no-repeat center center;
-      }
 
-      a.instagram {
-        background: url("/assets/instagram-circle.png") transparent no-repeat center center;
-      }
     }
   }
 }
