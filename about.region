@@ -227,7 +227,12 @@
               <squarespace:block-field id="intro-social-icons" class="intro-social-icons" label="Intro Social Icons" />
               <squarespace:block-field id="intro-media-kit" class="intro-media-kit" label="Media Kit" />
             </div>
-
+            <div class="out-team">
+              <squarespace:block-field id="our-team-item-one" class="item one" label="Our Team Item One" />
+              <squarespace:block-field id="our-team-item-two" class="item two" label="Our Team Item Two" />
+              <squarespace:block-field id="our-team-item-three" class="item three" label="Our Team Item Three" />
+              <squarespace:block-field id="our-team-item-four" class="item four" label="Our Team Item Four" />
+            </div>
           </div>
         </div>
       </main>
