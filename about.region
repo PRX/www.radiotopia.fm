@@ -228,10 +228,24 @@
               <squarespace:block-field id="intro-media-kit" class="intro-media-kit" label="Media Kit" />
             </div>
             <div class="out-team">
-              <squarespace:block-field id="our-team-item-one" class="item one" label="Our Team Item One" />
-              <squarespace:block-field id="our-team-item-two" class="item two" label="Our Team Item Two" />
-              <squarespace:block-field id="our-team-item-three" class="item three" label="Our Team Item Three" />
-              <squarespace:block-field id="our-team-item-four" class="item four" label="Our Team Item Four" />
+              <ul>
+                <li class="item">
+                  <squarespace:block-field id="our-team-image-one" class="image one" label="Our Team Image One" />
+                  <squarespace:block-field id="our-team-caption-one" class="caption one" label="Our Team Caption One" />
+                </li>
+                <li class="item">
+                  <squarespace:block-field id="our-team-image-two" class="image two" label="Our Team Image Two" />
+                  <squarespace:block-field id="our-team-caption-two" class="caption two" label="Our Team Caption Two" />
+                </li>
+                <li class="item">
+                  <squarespace:block-field id="our-team-image-three" class="image three" label="Our Team Image Three" />
+                  <squarespace:block-field id="our-team-caption-three" class="caption three" label="Our Team Caption Three" />
+                </li>
+                <li class="item">
+                  <squarespace:block-field id="our-team-image-four" class="image four" label="Our Team Image Four" />
+                  <squarespace:block-field id="our-team-caption-four" class="caption four" label="Our Team Caption Four" />
+                </li>
+              </ul>
             </div>
           </div>
         </div>
