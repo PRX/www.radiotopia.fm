@@ -335,8 +335,12 @@
           </div>
 
           <div class="section-8-wrapper">
-            <squarespace:block-field class="open-block-field" id="section-8-text" columns="12" label="Section 8 Text" />
-            <squarespace:block-field class="open-block-field" id="section-8-image" columns="12" label="Section 8 Image" />
+            <div class="section-8-text-wrapper">
+              <squarespace:block-field class="open-block-field" id="section-8-text" columns="12" label="Section 8 Text" />
+            </div>
+            <div class="section-8-image-wrapper">
+              <squarespace:block-field class="open-block-field" id="section-8-image" columns="12" label="Section 8 Image" />
+            </div>
           </div>
 
           <div class="section-9-bottom-banner">
