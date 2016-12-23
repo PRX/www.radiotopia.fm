@@ -154,7 +154,7 @@
       background: url("/assets/download-arrow.png") transparent no-repeat center left;
       background-size: 17px;
       color: @light_blue !important;
-      font-size: 0.75em;
+      font-size: .778em;
       font-weight: 700;
       height: 19px;
       padding-left: 27px;
@@ -168,7 +168,39 @@
   }
 
   .our-team {
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
 
+    .item {
+      width: 20%;
+
+      .image {
+        max-width: 160px;
+        margin: auto;
+      }
+
+      h1 {
+        font-size: .778em;
+        font-weight: 700;
+        line-height: initial;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      p {
+        color: @orange;
+        font-size: .778em;
+        font-family: "sofia-pro";
+        font-weight: 700;
+        line-height: initial;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
   }
 
 }
