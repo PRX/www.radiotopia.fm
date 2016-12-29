@@ -344,7 +344,13 @@
           </div>
 
           <div class="section-9-bottom-banner">
-            <squarespace:block-field class="open-block-field" id="bottom-banner-text" columns="12" label="Bottom Banner Text" />
+            <div class="bottom-banner-image-wrapper">
+              <squarespace:block-field class="open-block-field" id="bottom-banner-image-block" columns="12" label="Bottom Banner Icon" />
+            </div>
+            <div class="bottom-banner-text-wrapper">
+              <squarespace:block-field class="open-block-field" id="bottom-banner-text-block" columns="12" label="Bottom Banner Text" />
+            </div>
+
             <a class="button" href="mailto:#">Become a Sponsor</a>
           </div>
 
