@@ -348,10 +348,11 @@
               <squarespace:block-field class="open-block-field" id="bottom-banner-image-block" columns="12" label="Bottom Banner Image" />
             </div>
 
+            <div class="bottom-banner-icon-wrapper">
+              <squarespace:block-field class="open-block-field" id="bottom-banner-icon-block" columns="12" label="Bottom Banner Icon" />
+            </div>
+
             <div class="bottom-banner-text-wrapper">
-              <div class="bottom-banner-icon-wrapper">
-                <squarespace:block-field class="open-block-field" id="bottom-banner-icon-block" columns="12" label="Bottom Banner Icon" />
-              </div>
               <squarespace:block-field class="open-block-field" id="bottom-banner-text-block" columns="12" label="Bottom Banner Text" />
               <a class="button" href="mailto:#">Become a Sponsor</a>
             </div>
