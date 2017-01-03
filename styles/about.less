@@ -285,6 +285,12 @@
   }
 
   .listen-apps {
+    margin-bottom: 3.75em;
+
+    @media @tablet-desktop {
+      margin-bottom: 6.75em;
+    }
+
     .section-title {
       margin-bottom: 1em;
 
@@ -323,11 +329,14 @@
     }
 
     .inner {
-      width: 75%;
       margin: auto;
       position: relative;
       z-index: 10;
       .clearfix();
+
+      @media @tablet-desktop {
+        width: 91%;
+      }
     }
 
     a,
@@ -345,6 +354,32 @@
       letter-spacing: 2px;
     }
 
+    h2 {
+      font-size: 1.875em;
+      font-weight: 300;
+      text-transform: none;
+      padding-bottom: 1.25em;
+      position: relative;
+      letter-spacing: 1.5px;
+
+      &::after {
+        background: url("/assets/orange-bolt.png") transparent no-repeat center center;
+        background-size: 80px 17px;
+        bottom: 0;
+        content: "";
+        height: 17px;
+        left: 50%;
+        margin-left: -40px;
+        position: absolute;
+        width: 80px;
+      }
+    }
+
+    p {
+      font-family: 'roboto';
+      font-weight: 400;
+    }
+
     .support-left-column {
       text-align: center;
       .clearfix();
@@ -354,17 +389,6 @@
         float: left;
         padding: 3em 5% 3em 0;
         width: 50%;
-      }
-
-      h2 {
-        font-size: 2em;
-        font-weight: 400;
-        text-transform: none;
-      }
-
-      p {
-        font-family: 'roboto';
-        font-weight: 400;
       }
     }
 
@@ -376,17 +400,6 @@
         float: right;
         padding: 3em 0 3em 5%;
         width: 50%;
-      }
-
-      h2 {
-        font-size: 2em;
-        font-weight: 400;
-        text-transform: none;
-      }
-
-      p {
-        font-family: 'roboto';
-        font-weight: 400;
       }
     }
   }
