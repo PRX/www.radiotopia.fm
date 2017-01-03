@@ -153,13 +153,18 @@
     }
 
     @media @desktop {
+      max-width: 918px;
       padding: 96px 0;
     }
 
-    // podcast art is currently too big, links working though
-
     .podcast-item {
       width: 21%;
+      margin-right: 6%;
+      margin-bottom: 6%;
+
+      &:nth-child(3) {
+        margin-right: 0;
+      }
 
       .podcast-art-wrapper img {
         width: 100%;
