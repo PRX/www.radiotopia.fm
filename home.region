@@ -259,6 +259,10 @@
           {.end}
           {.end}
 
+          <div class="podcast-art-grid-wrapper">
+            <squarespace:query collection="podcast" template="podcast" columns="12" />
+          </div>
+
           <squarespace:query collection="testimonial" template="testimonial" columns="12" />
 
           <squarespace:block-field id="news-and-events-header" class="section-headline" columns="12" label="News and Events Header" />

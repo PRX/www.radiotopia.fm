@@ -1,0 +1,11 @@
+<section class="homepage-podcast-art-grid-section">
+  {.repeated section items}
+    <article class="podcast-item">
+      <div class="podcast-art-wrapper">
+        <a href="{baseUrl}{fullUrl}">
+          <img class="podcast-artwork-image" src={customContent.showArt.assetUrl} />
+        </a>
+      </div>
+    </article>
+  {.end}
+</section>
