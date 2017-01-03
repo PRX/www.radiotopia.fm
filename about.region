@@ -254,6 +254,19 @@
                 <squarespace:block-field id="app-content" class="app-content" columns="12" label="Apps" />
               </div>
             </div>
+
+            <div class="support-container" id="support-container">
+              <div class="inner">
+                <div class="support-left-column">
+                  <squarespace:block-field class="support-radiotopia" id="about-support-radiotopia" columns="12" label="Support Radiotopia" />
+                </div>
+
+                <div class="support-right-column">
+                  <squarespace:block-field class="sponsor-radiotopia" id="about-sponsor-radiotopia" columns="12" label="Become a Sponsor" />
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </main>

@@ -313,4 +313,81 @@
       }
     }
   }
+
+  .support-container {
+    padding-bottom: 0;
+    position: relative;
+
+    @media @desktop {
+      padding-bottom: 5em;
+    }
+
+    .inner {
+      width: 75%;
+      margin: auto;
+      position: relative;
+      z-index: 10;
+      .clearfix();
+    }
+
+    a,
+    a:active,
+    a:link,
+    a:active,
+    a:hover {
+      text-decoration: none !important;
+      color: @dark_blue !important;
+      border-radius: 6px;
+      font-size: .75em;
+      padding: 12px 30px;
+      font-family: 'roboto';
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+
+    .support-left-column {
+      text-align: center;
+      .clearfix();
+
+      @media @tablet-desktop {
+        border-right: 1px @light_blue solid;
+        float: left;
+        padding: 3em 5% 3em 0;
+        width: 50%;
+      }
+
+      h2 {
+        font-size: 2em;
+        font-weight: 400;
+        text-transform: none;
+      }
+
+      p {
+        font-family: 'roboto';
+        font-weight: 400;
+      }
+    }
+
+    .support-right-column {
+      text-align: center;
+      .clearfix();
+
+      @media @tablet-desktop {
+        float: right;
+        padding: 3em 0 3em 5%;
+        width: 50%;
+      }
+
+      h2 {
+        font-size: 2em;
+        font-weight: 400;
+        text-transform: none;
+      }
+
+      p {
+        font-family: 'roboto';
+        font-weight: 400;
+      }
+    }
+  }
 }
