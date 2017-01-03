@@ -124,11 +124,29 @@
     }
   }
 
-  #content {
+  // #content {
+  //   max-width: 1020px;
+  //   padding: 0;
+  //   width: 95%;
+  //   margin: auto;
+
+  //   @media @tablet {
+  //     padding: 35px 0;
+  //   }
+
+  //   @media @desktop {
+  //     padding: 96px 0;
+  //   }
+  // }
+
+  .podcast-art-grid-wrapper {
     max-width: 1020px;
     padding: 0;
     width: 95%;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
     @media @tablet {
       padding: 35px 0;
@@ -136,6 +154,10 @@
 
     @media @desktop {
       padding: 96px 0;
+    }
+
+    .podcast-art-wrapper {
+      width: 21%;
     }
   }
 
