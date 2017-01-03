@@ -267,6 +267,12 @@
               </div>
             </div>
 
+            <div class="mailing-list-sign-up"></div>
+
+            <div class="faq-container">
+              <squarespace:block-field class="faq" id="about-faq" columns="12" label="FAQ" />
+            </div>
+
           </div>
         </div>
       </main>
