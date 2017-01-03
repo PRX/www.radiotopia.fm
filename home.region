@@ -251,7 +251,7 @@
           -->{.collectionTypeNameEquals? page}<!-- comment the linebreak between these two elements because science
           --><squarespace:folder-navigation template="folder-navigation" />{.end}{.end}<!-- comment the linebreak between these two elements because science
           --><div id="content" class="main-content" data-content-field="main-content" data-collection-id="{collection.id}" {.equal? collection.typeName "gallery"}{.or}{.equal? collection.typeName "index"}{.or}data-edit-main-image="Banner"{.end}{.end}>
-           {squarespace.main-content}
+
           </div><!-- comment the linebreak between these two elements because science
           -->{.section collection}{.collectionTypeNameEquals? blog}<aside id="rightSidebar" role="complementary">
             <squarespace:block-field class="open-block-field" id="blogBlocks-{id}" columns="12" label="Blog Sidebar Content" />
