@@ -529,6 +529,40 @@
 
     .section-9-bottom-banner {
       margin-bottom: 2em;
+      position: relative;
+
+      .bottom-banner-text-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .bottom-banner-icon-wrapper {
+        max-width: 100px;
+        margin: 0 auto 1.75em;
+      }
+
+      #bottom-banner-text-block {
+        margin-bottom: 2.5em;
+
+        p {
+          font-size: 2em;
+          font-weight: 500;
+          line-height: 1.2em;
+        }
+      }
+
+      .button {
+        display: inline-block;
+        max-width: 25em;
+        width: 100%;
+      }
     }
 
     #podcasts-grid-header h2 {
