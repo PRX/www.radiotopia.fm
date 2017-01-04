@@ -267,7 +267,9 @@
               </div>
             </div>
 
-            <div class="mailing-list-sign-up"></div>
+            <div class="mailing-list-signup">
+              <squarespace:block-field class="mailing-list" id="about-mailing-list" columns="12" label="Mailing List Signup" />
+            </div>
 
             <div class="faq-container">
               <squarespace:block-field class="faq" id="about-faq" columns="12" label="FAQ" />
