@@ -134,17 +134,17 @@
               {.end}
               {.if customContent.podcastStitcherUrl}
                 <div class="stitcher-button subscribe-icon">
-                  <a href="http://{customContent.podcastStitcherUrl}"><img src="/assets/stitcher-logo.png"></a>
+                  <a href="{customContent.podcastStitcherUrl}"><img src="/assets/stitcher-logo.png"></a>
                 </div>
               {.end}
               {.if customContent.podcastItunesUrl}
                 <div class="itunes-button subscribe-icon">
-                  <a href="http://{customContent.podcastItunesUrl}"><img src="/assets/itunes-logo.png"></a>
+                  <a href="{customContent.podcastItunesUrl}"><img src="/assets/itunes-logo.png"></a>
                 </div>
               {.end}
               {.if customContent.podcastGooglePlayUrl}
                 <div class="google-play-button subscribe-icon">
-                  <a href="http://{customContent.podcastGooglePlayUrl}"><img src="/assets/google-play-logo.png"></a>
+                  <a href="{customContent.podcastGooglePlayUrl}"><img src="/assets/google-play-logo.png"></a>
                 </div>
               {.end}
             </div>
