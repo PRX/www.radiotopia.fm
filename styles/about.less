@@ -321,11 +321,11 @@
   }
 
   .support-container {
-    padding-bottom: 0;
+    margin-bottom: 1em;
     position: relative;
 
     @media @desktop {
-      padding-bottom: 5em;
+      margin-bottom: 6.5em;
     }
 
     .inner {
@@ -400,6 +400,74 @@
         float: right;
         padding: 3em 0 3em 5%;
         width: 50%;
+      }
+    }
+  }
+
+  .mailing-list-signup {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0 auto 1em;
+    text-align: center;
+
+    @media @tablet-desktop {
+      margin-bottom: 7em;
+      width: 80%;
+    }
+
+    #mc_embed_signup {
+      width: 100%;
+
+      h2 {
+        font-weight: 500;
+        font-size: 2em;
+        margin: 0 0 0.625em 0;
+        text-transform: initial;
+        width: 100%;
+
+        @media @tablet-desktop {}
+      }
+
+      p {
+        font-family: "sofia-pro";
+        margin: 0 0 1.75em 0;
+      }
+
+      .mc-field-group {
+        margin-bottom: 0.75em;
+
+        @media @desktop {
+          display: inline;
+          margin-right: 1em;
+        }
+
+        input {
+          padding: 0.5em;
+          max-width: 25em;
+          width: 100%;
+
+          @media @desktop {
+            width: initial;
+          }
+        }
+      }
+
+      .button {
+        background-color: @light_blue;
+        border-radius: 6px;
+        border: 0;
+        color: @white !important;
+        font-size: .75em;
+        font-family: 'roboto';
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-top: 0.5em;
+        padding: 14px 30px;
+
+        @media @tablet-desktop {
+          margin-top: 1.75em;
+          max-width: 17em;
+          width: 100%;
+        }
       }
     }
   }
