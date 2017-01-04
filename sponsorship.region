@@ -363,7 +363,7 @@
           <div class="podcasts-grid-wrapper">
             <squarespace:block-field class="open-block-field" id="podcasts-grid-header" columns="12" label="Podcasts Grid Header" />
 
-            <squarespace:query collection="podcasts-collection" template="sponsorship-podcast" columns="12" />
+            <squarespace:query collection="podcasts" template="sponsorship-podcast" columns="12" />
           </div>
         </div>
       </main>
