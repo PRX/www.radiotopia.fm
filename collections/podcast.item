@@ -53,12 +53,12 @@
                 {.end}
                 {.if customContent.podcastTwitterUrl}
                   <div class="twitter-button icon">
-                    <a href="http://{customContent.podcastTwitterUrl}"><img src="/assets/twitter.png"></a>
+                    <a href="{customContent.podcastTwitterUrl}"><img src="/assets/twitter.png"></a>
                   </div>
                 {.end}
                 {.if customContent.podcastInstagramUrl}
                   <div class="instagram-button icon">
-                    <a href="http://{customContent.podcastInstragramUrl}"><img src="/assets/instagram.png"></a>
+                    <a href="{customContent.podcastInstragramUrl}"><img src="/assets/instagram.png"></a>
                   </div>
                 {.end}
               </div>
@@ -93,7 +93,7 @@
                 </div>
                 <squarespace:block-field class="{customContent.podcastUrlTitle}-support-podcast" id="{customContent.podcastUrlTitle}-support-podcast" columns="12" label="Unique Support Podcast Title Block" />
                 <squarespace:block-field class="support-podcast-description" id="support-podcast-description" columns="12" label="Template Support Podcast Description" />
-                <a href="https://{customContent.podcastDonateUrl}">Donate Now</a>
+                <a href="{customContent.podcastDonateUrl}">Donate Now</a>
               </div>
 
               <div class="support-right-column">
@@ -129,7 +129,7 @@
             <div class="modal-icons">
               {.if customContent.podcastRPUrl}
                 <div class="radio-public-button subscribe-icon">
-                  <a href="http://{customContent.podcastRPUrl}"><img src="/assets/radio-public.png"></a>
+                  <a href="{customContent.podcastRPUrl}"><img src="/assets/radio-public.png"></a>
                 </div>
               {.end}
               {.if customContent.podcastStitcherUrl}
