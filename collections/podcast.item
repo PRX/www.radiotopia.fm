@@ -58,7 +58,7 @@
                 {.end}
                 {.if customContent.podcastInstagramUrl}
                   <div class="instagram-button icon">
-                    <a href="{customContent.podcastInstragramUrl}"><img src="/assets/instagram.png"></a>
+                    <a href="{customContent.podcastInstagramUrl}"><img src="/assets/instagram.png"></a>
                   </div>
                 {.end}
               </div>
