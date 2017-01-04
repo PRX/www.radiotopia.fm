@@ -49,7 +49,7 @@
                   {.main-image?}
                     <div class="banner-thumbnail-wrapper" data-content-field="main-image">
                       <div class="color-overlay"></div>
-                      <figure id="thumbnail" class="loading content-fill"><img {@|image-meta} /></figure>
+                      <figure id="thumbnail" class="loading content-fill"><img src="/assets/news-hero.jpg" /></figure>
                     </div>
                   {.end}
                 {.or}
@@ -92,7 +92,7 @@
                           {.section mainImage}
                           <div class="color-overlay"></div>
                           <figure id="thumbnail" class="loading content-fill">
-                            <img {@|image-meta} />
+                            <img src="/assets/news-hero.jpg" />
                           </figure>
                           {.end}
                           {.if description}<div class="desc-wrapper" data-collection-id="{id}">{description}</div>{.end}
@@ -168,7 +168,7 @@
                               <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image">
                                 <div class="color-overlay"></div>
                                 <figure id="thumbnail" class="loading content-fill">
-                                  <img {@|image-meta} />
+                                  <img src="/assets/news-hero.jpg" />
                                 </figure>
                                 {.if description}<div class="desc-wrapper" data-content-field="description">{description}</div>{.end}
                               </div>
@@ -193,7 +193,7 @@
                           <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image">
                             <div class="color-overlay"></div>
                             <figure id="thumbnail" class="loading content-fill">
-                              <img {@|image-meta} />
+                              <img src="/assets/news-hero.jpg" />
                             </figure>
                             {.if description}<div class="desc-wrapper" data-content-field="description">{description}</div>{.end}
                           </div>
