@@ -49,6 +49,8 @@
     }
 
     .sponsorship-headline-wrapper {
+      text-align: center;
+
       @media @tablet-desktop {
         align-items: center;
         display: flex;
@@ -58,6 +60,11 @@
         width: 100%;
         position: absolute;
         top: 0;
+      }
+
+      .button {
+        display: inline-block;
+        margin-bottom: 1em;
       }
     }
 
@@ -71,16 +78,23 @@
 
     .sponsorship-headline {
       h2 {
-        width: 76.5%;
         margin: auto;
-        margin-bottom: 1em;
         font-size: 1.125em;
         text-transform: none !important;
         letter-spacing: 1px;
         text-align: center;
+        width: 80%;
 
         @media @tablet-desktop {
           font-size: 2.25em;
+          margin-bottom: 1em;
+          width: 76.5%;
+        }
+
+        @media only screen and (min-width: 640px) and (max-width: 1000px) {
+          font-size: 1.25em;
+          margin-bottom: 0.75em;
+          padding-top: 2em;
         }
       }
     }
@@ -532,36 +546,65 @@
       position: relative;
 
       .bottom-banner-text-wrapper {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
         text-align: center;
+
+        @media @tablet-desktop {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        }
       }
 
       .bottom-banner-icon-wrapper {
-        max-width: 100px;
-        margin: 0 auto 1.75em;
+        max-width: 80px;
+        margin: 0 auto;
+
+        @media @tablet {
+          margin-bottom: 1em;
+        }
+
+        @media @desktop {
+          margin-bottom: 1.75em;
+          max-width: 100px;
+        }
       }
 
       #bottom-banner-text-block {
-        margin-bottom: 2.5em;
+        margin-bottom: 1em;
+
+        @media @desktop {
+          margin-bottom: 2.5em;
+        }
 
         p {
-          font-size: 2em;
+          font-size: 1.25em;
           font-weight: 500;
-          line-height: 1.2em;
+          line-height: initial;
+
+          @media @desktop {
+            font-size: 2em;
+            line-height: 1.2em;
+          }
         }
       }
 
       .button {
         display: inline-block;
-        max-width: 25em;
+        max-width: 18em;
         width: 100%;
+
+        @media @tablet {
+          padding: 8px 20px;
+        }
+
+        @media @desktop {
+          max-width: 25em;
+        }
       }
     }
 
