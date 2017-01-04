@@ -1,5 +1,4 @@
-<div class="blog-list">
-
+<div class="blog-list news-page">
   <div class="news-content">
     <div class="left-column">
     <squarespace:block-field id="news-title" class="section-headline" label="News Title" />
