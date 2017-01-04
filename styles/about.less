@@ -356,7 +356,7 @@
 
     h2 {
       font-size: 1.875em;
-      font-weight: 300;
+      font-weight: 500;
       text-transform: none;
       padding-bottom: 1.25em;
       position: relative;
@@ -400,6 +400,79 @@
         float: right;
         padding: 3em 0 3em 5%;
         width: 50%;
+      }
+    }
+  }
+
+  .faq-container {
+    margin: auto;
+
+    @media @tablet-desktop {
+      width: 80%;
+    }
+
+    h1 {
+      font-weight: 500;
+      font-size: 2em;
+      margin: 0 0 0.75em 0;
+      text-align: center;
+
+      @media @tablet-desktop {
+        margin-bottom: 1.25em;
+      }
+    }
+
+    h2 {
+      font-family: 'roboto';
+      font-size: 1em;
+      font-style: italic;
+      font-weight: 400;
+      line-height: initial !important;
+      text-transform: initial;
+      margin: 0 0 0.5em 0;
+
+      @media @tablet-desktop {
+        font-size: 1.3em;
+        line-height: 1.3em !important;
+      }
+    }
+
+    p {
+      font-family: 'roboto';
+      font-size: 1em;
+      font-weight: 300;
+      line-height: initial !important;
+      margin: 0 0 2.125em 0;
+
+      @media @tablet-desktop {
+        font-size: 1.3em;
+        line-height: 1.3em !important;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    .button-block {
+      a,
+      a:active,
+      a:link,
+      a:active,
+      a:hover {
+        text-decoration: none !important;
+        color: @dark_blue !important;
+        border-radius: 6px;
+        font-size: .75em;
+        padding: 12px 30px;
+        font-family: 'roboto';
+        font-weight: 600;
+        letter-spacing: 2px;
+
+        @media @tablet-desktop {
+          max-width: 25em;
+          width: 100%;
+        }
       }
     }
   }
