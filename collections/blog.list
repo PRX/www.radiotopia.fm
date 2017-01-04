@@ -1,6 +1,25 @@
 <div class="blog-list">
 
-  {.repeated section items}
+  <div class="news-content">
+    <div class="left-column">
+    <squarespace:block-field id="news-title" class="section-headline" label="News Title" />
+      <squarespace:query collection="news" limit="100" template="news" columns="12" />
+      <button class="load-more" data-behavior="load-more-news">Load More News</button>
+    </div>
+    <div class="right-column">
+      <div class="events-wrapper">
+        <squarespace:block-field id="events-title" class="section-headline" label="Events Title" />
+        <squarespace:query collection="events" limit="2" template="news-event" columns="12" />
+      </div>
+      <div class="twitter-wrapper">
+        <squarespace:block-field id="twitter-title" class="section-headline" label="Twitter Title" />
+        <squarespace:block-field class="news-tweets" id="news-tweets" columns="12" label="Recent Tweets" />
+      </div>
+
+    </div>
+  </div>
+
+  <!-- {.repeated section items}
   <article class="entry h-entry {@|item-classes}" id="article-{id}" data-item-id="{id}">
 
     <header class="entry-header">
@@ -88,7 +107,7 @@
     <div class="newer">{.if pagination.prevPage}<a href="{pagination.prevPageUrl}" rel="prev"><span class="prev-label">Newer Posts</span></a>{.end}</div><!-- comment the linebreak between these two elements because science
         --><div class="older">{.if pagination.nextPage}<a href="{pagination.nextPageUrl}" rel="next"><span class="next-label">Older Posts</span></a>{.end}</div>
   </nav>
-  {.end}
+  {.end} -->
 
 </div>
 

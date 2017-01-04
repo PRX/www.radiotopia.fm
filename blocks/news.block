@@ -7,7 +7,7 @@
         <p class="news-title">{title}</p>
         <div class="news-excerpt">{excerpt}</div>
         <div class="read-more-button">
-        <a href="{baseUrl}{fullUrl}">Read More</a>
+          <a href="{baseUrl}{fullUrl}">Read More</a>
         </div>
       </div>
     </article>
