@@ -260,6 +260,37 @@
         p {
           width: 85%;
         }
+
+        .legend {
+          margin: 0;
+          padding: 0;
+
+          li {
+            color: rgba(255, 255, 255, 0.8);
+            font-family: "sofia-pro";
+            font-size: 0.888em;
+            display: inline;
+            list-style: none;
+            margin-right: 2em;
+            padding-left: 20px;
+            position: relative;
+
+            &::before {
+              background-color: @orange;
+              content: "";
+              height: 12px;
+              left: 0;
+              margin-top: -6px;
+              position: absolute;
+              top: 50%;
+              width: 12px;
+            }
+
+            &:nth-of-type(2)::before {
+              background-color: @legend_blue;
+            }
+          }
+        }
       }
     }
 
