@@ -48,7 +48,7 @@
                 <p class="podcast-connect">Connect</p>
                 {.if customContent.podcastFacebookUrl}
                   <div class="facebook-button icon">
-                    <a href="http://{customContent.podcastFacebookUrl}"><img src="/assets/facebook.png"></a>
+                    <a href="{customContent.podcastFacebookUrl}"><img src="/assets/facebook.png"></a>
                   </div>
                 {.end}
                 {.if customContent.podcastTwitterUrl}
