@@ -23,12 +23,30 @@ body.general-page {
   }
 
   .podcast-item {
-    width: 21%;
-    margin-right: 6%;
-    margin-bottom: 6%;
+    width: 80%;
 
-    &:nth-child(3) {
-      margin-right: 0;
+    @media @mobile {
+      margin: 0 auto 6%;
+    }
+
+    @media @tablet {
+      width: 46%;
+      margin-right: 6%;
+      margin-bottom: 6%;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+
+    @media @desktop {
+      width: 29%;
+      margin-right: 6%;
+      margin-bottom: 6%;
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
     }
 
     .podcast-art-wrapper img {
