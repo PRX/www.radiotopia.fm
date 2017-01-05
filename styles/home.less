@@ -494,16 +494,21 @@
     a,
     a:active,
     a:link,
-    a:active,
-    a:hover {
+    a:active {
       text-decoration: none !important;
       color: @dark_blue !important;
+      background-color: @white !important;
       border-radius: 6px;
       font-size: .75em;
       padding: 12px 30px;
       font-family: 'roboto';
       font-weight: 600;
       letter-spacing: 2px;
+      text-transform: uppercase;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
 
     .support-left-column {
