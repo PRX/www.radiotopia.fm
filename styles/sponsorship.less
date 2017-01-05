@@ -56,7 +56,7 @@
           background-color: @white !important;
           border-radius: 6px;
           font-size: .75em;
-          padding: 12px 30px;
+          padding: 10px 30px;
           font-family: 'roboto';
           font-weight: 500;
           letter-spacing: 2px;
@@ -785,6 +785,7 @@
               font-size: .80em;
               font-weight: 700;
               text-transform: uppercase;
+              text-align: left;
               letter-spacing: .05em;
               margin-bottom: .25em;
             }
@@ -799,8 +800,7 @@
               a,
               a:active,
               a:link,
-              a:active,
-              a:hover {
+              a:active {
                 text-decoration: none !important;
                 color: @light_blue !important;
                 font-size: .88em;
@@ -808,6 +808,10 @@
                 font-weight: 400;
                 display: block;
                 line-height: initial;
+
+                &:hover {
+                  color: @light_blue !important
+                }
 
                 @media @tablet-desktop {
                   display: inline-block;
