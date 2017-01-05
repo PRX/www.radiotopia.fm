@@ -1,5 +1,3 @@
-<h1>Podcasts</h1>
-
 <section class="podcast-list-art-grid-section">
 
   {.repeated section items}
