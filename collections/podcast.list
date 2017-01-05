@@ -3,7 +3,7 @@
 
     <!--WRAPPER-->
 
-    <article id="post-{id}" class="{@|item-classes}" data-item-id="{id}">
+    <article id="post-{id}" class="{@|item-classes} podcast-item" data-item-id="{id}">
 
       <!--POST TILE-->
 
