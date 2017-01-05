@@ -3,23 +3,6 @@
   background-size: 100%;
   background-attachment: fixed;
 
-  a.button,
-  a.button:active,
-  a.button:link,
-  a.button:active,
-  a.button:hover {
-    text-decoration: none !important;
-    text-transform: uppercase;
-    color: @dark_blue !important;
-    background-color: #FFF;
-    border-radius: 6px;
-    font-size: .75em;
-    padding: 12px 30px;
-    font-family: 'roboto';
-    font-weight: 500;
-    letter-spacing: 2px;
-  }
-
   .sponsorship-banner-wrapper {
     position: relative;
 
@@ -62,9 +45,24 @@
         top: 0;
       }
 
-      .button {
-        display: inline-block;
-        margin-bottom: 1em;
+      a,
+      a:active,
+      a:link,
+      a:active {
+        text-decoration: none !important;
+        color: @dark_blue !important;
+        background-color: @white !important;
+        border-radius: 6px;
+        font-size: .75em;
+        padding: 12px 30px;
+        font-family: 'roboto';
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        &:hover {
+          opacity: 0.8;
+        }
       }
     }
 
@@ -663,6 +661,26 @@
           @media @desktop {
             font-size: 2em;
             line-height: 1.2em;
+          }
+        }
+
+        a,
+        a:active,
+        a:link,
+        a:active {
+          text-decoration: none !important;
+          color: @dark_blue !important;
+          background-color: @white !important;
+          border-radius: 6px;
+          font-size: .75em;
+          padding: 12px 30px;
+          font-family: 'roboto';
+          font-weight: 500;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+
+          &:hover {
+            opacity: 0.8;
           }
         }
       }

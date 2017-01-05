@@ -221,7 +221,6 @@
           <squarespace:block-field id="sponsorship-banner-image" class="sponsorship-banner-image" label="Sponsorship Banner Image" />
           <div class="sponsorship-headline-wrapper">
             <squarespace:block-field id="sponsorship-headline" class="sponsorship-headline" label="Sponsorship Headline" />
-            <a class="button" href="mailto:#">Become a Sponsor</a>
             <a href="#" class="smooth-scroll" data-behavior="smooth-scroll" data-target="section-1-wrapper">Or Learn Why You Should</a>
           </div>
         </div>
@@ -355,7 +354,6 @@
                 </div>
 
                 <squarespace:block-field class="open-block-field" id="bottom-banner-text-block" columns="12" label="Bottom Banner Text" />
-                <a class="button" href="mailto:#">Become a Sponsor</a>
               </div>
             </div>
           </div>
