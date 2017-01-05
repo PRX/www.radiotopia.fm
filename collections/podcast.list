@@ -1,4 +1,5 @@
-{.repeated section items}
+<section class="podcast-list-art-grid-section">
+  {.repeated section items}
 
     <!--WRAPPER-->
 
@@ -6,16 +7,15 @@
 
       <!--POST TILE-->
 
-      <h1 class="title" data-content-field="title">
-        {.passthrough?}
-          <a href="{sourceUrl}" target="_blank">{customContent.podcastTitle}</a>
-        {.or}
-          <a href="{fullUrl}">{customContent.podcastTitle}</a>
-        {.end}
-      </h1>
+        <div class="podcast-art-wrapper">
+          <a href="{baseUrl}{fullUrl}">
+            <img class="podcast-artwork-image" src={customContent.showArt.assetUrl} />
+          </a>
+        </div>
 
     </article>
 
   {.or}
     No podcasts available.
   {.end}
+</section>

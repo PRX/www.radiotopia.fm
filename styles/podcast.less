@@ -4,6 +4,39 @@ body.general-page {
   }
 }
 
+.podcast-list-art-grid-section {
+  max-width: 1020px;
+  padding: 0;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media @tablet {
+    padding: 35px 0;
+  }
+
+  @media @desktop {
+    max-width: 918px;
+    padding: 96px 0;
+  }
+
+  .podcast-item {
+    width: 21%;
+    margin-right: 6%;
+    margin-bottom: 6%;
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+
+    .podcast-art-wrapper img {
+      width: 100%;
+    }
+  }
+}
+
 #siteWrapper.podcast-detail {
   #page {
     max-width: none !important;
