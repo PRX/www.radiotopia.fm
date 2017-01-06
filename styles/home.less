@@ -319,8 +319,8 @@
       .news-date {
         color: @orange;
         font-family: 'roboto';
-        font-size: 0.75em;
-        font-weight: 500;
+        font-size: 0.67em;
+        font-weight: 700;
         margin: -0.5em 0 0 0;
         text-transform: uppercase;
 
@@ -330,13 +330,16 @@
       }
 
       .news-title {
-        font-size: 1.25em;
+        font-family: 'sofia-pro';
+        font-size: 1.33em;
+        font-weight: 400;
         margin: 0 0 0.4375em 0;
       }
 
       .news-excerpt {
         font-size: 0.875em;
         font-family: 'roboto';
+        font-weight: 400;
 
         h1, h2, p {
           margin: 0 0 0.25em 0;
@@ -425,9 +428,9 @@
 
       .event-header {
         color: @orange;
-        font-family: 'roboto';
-        font-size: 0.75em;
-        font-weight: 400;
+        font-family: 'sofia-pro';
+        font-size: 0.67em;
+        font-weight: 700;
         margin: -0.5em 0 0 0;
         text-transform: uppercase;
 
@@ -437,7 +440,9 @@
       }
 
       .event-title {
-        font-size: 1.25em;
+        font-family: 'sofia-pro';
+        font-size: 1.33em;
+        font-weight: 400;
         margin: 0 0 0.4375em 0;
       }
 
@@ -445,6 +450,23 @@
         font-size: 0.875em;
         font-family: 'roboto';
         margin: 0;
+
+        h1, h2, p {
+          margin: 0 0 0.25em 0;
+        }
+
+        a,
+        a:active,
+        a:link {
+          text-decoration: none;
+          color: @light_blue !important;
+          .css3-transition(color, .325s);
+
+          &:hover {
+            color: @white !important;
+            .css3-transition(color, .325s);
+          }
+        }
       }
 
       .event-excerpt {
