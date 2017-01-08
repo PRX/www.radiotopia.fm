@@ -1,5 +1,9 @@
 <section class="podcast-list-art-grid-section">
 
+  <div class="podcast-index-header">
+    <squarespace:block-field class="podcast-index-header-block" id="podcast-index-header-block" columns="12" label="Podcast List Header" />
+  </div>
+
   {.repeated section items}
 
     <!--WRAPPER-->
