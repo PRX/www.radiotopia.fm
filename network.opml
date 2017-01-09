@@ -25,5 +25,6 @@
     <outline text="Song Exploder" xmlUrl="http://feed.songexploder.net/SongExploder" />
     <outline text="Millennial" xmlUrl="http://feeds.millennialpodcast.org/millennialpodcast" />
     <outline text="The West Wing Weekly" xmlUrl="http://feeds.thewestwingweekly.com/westwingweekly" />
+    <outline text="The Bugle" xmlUrl="http://feeds.thebuglepodcast.com/thebuglefeed" />
   </body>
 </opml>
