@@ -1,7 +1,5 @@
 # Radiotopia
 
-[![Build Status](https://snap-ci.com/6VBopMdYAgQUlIn9B89kMD9zdhSsKkUoX91SNRvSQLM/build_image)](https://snap-ci.com/PRX/www.radiotopia.fm/branch/master)
-
 [`www.radiotopia.fm`](https://www.radiopia.fm) is static website hosted on S3 behind a CloudFront CDN. Any changes checked into GitHub will automatically be **live** and **available to the public**.
 
 The S3 bucket and GitHub repository are kept in sync with an automatically-triggered Snap CI pipeline, which runs:
@@ -46,3 +44,4 @@ The following are paths that should be maintained in perpetuity. (GitHub redirec
 - `/podquest` Podquest information page
 - `/press-kit` Press kit
 - `/ace` Radiotopia Live @ Ace Hotel
+- `/coin` Redirect to homepage
