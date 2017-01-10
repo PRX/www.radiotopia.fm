@@ -289,6 +289,7 @@
 
     		<div class="sponsor-logos">
           <squarespace:block-field class="sponsor-logos" id="sponsor-logos" columns="12" label="Sponsor Logos" />
+          <squarespace:block-field class="sponsorship-button" id="sponsorship-button" columns="12" label="Sponsorship Button Block" />
         </div>
       </main>
 
