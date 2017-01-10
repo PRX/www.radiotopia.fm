@@ -584,9 +584,24 @@
       }
 
       h2 {
-        font-size: 2em;
-        font-weight: 400;
+        font-size: 1.875em;
+        font-weight: 500;
         text-transform: none;
+        padding-bottom: 1.25em;
+        position: relative;
+        letter-spacing: 1.5px;
+
+        &::after {
+          background: url("/assets/orange-bolt.png") transparent no-repeat center center;
+          background-size: 80px 17px;
+          bottom: 0;
+          content: "";
+          height: 17px;
+          left: 50%;
+          margin-left: -40px;
+          position: absolute;
+          width: 80px;
+        }
       }
 
       p {
