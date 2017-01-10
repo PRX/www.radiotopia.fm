@@ -1,26 +1,28 @@
-<section class="podcast-list-art-grid-section">
+<div class="background-wrapper">
+  <section class="podcast-list-art-grid-section">
 
-  <div class="podcast-index-header">
-    <squarespace:block-field class="podcast-index-header-block" id="podcast-index-header-block" columns="12" label="Podcast List Header" />
-  </div>
+    <div class="podcast-index-header">
+      <squarespace:block-field class="podcast-index-header-block" id="podcast-index-header-block" columns="12" label="Podcast List Header" />
+    </div>
 
-  {.repeated section items}
+    {.repeated section items}
 
-    <!--WRAPPER-->
+      <!--WRAPPER-->
 
-    <article id="post-{id}" class="{@|item-classes} podcast-item" data-item-id="{id}">
+      <article id="post-{id}" class="{@|item-classes} podcast-item" data-item-id="{id}">
 
-      <!--POST TILE-->
+        <!--POST TILE-->
 
-        <div class="podcast-art-wrapper">
-          <a href="{baseUrl}{fullUrl}">
-            <img class="podcast-artwork-image" src={customContent.showArt.assetUrl} />
-          </a>
-        </div>
+          <div class="podcast-art-wrapper">
+            <a href="{baseUrl}{fullUrl}">
+              <img class="podcast-artwork-image" src={customContent.showArt.assetUrl} />
+            </a>
+          </div>
 
-    </article>
+      </article>
 
-  {.or}
-    No podcasts available.
-  {.end}
-</section>
+    {.or}
+      No podcasts available.
+    {.end}
+  </section>
+</div>
