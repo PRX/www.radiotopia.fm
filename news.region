@@ -56,7 +56,7 @@
                   {.main-image?}
                     <div class="banner-thumbnail-wrapper" data-content-field="main-image">
                       <div class="color-overlay"></div>
-                      <figure id="thumbnail" class="loading content-fill"><img src="/assets/news-hero.jpg" /></figure>
+                      <figure id="thumbnail" class="loading content-fill"><img src="/assets/news-event-city-banner.png" /></figure>
                       <div class="blog-item-wrapper">
                         <div class="title-desc-wrapper">
                           <time class="dt-published published post-date" datetime="{addedOn|date %F}" pubdate>{addedOn|date %B %e, %Y}</time>
