@@ -11,7 +11,7 @@
     <!--MAIN CONTENT-->
     <section>
 
-    <div class="banner-image-container" id="test">
+    <div class="banner-image-container">
       <img src="{customContent.bannerImage.assetUrl}">
     </div>
 

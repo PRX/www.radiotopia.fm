@@ -1,5 +1,5 @@
-<div class="background-wrapper">
-  <section class="podcast-list-art-grid-section">
+<section class="podcast-list-art-grid-section">
+  <div class="background-wrapper">
 
     <div class="podcast-index-header">
       <squarespace:block-field class="podcast-index-header-block" id="podcast-index-header-block" columns="12" label="Podcast List Header" />
@@ -24,5 +24,5 @@
     {.or}
       No podcasts available.
     {.end}
-  </section>
-</div>
+  </div>
+</section>
