@@ -378,52 +378,48 @@
   }
 }
 
-// #siteWrapper.general {
-//   .news-event-page {
-//     background: none !important;
-//     background-size: 100%;
-//     background-color: @white !important;
-//     max-width: none !important;
-//     padding: 0 0 3em !important;
 
-//     @media @tablet-desktop {
-//       padding: 0 0 5em !important;
-//     }
+body.view-item #siteWrapper.general #page {
+  background: @white;
+  color: @blue;
+  padding: 0 0 3em !important;
 
-//     div.news-event-inner {
-//       margin: 0 auto;
-//       padding-top: 3em;
-//       width: 80% !important;
-//       background-color: @white !important;
-//       color: @blue !important;
+  @media @tablet-desktop {
+    padding: 0 0 5em !important;
+  }
 
-//        Can't get this to take priority no matter what I try
+  div.news-event-inner {
+    margin: 0 auto;
+    padding-top: 3em;
 
-//       @media @tablet-desktop {
-//         width: 65% !important;
-//       }
+    @media @tablet {
+      width: 80% !important;
+    }
 
-//       .sqs-simple-like {
-//         color: @blue;
-//         font-weight: 400;
-//       }
+    @media @desktop {
+      width: 65% !important;
+    }
 
-//       .squarespace-social-buttons {
-//         color: @light_blue;
-//         font-weight: 400;
-//       }
+    .sqs-simple-like {
+      color: @blue;
+      font-weight: 400;
+    }
 
-//       a,
-//       a:active,
-//       a:link,
-//       a:active,
-//       a:hover {
-//         font-family: 'roboto';
-//         font-size: 1em;
-//         font-weight: 400;
-//         text-decoration: none;
-//         color: @light_blue !important;
-//       }
-//     }
-//   }
-// }
+    .squarespace-social-buttons {
+      color: @light_blue;
+      font-weight: 400;
+    }
+
+    a,
+    a:active,
+    a:link,
+    a:active,
+    a:hover {
+      font-family: 'roboto';
+      font-size: 1em;
+      font-weight: 400;
+      text-decoration: none;
+      color: @light_blue !important;
+    }
+  }
+}
