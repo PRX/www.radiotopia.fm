@@ -45,6 +45,14 @@
       </div>
     </header>
 
+    <div class="when">
+    	{item.startDate|date %B %e, %Y}
+    </div>
+
+    <div class="where">
+    	{item.location.addressTitle}
+    </div>
+
     <div class="entry-content e-content">
       {.section body}
         {@}
