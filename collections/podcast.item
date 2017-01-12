@@ -126,12 +126,14 @@
                 <p>{customContent.podcastTitle}</p>
               </div>
             </div>
-            <div class="modal-icons">
+            <div class="radio-public-icon">
               {.if customContent.podcastRPUrl}
                 <div class="radio-public-button subscribe-icon">
                   <a href="{customContent.podcastRPUrl}"><img src="/assets/radio-public-big.png"></a>
                 </div>
               {.end}
+            </div>
+            <div class="modal-icons">
               {.if customContent.podcastStitcherUrl}
                 <div class="stitcher-button subscribe-icon">
                   <a href="{customContent.podcastStitcherUrl}"><img src="/assets/stitcher-logo.png"></a>
