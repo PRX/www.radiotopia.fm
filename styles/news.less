@@ -377,3 +377,24 @@
     font-weight: 500;
   }
 }
+
+#page#news-event-page {
+  background: none;
+  background-size: 100%;
+  max-width: none !important;
+  padding: 0 0 3em !important;
+
+  @media @tablet-desktop {
+    padding: 0 0 5em !important;
+  }
+
+  &>.inner {
+    margin: 0 auto;
+    padding-top: 3em;
+    width: 80% !important;
+
+    @media @tablet-desktop {
+      width: 90% !important;
+    }
+  }
+}

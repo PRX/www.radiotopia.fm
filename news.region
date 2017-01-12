@@ -40,7 +40,7 @@
           --><div id="headerNav"><squarespace:navigation navigationId="mainNav" template="navigation" /></div>
         </div>
       </header>
-      <main id="page" role="main">
+      <main id="page news-event-page" role="main">
         {.if item}
             {.section item}
               {.if productType}
@@ -206,7 +206,7 @@
               {.end}
             {.end}
           {.end}
-        <div class="inner">
+        <div class="inner news-event-inner">
           {.section categoryFilter}
           <p class="filter-heading filter-by-category">
             <a href="{collection.fullUrl}"><span>{@|safe}</span></a>
