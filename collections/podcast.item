@@ -129,7 +129,7 @@
             <div class="modal-icons">
               {.if customContent.podcastRPUrl}
                 <div class="radio-public-button subscribe-icon">
-                  <a href="{customContent.podcastRPUrl}"><img src="/assets/radio-public.png"></a>
+                  <a href="{customContent.podcastRPUrl}"><img src="/assets/radio-public-big.png"></a>
                 </div>
               {.end}
               {.if customContent.podcastStitcherUrl}
