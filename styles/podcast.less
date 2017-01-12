@@ -670,6 +670,24 @@
       }
     }
 
+    .radio-public-icon {
+      margin: auto;
+
+      .radio-public-button {
+        @media @tablet {
+          width: 15%;
+        }
+
+        @media @desktop {
+          width: 24%;
+        }
+
+        img {
+          max-width: 187px;
+        }
+      }
+    }
+
     .modal-icons {
       margin: auto;
       padding-bottom: 2em;
@@ -694,22 +712,6 @@
         display: block;
         max-width: 175px;
         width: 100%;
-      }
-
-      .radio-public-button {
-        @media @tablet {
-          padding-right: 5%;
-          width: 15%;
-        }
-
-        @media @desktop {
-          padding-right: 5%;
-          width: 16%;
-        }
-
-        img {
-          max-width: 59px;
-        }
       }
 
       .stitcher-button {

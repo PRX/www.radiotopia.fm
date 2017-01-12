@@ -128,7 +128,7 @@
             </div>
             <div class="radio-public-icon">
               {.if customContent.podcastRPUrl}
-                <div class="radio-public-button subscribe-icon">
+                <div class="radio-public-button">
                   <a href="{customContent.podcastRPUrl}"><img src="/assets/radio-public-big.png"></a>
                 </div>
               {.end}
