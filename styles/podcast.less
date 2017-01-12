@@ -623,13 +623,11 @@
     width: 100%;
 
     @media @tablet {
-      height: 325px;
       width: 600px;
     }
 
     @media @desktop {
       background-size: 100%;
-      height: 400px;
       width: 780px;
     }
 
@@ -671,7 +669,8 @@
     }
 
     .radio-public-button {
-      margin: auto;
+      margin: 0 auto 1em;
+      text-align: center;
 
       @media @tablet {
         width: 24%;
@@ -694,6 +693,9 @@
       .subscribe-icon {
         margin-bottom: 1em;
         text-align: center;
+        -moz-box-sizing: initial;
+        -webkit-box-sizing: initial;
+        box-sizing: initial;
 
         @media @tablet-desktop {
           display: inline-block;
@@ -713,36 +715,26 @@
       }
 
       .stitcher-button {
-        @media @tablet {
-          padding-right: 7%;
-          width: 27%;
-        }
-
-        @media @desktop {
-          padding-right: 7%;
-          width: 28%;
+        @media @tablet-desktop {
+          padding-right: 4%;
+          width: 30%;
         }
       }
 
       .itunes-button {
-        @media @tablet {
-          padding-right: 6%;
-          width: 27%;
-        }
-
-        @media @desktop {
-          padding-right: 6%;
-          width: 28%;
+        @media @tablet-desktop {
+          padding-right: 4%;
+          width: 30%;
         }
       }
 
       .google-play-button {
-        @media @tablet {
-          width: 25%;
+        @media @tablet-desktop {
+          width: 30%;
         }
 
-        @media @desktop {
-          width: 26%;
+        img {
+          max-width: 197px;
         }
       }
     }
