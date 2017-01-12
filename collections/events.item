@@ -46,11 +46,14 @@
     </header>
 
     <div class="when">
-    	{item.startDate|date %B %e, %Y}
+    	{item.startDate|date %A, %B %e, %Y}
+    	{item.startDate|date %l:%M %P}-{item.endDate|date %l:%M %P}
     </div>
 
     <div class="where">
     	{item.location.addressTitle}
+    	{item.location.addressLine1}
+    	{item.location.addressLine2}
     </div>
 
     <div class="entry-content e-content">
