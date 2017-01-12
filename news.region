@@ -40,7 +40,7 @@
           --><div id="headerNav"><squarespace:navigation navigationId="mainNav" template="navigation" /></div>
         </div>
       </header>
-      <main id="page news-event-page" role="main">
+      <main id="page" class="news-event-page" role="main">
         {.if item}
             {.section item}
               {.if productType}
