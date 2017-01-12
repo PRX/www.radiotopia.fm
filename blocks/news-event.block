@@ -1,5 +1,6 @@
 <section class="events" >
   {.repeated section items}
+    <a href="{baseUrl}{fullUrl}">
       <article class="event-item" data-date="{startDate}">
         <div class="event-date">
           <div class="cal-icon">
@@ -14,5 +15,6 @@
           <p class="event-location">{location.addressLine2}</p>
         </div>
       </article>
+    </a>
   {.end}
 </section>
