@@ -114,7 +114,7 @@
         </div>
       </div>
 
-      <div id="modal-wrapper subscribe">
+      <div id="modal-wrapper" class="subscribe">
         <div class="inner">
           <div class="subscribe-modal">
             <div class="close-modal" data-behavior="close-modal"></div>
