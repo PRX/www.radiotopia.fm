@@ -154,7 +154,7 @@
     </section>
 
     <div class="donate-modal">
-      {customContent.donateModal}
+      {customContent.podcastDonateModal}
     </div>
   </article>
 
