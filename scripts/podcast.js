@@ -7,7 +7,11 @@ var RadiotopiaPodcast = {
   bind: function() {
     $('*[data-behavior="open-modal"]').on('click', function(e) {
       e.preventDefault();
-      $('#modal-wrapper').fadeIn();
+      var target = $(this).attr('data-target');
+
+      console.log(target);
+
+      $('#modal-wrapper.'+target).fadeIn();
     });
 
     $('*[data-behavior="close-modal"]').on('click', function() {

@@ -42,7 +42,7 @@
             <div class="podcast-column podcast-right-column">
               <div class="podcast-subscribe">
                 <p class="podcast-listen">Listen</p>
-                <a href="#" class="podcast-subscribe-button" data-behavior="open-modal">Subscribe</a>
+                <a href="#" class="podcast-subscribe-button" data-behavior="open-modal" data-target="subscribe">Subscribe</a>
               </div>
               <div class="social-buttons">
                 <p class="podcast-connect">Connect</p>
@@ -114,7 +114,7 @@
         </div>
       </div>
 
-      <div id="modal-wrapper">
+      <div id="modal-wrapper subscribe">
         <div class="inner">
           <div class="subscribe-modal">
             <div class="close-modal" data-behavior="close-modal"></div>
@@ -154,8 +154,10 @@
     </section>
 
     <div class="donate-modal">
-      {customContent.podcastDonateModal}
       <a class='commitchange-donate' data-embedded></a>
+    </div>
+    <div class="donate-modal-script">
+      {customContent.podcastDonateModal}
     </div>
   </article>
 
