@@ -155,7 +155,11 @@
     </section>
 
     <div id="modal-wrapper" class="donate">
-      <a class='commitchange-donate' data-embedded></a>
+      <div class="inner">
+        <div class="donate-modal">
+          <a class='commitchange-donate' data-embedded></a>
+        </div>
+      </div>
     </div>
     <div class="donate-modal-script">
       {customContent.podcastDonateModal}
