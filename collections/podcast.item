@@ -152,6 +152,10 @@
         </div>
       </div>
     </section>
+
+    <div class="donate-modal">
+      {customContent.donateModal}
+    </div>
   </article>
 
 {.end}
