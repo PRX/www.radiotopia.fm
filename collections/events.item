@@ -22,22 +22,6 @@
       {.end}
     </div>
 
-    <footer class="entry-footer clear">
-      {.section sourceUrl}
-      <p class="entry-source">
-        Source: <a href="{sourceUrl}" target="_blank">{sourceUrl}</a>
-      </p>
-      {.end}
-      {.section tags}
-      <p class="entry-tags">
-        Tagged: {.repeated section @}<a href="{collection.fullUrl}?tag={@|url-encode}" rel="tag">{@}</a>{.alternates with}, {.end}
-      </p>
-      {.end}
-      <div class="entry-actions">
-        {@|like-button}{@|social-button-inline}
-      </div>
-    </footer>
-
     {.if postItemInjectCode}<div class="entry-injection">{postItemInjectCode}</div>{.end}
 
   </article>
