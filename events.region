@@ -198,7 +198,7 @@
               {.end}
             {.end}
           {.end}
-        <div class="inner">
+        <div class="inner news-event-inner">
           {.section categoryFilter}
           <p class="filter-heading filter-by-category">
             <a href="{collection.fullUrl}"><span>{@|safe}</span></a>
