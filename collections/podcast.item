@@ -115,7 +115,7 @@
         </div>
       </div>
 
-      <div id="modal-wrapper" class="subscribe">
+      <div class="modal-wrapper subscribe">
         <div class="inner">
           <div class="subscribe-modal">
             <div class="close-modal" data-behavior="close-modal"></div>
@@ -154,7 +154,7 @@
       </div>
     </section>
 
-    <div id="modal-wrapper" class="donate">
+    <div class="modal-wrapper donate">
       <div class="inner">
         <div class="donate-modal">
           <a class='commitchange-donate' data-embedded></a>

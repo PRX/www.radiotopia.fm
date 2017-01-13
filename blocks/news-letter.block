@@ -1,4 +1,4 @@
-<div id="modal-wrapper">
+<div class="modal-wrapper">
   <div class="inner">
     <div id="mc_embed_signup">
       <div class="close-modal" data-behavior="close-modal"></div>

@@ -17,11 +17,11 @@ var Radiotopia = {
 
     $('*[data-behavior="open-modal"]').on('click', function(e) {
       e.preventDefault();
-      $('#modal-wrapper').fadeIn();
+      $('.modal-wrapper').fadeIn();
     });
 
     $('*[data-behavior="close-modal"]').on('click', function() {
-      $('#modal-wrapper').fadeOut();
+      $('.modal-wrapper').fadeOut();
     });
   },
 
