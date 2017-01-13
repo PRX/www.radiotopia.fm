@@ -40,7 +40,7 @@
           --><div id="headerNav"><squarespace:navigation navigationId="mainNav" template="navigation" /></div>
         </div>
       </header>
-      <main id="page" class="news-event-page" role="main">
+      <main id="page" role="main">
         {.if item}
             {.section item}
               {.if productType}
@@ -49,7 +49,7 @@
                   {.main-image?}
                     <div class="banner-thumbnail-wrapper" data-content-field="main-image">
                       <div class="color-overlay"></div>
-                      <figure id="thumbnail" class="loading content-fill"><img src="/assets/news-hero.jpg" /></figure>
+                      <figure id="thumbnail" class="loading content-fill"><img src="/assets/news-event-city-banner.png" /></figure>
                     </div>
                   {.end}
                 {.or}
@@ -91,9 +91,7 @@
                         <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image" data-collection-id="{collection.id}" data-edit-main-image="Banner" data-annotation-alignment="bottom left">
                           {.section mainImage}
                           <div class="color-overlay"></div>
-                          <figure id="thumbnail" class="loading content-fill">
-                            <img src="/assets/news-hero.jpg" />
-                          </figure>
+                          <figure id="thumbnail" class="loading content-fill"><img src="/assets/news-event-city-banner.png" /></figure>
                           {.end}
                           {.if description}<div class="desc-wrapper" data-collection-id="{id}">{description}</div>{.end}
                         </div>
@@ -158,18 +156,14 @@
                           {.background-source-video?}
                             <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image">
                               <div class="color-overlay"></div>
-                              <figure id="thumbnail" class="loading content-fill">
-                                {@|apply sqs-video-background.block}
-                              </figure>
+                              <figure id="thumbnail" class="loading content-fill"><img src="/assets/news-event-city-banner.png" /></figure>
                               {.if description}<div class="desc-wrapper" data-content-field="description">{description}</div>{.end}
                             </div>
                           {.or}
                             {.section mainImage}
                               <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image">
                                 <div class="color-overlay"></div>
-                                <figure id="thumbnail" class="loading content-fill">
-                                  <img src="/assets/news-hero.jpg" />
-                                </figure>
+                                <figure id="thumbnail" class="loading content-fill"><img src="/assets/news-event-city-banner.png" /></figure>
                                 {.if description}<div class="desc-wrapper" data-content-field="description">{description}</div>{.end}
                               </div>
                             {.end}
@@ -192,9 +186,7 @@
                         {.section mainImage}
                           <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image">
                             <div class="color-overlay"></div>
-                            <figure id="thumbnail" class="loading content-fill">
-                              <img src="/assets/news-hero.jpg" />
-                            </figure>
+                            <figure id="thumbnail" class="loading content-fill"><img src="/assets/news-event-city-banner.png" /></figure>
                             {.if description}<div class="desc-wrapper" data-content-field="description">{description}</div>{.end}
                           </div>
                         {.end}
@@ -206,7 +198,7 @@
               {.end}
             {.end}
           {.end}
-        <div class="inner news-event-inner">
+        <div class="inner">
           {.section categoryFilter}
           <p class="filter-heading filter-by-category">
             <a href="{collection.fullUrl}"><span>{@|safe}</span></a>
@@ -273,13 +265,5 @@
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
     crossorigin="anonymous"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-    <squarespace:script src="news.js" combo="false" />
-
-    <script type="text/javascript">
-      $(document).ready(function(){
-        RadiotopiaNews.initialize();
-      });
-    </script>
   </body>
 </html>
