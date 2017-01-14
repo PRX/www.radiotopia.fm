@@ -300,6 +300,14 @@
       </div>
 
       {@|apply news-letter.block}
+      <div class="modal-wrapper donate">
+        <div class="inner">
+          <div class="donate-modal">
+            <div class="close-modal" data-behavior="close-modal"></div>
+            <squarespace:block-field class="home-donate-embed" id="home-donate-embed" columns="12" label="Donate Embed Block" />
+          </div>
+        </div>
+      </div>
 
       <footer id="footer" role="contentinfo">
         <div class="footer-inner">
