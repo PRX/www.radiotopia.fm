@@ -259,6 +259,7 @@
               <div class="inner">
                 <div class="support-left-column">
                   <squarespace:block-field class="support-radiotopia" id="about-support-radiotopia" columns="12" label="Support Radiotopia" />
+                  <a href="#" data-behavior="open-modal" data-target="donate">Donate Now</a>
                 </div>
 
                 <div class="support-right-column">
@@ -285,6 +286,8 @@
         </div>
       </div>
 
+      {@|apply home-donate-embed-modal.block}
+
       <footer id="footer" role="contentinfo">
         <div class="footer-inner">
           <div class="nav-wrapper back-to-top-nav"><nav><div class="back-to-top"><a href="#header">Back to Top</a></div></nav></div>
@@ -306,10 +309,12 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
     <squarespace:script src="vendor/underscore-min.js" combo="false" />
+    <squarespace:script src="main.js" combo="false" />
     <squarespace:script src="news.js" combo="false" />
 
     <script type="text/javascript">
       $(document).ready(function(){
+        Radiotopia.initialize();
         RadiotopiaNews.initialize();
       });
     </script>
