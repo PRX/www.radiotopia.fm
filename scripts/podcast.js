@@ -11,8 +11,7 @@ var RadiotopiaPodcast = {
       $('.modal-wrapper.'+target).fadeIn();
     });
 
-    $('*[data-behavior="close-modal"], .closeButton').on('click', function() {
-      console.log('close');
+    $('*[data-behavior="close-modal"]').on('click', function() {
       $('.modal-wrapper').fadeOut();
     });
   }
