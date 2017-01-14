@@ -157,12 +157,9 @@
     <div class="modal-wrapper donate">
       <div class="inner">
         <div class="donate-modal">
-          <a class='commitchange-donate' data-embedded></a>
+          {customContent.podcastDonateModal}
         </div>
       </div>
-    </div>
-    <div class="donate-modal-script">
-      {customContent.podcastDonateModal}
     </div>
   </article>
 
