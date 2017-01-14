@@ -199,11 +199,11 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
     <squarespace:script src="vendor/underscore-min.js" combo="false" />
-    <squarespace:script src="podcast.js" combo="false" />
+    <squarespace:script src="main.js" combo="false" />
 
     <script type="text/javascript">
       $(document).ready(function(){
-        RadiotopiaPodcast.initialize();
+        Radiotopia.initialize();
       });
     </script>
   </body>

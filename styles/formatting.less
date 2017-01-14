@@ -157,6 +157,10 @@ header {
   width: 100%;
   z-index: 1000;
 
+  @media @tablet-desktop {
+    padding: 0;
+  }
+
   .inner {
     align-items: center;
     display: flex;
@@ -165,8 +169,18 @@ header {
     width: 100%;
   }
 
-  @media @tablet-desktop {
-    padding: 0;
+  .donate-modal {
+    position: relative;
+
+    .close-modal {
+      background: url("/assets/close-icon.png") #9a9a9a no-repeat center center;
+      background-size: 12px;
+      border-radius: 100px;
+      height: 26px;
+      top: 15px;
+      right: 10px;
+      width: 26px;
+    }
   }
 
   .close-modal {

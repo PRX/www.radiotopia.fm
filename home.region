@@ -279,6 +279,7 @@
           <div class="inner">
             <div class="support-left-column">
               <squarespace:block-field class="support-radiotopia" id="support-radiotopia" columns="12" label="Support Radiotopia" />
+              <a href="#" data-behavior="open-modal" data-target="donate">Donate Now</a>
             </div>
 
             <div class="support-right-column">
@@ -299,15 +300,8 @@
         </div>
       </div>
 
-      {@|apply news-letter.block}
-      <div class="modal-wrapper donate">
-        <div class="inner">
-          <div class="donate-modal">
-            <div class="close-modal" data-behavior="close-modal"></div>
-            <squarespace:block-field class="home-donate-embed" id="home-donate-embed" columns="12" label="Donate Embed Block" />
-          </div>
-        </div>
-      </div>
+      {@|apply newsletter-modal.block}
+      {@|apply home-donate-embed-modal.block}
 
       <footer id="footer" role="contentinfo">
         <div class="footer-inner">
