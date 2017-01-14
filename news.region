@@ -273,11 +273,13 @@
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
     crossorigin="anonymous"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
+    <squarespace:script src="vendor/underscore-min.js" combo="false" />
+    <squarespace:script src="main.js" combo="false" />
     <squarespace:script src="news.js" combo="false" />
 
     <script type="text/javascript">
       $(document).ready(function(){
+        Radiotopia.initialize();
         RadiotopiaNews.initialize();
       });
     </script>
