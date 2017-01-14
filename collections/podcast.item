@@ -157,6 +157,7 @@
     <div class="modal-wrapper donate">
       <div class="inner">
         <div class="donate-modal">
+          <div class="close-modal" data-behavior="close-modal"></div>
           {customContent.podcastDonateModal}
         </div>
       </div>
