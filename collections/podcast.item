@@ -124,7 +124,9 @@
                 <h2>Subscribe To</h2>
               </div>
               <div class="subscribe-body">
-                <p>{customContent.podcastTitle}</p>
+                <p>
+                  <a href="{customContent.podcastFeedUrl}">{customContent.podcastTitle}</a>
+                </p>
               </div>
             </div>
             {.if customContent.podcastRPUrl}
