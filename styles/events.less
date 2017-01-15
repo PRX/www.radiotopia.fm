@@ -26,6 +26,7 @@ body.view-item #siteWrapper.general #page {
         top: 5%;
 
         .cal-icon {
+          display: inline-block;
           background: url("/assets/calendar-icon.png") transparent no-repeat center center;
           background-size: 120px 128px;
           padding-top: 2em;
@@ -70,20 +71,23 @@ body.view-item #siteWrapper.general #page {
           }
         }
 
-        time.event-start {
-          text-align: left;
-          color: @orange !important;
-          font-family: 'roboto' !important;
-          font-size: .625em !important;
-          font-weight: 700 !important;
-          font-style: normal !important;
-        }
+        .event-details {
+          display: inline-block;
+          time.event-start {
+            text-align: left;
+            color: @orange !important;
+            font-family: 'roboto' !important;
+            font-size: .625em !important;
+            font-weight: 700 !important;
+            font-style: normal !important;
+          }
 
-        .event-title {
-          text-align: left;
-          font-family: 'sofia-pro';
-          font-size: 2em;
-          font-weight: 500;
+          .event-title {
+            text-align: left;
+            font-family: 'sofia-pro';
+            font-size: 2em;
+            font-weight: 500;
+          }
         }
       }
     }
