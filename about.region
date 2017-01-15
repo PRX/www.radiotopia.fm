@@ -286,7 +286,8 @@
         </div>
       </div>
 
-      {@|apply home-donate-embed-modal.block}
+      {@|apply newsletter-modal.block}
+      {@|apply donate-embed-modal.block}
 
       <footer id="footer" role="contentinfo">
         <div class="footer-inner">
