@@ -28,10 +28,12 @@
       </div>
     </div>
 
-    <div class="entry-content e-content">
-      {.section body}
-        {@}
-      {.end}
+    <div class="event-right-column">
+      <div class="entry-content e-content">
+        {.section body}
+          {@}
+        {.end}
+      </div>
     </div>
 
     {.if postItemInjectCode}<div class="entry-injection">{postItemInjectCode}</div>{.end}
