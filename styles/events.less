@@ -24,6 +24,21 @@ body.view-item #siteWrapper.general #page {
         width: 70%;
         margin: auto;
 
+        .cal-icon {
+          background: url("/assets/calendar-icon.png") transparent no-repeat center center;
+          background-size: 120px 128px;
+          padding-top: 2em;
+          height: 128px;
+          width: 120px;
+
+          @media @tablet {
+            background-size: 90px 96px;
+            padding-top: 1.5em;
+            height: 96px;
+            width: 90px;
+          }
+        }
+
         time {
           text-align: left;
           color: @orange !important;
