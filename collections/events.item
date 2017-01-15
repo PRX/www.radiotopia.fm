@@ -1,10 +1,17 @@
 <div class="event-item">
 
   {.section item}
+  <div class="event-item-header">
+    <div class="cal-icon">
+      <p class="event-month">{item.startDate|date %b}</p>
+      <p class="event-day">{item.startDate|date %d}</p>
+    </div>
+    <div class="header-details">
+      <time class="event-start">{item.startDate|date %B %e, %l %P}</time>
+    </div>
+  </div>
+
   <article class="entry h-entry {@|item-classes}{.main-image?} has-main-image{.end} clear" id="article-{id}" data-item-id="{id}">
-
-
-
     <div class="when">
     	{item.startDate|date %A, %B %e, %Y}
     	{item.startDate|date %l:%M %P}-{item.endDate|date %l:%M %P}
