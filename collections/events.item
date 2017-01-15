@@ -8,7 +8,7 @@
     </div>
     <div class="header-details">
       <time class="event-start">{item.startDate|date %B %e, %l %P}</time>
-
+      <h1 class="event-title">{item.title}</h1>
     </div>
   </div>
 
