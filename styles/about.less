@@ -423,60 +423,72 @@
       width: 80%;
     }
 
-    #mc_embed_signup {
-      width: 100%;
-
-      h2 {
-        font-weight: 500;
-        font-size: 2em;
-        margin: 0 0 0.625em 0;
-        text-transform: initial;
+    #about-mailing-list {
+      #mc_embed_signup {
+        background: inherit;
+        clear: none;
+        font: inherit;
         width: 100%;
 
-        @media @tablet-desktop {}
-      }
+        h2 {
+          font-weight: 500;
+          font-size: 2em;
+          margin: 0 0 0.625em 0;
+          text-transform: initial;
+          width: 100%;
 
-      p {
-        font-family: "sofia-pro";
-        margin: 0 0 1.75em 0;
-      }
-
-      .mc-field-group {
-        margin-bottom: 0.75em;
-
-        @media @desktop {
-          display: inline;
-          margin-right: 1em;
+          @media @tablet-desktop {}
         }
 
-        input {
-          padding: 0.5em;
-          max-width: 25em;
-          width: 100%;
+        p {
+          font-family: "sofia-pro";
+          margin: 0 0 1.75em 0;
+        }
+
+        form {
+          text-align: center;
+        }
+
+        .mc-field-group {
+          margin-bottom: 0.75em;
 
           @media @desktop {
-            width: initial;
+            display: inline;
+            margin-right: 1em;
+          }
+
+          input {
+            display: inline;
+            padding: 0.5em;
+            max-width: 25em;
+            width: 100%;
+
+            @media @desktop {
+              width: initial;
+            }
           }
         }
-      }
 
-      .button {
-        background-color: @light_blue;
-        border-radius: 6px;
-        border: 0;
-        color: @white !important;
-        font-size: .75em;
-        font-family: 'roboto';
-        font-weight: 600;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        margin-top: 0.5em;
-        padding: 14px 30px;
+        .button {
+          background-color: @light_blue;
+          border-radius: 6px;
+          border: 0;
+          color: @white !important;
+          font-size: .75em;
+          font-family: 'roboto';
+          font-weight: 600;
+          height: auto;
+          letter-spacing: 2px;
+          line-height: initial;
+          text-transform: uppercase;
+          margin-top: 0.5em;
+          padding: 14px 30px;
 
-        @media @tablet-desktop {
-          margin-top: 1.75em;
-          max-width: 17em;
-          width: 100%;
+          @media @tablet-desktop {
+            margin-top: 1.75em;
+            max-width: 17em;
+            width: 100%;
+          }
         }
       }
     }
