@@ -16,13 +16,13 @@
     <div class="event-content">
       <div class="event-left-column">
         <div class="when">
-          <p>When</p>
+          <p class="when-text">When</p>
         	{item.startDate|date %A, %B %e, %Y}
         	{item.startDate|date %l:%M %P}-{item.endDate|date %l:%M %P}
         </div>
 
         <div class="where">
-          <p>Where</p>
+          <p class="where-text">Where</p>
         	{item.location.addressTitle}
         	{item.location.addressLine1}
         	{item.location.addressLine2}
