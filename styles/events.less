@@ -22,14 +22,16 @@ body.view-item #siteWrapper.general #page {
     .event-item {
       .event-item-header {
         @media @tablet {
-
-        }
-
-        @media @desktop {
-
           width: 70%;
           position: absolute;
           top: 10%;
+        }
+
+        @media @desktop {
+          width: 70%;
+          position: absolute;
+          top: 10%;
+        }
 
           .cal-icon {
             display: inline-block;
@@ -102,32 +104,36 @@ body.view-item #siteWrapper.general #page {
         }
       }
 
-      .event-left-column {
-        display: inline-block;
-        width: 28%;
+      .event-content {
+        .clearfix();
 
-        .when {
-          .when-text {
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: .625em;
-            margin: 1em 0 0.25em;
+        .event-left-column {
+          display: inline-block;
+          width: 28%;
+
+          .when {
+            .when-text {
+              text-transform: uppercase;
+              font-weight: 700;
+              font-size: .625em;
+              margin: 1em 0 0.25em;
+            }
+          }
+
+          .where {
+            .where-text {
+              text-transform: uppercase;
+              font-weight: 700;
+              font-size: .625em;
+              margin: 1em 0 0.25em;
+            }
           }
         }
 
-        .where {
-          .where-text {
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: .625em;
-            margin: 1em 0 0.25em;
-          }
+        .event-right-column {
+          display: inline-block;
+          width: 70%;
         }
-      }
-
-      .event-right-column {
-        display: inline-block;
-        width: 70%;
       }
     }
 
