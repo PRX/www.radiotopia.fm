@@ -21,9 +21,22 @@ body.view-item #siteWrapper.general #page {
 
     .event-item {
       .event-item-header {
-        width: 70%;
+        width: 80%;
         position: absolute;
-        top: 10%;
+        top: 3%;
+
+        @media @desktop {
+          width: 70%;
+          position: absolute;
+          top: 10%;
+        }
+
+        @media @tablet {
+          width: 80%;
+          position: absolute;
+          top: 7%;
+        }
+
 
         .cal-icon {
           display: inline-block;
