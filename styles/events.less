@@ -21,119 +21,105 @@ body.view-item #siteWrapper.general #page {
 
     .event-item {
       .event-item-header {
-        @media @tablet {
-          width: 70%;
-          position: absolute;
-          top: 10%;
-        }
+        width: 70%;
+        position: absolute;
+        top: 10%;
 
-        @media @desktop {
-          width: 70%;
-          position: absolute;
-          top: 10%;
-        }
+        .cal-icon {
+          display: inline-block;
+          background: url("/assets/calendar-icon.png") transparent no-repeat center center;
+          background-size: 80px 85px;
+          padding-top: 1.5em;
+          height: 85px;
+          width: 80px;
+          margin-right: 2em;
 
-          .cal-icon {
-            display: inline-block;
-            background: url("/assets/calendar-icon.png") transparent no-repeat center center;
-            background-size: 80px 85px;
+          @media @tablet {
+            background-size: 90px 96px;
             padding-top: 1.5em;
-            height: 85px;
-            width: 80px;
-            margin-right: 2em;
-
-            @media @tablet {
-              background-size: 90px 96px;
-              padding-top: 1.5em;
-              height: 96px;
-              width: 90px;
-            }
+            height: 96px;
+            width: 90px;
           }
+        }
 
-          .event-month {
-            font-size: 0.5em;
-            font-weight: 700;
-            line-height: initial;
+        .event-month {
+          font-size: 0.5em;
+          font-weight: 700;
+          line-height: initial;
+          margin: 0;
+          text-align: center;
+          text-transform: uppercase;
+          color: @white;
+
+          @media @tablet {
+            font-size: 0.735em;
             margin: 0;
-            text-align: center;
-            text-transform: uppercase;
             color: @white;
+          }
+        }
 
-            @media @tablet {
-              font-size: 0.735em;
-              margin: 0;
-              color: @white;
-            }
+        .event-day {
+          font-size: 2em;
+          font-weight: 500;
+          line-height: 1em;
+          margin: -0.0625em 0 0 0;
+          text-align: center;
+          color: @white;
+
+          @media @tablet {
+            font-size: 2em;
+            color: @white;
+          }
+        }
+
+        .header-details {
+          display: inline-block;
+
+          time.event-start {
+            text-align: left;
+            color: @orange !important;
+            font-family: 'roboto' !important;
+            font-size: .625em !important;
+            font-weight: 700 !important;
+            font-style: normal !important;
           }
 
-          .event-day {
+          .event-title {
+            text-align: left;
+            font-family: 'sofia-pro';
             font-size: 2em;
             font-weight: 500;
-            line-height: 1em;
-            margin: -0.0625em 0 0 0;
-            text-align: center;
-            color: @white;
-
-            @media @tablet {
-              font-size: 2em;
-              color: @white;
-            }
+            margin: .25em 0 .5em;
           }
-
-          .header-details {
-            display: inline-block;
-
-            time.event-start {
-              text-align: left;
-              color: @orange !important;
-              font-family: 'roboto' !important;
-              font-size: .625em !important;
-              font-weight: 700 !important;
-              font-style: normal !important;
-            }
-
-            .event-title {
-              text-align: left;
-              font-family: 'sofia-pro';
-              font-size: 2em;
-              font-weight: 500;
-              margin: .25em 0 .5em;
-            }
-          }
-
         }
       }
 
-      .event-content {
-        .clearfix();
+      .event-left-column {
+        display: inline-block;
+        width: 28%;
 
-        .event-left-column {
-          display: inline-block;
-          width: 28%;
-
-          .when {
-            .when-text {
-              text-transform: uppercase;
-              font-weight: 700;
-              font-size: .625em;
-              margin: 1em 0 0.25em;
-            }
-          }
-
-          .where {
-            .where-text {
-              text-transform: uppercase;
-              font-weight: 700;
-              font-size: .625em;
-              margin: 1em 0 0.25em;
-            }
+        .when {
+          .when-text {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: .625em;
+            margin: 1em 0 0.25em;
           }
         }
 
-        .event-right-column {
-          display: inline-block;
-          width: 70%;
+        .where {
+          .where-text {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: .625em;
+            margin: 1em 0 0.25em;
+          }
         }
+      }
+
+      .event-right-column {
+        display: inline-block;
+        width: 70%;
       }
     }
 
