@@ -320,6 +320,16 @@
     <squarespace:script src="main.js" combo="false" />
     <squarespace:script src="news.js" combo="false" />
 
+    <script>
+      (function() { if(document.getElementById('commitchange-script')) return;
+      var npo = 4341;
+      var script = document.createElement('script');
+      var first = document.getElementsByTagName('script')[0]; script.setAttribute('data-npo-id', npo);
+      script.id = 'commitchange-script';
+      script.src = 'https://commitchange.com/js/donate-button.v2.js'; first.parentNode.insertBefore(script, first);
+      })();
+    </script>
+
     <script type="text/javascript">
       $(document).ready(function(){
         Radiotopia.initialize();
