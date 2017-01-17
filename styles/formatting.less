@@ -17,16 +17,18 @@ h4 {
   color: @white !important;
 }
 
-a,
-a:active,
-a:link {
-  text-decoration: none;
-  color: @white !important;
-  .css3-transition(color, .325s);
-
-  &:hover {
-    color: @light_blue !important;
+.nav-wrapper {
+  a,
+  a:active,
+  a:link {
+    text-decoration: none;
+    color: @white !important;
     .css3-transition(color, .325s);
+
+    &:hover {
+      color: @light_blue !important;
+      .css3-transition(color, .325s);
+    }
   }
 }
 
