@@ -293,42 +293,14 @@
         </div>
       </div>
 
-      {@|apply newsletter-modal.block}
-      {@|apply donate-embed-modal.block}
-
-      <footer id="footer" role="contentinfo">
-        <div class="footer-inner">
-          <div class="nav-wrapper back-to-top-nav"><nav><div class="back-to-top"><a href="#header">Back to Top</a></div></nav></div>
-          <squarespace:block-field id="footerBlocks" columns="12" label="Footer Content" />
-          <squarespace:navigation navigationId="footerNav" template="footer-navigation" />
-          {.if website.location.addressTitle || website.location.addressLine1 || website.location.addressLine2 || website.location.addressCountry}<div id="siteInfo">{.or}{.if websiteSettings.contactPhoneNumber || websiteSettings.contactEmail}<div id="siteInfo">{.end}{.end}{.section website}{.section location}{.if addressTitle || addressLine1 || addressLine2 || addressCountry}<span class="site-address">{.end}{.if addressTitle}{addressTitle}{.end}{.if addressLine1}{.if addressTitle}, {.end}{addressLine1}{.end}{.if addressLine2}{.if addressTitle || addressLine1}, {.or}{.end}{addressLine2}{.end}{.if addressCountry}{.if addressTitle || addressLine1 || addressLine2}, {.end}{addressCountry}{.end}{.if addressTitle || addressLine1 || addressLine2 || addressCountry}</span>{.end}{.end}{.end}{.section websiteSettings}{.if contactPhoneNumber}<span rel="tel" class="site-phone">{contactPhoneNumber}</span>{.end}{.if contactEmail}<a href="mailto:{contactEmail}" class="site-email"><span>{contactEmail}</span></a>{.end}{.end}{.if website.location.addressTitle || website.location.addressLine1 || website.location.addressLine2 || website.location.addressCountry}</div>{.or}{.if websiteSettings.contactPhoneNumber || websiteSettings.contactEmail}</div>{.end}{.end}
-        </div>
-      </footer>
-
+      {@|apply footer.block}
     </div>
 
     <squarespace:script src="site-bundle.js" combo="false" />
     {squarespace-footers}
 
-    <script
-    src="https://code.jquery.com/jquery-1.12.4.min.js"
-    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-    crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-    <squarespace:script src="vendor/underscore-min.js" combo="false" />
-    <squarespace:script src="main.js" combo="false" />
+    {@|apply footer-javascript.block}
     <squarespace:script src="news.js" combo="false" />
-
-    <script>
-      (function() { if(document.getElementById('commitchange-script')) return;
-      var npo = 4341;
-      var script = document.createElement('script');
-      var first = document.getElementsByTagName('script')[0]; script.setAttribute('data-npo-id', npo);
-      script.id = 'commitchange-script';
-      script.src = 'https://commitchange.com/js/donate-button.v2.js'; first.parentNode.insertBefore(script, first);
-      })();
-    </script>
 
     <script type="text/javascript">
       $(document).ready(function(){

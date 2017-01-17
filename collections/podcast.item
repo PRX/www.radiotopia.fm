@@ -94,7 +94,7 @@
                 <squarespace:block-field class="{customContent.podcastUrlTitle}-support-podcast" id="{customContent.podcastUrlTitle}-support-podcast" columns="12" label="Unique Support Podcast Title Block" />
                 <squarespace:block-field class="support-podcast-description" id="support-podcast-description" columns="12" label="Template Support Podcast Description" />
 
-                <a href="#" data-behavior="open-modal" data-target="donate">Donate Now</a>
+                <a href="#" data-behavior="open-modal" data-target="podcast-donate">Donate Now</a>
               </div>
 
               <div class="support-right-column">
@@ -156,7 +156,7 @@
       </div>
     </section>
 
-    <div class="modal-wrapper donate">
+    <div class="modal-wrapper podcast-donate">
       <div class="inner">
         <div class="donate-modal">
           <div class="close-modal" data-behavior="close-modal"></div>
@@ -166,13 +166,5 @@
     </div>
   </article>
 
-  <script>
-    (function() { if(document.getElementById('commitchange-script')) return;
-    var npo = 4341;
-    var script = document.createElement('script');
-    var first = document.getElementsByTagName('script')[0]; script.setAttribute('data-npo-id', npo);
-    script.id = 'commitchange-script';
-    script.src = 'https://commitchange.com/js/donate-button.v2.js'; first.parentNode.insertBefore(script, first);
-    })();
-  </script>
+  {@|apply donate-embed-modal.block}
 {.end}
