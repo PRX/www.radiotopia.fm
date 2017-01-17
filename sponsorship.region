@@ -349,6 +349,12 @@
             </div>
           </div>
 
+          <div class="podcasts-grid-wrapper">
+            <squarespace:block-field class="open-block-field" id="podcasts-grid-header" columns="12" label="Podcasts Grid Header" />
+
+            <squarespace:query collection="podcasts" template="sponsorship-podcast" columns="12" />
+          </div>
+
           <div class="section-9-bottom-banner">
             <div class="bottom-banner-image-wrapper">
               <squarespace:block-field class="open-block-field" id="bottom-banner-image-block" columns="12" label="Bottom Banner Image" />
@@ -363,12 +369,6 @@
                 <squarespace:block-field class="open-block-field" id="bottom-banner-text-block" columns="12" label="Bottom Banner Text" />
               </div>
             </div>
-          </div>
-
-          <div class="podcasts-grid-wrapper">
-            <squarespace:block-field class="open-block-field" id="podcasts-grid-header" columns="12" label="Podcasts Grid Header" />
-
-            <squarespace:query collection="podcasts" template="sponsorship-podcast" columns="12" />
           </div>
 
           <div class="post-grid-block">
