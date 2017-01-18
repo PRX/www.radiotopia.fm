@@ -708,9 +708,28 @@
       }
     }
 
-    #podcasts-grid-header h2 {
-      text-align: center;
-      margin-bottom: 2.375em;
+    #podcasts-grid-header {
+      h2 {
+        width: 80%;
+        margin: 0 auto 1em;
+      }
+
+      p {
+        width: 80%;
+        margin: 0 auto 1em;
+      }
+
+      @media @tablet-desktop {
+        h2 {
+          width: 69%;
+          margin: 0 auto .8em;
+        }
+
+        p {
+          width: 57%;
+          margin: 0 auto 4.5em;
+        }
+      }
     }
 
     .sponsorship-page-podcasts {
