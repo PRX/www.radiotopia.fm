@@ -387,6 +387,7 @@
 
     {@|apply footer-javascript.block}
     <squarespace:script src="sponsorship.js" combo="false" />
+    <squarespace:script src="vendor/jquery.scrollTo.min.js" combo="false" />
 
     <script type="text/javascript">
       $(document).ready(function(){
@@ -394,5 +395,6 @@
         RadiotopiaSponsorship.initialize();
       });
     </script>
+
   </body>
 </html>
