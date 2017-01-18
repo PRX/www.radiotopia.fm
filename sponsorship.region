@@ -370,10 +370,6 @@
               </div>
             </div>
           </div>
-
-          <div class="post-grid-block">
-            <squarespace:block-field class="open-block-field" id="post-grid-block" columns="12" label="Post Grid Block" />
-          </div>
         </div>
       </main>
 
