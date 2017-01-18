@@ -228,7 +228,7 @@
           <squarespace:block-field id="sponsorship-banner-image" class="sponsorship-banner-image" label="Sponsorship Banner Image" />
           <div class="sponsorship-headline-wrapper">
             <squarespace:block-field id="sponsorship-headline" class="sponsorship-headline" label="Sponsorship Headline" />
-            <a href="#" class="smooth-scroll" data-behavior="smooth-scroll" data-target="section-1-wrapper">Learn More</a>
+            <a href="#" class="smooth-scroll" data-behavior="smooth-scroll" data-target="section-1-wrapper"> Or Learn More</a>
           </div>
         </div>
 
