@@ -6,9 +6,6 @@
         <p class="news-date">{addedOn|date %b. %d, %G}</p>
         <p class="news-title">{title}</p>
         <div class="news-excerpt">{excerpt}</div>
-        <div class="read-more-button">
-          <a href="{baseUrl}{fullUrl}">Read More</a>
-        </div>
       </div>
     </article>
   {.end}
