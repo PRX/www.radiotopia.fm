@@ -242,6 +242,15 @@
             </div>
           </div>
 
+          <div class="post-phone-section">
+            <div class="post-phone-section-text-wrapper">
+              <squarespace:block-field class="open-block-field" id="post-phone-text" columns="12" label="Post Phone Text Block" />
+            </div>
+            <div class="post-phone-section-image-wrapper">
+              <squarespace:block-field class="open-block-field" id="post-phone-image" columns="12" label="Post Phone Image Block" />
+            </div>
+          </div>
+
           <div class="section-2-wrapper">
             <div class="section-2-text-wrapper">
               <squarespace:block-field class="open-block-field" id="section-2-text" columns="12" label="Section 2 Text" />
