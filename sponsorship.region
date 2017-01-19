@@ -364,6 +364,15 @@
             <squarespace:query collection="podcasts" template="sponsorship-podcast" columns="12" />
           </div>
 
+          <div class="prx-block-wrapper">
+            <div class="prx-text-wrapper">
+              <squarespace:block-field class="open-block-field" id="prx-text-block" columns="12" label="Check out PRX text block" />
+            </div>
+            <div class="prx-logo-wrapper">
+              <squarespace:block-field class="open-block-field" id="prx-logo-block" columns="12" label="PRX logo block" />
+            </div>
+          </div>
+
           <div class="section-9-bottom-banner">
             <div class="bottom-banner-image-wrapper">
               <squarespace:block-field class="open-block-field" id="bottom-banner-image-block" columns="12" label="Bottom Banner Image" />
