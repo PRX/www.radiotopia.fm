@@ -16,7 +16,7 @@
     <div class="event-content">
       <div class="event-left-column">
       <div class="event-image-wrapper">
-        <img src="{item.assetUrl}">
+        <img class="event-image" src="{item.assetUrl}">
       </div>
         <div class="when">
           <p class="when-text">When</p>
