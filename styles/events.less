@@ -21,6 +21,7 @@ body.view-item #siteWrapper.general #page {
 
     .event-item {
       .event-item-header {
+        display: flex;
         width: 80%;
         position: absolute;
         top: 5%;
@@ -43,6 +44,7 @@ body.view-item #siteWrapper.general #page {
           display: inline-block;
           background: url("/assets/calendar-icon.png") transparent no-repeat center center;
           background-size: 80px 85px;
+          flex: 0 0 80px;
           padding-top: 1.5em;
           height: 85px;
           width: 80px;
@@ -50,6 +52,7 @@ body.view-item #siteWrapper.general #page {
 
           @media @tablet {
             background-size: 90px 96px;
+            flex: 0 0 90px;
             padding-top: 1.5em;
             height: 96px;
             width: 90px;
@@ -88,6 +91,7 @@ body.view-item #siteWrapper.general #page {
 
         .header-details {
           display: inline-block;
+          flex: 1 1 auto;
 
           time.event-start {
             text-align: left;
