@@ -17,8 +17,8 @@
       <div class="event-left-column">
         <div class="when">
           <p class="when-text">When</p>
-          {item.startDate|date %A, %B %e, %Y}
-          {item.startDate|date %l:%M %P}-{item.endDate|date %l:%M %P}
+          <p>{item.startDate|date %A, %B %e, %Y}</p>
+          <p>{item.startDate|date %l:%M %P}-{item.endDate|date %l:%M %P}</p>
         </div>
 
         <div class="where">
