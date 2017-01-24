@@ -112,26 +112,12 @@ body.view-item #siteWrapper.general #page {
         .clearfix();
 
         .event-left-column {
-          display: inline;
+          float: left;
           width: 80%;
 
           @media @tablet-desktop {
             float: right;
             width: 70%;
-          }
-        }
-
-        .event-right-column {
-          display: inline;
-          width: 80%;
-
-          @media @tablet-desktop {
-            float: left;
-            width: 28%;
-          }
-
-          .event-image {
-            width: 100%;
           }
 
           .when {
@@ -151,6 +137,22 @@ body.view-item #siteWrapper.general #page {
               margin: 1em 0 0.25em;
             }
           }
+        }
+
+        .event-right-column {
+          float: left;
+          width: 80%;
+
+          @media @tablet-desktop {
+            float: left;
+            width: 28%;
+          }
+
+          .event-image {
+            width: 100%;
+          }
+
+
         }
       }
     }
