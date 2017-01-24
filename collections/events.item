@@ -23,9 +23,9 @@
 
         <div class="where">
           <p class="where-text">Where</p>
-          {item.location.addressTitle}
-          {item.location.addressLine1}
-          {item.location.addressLine2}
+          <p>{item.location.addressTitle}</p>
+          <p>{item.location.addressLine1}</p>
+          <p>{item.location.addressLine2}</p>
         </div>
 
         <div class="entry-content e-content">
