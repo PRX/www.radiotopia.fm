@@ -122,42 +122,43 @@ body.view-item #siteWrapper.general #page {
 
           .when-where-section {
             margin-bottom: 1em;
-          }
+            .clearfix();
 
-          .when {
-            float: left;
-            margin-right: 4em;
+            .when {
+              float: left;
+              margin-right: 4em;
 
-            .when-text {
-              text-transform: uppercase;
-              font-weight: 700;
-              font-size: .75em;
-              margin: 1em 0 0.25em;
+              .when-text {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: .75em;
+                margin: 1em 0 0.25em;
+              }
+
+              p.date-text {
+                margin: 0;
+              }
             }
 
-            p.date-text {
-              margin: 0;
-            }
-          }
+            .where {
+              float: left;
 
-          .where {
-            float: left;
+              .where-text {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: .75em;
+                margin: 1em 0 0.25em;
+              }
 
-            .where-text {
-              text-transform: uppercase;
-              font-weight: 700;
-              font-size: .75em;
-              margin: 1em 0 0.25em;
-            }
-
-            p.location-text {
-              margin: 0;
+              p.location-text {
+                margin: 0;
+              }
             }
           }
         }
 
         .event-right-column {
-          float: right;
+          float: left;
           width: 80%;
 
           @media @tablet-desktop {
