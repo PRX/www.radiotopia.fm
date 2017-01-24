@@ -17,15 +17,15 @@
       <div class="event-left-column">
         <div class="when">
           <p class="when-text">When</p>
-          <p>{item.startDate|date %A, %B %e, %Y}</p>
-          <p>{item.startDate|date %l:%M %P}-{item.endDate|date %l:%M %P}</p>
+          <p class="date-text">{item.startDate|date %A, %B %e, %Y}</p>
+          <p class="date-text">{item.startDate|date %l:%M %P}-{item.endDate|date %l:%M %P}</p>
         </div>
 
         <div class="where">
           <p class="where-text">Where</p>
-          <p>{item.location.addressTitle}</p>
-          <p>{item.location.addressLine1}</p>
-          <p>{item.location.addressLine2}</p>
+          <p class="location-text">{item.location.addressTitle}</p>
+          <p class="location-text">{item.location.addressLine1}</p>
+          <p class="location-text">{item.location.addressLine2}</p>
         </div>
 
         <div class="entry-content e-content">

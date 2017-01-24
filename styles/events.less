@@ -117,17 +117,22 @@ body.view-item #siteWrapper.general #page {
 
           @media @tablet-desktop {
             float: left;
-            width: 80%;
+            width: 65%;
           }
 
           .when {
             float: left;
+            margin-right: 4em;
 
             .when-text {
               text-transform: uppercase;
               font-weight: 700;
-              font-size: .625em;
+              font-size: .75em;
               margin: 1em 0 0.25em;
+            }
+
+            p.date-text {
+              margin: 0;
             }
           }
 
@@ -137,8 +142,12 @@ body.view-item #siteWrapper.general #page {
             .where-text {
               text-transform: uppercase;
               font-weight: 700;
-              font-size: .625em;
+              font-size: .75em;
               margin: 1em 0 0.25em;
+            }
+
+            p.location-text {
+              margin: .25em 0;
             }
           }
         }
@@ -149,7 +158,7 @@ body.view-item #siteWrapper.general #page {
 
           @media @tablet-desktop {
             float: right;
-            width: 25%;
+            width: 29%;
           }
 
           .event-image {
