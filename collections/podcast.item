@@ -99,7 +99,6 @@
 
               <div class="support-right-column">
                 <squarespace:block-field class="sponsor-podcast" id="sponsor-podcast" columns="12" label="Template Become a Sponsor Block" />
-                <a href="mailto:{customContent.podcastSponsorEmail}?Subject=Sponsor%20{customContent.podcastTitle}">Become a Sponsor</a>
               </div>
             </div>
           </div>
