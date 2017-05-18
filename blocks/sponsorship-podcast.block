@@ -1,28 +1,31 @@
 <section class="sponsorship-page-podcasts">
   {.repeated section items}
-    <article class="podcast-item">
-      <div class="podcast-wrapper">
-        <div class="left-column">
-          <div class="podcast-art-wrapper">
-            <img class="podcast-artwork-image" src={customContent.showArt.assetUrl} />
+    {.if customContent.podcastHidden}
+    {.or}
+      <article class="podcast-item">
+        <div class="podcast-wrapper">
+          <div class="left-column">
+            <div class="podcast-art-wrapper">
+              <img class="podcast-artwork-image" src={customContent.showArt.assetUrl} />
+            </div>
+          </div>
+          <div class="right-column">
+            <div class="offset-box"></div>
+            <div class="podcast-host-image-wrapper">
+              <img class="podcast-host-image" src={customContent.hostsImage.assetUrl} />
+            </div>
+            <h2 class="podcast-title">{customContent.podcastTitle}</h2>
+            <p class="podcast-host">{customContent.podcastHosts}</p>
+            <div class="sponsorship-links">
+              <a href="mailto:{customContent.podcastSponsorEmail}?Subject=Sponsor%20{customContent.podcastTitle}" target="_blank">Sponsor Contact</a>
+              <a href="{baseUrl}{fullUrl}">Learn More</a>
+            </div>
+            <div class="podcast-grid-audio-block-wrapper">
+              <squarespace:block-field class="open-block-field" id="{customContent.podcastUrlTitle}" columns="12" label="Podcasts Grid Unique Audio Block" />
+            </div>
           </div>
         </div>
-        <div class="right-column">
-          <div class="offset-box"></div>
-          <div class="podcast-host-image-wrapper">
-            <img class="podcast-host-image" src={customContent.hostsImage.assetUrl} />
-          </div>
-          <h2 class="podcast-title">{customContent.podcastTitle}</h2>
-          <p class="podcast-host">{customContent.podcastHosts}</p>
-          <div class="sponsorship-links">
-            <a href="mailto:{customContent.podcastSponsorEmail}?Subject=Sponsor%20{customContent.podcastTitle}" target="_blank">Sponsor Contact</a>
-            <a href="{baseUrl}{fullUrl}">Learn More</a>
-          </div>
-          <div class="podcast-grid-audio-block-wrapper">
-            <squarespace:block-field class="open-block-field" id="{customContent.podcastUrlTitle}" columns="12" label="Podcasts Grid Unique Audio Block" />
-          </div>
-        </div>
-      </div>
-    </article>
+      </article>
+    {.end}
   {.end}
 </section>
