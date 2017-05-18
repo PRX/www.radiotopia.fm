@@ -7,19 +7,24 @@
 
     {.repeated section items}
 
-      <!--WRAPPER-->
+      {.if customContent.podcastHidden}
+      {.or}
 
-      <article id="post-{id}" class="{@|item-classes} podcast-item" data-item-id="{id}">
+        <!--WRAPPER-->
 
-        <!--POST TILE-->
+        <article id="post-{id}" class="{@|item-classes} podcast-item" data-item-id="{id}">
 
-          <div class="podcast-art-wrapper">
-            <a href="{baseUrl}{fullUrl}">
-              <img class="podcast-artwork-image" src={customContent.showArt.assetUrl} />
-            </a>
-          </div>
+          <!--POST TILE-->
 
-      </article>
+            <div class="podcast-art-wrapper">
+              <a href="{baseUrl}{fullUrl}">
+                <img class="podcast-artwork-image" src={customContent.showArt.assetUrl} />
+              </a>
+            </div>
+
+        </article>
+
+      {.end}
 
     {.or}
       No podcasts available.
