@@ -1,12 +1,10 @@
 # Radiotopia
 
-[`www.radiotopia.fm`](https://www.radiopia.fm) is static website hosted on S3 behind a CloudFront CDN. Any changes checked into GitHub will automatically be **live** and **available to the public**.
-
-The S3 bucket and GitHub repository are kept in sync with an automatically-triggered Snap CI pipeline, which runs:
-
-`aws s3 sync . s3://www.radiotopia.fm --acl private --region us-east-1 --delete --exclude ".git/*"``
+[`www.radiotopia.fm`](https://www.radiopia.fm) is static website hosted on GitHub Pages behind a CloudFront CDN. Any changes checked into GitHub will automatically be **live** and **available to the public**.
 
 `www.radiotopia.fm` should never be served over insecure HTTP as long as it is accepting donations.
+
+> ___This is no longer the active version of the site. It's maintained for legacy reasons, so some parts of this readme may not align with reality.___
 
 ### Domains
 
