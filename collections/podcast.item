@@ -64,7 +64,7 @@
               </div>
             </div>
             <div class="extra-metadata">
-              <squarespace:block-field class="podcast-extra-metadata" id="{customContent.podcastUrlTitle}-podcast-extra-metadata" label="Extra Metadata" />
+              <squarespace:block-field class="podcast-extra-metadata" id="{customContent.podcastUrlTitle}-podcast-extra-metadata" columns="1" label="Extra Metadata" />
             </div>
           </div>
 
