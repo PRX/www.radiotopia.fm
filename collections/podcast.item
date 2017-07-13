@@ -63,10 +63,9 @@
                 {.end}
               </div>
             </div>
-          </div>
-
-          <div class="podcast-column podcast-right-column">
-            <squarespace:block-field class="podcast-extra-metadata" id="{customContent.podcastUrlTitle}-podcast-extra-metadata" label="Extra Metadata" />
+            <div class="extra-metadata">
+              <squarespace:block-field class="podcast-extra-metadata" id="{customContent.podcastUrlTitle}-podcast-extra-metadata" label="Extra Metadata" />
+            </div>
           </div>
 
           <div class="podcast-starter-episodes-container">
