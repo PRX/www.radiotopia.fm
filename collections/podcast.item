@@ -65,6 +65,10 @@
             </div>
           </div>
 
+          <div class="podcast-column podcast-right-column">
+            <squarespace:block-field class="podcast-extra-metadata" id="{customContent.podcastUrlTitle}-podcast-extra-metadata" label="Extra Metadata" />
+          </div>
+
           <div class="podcast-starter-episodes-container">
             <squarespace:block-field class="podcast-starter-episodes-header" id="{customContent.podcastUrlTitle}-podcast-starter-episodes-header" columns="12" label="Starter Episodes Header" />
             <squarespace:block-field class="podcast-starter-episodes" id="{customContent.podcastUrlTitle}-podcast-starter-episodes" columns="12" label="Starter Episodes" />
