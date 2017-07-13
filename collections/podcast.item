@@ -66,7 +66,7 @@
           </div>
 
           <div class="podcast-starter-episodes-container">
-            <squarespace:block-field class="podcast-starter-episodes-header" id="podcast-starter-episodes-header" columns="12" label="Starter Episodes Header" />
+            <squarespace:block-field class="podcast-starter-episodes-header" id="{customContent.podcastUrlTitle}-podcast-starter-episodes-header" columns="12" label="Starter Episodes Header" />
             <squarespace:block-field class="podcast-starter-episodes" id="{customContent.podcastUrlTitle}-podcast-starter-episodes" columns="12" label="Starter Episodes" />
           </div>
 
