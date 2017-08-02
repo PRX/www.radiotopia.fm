@@ -122,7 +122,7 @@
               </div>
               <div class="subscribe-body">
                 <p>
-                  <a href="{customContent.podcastFeedUrl}">{customContent.podcastTitle}</a>
+                  {customContent.podcastTitle}
                 </p>
               </div>
             </div>
@@ -147,6 +147,9 @@
                   <a href="{customContent.podcastGooglePlayUrl}"><img src="/assets/google-play-logo.png"></a>
                 </div>
               {.end}
+            </div>
+            <div class="misc-buttons">
+              <a href="{customContent.podcastFeedUrl}">RSS</a>
             </div>
           </div>
         </div>
