@@ -720,6 +720,11 @@
 
       img {
         max-width: 187px;
+
+        @media @small-mobile {
+          // TODO this is a hack to make sure everything fits on small screens
+          max-width: 35vw !important;
+        }
       }
     }
 
