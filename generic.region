@@ -43,7 +43,7 @@
 
       <main id="page" role="main">
         <div class="generic-content-wrapper">
-            <div class="generic-content-block-wrapper">
+            <div class="generic-content-block-wrapper inner">
               {squarespace.main-content}
             </div>
           </div>
