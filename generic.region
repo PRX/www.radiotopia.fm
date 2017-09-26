@@ -23,7 +23,7 @@
     <div id="sidecarNav">
       <squarespace:navigation navigationId="mainNav" template="mobile-navigation" />
     </div>
-    <div id="siteWrapper" class="clearfix sponsorship">
+    <div id="siteWrapper" class="clearfix generic">
 
       <div class="sqs-cart-dropzone"></div>
 
@@ -44,7 +44,7 @@
       <main id="page" role="main">
         <div class="generic-content-wrapper">
             <div class="generic-content-block-wrapper">
-              <squarespace:block-field class="open-block-field" id="page-content" columns="12" label="Page Content" />
+              {squarespace.main-content}
             </div>
           </div>
       </main>
