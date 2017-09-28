@@ -132,33 +132,49 @@
             </div>
             {.if customContent.podcastRPUrl}
               <div class="radio-public-button">
-                <a href="{customContent.podcastRPUrl}"><img src="/assets/radio-public-big.png"></a>
+                <a href="{customContent.podcastRPUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="RadioPublic"><img src="/assets/radio-public-big.png"></a>
               </div>
             {.end}
             <div class="modal-icons">
               {.if customContent.podcastStitcherUrl}
                 <div class="stitcher-button subscribe-icon">
-                  <a href="{customContent.podcastStitcherUrl}"><img src="/assets/stitcher-logo.png"></a>
+                  <a href="{customContent.podcastStitcherUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Stitcher"><img src="/assets/stitcher-logo.png"></a>
                 </div>
               {.end}
               {.if customContent.podcastItunesUrl}
                 <div class="itunes-button subscribe-icon">
-                  <a href="{customContent.podcastItunesUrl}"><img src="/assets/itunes-logo.png"></a>
+                  <a href="{customContent.podcastItunesUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Apple"><img src="/assets/itunes-logo.png"></a>
                 </div>
               {.end}
               {.if customContent.podcastGooglePlayUrl}
                 <div class="google-play-button subscribe-icon">
-                  <a href="{customContent.podcastGooglePlayUrl}"><img src="/assets/google-play-logo.png"></a>
+                  <a href="{customContent.podcastGooglePlayUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Google Play"><img src="/assets/google-play-logo.png"></a>
                 </div>
               {.end}
             </div>
             <div class="misc-buttons">
-              <a href="{customContent.podcastFeedUrl}">RSS</a>
+              <a href="{customContent.podcastFeedUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="RSS">RSS</a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <script>
+      $('a[data-trk-podcast]').on('click', function(e) {
+        var podcast = $(this).attr('data-trk-podcast');
+        var platform = $(this).attr('data-trk-platform');
+
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'Subscription Link',
+          eventAction: podcast,
+          eventLabel: platform,
+          eventValue: 1,
+          transport: 'beacon'
+        });
+      });
+    </script>
 
     <div class="modal-wrapper podcast-donate">
       <div class="inner">
