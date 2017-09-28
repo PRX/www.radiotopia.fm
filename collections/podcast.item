@@ -160,25 +160,6 @@
       </div>
     </section>
 
-    <script>
-      $(function() {
-        $('a[data-trk-podcast]').on('click', function(e) {
-          console.log('click');
-          var podcast = $(this).attr('data-trk-podcast');
-          var platform = $(this).attr('data-trk-platform');
-
-          ga('send', {
-            hitType: 'event',
-            eventCategory: 'Subscription Link',
-            eventAction: podcast,
-            eventLabel: platform,
-            eventValue: 1,
-            transport: 'beacon'
-          });
-        });
-      });
-    </script>
-
     <div class="modal-wrapper podcast-donate">
       <div class="inner">
         <div class="donate-modal">

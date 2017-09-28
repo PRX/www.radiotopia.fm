@@ -25,6 +25,21 @@ var Radiotopia = {
     $('*[data-behavior="close-modal"]').on('click', function() {
       $('.modal-wrapper').fadeOut();
     });
+
+    $('a[data-trk-podcast]').on('click', function() {
+      console.log('click');
+      var podcast = $(this).attr('data-trk-podcast');
+      var platform = $(this).attr('data-trk-platform');
+
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'Subscription Link',
+        eventAction: podcast,
+        eventLabel: platform,
+        eventValue: 1,
+        transport: 'beacon'
+      });
+    });
   },
 
   resizeHandler: function() {
