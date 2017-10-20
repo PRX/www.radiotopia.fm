@@ -15,10 +15,10 @@
       /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
          We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
     </style>
-    <meta http-equiv="refresh" content="1; url=https://www.apple.com/">
+    <meta http-equiv="refresh" content="1; url=https://www.commitchange.com/ma/cambridge/prx-inc/campaigns/radiotopia-fall-campaign-2017">
 
     <script>
-      window.location.href = 'https://www.apple.com/';
+      window.location.href = 'https://www.commitchange.com/ma/cambridge/prx-inc/campaigns/radiotopia-fall-campaign-2017';
     </script>
   </head>
 
