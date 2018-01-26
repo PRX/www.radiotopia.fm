@@ -73,7 +73,7 @@
             <squarespace:block-field class="podcast-starter-episodes" id="{customContent.podcastUrlTitle}-podcast-starter-episodes" columns="12" label="Starter Episodes" />
           </div>
 
-          <div class="hosts-header">
+          <div class="hosts-header" name="podcast-hosts">
             <squarespace:block-field class="{customContent.podcastUrlTitle}-hosts-header-block" id="{customContent.podcastUrlTitle}-hosts-header-block" columns="12" label="Hosts Header" />
           </div>
 
