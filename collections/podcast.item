@@ -77,7 +77,7 @@
             <squarespace:block-field class="{customContent.podcastUrlTitle}-hosts-header-block" id="{customContent.podcastUrlTitle}-hosts-header-block" columns="12" label="Hosts Header" />
           </div>
 
-          <div class="hosts-container">
+          <div class="hosts-container" id="podcast-hosts">
             <img src="{customContent.hostsImage.assetUrl}" class="hosts-image">
             <div class="hosts-content">
               <div class="hosts">
