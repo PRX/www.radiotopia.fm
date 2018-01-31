@@ -16,7 +16,12 @@ var Radiotopia = {
     $('#secondaryNavigation .folder').last().find('.subnav').append('<div><a href="#" data-behavior="open-modal" data-target="newsletter">Sign Up For Newsletter</a></div>');
     $('#secondaryNavigation .folder:nth-of-type(2)').find('.subnav').append('<div><a href="#" data-behavior="open-modal" data-target="donate">Make a Donation</a></div>');
 
-    $('#headerNav').find('#mainNavigation').append('<div class="external"><a href="#" data-behavior="open-modal" data-target="donate">Donate</a></div>');
+    if ($('.modal-wrapper.podcast-donate').length) {
+      $('#headerNav').find('#mainNavigation').append('<div class="external"><a href="#" data-behavior="open-modal" data-target="podcast-donate">Donate</a></div>');
+    } else {
+      $('#headerNav').find('#mainNavigation').append('<div class="external"><a href="#" data-behavior="open-modal" data-target="donate">Donate</a></div>');
+    }
+
 
     $('*[data-behavior="open-modal"]').on('click', function(e) {
       e.preventDefault();
