@@ -22,7 +22,6 @@ var Radiotopia = {
       $('#headerNav').find('#mainNavigation').append('<div class="external"><a href="#" data-behavior="open-modal" data-target="donate">Donate</a></div>');
     }
 
-
     $('*[data-behavior="open-modal"]').on('click', function(e) {
       e.preventDefault();
       var target = $(this).attr('data-target');
