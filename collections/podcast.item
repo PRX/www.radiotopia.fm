@@ -136,14 +136,14 @@
               </div>
             {.end}
             <div class="modal-icons">
-              {.if customContent.podcastStitcherUrl}
-                <div class="stitcher-button subscribe-icon">
-                  <a href="{customContent.podcastStitcherUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Stitcher"><img src="/assets/stitcher-logo.png"></a>
-                </div>
-              {.end}
               {.if customContent.podcastItunesUrl}
                 <div class="itunes-button subscribe-icon">
                   <a href="{customContent.podcastItunesUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Apple"><img src="/assets/new-itunes-logo-color.png"></a>
+                </div>
+              {.end}
+              {.if customContent.podcastStitcherUrl}
+                <div class="stitcher-button subscribe-icon">
+                  <a href="{customContent.podcastStitcherUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Stitcher"><img src="/assets/stitcher-logo.png"></a>
                 </div>
               {.end}
               {.if customContent.podcastGooglePlayUrl}
