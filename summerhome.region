@@ -26,6 +26,30 @@
     </div>
     <div id="siteWrapper" class="clearfix home">
 
+      <style>
+        #headerNav nav a {
+          color: #1D314D!important;
+        }
+
+        #summer-home-header {
+          background: linear-gradient(to bottom, #d9f0f5 0%,#78cae2 100%);
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 500px;
+          z-index: 10;
+        }
+
+        @media only screen and (max-width: 640px) {
+          #summer-home-header {
+            height: 640px;
+          }
+        }
+      </style>
+
+      <div id="summer-home-header"></div>
+
       <div class="sqs-cart-dropzone"></div>
 
       <header id="header" class="show-on-scroll" data-offset-el=".index-section" data-offset-behavior="bottom" role="banner">
@@ -45,19 +69,203 @@
         <div class="inner">
           <style>
             #summer-home-block {
-              background: red;
+              height: 357px;
+              position: relative;
+              z-index: 20;
+            }
+
+            @media only screen and (max-width: 640px) {
+              #summer-home-block {
+                height: 530px;
+                margin-bottom: 50px;
+              }
+            }
+
+            #cloud1 {
+              position: absolute;
+              top: 200px;
+              left: 30px;
+              opacity: 0.7;
+            }
+            @media only screen and (max-width: 640px) { #cloud1 { left: -10px; top: 50px; opacity: 0.5; } }
+
+            #cloud2 {
+              position: absolute;
+              bottom: 200px;
+              right: 40px;
+              width: 300px;
+            }
+            @media only screen and (max-width: 640px) { #cloud2 { right: -20px; top: 300px; width: 250px; opacity: 0.5; } }
+
+            #cloud3 {
+              position: absolute;
+              top: 10px;
+              left: 400px;
+              width: 200px;
+            }
+            @media only screen and (max-width: 950px) { #cloud3 { display: none; } }
+
+            #sun {
+              position: absolute;
+              top: -30px;
+              left: 50px;
+            }
+            @media only screen and (max-width: 1160px) { #sun { width: 200px; } }
+            @media only screen and (max-width: 1000px) { #sun { width: 150px; } }
+            @media only screen and (max-width: 840px) { #sun { width: 120px; } }
+            @media only screen and (max-width: 680px) { #sun { width: 100px; } }
+            @media only screen and (max-width: 640px) { #sun { width: 100px; top: 0; left: 0; } }
+            @media only screen and (max-width: 330px) { #sun { width: 100px; top: 35px; left: 0; } }
+
+            #plane {
+              position: absolute;
+              top: -40px;
+              right: 50px;
+            }
+            @media only screen and (max-width: 1160px) { #plane { width: 600px; } }
+            @media only screen and (max-width: 1000px) { #plane { width: 500px; } }
+            @media only screen and (max-width: 840px) { #plane { width: 400px; } }
+            @media only screen and (max-width: 680px) { #plane { width: 370px; } }
+            @media only screen and (max-width: 640px) { #plane { width: 370px; top: -80px; right: 20px; } }
+            @media only screen and (max-width: 550px) { #plane { width: 300px; top: -80px; right: 20px; } }
+            @media only screen and (max-width: 460px) { #plane { width: 250px; top: -80px; right: 20px; } }
+            @media only screen and (max-width: 400px) { #plane { width: 220px; top: -80px; right: 20px; } }
+            @media only screen and (max-width: 330px) { #plane { width: 200px; top: -25px; left: 0; } }
+
+            #threeshows {
+              text-transform: uppercase;
+              font-size: 46px;
+              font-weight: 700;
+              color: #1D314D;
+              position: absolute;
+              top: 150px;
+              left: 300px;
+              padding-bottom: 14px;
+              border-bottom: 6px solid orange;
+            }
+            @media only screen and (max-width: 1100px) { #threeshows { top: 130px; left: 280px; font-size: 42px; } }
+            @media only screen and (max-width: 1000px) { #threeshows { top: 90px; left: 230px; font-size: 38px; } }
+            @media only screen and (max-width: 640px) { #threeshows {
+              top: -5px;
+              left: 117px;
+              line-height: 45px;
+              width: 180px;
+            } }
+            @media only screen and (max-width: 340px) { #threeshows { width: 150px; } }
+            @media only screen and (max-width: 330px) { #threeshows { top: 40px; font-size: 30px; line-height: 33px; } }
+
+            #listenall {
+              text-transform: uppercase;
+              font-size: 28px;
+              font-weight: 400;
+              color: #1D314D;
+              position: absolute;
+              top: 210px;
+              left: 300px;
+            }
+            @media only screen and (max-width: 1100px) { #listenall { top: 185px; left: 280px; font-size: 25px; } }
+            @media only screen and (max-width: 1000px) { #listenall { top: 150px; left: 230px; font-size: 22px; } }
+            @media only screen and (max-width: 640px) { #listenall {
+              top: 170px;
+              left: 117px;
+              line-height: 25px;
+              font-size: 20px;
+              width: 180px;
+            } }
+
+            #learnmore {
+              background: #fae823;
+              color: #1D314D;
+              padding: 12px 18px;
+              position: absolute;
+              left: 300px;
+              top: 270px;
+              font-weight: bold;
+              font-size: 20px;
+              height: 50px;
+            }
+            @media only screen and (max-width: 1100px) { #learnmore { top: 250px; left: 280px; } }
+            @media only screen and (max-width: 1000px) { #learnmore { top: 200px; left: 230px; } }
+            @media only screen and (max-width: 640px) { #learnmore {
+              top: 380px;
+              left: 50%;
+              line-height: 45px;
+              width: 200px;
+              margin-left: -100px;
+              text-align: center;
+              padding-top: 3px;
+              padding-left: 0;
+              padding-right: 0;
+            } }
+
+            #learnmore a {
+              color: inherit;
+            }
+
+            #summerpreview {
+              background: #f89320;
+              width: 250px;
+              height: 50px;
+              position: absolute;
+              top: 270px;
+              left: 460px;
+              font-weight: bold;
+              color: #1D314D;
+              padding: 12px 0 0 18px;
+              font-size: 20px;
+              cursor: pointer;
+            }
+            @media only screen and (max-width: 1100px) { #summerpreview { top: 250px; left: 430px; } }
+            @media only screen and (max-width: 1000px) { #summerpreview { top: 200px; left: 380px; } }
+            @media only screen and (max-width: 640px) { #summerpreview {
+              top: 300px;
+              left: 50%;
+              line-height: 45px;
+              width: 200px;
+              margin-left: -100px;
+              text-align: center;
+              padding-top: 3px;
+              padding-left: 0;
+              padding-right: 0;
+            } }
+
+            #summerpreview-audio-wrap {
+              display: none;
             }
           </style>
           <div id="summer-home-block">
+            <img src="/assets/summer/cloud.png" id="cloud1">
+            <img src="/assets/summer/cloud.png" id="cloud2">
+            <img src="/assets/summer/cloud.png" id="cloud3">
 
+            <img src="/assets/summer/hp-sun.png" id="sun" alt="Summer 2018">
+            <img src="/assets/summer/hp-plane.png" id="plane" alt="Escape to Radiotopia">
+
+            <div id="threeshows">Three new shows</div>
+            <div id="listenall">Listen all summer long</div>
+
+            <div id="learnmore"><a href="/summer">Learn More</a></div>
+
+            <div id="summerpreview">▶ Hear a Preview</div>
+            <div id="summerpreview-audio-wrap">
+              <audio src="https://media.radiotopia.fm/promos/Summer_of_Radiotopia-Trailer-Generic.mp3" id="summerpreview-audio"></audio>
+            </div>
+            <script>
+              (function () {
+                var btn = document.getElementById('summerpreview');
+                var ply = document.getElementById('summerpreview-audio');
+                btn.addEventListener('click', function (ev) {
+                  if (ply.paused) {
+                    ply.play();
+                    btn.innerText = 'Pause Preview';
+                  } else {
+                    ply.pause();
+                    btn.innerText = '▶ Hear a Preview';
+                  }
+                })
+              })();
+            </script>
           </div>
-          <squarespace:block-field id="homeLogo" columns="12" label="Home Logo" />
-
-          <squarespace:block-field id="homeLogoAudioPlayer" columns="12" label="Home Logo Audio Player" />
-
-          <squarespace:block-field id="homeLogoSubtitle" columns="12" label="Home Logo Subtitle" />
-
-          <squarespace:block-field id="homeLogoVideoPlayer" columns="12" label="Home Logo Video Player" />
 
           {.if item}
             {.section item}
