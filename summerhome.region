@@ -74,6 +74,10 @@
               z-index: 20;
             }
 
+            #logoImage img {
+              width: 60px;
+            }
+
             @media only screen and (max-width: 640px) {
               #summer-home-block {
                 height: 530px;
@@ -165,13 +169,7 @@
             }
             @media only screen and (max-width: 1100px) { #listenall { top: 185px; left: 280px; font-size: 25px; } }
             @media only screen and (max-width: 1000px) { #listenall { top: 150px; left: 230px; font-size: 22px; } }
-            @media only screen and (max-width: 640px) { #listenall {
-              top: 170px;
-              left: 117px;
-              line-height: 25px;
-              font-size: 20px;
-              width: 180px;
-            } }
+            @media only screen and (max-width: 640px) { #listenall { top: 170px; left: 117px; line-height: 25px; font-size: 20px; width: 180px; } }
 
             #learnmore {
               background: #fae823;
@@ -538,6 +536,13 @@
         Radiotopia.initialize();
         RadiotopiaHome.initialize();
       });
+    </script>
+
+    <script>
+      (function () {
+        var logo = document.querySelector('#logoImage img');
+        logo.src = '/assets/summer/Radiotopia-Zag-Full-Blue.png';
+      })();
     </script>
   </body>
 </html>
