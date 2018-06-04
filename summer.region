@@ -379,7 +379,7 @@
                 <img src="/assets/summer/cloud.png" id="cloud3">
 
                 <img src="/assets/summer/hp-sun.png" id="sun" alt="Summer 2018">
-                <img src="/assets/summer/hp-plane.png" id="plane" alt="Escape to Radiotopia">
+                <img src="/assets/summer/hp-plane.png?v=2" id="plane" alt="Escape to Radiotopia">
 
                 <div id="threeshows">Three new shows</div>
                 <div id="listenall">Listen all summer long</div>
