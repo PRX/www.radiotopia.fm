@@ -190,6 +190,10 @@
 
       @media only screen and (max-width: 700px) { .summer-title br { display: none; } }
 
+      .summer-title a {
+        text-decoration: none;
+      }
+
       .summer-date {
         display: block;
         color: #1D314D;
@@ -398,21 +402,21 @@
                   <div id="summer-shows">
                     <div class="summer-show">
                       <a href="/podcasts/zigzag"><img src="/assets/summer/ZigZag-Artwork.jpg" alt=""></a>
-                      <span class="summer-title">ZigZag<br><br></span>
+                      <span class="summer-title"><a href="/podcasts/zigzag">ZigZag</a><br><br></span>
                       <span class="summer-date">Premieres June 14</span>
                       <span class="summer-desc">A podcast about changing the course of capitalism, journalism, and women’s lives. For real.</span>
                       <span class="summer-info"><a href="/podcasts/zigzag">Learn More</a></span><span class="summer-sep"> | </span><span class="summer-subscribe"><a href="#" data-show="zigzag">Subscribe</a></span>
                     </div>
                     <div class="summer-show">
                       <a href="/podcasts/everything-is-alive"><a href="/podcasts/everything-is-alive"><img src="/assets/summer/Everything_is_Alive.jpg" alt=""></a>
-                      <span class="summer-title">Everything is Alive<br><br></span>
+                      <span class="summer-title"><a href="/podcasts/everything-is-alive">Everything is Alive</a><br><br></span>
                       <span class="summer-date">Premieres July 17</span>
                       <span class="summer-desc">An unscripted interview show in which all the guests are inanimate objects.</span>
                       <span class="summer-info"><a href="/podcasts/everything-is-alive">Learn More</a></span><span class="summer-sep"> | </span><span class="summer-subscribe"><a href="#" data-show="eia">Subscribe</a></span>
                     </div>
                     <div class="summer-show">
                       <a href="/showcase"><img src="/assets/summer/Copy of GGoD_Podcast logo_051418.jpg" alt=""></a>
-                      <span class="summer-title">The Great God of Depression</span>
+                      <span class="summer-title"><a href="/showcase">The Great God of Depression</a></span>
                       <span class="summer-date">Premieres August 3</span>
                       <span class="summer-desc">A true story of a brilliant physician, a literary genius and madness in America.</span>
                       <span class="summer-info"><a href="/showcase">Learn More</a></span><span class="summer-sep"> | </span><span class="summer-subscribe"><a href="#" data-show="ggod">Subscribe</a></span>
