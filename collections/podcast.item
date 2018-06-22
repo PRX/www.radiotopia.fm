@@ -148,7 +148,7 @@
               {.end}
               {.if customContent.podcastGooglePlayUrl}
                 <div class="google-play-button subscribe-icon">
-                  <a href="{customContent.podcastGooglePlayUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Google Play"><img src="/assets/google-play-logo.png"></a>
+                  <a href="{customContent.podcastGooglePlayUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Google Play"><img src="/assets/google_podcasts_badge@2x.png"></a>
                 </div>
               {.end}
             </div>
