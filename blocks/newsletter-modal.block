@@ -41,6 +41,11 @@
           <li><input type="checkbox" value="8192" name="group[9413][8192]" id="mce-group[9413]-9413-13"><label for="mce-group[9413]-9413-13">Benjamen Walker's Theory of Everything</label></li>
           <li><input type="checkbox" value="16384" name="group[9413][16384]" id="mce-group[9413]-9413-14"><label for="mce-group[9413]-9413-14">The Truth</label></li>
           <li><input type="checkbox" value="32768" name="group[9413][32768]" id="mce-group[9413]-9413-15"><label for="mce-group[9413]-9413-15">The West Wing Weekly</label></li>
+          <li><input type="checkbox" value="65536" name="group[9413][65536]" id="mce-group[9413]-9413-16"><label for="mce-group[9413]-9413-16">Ear Hustle</label></li>
+          <li><input type="checkbox" value="131072" name="group[9413][131072]" id="mce-group[9413]-9413-17"><label for="mce-group[9413]-9413-17">Showcase from Radiotopia</label></li>
+          <li><input type="checkbox" value="262144" name="group[9413][262144]" id="mce-group[9413]-9413-18"><label for="mce-group[9413]-9413-18">This is Love</label></li>
+          <li><input type="checkbox" value="524288" name="group[9413][524288]" id="mce-group[9413]-9413-19"><label for="mce-group[9413]-9413-19">What Trump Can Teach Us About Con Law</label></li>
+          <li><input type="checkbox" value="1048576" name="group[9413][1048576]" id="mce-group[9413]-9413-20"><label for="mce-group[9413]-9413-20">ZigZag</label></li>
         </ul>
       </div>
         <div id="mce-responses" class="clear">
