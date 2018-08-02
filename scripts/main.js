@@ -22,6 +22,10 @@ var Radiotopia = {
       $('#headerNav').find('#mainNavigation').append('<div class="external"><a href="#" data-behavior="open-modal" data-target="donate" data-source="nav">Donate</a></div>');
     }
 
+    if (/#subscribe/.test(window.location.href)) {
+      $('.modal-wrapper.subscribe').fadeIn();
+    }
+
     $('*[data-behavior="open-modal"]').on('click', function(e) {
       e.preventDefault();
       var target = $(this).attr('data-target');
