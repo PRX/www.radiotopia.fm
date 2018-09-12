@@ -246,6 +246,10 @@
                   <squarespace:block-field id="our-team-caption-two" class="caption two" label="Our Team Caption Two" />
                 </li>
                 <li class="item">
+                  <squarespace:block-field id="our-team-image-five" class="image five" label="Our Team Image Five" />
+                  <squarespace:block-field id="our-team-caption-five" class="caption five" label="Our Team Caption Five" />
+                </li>
+                <li class="item">
                   <squarespace:block-field id="our-team-image-three" class="image three" label="Our Team Image Three" />
                   <squarespace:block-field id="our-team-caption-three" class="caption three" label="Our Team Caption Three" />
                 </li>
