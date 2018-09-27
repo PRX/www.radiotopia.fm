@@ -102,7 +102,7 @@
 
               <div class="support-right-column">
                 <squarespace:block-field class="sponsor-podcast" id="sponsor-podcast" columns="12" label="Template Become a Sponsor Block" />
-                <div class="row sqs-row">
+                <div class="row sqs-row" style="padding-top: 14px;">
                   <div class="sqs-block button-block sqs-block-button">
                     <div class="sqs-block-content">
                       <div class="sqs-block-button-container--center" data-alignment="center" data-button-size="medium" id="yui_3_17_2_1_1538079083875_159">
