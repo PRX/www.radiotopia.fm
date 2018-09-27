@@ -101,7 +101,7 @@
               </div>
 
               <div class="support-right-column">
-                <squarespace:block-field class="sponsor-podcast" id="{customContent.podcastUrlTitle}-sponsor-podcast" columns="12" label="Template Become a Sponsor Block" />
+                <squarespace:block-field class="sponsor-podcast" id="sponsor-podcast" columns="12" label="Template Become a Sponsor Block" />
                 <div class="row sqs-row">
                   <div class="sqs-block button-block sqs-block-button">
                     <div class="sqs-block-content">
