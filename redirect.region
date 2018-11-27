@@ -24,7 +24,9 @@
           el.innerText = 'Redirect surpressed within Squarespace'
           document.body.appendChild(el);
         } else {
-          window.location.href = 'https://us.commitchange.com/ma/cambridge/prx-inc/campaigns/radiotopia-fall-campaign-2018?r=j';
+          setTimeout(function(){
+            window.location.href = 'https://us.commitchange.com/ma/cambridge/prx-inc/campaigns/radiotopia-fall-campaign-2018?r=j';
+          }, 1000);
         }
       });
 
