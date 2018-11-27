@@ -20,6 +20,9 @@
     <script>
       document.addEventListener("DOMContentLoaded", function(event) {
         if (window.location.href.includes('squarespace.com')) {
+          var el = document.createElement('p');
+          el.innerText = 'Redirect surpressed within Squarespace'
+          document.body.appendChild(el);
         } else {
           window.location.href = 'https://us.commitchange.com/ma/cambridge/prx-inc/campaigns/radiotopia-fall-campaign-2018?r=j';
         }
