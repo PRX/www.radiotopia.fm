@@ -18,7 +18,9 @@
     <meta id="redirect" http-equiv="refresh" content="1; url=https://us.commitchange.com/ma/cambridge/prx-inc/campaigns/radiotopia-fall-campaign-2018">
 
     <script>
-      if (!window.location.href.includes('www-radiotopia-fm.squarespace.com')) {
+      if (window.location.href.includes('www-radiotopia-fm.squarespace.com')) {
+        document.getElementById("redirect").parentNode.removeChild(document.getElementById("redirect"));
+      } else {
         window.location.href = 'https://us.commitchange.com/ma/cambridge/prx-inc/campaigns/radiotopia-fall-campaign-2018';
       }
     </script>
