@@ -1,64 +1,134 @@
 <div class="modal-wrapper newsletter">
   <div class="inner">
-    <div id="mc_embed_signup">
-      <div class="close-modal" data-behavior="close-modal"></div>
-      <form action="//prx.us3.list-manage.com/subscribe/post?u=b030d898f636b90f47f8cd820&amp;id=76ff76f2c5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-        <h2>Subscribe to our mailing list</h2>
-      <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-      <div class="mc-field-group">
-        <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
-        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-      </div>
-      <div class="mc-field-group">
-        <label for="mce-FNAME">First Name </label>
-        <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-      </div>
-      <div class="mc-field-group">
-        <label for="mce-LNAME">Last Name </label>
-        <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-      </div>
-      <div class="mc-field-group">
-        <label for="mce-MMERGE3">ZIP Code </label>
-        <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3">
-      </div>
-      <div class="mc-field-group input-group">
-        <strong>Shows that I like </strong>
-        <ul>
-          <li><input type="checkbox" value="1" name="group[9413][1]" id="mce-group[9413]-9413-0"><label for="mce-group[9413]-9413-0">99% Invisible</label></li>
-          <li><input type="checkbox" value="2" name="group[9413][2]" id="mce-group[9413]-9413-1"><label for="mce-group[9413]-9413-1">The Allusionist</label></li>
-          <li><input type="checkbox" value="4" name="group[9413][4]" id="mce-group[9413]-9413-2"><label for="mce-group[9413]-9413-2">The Bugle</label></li>
-          <li><input type="checkbox" value="8" name="group[9413][8]" id="mce-group[9413]-9413-3"><label for="mce-group[9413]-9413-3">Criminal</label></li>
-          <li><input type="checkbox" value="16" name="group[9413][16]" id="mce-group[9413]-9413-4"><label for="mce-group[9413]-9413-4">Fugitive Waves</label></li>
-          <li><input type="checkbox" value="32" name="group[9413][32]" id="mce-group[9413]-9413-5"><label for="mce-group[9413]-9413-5">The Heart</label></li>
-          <li><input type="checkbox" value="64" name="group[9413][64]" id="mce-group[9413]-9413-6"><label for="mce-group[9413]-9413-6">Love + Radio</label></li>
-          <li><input type="checkbox" value="128" name="group[9413][128]" id="mce-group[9413]-9413-7"><label for="mce-group[9413]-9413-7">The Memory Palace</label></li>
-          <li><input type="checkbox" value="256" name="group[9413][256]" id="mce-group[9413]-9413-8"><label for="mce-group[9413]-9413-8">Millennial</label></li>
-          <li><input type="checkbox" value="512" name="group[9413][512]" id="mce-group[9413]-9413-9"><label for="mce-group[9413]-9413-9">Mortified</label></li>
-          <li><input type="checkbox" value="1024" name="group[9413][1024]" id="mce-group[9413]-9413-10"><label for="mce-group[9413]-9413-10">Radio Diaries</label></li>
-          <li><input type="checkbox" value="2048" name="group[9413][2048]" id="mce-group[9413]-9413-11"><label for="mce-group[9413]-9413-11">Song Exploder</label></li>
-          <li><input type="checkbox" value="4096" name="group[9413][4096]" id="mce-group[9413]-9413-12"><label for="mce-group[9413]-9413-12">Strangers</label></li>
-          <li><input type="checkbox" value="8192" name="group[9413][8192]" id="mce-group[9413]-9413-13"><label for="mce-group[9413]-9413-13">Benjamen Walker's Theory of Everything</label></li>
-          <li><input type="checkbox" value="16384" name="group[9413][16384]" id="mce-group[9413]-9413-14"><label for="mce-group[9413]-9413-14">The Truth</label></li>
-          <li><input type="checkbox" value="32768" name="group[9413][32768]" id="mce-group[9413]-9413-15"><label for="mce-group[9413]-9413-15">The West Wing Weekly</label></li>
-          <li><input type="checkbox" value="65536" name="group[9413][65536]" id="mce-group[9413]-9413-16"><label for="mce-group[9413]-9413-16">Ear Hustle</label></li>
-          <li><input type="checkbox" value="131072" name="group[9413][131072]" id="mce-group[9413]-9413-17"><label for="mce-group[9413]-9413-17">Showcase from Radiotopia</label></li>
-          <li><input type="checkbox" value="262144" name="group[9413][262144]" id="mce-group[9413]-9413-18"><label for="mce-group[9413]-9413-18">This is Love</label></li>
-          <li><input type="checkbox" value="524288" name="group[9413][524288]" id="mce-group[9413]-9413-19"><label for="mce-group[9413]-9413-19">What Trump Can Teach Us About Con Law</label></li>
-          <li><input type="checkbox" value="1048576" name="group[9413][1048576]" id="mce-group[9413]-9413-20"><label for="mce-group[9413]-9413-20">ZigZag</label></li>
-        </ul>
-      </div>
-        <div id="mce-responses" class="clear">
-          <div class="response" id="mce-error-response" style="display:none"></div>
-          <div class="response" id="mce-success-response" style="display:none"></div>
-        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b030d898f636b90f47f8cd820_76ff76f2c5" tabindex="-1" value=""></div>
-          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+
+    <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="30FEA77E7D0A9B8D7616376B90063231CC5E3663E51148766B9A8A1551D7FEC1285E07ACA63689B2335EC412F2AA02A9B7C9C8A21DEDC34C2B9648B9170F3146">
+    <p>
+        <label for="fieldName">Name</label>
+        <br />
+        <input id="fieldName" name="cm-name" type="text" />
+    </p>
+    <p>
+        <label for="fieldEmail">Email</label>
+        <br />
+        <input id="fieldEmail" name="cm-eirykj-eirykj" type="email" class="js-cm-email-input"
+        required />
+    </p>
+    <p>
+        <label for="fieldjdcjid">ZIP Code</label>
+        <br />
+        <input id="fieldjdcjid" name="cm-f-jdcjid" type="text" autocomplete="off"
+        style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAXtJREFUOBGVUj2LwkAUnIjBICIIKe8gWKRKo2BvYXMgWNlYWZ3gn1B/htekibWVcH1aIVV+wQULCxsRtMrtrGYv8RLUB8nuvjczu+9DWywWH3EcL8X3jidM07QfAfucz+ffhJdeIZNwu+iLexoFnrr5Cr/+05xSOvBoX61WYdt2BvaSgGVZ6PV6+QKGYahApVKBKJY6p2PKeduUufb7fbTbbaxWKxwOB0ynU+x2O7ium4ndk3l+KYU8AW02m8UM8Jnn81limMLlcsnDK59IMRKHiXpBQibiEZkY0co3sSxlDegoMsdx0O12Ua/XEUUR1us1jsejhFNEvaBIgK07nU4IwxDNZhOdTicDLXO205OViYrDZrORLg5Qq9VSdUpwJSEwoUjiuF+FOEzTxGAwwH6/x3a7zUD+piXjBpLukDwej2XenufJdNLQhzUYjUao1WpoNBpywIbDYZqPwi6wz6xyEATQdV2ROKmJEVMoIECszdL3ffb7n5EsnJNf8S6HAZZBgLIAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"
+        />
+    </p>
+    <p>
+        <label>Shows That I Like</label>
+        <br />
+        <div>
+            <input id="fieldjdcjdj-0" name="cm-fo-jdcjdj" type="checkbox" value="1242131"
+            />
+            <label for="fieldjdcjdj-0">Spacebridge</label>
         </div>
-      </form>
-    </div>
+        <div>
+            <input id="fieldjdcjdj-1" name="cm-fo-jdcjdj" type="checkbox" value="1241468"
+            />
+            <label for="fieldjdcjdj-1">99% Invisible</label>
+        </div>
+        <div>
+            <input id="fieldjdcjdj-2" name="cm-fo-jdcjdj" type="checkbox" value="1242132"
+            />
+            <label for="fieldjdcjdj-2">The Allusionist</label>
+        </div>
+        <div>
+            <input id="fieldjdcjdj-3" name="cm-fo-jdcjdj" type="checkbox" value="1242133"
+            />
+            <label for="fieldjdcjdj-3">Articles of Interest</label>
+        </div>
+        <div>
+            <input id="fieldjdcjdj-4" name="cm-fo-jdcjdj" type="checkbox" value="1242134"
+            />
+            <label for="fieldjdcjdj-4">Criminal</label>
+        </div>
+        <div>
+            <input id="fieldjdcjdj-5" name="cm-fo-jdcjdj" type="checkbox" value="1242135"
+            />
+            <label for="fieldjdcjdj-5">Ear Hustle</label>
+        </div>
+        <div>
+            <input id="fieldjdcjdj-6" name="cm-fo-jdcjdj" type="checkbox" value="1242136"
+            />
+            <label for="fieldjdcjdj-6">Everything is Alive</label>
+        </div>
+        <div>
+            <input id="fieldjdcjdj-7" name="cm-fo-jdcjdj" type="checkbox" value="1242144"
+            />
+            <label for="fieldjdcjdj-7">The Heart</label>
+        </div>
+        <div>
+            <input id="fieldjdcjdj-8" name="cm-fo-jdcjdj" type="checkbox" value="1242145"
+            />
+            <label for="fieldjdcjdj-8">The Kitchen Sisters Present</label>
+        </div>
+        <div>
+            <input id="fieldjdcjdj-9" name="cm-fo-jdcjdj" type="checkbox" value="1242146"
+            />
+            <label for="fieldjdcjdj-9">The Memory Palace</label>
+        </div>
+        <div>
+            <input id="fieldjdcjdj-10" name="cm-fo-jdcjdj" type="checkbox" value="1242147"
+            />
+            <label for="fieldjdcjdj-10">Mortified</label>
+        </div>
+        <div>
+            <input id="fieldjdcjdj-11" name="cm-fo-jdcjdj" type="checkbox" value="1242148"
+            />
+            <label for="fieldjdcjdj-11">Radio Diaries</label>
+        </div>
+        <div>
+            <input id="fieldjdcjdj-12" name="cm-fo-jdcjdj" type="checkbox" value="1242149"
+            />
+            <label for="fieldjdcjdj-12">Song Exploder</label>
+        </div>
+        <div>
+            <input id="fieldjdcjdj-13" name="cm-fo-jdcjdj" type="checkbox" value="1242138"
+            />
+            <label for="fieldjdcjdj-13">This is Love</label>
+        </div>
+        <div>
+            <input id="fieldjdcjdj-14" name="cm-fo-jdcjdj" type="checkbox" value="1242139"
+            />
+            <label for="fieldjdcjdj-14">Theory of Everything</label>
+        </div>
+        <div>
+            <input id="fieldjdcjdj-15" name="cm-fo-jdcjdj" type="checkbox" value="1242140"
+            />
+            <label for="fieldjdcjdj-15">The Truth</label>
+        </div>
+        <div>
+            <input id="fieldjdcjdj-16" name="cm-fo-jdcjdj" type="checkbox" value="1242141"
+            />
+            <label for="fieldjdcjdj-16">The West Wing Weekly</label>
+        </div>
+        <div>
+            <input id="fieldjdcjdj-17" name="cm-fo-jdcjdj" type="checkbox" value="1242142"
+            />
+            <label for="fieldjdcjdj-17">What Trump Can Teach Us About Con Law</label>
+        </div>
+        <div>
+            <input id="fieldjdcjdj-18" name="cm-fo-jdcjdj" type="checkbox" value="1242143"
+            />
+            <label for="fieldjdcjdj-18">ZigZag</label>
+        </div>
+        <div>
+            <input id="fieldjdcjdj-19" name="cm-fo-jdcjdj" type="checkbox" value="1242137"
+            />
+            <label for="fieldjdcjdj-19">Millennial</label>
+        </div>
+    </p>
+    <p>
+        <button class="js-cm-submit-button" type="submit">Subscribe</button>
+    </p>
+    </form>
+    <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+
   </div>
 </div>
-
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='zip';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-<!--End mc_embed_signup-->
