@@ -1,7 +1,11 @@
 <div class="modal-wrapper newsletter">
   <div class="inner">
 
-    <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="30FEA77E7D0A9B8D7616376B90063231CC5E3663E51148766B9A8A1551D7FEC1285E07ACA63689B2335EC412F2AA02A9B7C9C8A21DEDC34C2B9648B9170F3146">
+    <p style="text-align: center;">
+    Sign up for our monthly Citizen newsletter.
+    </p>
+
+    <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="30FEA77E7D0A9B8D7616376B90063231CC5E3663E51148766B9A8A1551D7FEC1285E07ACA63689B2335EC412F2AA02A9B7C9C8A21DEDC34C2B9648B9170F3146" style="margin: 0 auto; max-width: 200px;">
     <p>
         <label for="fieldName">Name</label>
         <br />
@@ -19,110 +23,6 @@
         <input id="fieldjdcjid" name="cm-f-jdcjid" type="text" autocomplete="off"
         style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAXtJREFUOBGVUj2LwkAUnIjBICIIKe8gWKRKo2BvYXMgWNlYWZ3gn1B/htekibWVcH1aIVV+wQULCxsRtMrtrGYv8RLUB8nuvjczu+9DWywWH3EcL8X3jidM07QfAfucz+ffhJdeIZNwu+iLexoFnrr5Cr/+05xSOvBoX61WYdt2BvaSgGVZ6PV6+QKGYahApVKBKJY6p2PKeduUufb7fbTbbaxWKxwOB0ynU+x2O7ium4ndk3l+KYU8AW02m8UM8Jnn81limMLlcsnDK59IMRKHiXpBQibiEZkY0co3sSxlDegoMsdx0O12Ua/XEUUR1us1jsejhFNEvaBIgK07nU4IwxDNZhOdTicDLXO205OViYrDZrORLg5Qq9VSdUpwJSEwoUjiuF+FOEzTxGAwwH6/x3a7zUD+piXjBpLukDwej2XenufJdNLQhzUYjUao1WpoNBpywIbDYZqPwi6wz6xyEATQdV2ROKmJEVMoIECszdL3ffb7n5EsnJNf8S6HAZZBgLIAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"
         />
-    </p>
-    <p>
-        <label>Shows That I Like</label>
-        <br />
-        <div>
-            <input id="fieldjdcjdj-0" name="cm-fo-jdcjdj" type="checkbox" value="1242131"
-            />
-            <label for="fieldjdcjdj-0">Spacebridge</label>
-        </div>
-        <div>
-            <input id="fieldjdcjdj-1" name="cm-fo-jdcjdj" type="checkbox" value="1241468"
-            />
-            <label for="fieldjdcjdj-1">99% Invisible</label>
-        </div>
-        <div>
-            <input id="fieldjdcjdj-2" name="cm-fo-jdcjdj" type="checkbox" value="1242132"
-            />
-            <label for="fieldjdcjdj-2">The Allusionist</label>
-        </div>
-        <div>
-            <input id="fieldjdcjdj-3" name="cm-fo-jdcjdj" type="checkbox" value="1242133"
-            />
-            <label for="fieldjdcjdj-3">Articles of Interest</label>
-        </div>
-        <div>
-            <input id="fieldjdcjdj-4" name="cm-fo-jdcjdj" type="checkbox" value="1242134"
-            />
-            <label for="fieldjdcjdj-4">Criminal</label>
-        </div>
-        <div>
-            <input id="fieldjdcjdj-5" name="cm-fo-jdcjdj" type="checkbox" value="1242135"
-            />
-            <label for="fieldjdcjdj-5">Ear Hustle</label>
-        </div>
-        <div>
-            <input id="fieldjdcjdj-6" name="cm-fo-jdcjdj" type="checkbox" value="1242136"
-            />
-            <label for="fieldjdcjdj-6">Everything is Alive</label>
-        </div>
-        <div>
-            <input id="fieldjdcjdj-7" name="cm-fo-jdcjdj" type="checkbox" value="1242144"
-            />
-            <label for="fieldjdcjdj-7">The Heart</label>
-        </div>
-        <div>
-            <input id="fieldjdcjdj-8" name="cm-fo-jdcjdj" type="checkbox" value="1242145"
-            />
-            <label for="fieldjdcjdj-8">The Kitchen Sisters Present</label>
-        </div>
-        <div>
-            <input id="fieldjdcjdj-9" name="cm-fo-jdcjdj" type="checkbox" value="1242146"
-            />
-            <label for="fieldjdcjdj-9">The Memory Palace</label>
-        </div>
-        <div>
-            <input id="fieldjdcjdj-10" name="cm-fo-jdcjdj" type="checkbox" value="1242147"
-            />
-            <label for="fieldjdcjdj-10">Mortified</label>
-        </div>
-        <div>
-            <input id="fieldjdcjdj-11" name="cm-fo-jdcjdj" type="checkbox" value="1242148"
-            />
-            <label for="fieldjdcjdj-11">Radio Diaries</label>
-        </div>
-        <div>
-            <input id="fieldjdcjdj-12" name="cm-fo-jdcjdj" type="checkbox" value="1242149"
-            />
-            <label for="fieldjdcjdj-12">Song Exploder</label>
-        </div>
-        <div>
-            <input id="fieldjdcjdj-13" name="cm-fo-jdcjdj" type="checkbox" value="1242138"
-            />
-            <label for="fieldjdcjdj-13">This is Love</label>
-        </div>
-        <div>
-            <input id="fieldjdcjdj-14" name="cm-fo-jdcjdj" type="checkbox" value="1242139"
-            />
-            <label for="fieldjdcjdj-14">Theory of Everything</label>
-        </div>
-        <div>
-            <input id="fieldjdcjdj-15" name="cm-fo-jdcjdj" type="checkbox" value="1242140"
-            />
-            <label for="fieldjdcjdj-15">The Truth</label>
-        </div>
-        <div>
-            <input id="fieldjdcjdj-16" name="cm-fo-jdcjdj" type="checkbox" value="1242141"
-            />
-            <label for="fieldjdcjdj-16">The West Wing Weekly</label>
-        </div>
-        <div>
-            <input id="fieldjdcjdj-17" name="cm-fo-jdcjdj" type="checkbox" value="1242142"
-            />
-            <label for="fieldjdcjdj-17">What Trump Can Teach Us About Con Law</label>
-        </div>
-        <div>
-            <input id="fieldjdcjdj-18" name="cm-fo-jdcjdj" type="checkbox" value="1242143"
-            />
-            <label for="fieldjdcjdj-18">ZigZag</label>
-        </div>
-        <div>
-            <input id="fieldjdcjdj-19" name="cm-fo-jdcjdj" type="checkbox" value="1242137"
-            />
-            <label for="fieldjdcjdj-19">Millennial</label>
-        </div>
     </p>
     <p>
         <button class="js-cm-submit-button" type="submit">Subscribe</button>
