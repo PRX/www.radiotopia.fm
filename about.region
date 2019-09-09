@@ -261,6 +261,22 @@
                   <squarespace:block-field id="our-team-image-six" class="image six" label="Our Team Image six" />
                   <squarespace:block-field id="our-team-caption-six" class="caption six" label="Our Team Caption six" />
                 </li>
+                <li class="item">
+                  <squarespace:block-field id="our-team-image-seven" class="image seven" label="Our Team Image seven" />
+                  <squarespace:block-field id="our-team-caption-seven" class="caption seven" label="Our Team Caption seven" />
+                </li>
+                <li class="item">
+                  <squarespace:block-field id="our-team-image-eight" class="image eight" label="Our Team Image eight" />
+                  <squarespace:block-field id="our-team-caption-eight" class="caption eight" label="Our Team Caption eight" />
+                </li>
+                <li class="item">
+                  <squarespace:block-field id="our-team-image-nine" class="image nine" label="Our Team Image nine" />
+                  <squarespace:block-field id="our-team-caption-nine" class="caption nine" label="Our Team Caption nine" />
+                </li>
+                <li class="item">
+                  <squarespace:block-field id="our-team-image-ten" class="image ten" label="Our Team Image ten" />
+                  <squarespace:block-field id="our-team-caption-ten" class="caption ten" label="Our Team Caption ten" />
+                </li>
               </ul>
             </div>
             <div class="listen-apps">
