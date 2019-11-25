@@ -15,7 +15,7 @@
       /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
          We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
     </style>
-    <!-- <meta id="redirect" http-equiv="refresh" content="1; url=https://us.commitchange.com/ma/cambridge/prx-inc/campaigns/radiotopia-fall-campaign-2018?r=m"> -->
+    <!-- <meta id="redirect" http-equiv="refresh" content="1; url=https://us.commitchange.com/ma/cambridge/prx-inc/campaigns/radiotopia-forever?r=m"> -->
 
     <script>
       document.addEventListener("DOMContentLoaded", function(event) {
@@ -25,7 +25,7 @@
           document.body.appendChild(el);
         } else {
           setTimeout(function(){
-            window.location.href = 'https://us.commitchange.com/ma/cambridge/prx-inc/campaigns/radiotopia-fall-campaign-2018?r=j';
+            window.location.href = 'https://us.commitchange.com/ma/cambridge/prx-inc/campaigns/radiotopia-forever?r=j';
           }, 1000);
         }
       });
