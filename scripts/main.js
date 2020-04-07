@@ -13,7 +13,7 @@ var Radiotopia = {
     var throttledScroll = _.throttle(Radiotopia.scrollHandler, 50);
     $(window).scroll(throttledScroll);
 
-    $('#secondaryNavigation .folder').last().find('.subnav').append('<div><a href="#" data-behavior="open-modal" data-target="newsletter">Sign Up For Newsletter</a></div>');
+    // $('#secondaryNavigation .folder').last().find('.subnav').append('<div><a href="#" data-behavior="open-modal" data-target="newsletter">Sign Up For Newsletter</a></div>');
     $('#secondaryNavigation .folder:nth-of-type(2)').find('.subnav').append('<div><a href="#" data-behavior="open-modal" data-target="donate" data-source="footer">Make a Donation</a></div>');
 
     if ($('.modal-wrapper.podcast-donate').length) {
