@@ -206,7 +206,7 @@
               {.if customContent.podcastFeedUrl}
                 <li>
                   <a href="{customContent.podcastFeedUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="RSS">
-                    <img src="https://media.radiotopia.fm/www/apple-podcasts.svg">
+                    <img src="https://media.radiotopia.fm/www/rss.svg">
                   </a>
                 </li>
               {.end}
