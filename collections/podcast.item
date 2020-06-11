@@ -190,7 +190,7 @@
               {.if customContent.podcastRPUrl}
                 <li>
                   <a href="{customContent.podcastRPUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Radio Public">
-                    <img src="https://media.radiotopia.fm/www/apple-podcasts.svg">
+                    <img src="/assets/radio-public-big.png">
                   </a>
                 </li>
               {.end}
