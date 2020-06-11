@@ -166,7 +166,7 @@
               {.if customContent.podcastOvercastUrl}
                 <li>
                   <a href="{customContent.podcastOvercastUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Overcast">
-                    <img src="https://media.radiotopia.fm/www/apple-podcasts.svg">
+                    <img src="https://media.radiotopia.fm/www/overcast.svg">
                   </a>
                 </li>
               {.end}
