@@ -134,36 +134,83 @@
                 <h2>Subscribe To</h2>
               </div>
               <div class="subscribe-body">
-                <p>
-                  {customContent.podcastTitle}
-                </p>
+                <p>{customContent.podcastTitle}</p>
               </div>
             </div>
-            {.if customContent.podcastRPUrl}
-              <div class="radio-public-button">
-                <a href="{customContent.podcastRPUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="RadioPublic"><img src="/assets/radio-public-big.png"></a>
-              </div>
-            {.end}
-            <div class="modal-icons">
+
+            <ol class="subscribe-options">
               {.if customContent.podcastItunesUrl}
-                <div class="itunes-button subscribe-icon">
-                  <a href="{customContent.podcastItunesUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Apple"><img src="/assets/new-itunes-logo-color.png"></a>
-                </div>
+                <li>
+                  <a href="{customContent.podcastItunesUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Apple">
+                    <img src="/assets/subscribe/apple-podcasts.svg">
+                  </a>
+                </li>
               {.end}
+
+              {.if customContent.podcastSpotifyUrl}
+                <li>
+                  <a href="{customContent.podcastSpotifyUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Spotify">
+                    <img src="/assets/subscribe/spotify.svg">
+                  </a>
+                </li>
+              {.end}
+
               {.if customContent.podcastStitcherUrl}
-                <div class="stitcher-button subscribe-icon">
-                  <a href="{customContent.podcastStitcherUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Stitcher"><img src="/assets/stitcher-logo-2.png"></a>
-                </div>
+                <li>
+                  <a href="{customContent.podcastStitcherUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Stitcher">
+                    <img src="/assets/subscribe/stitcher.png">
+                  </a>
+                </li>
               {.end}
+
+              {.if customContent.podcastOvercastUrl}
+                <li>
+                  <a href="{customContent.podcastOvercastUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Overcast">
+                    <img src="/assets/subscribe/overcast.png">
+                  </a>
+                </li>
+              {.end}
+
+              {.if customContent.podcastPocketCastsUrl}
+                <li>
+                  <a href="{customContent.podcastPocketCastsUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Pocket Casts">
+                    <img src="/assets/subscribe/pocket-casts.png">
+                  </a>
+                </li>
+              {.end}
+
               {.if customContent.podcastGooglePlayUrl}
-                <div class="google-play-button subscribe-icon">
-                  <a href="{customContent.podcastGooglePlayUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Google Play"><img src="/assets/google_podcasts_badge@2x.png"></a>
-                </div>
+                <li>
+                  <a href="{customContent.podcastGooglePlayUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Google Podcasts">
+                    <img src="/assets/subscribe/google-podcasts.png">
+                  </a>
+                </li>
               {.end}
-            </div>
-            <div class="misc-buttons">
-              <a href="{customContent.podcastFeedUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="RSS">RSS</a>
-            </div>
+
+              {.if customContent.podcastRPUrl}
+                <li>
+                  <a href="{customContent.podcastRPUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Radio Public">
+                    <img src="/assets/subscribe/radio-publics.png">
+                  </a>
+                </li>
+              {.end}
+
+              {.if customContent.podcastPandoraUrl}
+                <li>
+                  <a href="{customContent.podcastPandoraUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Pandora">
+                    <img src="/assets/subscribe/pandora.png">
+                  </a>
+                </li>
+              {.end}
+
+              {.if customContent.podcastFeedUrl}
+                <li>
+                  <a href="{customContent.podcastFeedUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="RSS">
+                    <img src="/assets/subscribe/rss.png">
+                  </a>
+                </li>
+              {.end}
+            </ol>
           </div>
         </div>
       </div>
