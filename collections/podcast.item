@@ -150,7 +150,7 @@
               {.if customContent.podcastSpotifyUrl}
                 <li>
                   <a href="{customContent.podcastSpotifyUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Spotify">
-                    <img src="https://media.radiotopia.fm/www/apple-podcasts.svg">
+                    <img src="https://media.radiotopia.fm/www/spotify.svg">
                   </a>
                 </li>
               {.end}
@@ -182,7 +182,7 @@
               {.if customContent.podcastGooglePlayUrl}
                 <li>
                   <a href="{customContent.podcastGooglePlayUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Google Podcasts">
-                    <img src="https://media.radiotopia.fm/www/apple-podcasts.svg">
+                    <img src="https://media.radiotopia.fm/www/google.svg">
                   </a>
                 </li>
               {.end}
