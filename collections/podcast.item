@@ -198,7 +198,7 @@
               {.if customContent.podcastPandoraUrl}
                 <li>
                   <a href="{customContent.podcastPandoraUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Pandora">
-                    <img src="https://media.radiotopia.fm/www/apple-podcasts.svg">
+                    <img src="https://media.radiotopia.fm/www/pandora.png">
                   </a>
                 </li>
               {.end}
