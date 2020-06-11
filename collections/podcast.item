@@ -142,7 +142,7 @@
               {.if customContent.podcastItunesUrl}
                 <li>
                   <a href="{customContent.podcastItunesUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Apple">
-                    <img src="/assets/subscribe/apple-podcasts.svg">
+                    <img src="https://media.radiotopia.fm/www/apple-podcasts.svg">
                   </a>
                 </li>
               {.end}
