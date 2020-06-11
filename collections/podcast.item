@@ -150,7 +150,7 @@
               {.if customContent.podcastSpotifyUrl}
                 <li>
                   <a href="{customContent.podcastSpotifyUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Spotify">
-                    <img src="/assets/subscribe/spotify.svg">
+                    <img src="https://media.radiotopia.fm/www/apple-podcasts.svg">
                   </a>
                 </li>
               {.end}
@@ -158,7 +158,7 @@
               {.if customContent.podcastStitcherUrl}
                 <li>
                   <a href="{customContent.podcastStitcherUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Stitcher">
-                    <img src="/assets/subscribe/stitcher.png">
+                    <img src="https://media.radiotopia.fm/www/apple-podcasts.svg">
                   </a>
                 </li>
               {.end}
@@ -166,7 +166,7 @@
               {.if customContent.podcastOvercastUrl}
                 <li>
                   <a href="{customContent.podcastOvercastUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Overcast">
-                    <img src="/assets/subscribe/overcast.png">
+                    <img src="https://media.radiotopia.fm/www/apple-podcasts.svg">
                   </a>
                 </li>
               {.end}
@@ -174,7 +174,7 @@
               {.if customContent.podcastPocketCastsUrl}
                 <li>
                   <a href="{customContent.podcastPocketCastsUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Pocket Casts">
-                    <img src="/assets/subscribe/pocket-casts.png">
+                    <img src="https://media.radiotopia.fm/www/apple-podcasts.svg">
                   </a>
                 </li>
               {.end}
@@ -182,7 +182,7 @@
               {.if customContent.podcastGooglePlayUrl}
                 <li>
                   <a href="{customContent.podcastGooglePlayUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Google Podcasts">
-                    <img src="/assets/subscribe/google-podcasts.png">
+                    <img src="https://media.radiotopia.fm/www/apple-podcasts.svg">
                   </a>
                 </li>
               {.end}
@@ -190,7 +190,7 @@
               {.if customContent.podcastRPUrl}
                 <li>
                   <a href="{customContent.podcastRPUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Radio Public">
-                    <img src="/assets/subscribe/radio-publics.png">
+                    <img src="https://media.radiotopia.fm/www/apple-podcasts.svg">
                   </a>
                 </li>
               {.end}
@@ -198,7 +198,7 @@
               {.if customContent.podcastPandoraUrl}
                 <li>
                   <a href="{customContent.podcastPandoraUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Pandora">
-                    <img src="/assets/subscribe/pandora.png">
+                    <img src="https://media.radiotopia.fm/www/apple-podcasts.svg">
                   </a>
                 </li>
               {.end}
@@ -206,7 +206,7 @@
               {.if customContent.podcastFeedUrl}
                 <li>
                   <a href="{customContent.podcastFeedUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="RSS">
-                    <img src="/assets/subscribe/rss.png">
+                    <img src="https://media.radiotopia.fm/www/apple-podcasts.svg">
                   </a>
                 </li>
               {.end}
