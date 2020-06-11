@@ -174,7 +174,7 @@
               {.if customContent.podcastPocketCastsUrl}
                 <li>
                   <a href="{customContent.podcastPocketCastsUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Pocket Casts">
-                    <img src="https://media.radiotopia.fm/www/apple-podcasts.svg">
+                    <img src="https://media.radiotopia.fm/www/pocket-casts.svg">
                   </a>
                 </li>
               {.end}
