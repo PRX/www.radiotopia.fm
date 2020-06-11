@@ -158,7 +158,7 @@
               {.if customContent.podcastStitcherUrl}
                 <li>
                   <a href="{customContent.podcastStitcherUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Stitcher">
-                    <img src="https://media.radiotopia.fm/www/apple-podcasts.svg">
+                    <img src="https://media.radiotopia.fm/www/stitcher.png">
                   </a>
                 </li>
               {.end}
