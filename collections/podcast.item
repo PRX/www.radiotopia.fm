@@ -203,6 +203,14 @@
                 </li>
               {.end}
 
+              {.if customContent.podcastAmazonMusicUrl}
+                <li>
+                  <a href="{customContent.podcastAmazonMusicUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Amazon">
+                    <img src="https://media.radiotopia.fm/www/amazon.png">
+                  </a>
+                </li>
+              {.end}
+
               {.if customContent.podcastFeedUrl}
                 <li>
                   <a href="{customContent.podcastFeedUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="RSS">
