@@ -277,6 +277,14 @@
                   <squarespace:block-field id="our-team-image-ten" class="image ten" label="Our Team Image ten" />
                   <squarespace:block-field id="our-team-caption-ten" class="caption ten" label="Our Team Caption ten" />
                 </li>
+                <li class="item">
+                  <squarespace:block-field id="our-team-image-eleven" class="image eleven" label="Our Team Image eleven" />
+                  <squarespace:block-field id="our-team-caption-eleven" class="caption eleven" label="Our Team Caption eleven" />
+                </li>
+                <li class="item">
+                  <squarespace:block-field id="our-team-image-twelve" class="image twelve" label="Our Team Image twelve" />
+                  <squarespace:block-field id="our-team-caption-twelve" class="caption twelve" label="Our Team Caption twelve" />
+                </li>
               </ul>
             </div>
             <div class="listen-apps">
