@@ -280,7 +280,7 @@
           <div class="inner">
             <div class="support-left-column" id="make-a-donation" name="make-a-donation">
               <squarespace:block-field class="support-radiotopia" id="support-radiotopia" columns="12" label="Support Radiotopia" />
-              <a href="#" data-behavior="open-modal" data-target="donate" data-source="body">Donate Now</a>
+              <a href="https://give.prx.org/radiotopia">Donate Now</a>
             </div>
 
             <div class="support-right-column">
