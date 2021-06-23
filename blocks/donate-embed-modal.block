@@ -1,8 +1,0 @@
-<div class="modal-wrapper donate">
-  <div class="inner">
-    <div class="donate-modal">
-      <div class="close-modal" data-behavior="close-modal"></div>
-      <a class='commitchange-donate' data-embedded data-designation="Radiotopia2020"></a>
-    </div>
-  </div>
-</div>

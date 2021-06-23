@@ -224,14 +224,5 @@
         </div>
       </div>
     </section>
-
-    <div class="modal-wrapper podcast-donate">
-      <div class="inner">
-        <div class="donate-modal">
-          <div class="close-modal" data-behavior="close-modal"></div>
-          <a class='commitchange-donate' data-embedded data-designation="{customContent.podcastDonateModalDesignation}"></a>
-        </div>
-      </div>
-    </div>
   </article>
 {.end}
