@@ -258,7 +258,7 @@
           {.end}
 
           <div class="podcast-art-grid-wrapper">
-            <squarespace:query collection="podcasts" template="podcast" columns="12" limit="30" />
+            <squarespace:query collection="podcasts" template="podcast" columns="12" limit="40" />
           </div>
 
           <!-- <squarespace:query collection="testimonial" template="testimonial" columns="12" />
