@@ -1,0 +1,20 @@
+{
+  "name": "www.radiotopia.fm",
+  "version": "1.0.0",
+  "description": "tktktk",
+  "devDependencies": {
+    "@squarespace/server": "^1.7.0"
+  },
+  "scripts": {
+    "start": "squarespace-server https://www-radiotopia-fm.squarespace.com --port 8091"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PRX/www.radiotopia.fm.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/PRX/www.radiotopia.fm/issues"
+  },
+  "homepage": "https://github.com/PRX/www.radiotopia.fm#readme"
+}

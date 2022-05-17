@@ -1,5 +1,14 @@
-.PHONY: deploy
+.PHONY: dev-init dev-start deploy
+
+dev-init:
+	asdf install
+	npm install -g npm@latest
+	npm install
+	echo 8091 > ~/.puma-dev/www.radiotopia
+
+dev-start:
+	npm start
 
 deploy:
-	git push origin master
-	git push squarespace master
+	git push origin
+	git push squarespace
