@@ -10,5 +10,5 @@ dev-start:
 	npm start
 
 deploy:
-	git push origin
-	git push squarespace
+	git push origin master
+	git push squarespace master
