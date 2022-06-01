@@ -88,6 +88,10 @@
             </div>
           </div>
 
+          <div class="misc1-container" id="misc1-container">
+            <squarespace:block-field id="{customContent.podcastUrlTitle}-misc1" columns="12" label="Misc Content 1" />
+          </div>
+
           <div class="support-container" id="support-container">
             <div class="inner" id="make-a-donation" name="make-a-donation">
               <div class="support-left-column">
