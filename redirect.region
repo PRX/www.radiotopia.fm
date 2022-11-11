@@ -24,7 +24,7 @@
           document.body.appendChild(el);
         } else {
           setTimeout(function(){
-            window.location.href = 'https://give.prx.org/give/389319/#!/donation/checkout';
+            window.location.href = 'https://give.prx.org/campaign/radiotopia/c435498';
           }, 1000);
         }
       });
@@ -35,7 +35,7 @@
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}{.if item}{.section item}{.if productType}{.or}{.background-source-video?} has-banner-image item-main-image{.or}{.main-image?} has-banner-image item-main-image{.end}{.end}{.end}{.end}{.or}{.section collection}{.collectionTypeNameEquals? index}{.section collections}{.section 0}{.background-source-video?} has-banner-image index-page{.or}{.main-image?} has-banner-image index-page{.end}{.end}{.end}{.end}{.or}{.background-source-video?} has-banner-image general-page{.or}{.main-image?} has-banner-image general-page{.end}{.end}{.end}{.end}{.end}">
 
     <div style="font-size: 24px; font-weight: bold; color: #ddd; text-align: center; margin-top: 200px;">
-      <a href="https://give.prx.org/give/389319/#!/donation/checkout">Redirecting…</a>
+      <a href="https://give.prx.org/campaign/radiotopia/c435498">Redirecting…</a>
     </div>
 
     <squarespace:script src="site-bundle.js" combo="false" />
