@@ -1,6 +1,5 @@
 {.section items}<div id="folderNav" data-content-field="navigation-folderNav">
-  <input type="checkbox" name="folder-nav-toggle" id="folderNavToggle" class="folder-nav-toggle hidden" />
-  <label for="folderNavToggle" class="folder-nav-toggle-label" onclick></label>
+  <div class="folder-nav-toggle"></div>
   <nav class="folder-nav" role="navigation">
     <ul>
     <li class="nav-section-label">{collection.title}</li>
