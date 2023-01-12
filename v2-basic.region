@@ -1,4 +1,0 @@
-      <!-- cms content injection point -->
-      <main class="content-container" role="main" data-content-field="main-content">
-        {squarespace.main-content}
-      </main>
