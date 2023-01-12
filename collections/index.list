@@ -2,7 +2,7 @@
   <!-- Create index sections -->
 
   {.repeated section collections}
-  <div id="{urlId}" class="index-section{.section mainContent}{.or} empty{.end}" data-url-id="{urlId}" data-collection-id="{id}" data-edit-main-image="Banner">
+  <div id="{urlId}" class="index-section{.section mainContent}{.or} empty{.end}" data-url-id="{urlId}" data-collection-id="{id}" data-edit-main-image="{localizedStrings.banner}">
     <div class="promoted-gallery-wrapper"></div>
     {.background-source-video?}
         <div class="banner-thumbnail-wrapper{.if description} has-description{.end}" data-content-field="main-image">
