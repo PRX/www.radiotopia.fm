@@ -114,7 +114,7 @@
 }
 
 .entry-more-link a:before {
-  content: "Read More";
+  content: attr(data-read-more);
 }
 
 .entry-more-link a:after {
@@ -234,7 +234,7 @@
     }
     #page #content {
       width: 100%;
-      // max-width: @pageWidthNarrow;
+      max-width: @pageWidthNarrow;
       display: block;
       margin: 0 auto;
     }
@@ -549,7 +549,7 @@
       line-height:1em;
       margin-top:1.4em;
       &:before {
-        content: 'View Post';
+        content: attr(data-view-post);
         display: inline-block;
         .banner-text-font;
         color: @bannerTextColor;
