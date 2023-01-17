@@ -1,0 +1,14 @@
+{.repeated section items}
+
+  {.if customContent.podcastHidden}
+  {.or}
+
+    <a href="{baseUrl}{fullUrl}">
+      <img class="podcast-artwork-image" src={customContent.showArt.assetUrl} />
+    </a>
+
+  {.end}
+
+{.or}
+  No podcasts available.
+{.end}
