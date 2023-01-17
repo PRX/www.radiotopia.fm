@@ -9,7 +9,12 @@
     <style>
       #prx-podcast-banner {
         background-image: url('{customContent.podcastBannerArtwork.assetUrl}');
-        height: 300px;
+        height: 500px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        background-size: cover;
+        background-position: top center;
       }
     </style>
 
@@ -35,6 +40,9 @@
       }
       #prx-podcast-intro h1 + a:hover { color: #8087af; }
 
+      #prx-podcast-intro .description p {
+        font-size: 22px;
+      }
 
       #prx-platform-links {
         border: 0;
@@ -87,15 +95,31 @@
       <li><a href="{customContent.podcastFeedUrl}">RSS</a></li>
     </ul>
 
-    <div>{customContent.podcastDescription.html}</div>
+    <div class=description>{customContent.podcastDescription.html}</div>
+
+    <hr>
 
     <div id=prx-trailer-player>
       <!-- TRAILER -->
     </div>
   </section>
 
-  <section>
+  <section id=prx-podcast-starter>
+    <style>
+      #prx-podcast-starter {
+        background: blue;
+        color: white;
+        height: 30px;
+        margin-bottom: 125px;
+        margin-left: 50%;
+        margin-top: 125px;
+        transform: translateX(-50%);
+        width: 100vw;
+      }
+    </style>
     <!-- WHERE TO START -->
+
+    <squarespace:block-field id="shared-podcast-starter" columns="12" label="Shared Starter" />
   </section>
 
   <section id=prx-podcast-hosts>
