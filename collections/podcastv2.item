@@ -1,10 +1,83 @@
-{.section item}
-  <section id=prx-podcast-intro>
-    <h1>{customContent.podcastTitle}</h1>
-    <a>{customContent.podcastUrlTitle}</a>
+<style>
+  #siteWrapper .banner-thumbnail-wrapper {
+    display: none;
+  }
+</style>
 
-    <ul>
-      <li><a href="customContent.podcastItunesUrl">Apple</a></li>
+{.section item}
+  <section id=prx-podcast-banner>
+    <style>
+      #prx-podcast-banner {
+        background-image: url('{customContent.podcastBannerArtwork.assetUrl}');
+        height: 300px;
+      }
+    </style>
+
+  </section>
+
+  <section id=prx-podcast-intro>
+    <style>
+      #prx-podcast-intro {
+        margin: 0 auto;
+        max-width: 500px;
+      }
+
+      #prx-podcast-intro h1 {
+        color: #ff446a;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+
+      #prx-podcast-intro h1 + a {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      #prx-podcast-intro h1 + a:hover { color: #8087af; }
+
+
+      #prx-platform-links {
+        border: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        justify-content: left;
+        list-style: none;
+        margin: 30px 0 20px;
+        padding: 0;
+      }
+
+      #prx-platform-links li {
+        display: block;
+      }
+
+      #prx-platform-links li a {
+        background: red;
+        display: block;
+        height: 20px;
+        overflow: hidden;
+        margin: 0;
+        width: 20px;
+      }
+
+      @media screen and (max-width: 768px) {
+        #prx-platform-links {
+          gap: 12px;
+        }
+
+        #prx-platform-links li a {
+          height: 36px;
+          width: 36px;
+        }
+      }
+    </style>
+
+
+    <h1>{customContent.podcastTitle}</h1>
+    <a href="{customContent.podcastLink}">{customContent.podcastUrlTitle}</a>
+
+    <ul id=prx-platform-links>
+      <li><a href="{customContent.podcastItunesUrl}">Apple</a></li>
       <li><a href="{customContent.podcastSpotifyUrl}">Spotify</a></li>
       <li><a href="{customContent.podcastOvercastUrl}">Overcast</a></li>
       <li><a href="{customContent.podcastPocketCastsUrl}">Pocket Casts</a></li>
@@ -25,11 +98,55 @@
     <!-- WHERE TO START -->
   </section>
 
-  <section>
-    <!-- HOSTS -->
+  <section id=prx-podcast-hosts>
+    <style>
+      #prx-podcast-hosts {
+        margin: 0 auto;
+        max-width: 650px;
+      }
+    </style>
+
+    <div>{customContent.podcastMeetTheHosts.html}</div>
   </section>
 
-  <section>
+  <section id=prx-podcast-cta>
+    <style>
+      #prx-podcast-cta {
+        display: flex;
+        gap: 75px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 125px auto;
+        width: 100%;
+      }
+
+      /* Each CTA */
+      #prx-podcast-cta > div {
+        max-width: 320px;
+      }
+
+      /* CTA buttons */
+      #prx-podcast-cta > div > a {
+        background: #ff446a;
+        border: 1px solid #ff446a;
+        border-radius: 999px;
+        color: white;
+        display: block;
+        margin: 0 auto 15px;
+        padding: 10px 20px;
+        text-align: center;
+        width: fit-content;
+        transition: all 0.1s ease-out
+      }
+      #prx-podcast-cta > div > a:hover { background: white; color: #ff446a; }
+
+      /* Paragraphs within the Squarespace CMS block field */
+      #prx-podcast-cta > div div.sqs-row p {
+        font-size: 18px;
+      }
+    </style>
+
     <div>
       <a href="#">Support {customContent.podcastTitle}</a>
       <squarespace:block-field id="shared-podcast-support-copy" columns="12" label="Shared Support Copy" />
@@ -41,7 +158,39 @@
     </div>
   </section>
 
-  <section>
-    <squarespace:block-field id="shared-podcast-carousel" columns="12" label="Shared Carousel" />
+  <section id=prx-podcast-carousel>
+    <style>
+      /* Busts out of the default Squarespace center column, for full bleed bg */
+      #prx-podcast-carousel {
+        background-color: #F6F6F6;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+      }
+
+      /* Make internal wrapper follow the default Squarespace center column layout */
+      #prx-podcast-carousel > div {
+        box-sizing: border-box;
+        width: auto;
+        margin: auto;
+        max-width: 1020px;
+        padding: 96px 32px;
+      }
+
+      #prx-podcast-carousel a.sqs-block-button-element {
+        background: #092c58;
+        border: 1px solid #092c58;
+        border-radius: 999px;
+        font-weight: normal;
+        padding: 8px 30px;
+        text-transform: initial;
+        transition: all 0.1s ease-out
+      }
+      #prx-podcast-carousel a.sqs-block-button-element:hover { background: white; color: #092c58; opacity: 1; }
+    </style>
+
+    <div>
+      <squarespace:block-field id="shared-podcast-carousel" columns="12" label="Shared Carousel" />
+    </div>
   </section>
 {.end}
