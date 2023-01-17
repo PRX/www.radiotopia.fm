@@ -9,15 +9,44 @@
     <style>
       #prx-podcast-banner {
         background-image: url('{customContent.podcastBannerArtwork.assetUrl}');
+        background-position: top center;
+        background-size: cover;
         height: 500px;
         margin-left: 50%;
+        position: relative;
         transform: translateX(-50%);
         width: 100vw;
-        background-size: cover;
-        background-position: top center;
+      }
+
+      #prx-podcast-banner ul {
+        align-items: flex-end;
+        border: 0;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        gap: 12px;
+        justify-content: end;
+        list-style: none;
+        margin: 0;
+        padding: 0 50px 30px 0;
+      }
+
+      #prx-podcast-banner ul li a {
+        background: black;
+        height: 38px;
+        display: block;
+        overflow: hidden;
+        width: 38px;
       }
     </style>
 
+    <ul>
+      {.if customContent.podcastInstagramUrl}<li><a href="#">Instagram</a></li>{.end}
+      {.if customContent.podcastFacebookUrl}<li><a href="#">Facebook</a></li>{.end}
+      {.if customContent.podcastTwitterUrl}<li><a href="#">Twitter</a></li>{.end}
+      {.if customContent.podcastMastodonUrl}<li><a href="#">Mastodon</a></li>{.end}
+      {.if customContent.podcastNewsletterUrl}<li><a href="#">Newsletter</a></li>{.end}
+    </ul>
   </section>
 
   <section id=prx-podcast-intro>
@@ -55,17 +84,19 @@
         padding: 0;
       }
 
-      #prx-platform-links li {
-        display: block;
-      }
-
       #prx-platform-links li a {
-        background: red;
         display: block;
         height: 20px;
         overflow: hidden;
         margin: 0;
+        text-indent: -999px;
         width: 20px;
+      }
+
+      #prx-platform-links li a img {
+        cursor: pointer;
+        display: block;
+        width: 100%;
       }
 
       @media screen and (max-width: 768px) {
@@ -85,14 +116,16 @@
     <a href="{customContent.podcastLink}">{customContent.podcastUrlTitle}</a>
 
     <ul id=prx-platform-links>
-      <li><a href="{customContent.podcastItunesUrl}">Apple</a></li>
-      <li><a href="{customContent.podcastSpotifyUrl}">Spotify</a></li>
-      <li><a href="{customContent.podcastOvercastUrl}">Overcast</a></li>
-      <li><a href="{customContent.podcastPocketCastsUrl}">Pocket Casts</a></li>
-      <li><a href="{customContent.podcastStitcherUrl}">Stitcher</a></li>
-      <li><a href="{customContent.podcastPandoraUrl}">Pandora</a></li>
-      <li><a href="{customContent.podcastGooglePlayUrl}">Google</a></li>
-      <li><a href="{customContent.podcastFeedUrl}">RSS</a></li>
+      {.if customContent.podcastItunesUrl}<li><a href="{customContent.podcastItunesUrl}"><img src="/assets/platforms/apple.svg"></a></li>{.end}
+      {.if customContent.podcastSpotifyUrl}<li><a href="{customContent.podcastSpotifyUrl}"><img src="/assets/platforms/spotify.svg"></a></li>{.end}
+      {.if customContent.podcastOvercastUrl}<li><a href="{customContent.podcastOvercastUrl}"><img src="/assets/platforms/overcast.svg"></a></li>{.end}
+      {.if customContent.podcastCastboxUrl}<li><a href="{customContent.podcastCastboxUrl}"><img src="/assets/platforms/castbox.svg"></a></li>{.end}
+      {.if customContent.podcastPocketCastsUrl}<li><a href="{customContent.podcastPocketCastsUrl}"><img src="/assets/platforms/pocket-casts.svg"></a></li>{.end}
+      {.if customContent.podcastStitcherUrl}<li><a href="{customContent.podcastStitcherUrl}"><img src="/assets/platforms/stitcher.svg"></a></li>{.end}
+      {.if customContent.podcastPandoraUrl}<li><a href="{customContent.podcastPandoraUrl}"><img src="/assets/platforms/pandora.svg"></a></li>{.end}
+      {.if customContent.podcastGooglePlayUrl}<li><a href="{customContent.podcastGooglePlayUrl}"><img src="/assets/platforms/google.png"></a></li>{.end}
+      {.if customContent.podcastAmazonMusicUrl}<li><a href="{customContent.podcastAmazonMusicUrl}"><img src="/assets/platforms/amazon.svg"></a></li>{.end}
+      {.if customContent.podcastFeedUrl}<li><a href="{customContent.podcastFeedUrl}"><img src="/assets/platforms/rss.svg"></a></li>{.end}
     </ul>
 
     <div class=description>{customContent.podcastDescription.html}</div>
@@ -107,14 +140,25 @@
   <section id=prx-podcast-starter>
     <style>
       #prx-podcast-starter {
-        background: blue;
+        background: #092c58;
         color: white;
-        height: 30px;
         margin-bottom: 125px;
         margin-left: 50%;
         margin-top: 125px;
+        padding: 50px 0 30px;
         transform: translateX(-50%);
         width: 100vw;
+      }
+
+      #prx-podcast-starter .sqs-row h1 {
+        color: white;
+        font-size: 100px;
+      }
+
+      @media screen and (max-width: 768px) {
+        #prx-podcast-starter .sqs-row h1 {
+          font-size: 50px;
+        }
       }
     </style>
     <!-- WHERE TO START -->
@@ -198,7 +242,7 @@
         width: auto;
         margin: auto;
         max-width: 1020px;
-        padding: 96px 32px;
+        padding: 40px 32px;
       }
 
       #prx-podcast-carousel a.sqs-block-button-element {
