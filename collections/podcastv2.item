@@ -1,1 +1,47 @@
-<h1>tktktktk</h1>
+{.section item}
+  <section id=prx-podcast-intro>
+    <h1>{customContent.podcastTitle}</h1>
+    <a>{customContent.podcastUrlTitle}</a>
+
+    <ul>
+      <li><a href="customContent.podcastItunesUrl">Apple</a></li>
+      <li><a href="{customContent.podcastSpotifyUrl}">Spotify</a></li>
+      <li><a href="{customContent.podcastOvercastUrl}">Overcast</a></li>
+      <li><a href="{customContent.podcastPocketCastsUrl}">Pocket Casts</a></li>
+      <li><a href="{customContent.podcastStitcherUrl}">Stitcher</a></li>
+      <li><a href="{customContent.podcastPandoraUrl}">Pandora</a></li>
+      <li><a href="{customContent.podcastGooglePlayUrl}">Google</a></li>
+      <li><a href="{customContent.podcastFeedUrl}">RSS</a></li>
+    </ul>
+
+    <div>{customContent.podcastDescription.html}</div>
+
+    <div id=prx-trailer-player>
+      <!-- TRAILER -->
+    </div>
+  </section>
+
+  <section>
+    <!-- WHERE TO START -->
+  </section>
+
+  <section>
+    <!-- HOSTS -->
+  </section>
+
+  <section>
+    <div>
+      <a href="#">Support {customContent.podcastTitle}</a>
+      <squarespace:block-field id="shared-podcast-support-copy" columns="12" label="Shared Support Copy" />
+    </div>
+
+    <div>
+      <a href="#">Become a Sponsor</a>
+      <squarespace:block-field id="shared-podcast-sponsor-copy" columns="12" label="Shared Sponsor Copy" />
+    </div>
+  </section>
+
+  <section>
+    <squarespace:block-field id="shared-podcast-carousel" columns="12" label="Shared Carousel" />
+  </section>
+{.end}
