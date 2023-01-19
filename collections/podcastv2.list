@@ -23,12 +23,19 @@
   #prx-podcast-grid a:hover img { outline-width: 4px; }
 
   #prx-podcast-grid a p {
-    font-weight: bold;
+    font-weight: 600;
     margin: 0;
   }
 
   @media screen and (max-width: 1000px) { #prx-podcast-grid { --size: 172px; } }
-  @media screen and (max-width: 768px) { #prx-podcast-grid { --size: 150px; } }
+  @media screen and (max-width: 768px) {
+    #prx-podcast-grid { --size: 150px; }
+
+    .sqs-layout p {
+      font-size: 14px !important; /* Clean up this selector once `.sqs-block-html p` in Custom CSS is moved to Site Styles */
+      line-height: 1.2em;
+    }
+  }
 </style>
 
 <section>

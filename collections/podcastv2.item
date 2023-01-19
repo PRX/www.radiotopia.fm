@@ -295,9 +295,9 @@
         background-position: top center, top center, top center;
         background-size: 100%, 140%, 100%;
         color: white;
-        margin-bottom: 125px;
+        margin-bottom: 85px;
         margin-left: 50%;
-        margin-top: 125px;
+        margin-top: 65px;
         padding: 35px 0 90px;
         transform: translateX(-50%);
         width: 100vw;
@@ -374,6 +374,7 @@
         #prx-podcast-starter {
           margin-bottom: 60px;
           margin-top: 10px;
+          padding-bottom: 60px;
         }
 
         #prx-podcast-starter .sqs-row h1 {
@@ -471,30 +472,45 @@
         justify-content: center;
         list-style: none;
         margin: 0;
-        padding: 0;
-      }
-
-      #prx-podcast-hosts ul li {
-
+        padding: 20px 0 30px;
       }
 
       #prx-podcast-hosts ul li img {
         width: 200px;
       }
 
-      #prx-podcast-hosts div {
+      #prx-podcast-hosts > div {
+        margin: 0 auto;
         max-width: 650px;
+      }
+
+      #prx-podcast-hosts > div.sqs-layout { max-width: initial; }
+
+      #prx-podcast-hosts > div.sqs-layout h1 {
+        color: #8087af;
+        font-weight: 600;
+      }
+
+      @media screen and (max-width: 640px) {
+        #prx-podcast-hosts ul li img {
+          width: 145px;
+        }
+
+        #prx-podcast-hosts p {
+          font-size: 16px;
+        }
       }
     </style>
 
   <squarespace:block-field id="shared-podcast-hosts-header" columns="12" label="Shared Hosts Header" />
 
     <ul>
-      <li><img src="https://media.bailey.dog/images/1707/352201600001-1920-adobe-icc.jpg"></li>
-      <li><img src="https://media.bailey.dog/images/1707/352201600001-1920-adobe-icc.jpg"></li>
-      <li><img src="https://media.bailey.dog/images/1707/352201600001-1920-adobe-icc.jpg"></li>
-      <li><img src="https://media.bailey.dog/images/1707/352201600001-1920-adobe-icc.jpg"></li>
-      <li><img src="https://media.bailey.dog/images/1707/352201600001-1920-adobe-icc.jpg"></li>
+      {.if customContent.hostPhoto1}<li><img src="{customContent.hostPhoto1.assetUrl}"></li>{.end}
+      {.if customContent.hostPhoto2}<li><img src="{customContent.hostPhoto2.assetUrl}"></li>{.end}
+      {.if customContent.hostPhoto3}<li><img src="{customContent.hostPhoto3.assetUrl}"></li>{.end}
+      {.if customContent.hostPhoto4}<li><img src="{customContent.hostPhoto4.assetUrl}"></li>{.end}
+      {.if customContent.hostPhoto5}<li><img src="{customContent.hostPhoto5.assetUrl}"></li>{.end}
+      {.if customContent.hostPhoto6}<li><img src="{customContent.hostPhoto6.assetUrl}"></li>{.end}
     </ul>
 
     <div>{customContent.podcastMeetTheHosts.html}</div>
@@ -535,6 +551,13 @@
       /* Paragraphs within the Squarespace CMS block field */
       #prx-podcast-cta > div div.sqs-row p {
         font-size: 18px;
+      }
+
+      @media screen and (max-width: 768px) {
+        #prx-podcast-cta {
+          margin-bottom: 75px;
+          margin-top: 75px;
+        }
       }
     </style>
 
