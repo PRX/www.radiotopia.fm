@@ -404,9 +404,6 @@
           const episodeList = document.querySelector('#prx-podcast-starter > ul');
 
           for (const meta of starterMeta) {
-            const titleEl = meta.querySelector('.labels .title');
-            const artistEl = meta.querySelector('.labels .artistName');
-
             const li = document.createElement('li');
 
             const img = document.createElement('img');
@@ -414,11 +411,11 @@
             li.appendChild(img)
 
             const h4 = document.createElement('h4');
-            h4.innerText = titleEl.innerText;
+            h4.innerText = meta.getAttribute('data-title');
             li.appendChild(h4);
 
             const h5 = document.createElement('h5');
-            h5.innerText = artistEl.innerText;
+            h5.innerText = meta.getAttribute('data-author');
             li.appendChild(h5);
 
             const audio = document.createElement('audio');
