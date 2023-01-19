@@ -128,7 +128,7 @@
 
       @media screen and (max-width: 768px) {
         #prx-podcast-intro {
-          background-size: 600%;
+          background-size: 100%, 600%;
         }
       }
 
@@ -297,6 +297,53 @@
         font-weight: 600;
       }
 
+      #prx-podcast-starter ul {
+        border: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 45px;
+        justify-content: center;
+        list-style: none;
+        margin: 0 auto;
+        max-width: 80%;
+        padding: 0;
+      }
+
+      #prx-podcast-starter ul li {
+        background-color: white;
+        border-radius: 50px;
+        color: #092c58;
+        cursor: pointer;
+        min-width: 450px;
+        padding: 22px 30px;
+      }
+      #prx-podcast-starter ul li:hover { background: #ff446a; color: white; }
+
+      #prx-podcast-starter ul li img {
+        display: block;
+        float: left;
+        width: 65px;
+      }
+
+      #prx-podcast-starter ul li h4 {
+        font-size: 22px;
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      #prx-podcast-starter ul li h5 {
+        color: #ff446a;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 5px 0 0 0;
+        padding: 0;
+        text-align: center;
+      }
+      #prx-podcast-starter ul li:hover h5 { color: white; }
+
       @media screen and (max-width: 768px) {
         #prx-podcast-starter {
           margin-bottom: 60px;
@@ -311,6 +358,27 @@
     <!-- WHERE TO START -->
 
     <squarespace:block-field id="shared-podcast-starter" columns="12" label="Shared Starter" />
+
+    <ul>
+      <li>
+        <img src=/assets/play.svg>
+        <h4>I Was Just Trying to Help</h4>
+        <h5>Season 1 Episode 2</h5>
+      </li>
+      <li>
+        <img src=/assets/play.svg>
+        <h4>I Was Just Trying to Help</h4>
+        <h5>Season 1 Episode 2</h5>
+      </li>
+      <li>
+        <img src=/assets/play.svg>
+        <h4>I Was Just Trying to Help</h4>
+        <h5>Season 1 Episode 2</h5>
+      </li>
+    </ul>
+
+    <!-- Ths block field is only visible in the Squarespace -->
+    <squarespace:block-field id="prx-podcast-{id}-starter-meta" class="prx-podcast-starter-meta" columns="12" label="Starter Audio Helper" />
   </section>
 
   <section id=prx-podcast-hosts>
