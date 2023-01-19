@@ -213,6 +213,10 @@
           }
           #prx-trailer-player:hover h4 { color: #ff446a; }
 
+          #prx-trailer-player > audio {
+            display: none;
+          }
+
           @media screen and (max-width: 480px) {
             #prx-trailer-player { gap: 10px; }
             #prx-trailer-player img { width: 48px; }
@@ -228,9 +232,8 @@
         <h4>listen to the trailer</h4>
 
         <audio controls="" preload="none"></audio>
-
-        <squarespace:block-field id="prx-podcast-{id}-trailer-meta" columns="12" label="Audio Trailer Helper" />
       </div>
+      <squarespace:block-field id="prx-podcast-{id}-trailer-meta" columns="12" label="Audio Trailer Helper" />
     </div>
   </section>
 
