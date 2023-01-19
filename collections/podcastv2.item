@@ -219,21 +219,53 @@
 
           @media screen and (max-width: 480px) {
             #prx-trailer-player { gap: 10px; }
-            #prx-trailer-player img { width: 48px; }
-            #prx-trailer-player h4 { font-size: 26px; }
+            #prx-trailer-player img { width: 38px; }
+            #prx-trailer-player h4 { font-size: 23px; }
+          }
+
+          .prx-podcast-trailer-meta {
+            display: none;
+          }
+          .sqs-edit-mode .prx-podcast-trailer-meta {
+            display: block;
           }
         </style>
 
         <script>
+          (function () {
+            document.addEventListener("DOMContentLoaded", _ => {
+              const meta = document.querySelector('.prx-podcast-trailer-meta .sqs-audio-embed');
 
+              const trailerAudio = document.querySelector('#prx-trailer-player audio');
+              trailerAudio.setAttribute('src', meta.getAttribute('data-url'));
+
+              const trailerControl = document.querySelector('#prx-trailer-player');
+              const trailerControlIndicator = document.querySelector('#prx-trailer-player img');
+
+              trailerControl.addEventListener('click', e => {
+                if (trailerAudio.paused) {
+                  trailerAudio.play();
+                  trailerControlIndicator.src = '/assets/pause.svg';
+                } else {
+                  trailerControlIndicator.src = '/assets/play.svg';
+                  trailerAudio.pause();
+                }
+              });
+            });
+          })();
         </script>
 
-        <img src="/assets/play.svg">
+        <img src=/assets/play.svg>
         <h4>listen to the trailer</h4>
 
+        <!-- The file loaded into this player is extracted from the first
+        `.sqs-audio-embed` found within `.prx-podcast-trailer-meta`. The URL
+        is contained in the `data-url` attribute -->
         <audio controls="" preload="none"></audio>
       </div>
-      <squarespace:block-field id="prx-podcast-{id}-trailer-meta" columns="12" label="Audio Trailer Helper" />
+
+      <!-- Ths block field is only visible in the Squarespace -->
+      <squarespace:block-field id="prx-podcast-{id}-trailer-meta" class="prx-podcast-trailer-meta" columns="12" label="Audio Trailer Helper" />
     </div>
   </section>
 
@@ -257,6 +289,11 @@
       }
 
       @media screen and (max-width: 768px) {
+        #prx-podcast-starter {
+          margin-bottom: 60px;
+          margin-top: 10px;
+        }
+
         #prx-podcast-starter .sqs-row h1 {
           font-size: 50px;
         }
