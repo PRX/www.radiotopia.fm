@@ -5,6 +5,8 @@
 </style>
 
 <script>
+  // Pause all audio elements on the page, and set all controls back to the
+  // "Play" button
   function pauseAllAudio() {
     const audioEls = document.querySelectorAll('audio');
 
