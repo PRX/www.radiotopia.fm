@@ -1,0 +1,57 @@
+<style>
+  #siteWrapper .banner-thumbnail-wrapper {
+    display: none;
+  }
+
+  #prx-podcast-grid {
+    --size: 220px;
+
+    display: grid;
+    grid-gap: 18px;
+    grid-template-columns: repeat(auto-fill, var(--size));
+    justify-content: space-between;
+  }
+
+  #prx-podcast-grid a img {
+
+    height: var(--size);
+    outline: 0px solid #ff8b2c;
+    outline-offset: -4px;
+    transition: all 0.1s ease-out;
+    width: var(--size);
+  }
+  #prx-podcast-grid a:hover img { outline-width: 4px; }
+
+  #prx-podcast-grid a p {
+    font-weight: 600;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 1000px) { #prx-podcast-grid { --size: 172px; } }
+  @media screen and (max-width: 768px) {
+    #prx-podcast-grid { --size: 150px; }
+
+    .sqs-layout p {
+      font-size: 14px !important; /* Clean up this selector once `.sqs-block-html p` in Custom CSS is moved to Site Styles */
+      line-height: 1.2em;
+    }
+  }
+</style>
+
+<section>
+  <squarespace:block-field id="podcast-grid-header" columns="12" label="Podcast Grid Header" />
+</section>
+
+<section id=prx-podcast-grid>
+  {.repeated section items}
+    {.if customContent.podcastHidden}
+    {.or}
+      <div>
+        <a href="{baseUrl}{fullUrl}">
+          <img class="podcast-artwork-image" src={customContent.podcastCoverArtwork.assetUrl} />
+          <p>{customContent.podcastTitle}</p>
+        </a>
+      </div>
+    {.end}
+  {.end}
+</section>
