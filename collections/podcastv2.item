@@ -282,6 +282,15 @@
         width: 100vw;
       }
 
+      /* Make internal wrapper follow the default Squarespace center column layout */
+      #prx-podcast-starter > div {
+        box-sizing: border-box;
+        width: auto;
+        margin: auto;
+        max-width: 1020px;
+        padding: 40px 32px;
+      }
+
       #prx-podcast-starter .sqs-row h1 {
         color: white;
         font-size: 100px;
