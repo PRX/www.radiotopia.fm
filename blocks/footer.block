@@ -2,7 +2,9 @@
 {@|apply donate-embed-modal.block}
 
 <style>
-  color: white !important;
+  .footer-inner {
+    color: white !important;
+  }
 </style>
 
 <footer id="footer" role="contentinfo">
