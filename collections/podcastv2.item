@@ -1,6 +1,48 @@
 <style>
+  /* Get rid of the default background banner */
   #siteWrapper .banner-thumbnail-wrapper {
     display: none;
+  }
+
+  /* Reorder the logo/nav grid for the podcast page special case */
+  .prx-v2 #header .header-inner {
+    position: relative;
+  }
+
+  .prx-v2 #header .header-inner #logoWrapper {
+    position: absolute;
+    grid-area: initial;
+  }
+
+  .prx-v2 #header .header-inner {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav";
+    padding: 0;
+  }
+
+  .prx-v2 #header .header-inner #headerNav {
+    padding: 36px 0;
+  }
+
+  .prx-v2 #header .header-inner #logoWrapper #logoImage a::after {
+    height: 45px;
+    background-position: left top;
+    margin-top: 25px;
+  }
+
+  .prx-v2 #page {
+    padding-top: 0;
+  }
+
+  @media screen and (max-width: 640px) {
+    .prx-v2 #page {
+      padding-top: 95px;
+    }
+
+    .prx-v2 #header .header-inner #logoWrapper #logoImage a::after {
+      background-position: top center;
+    }
   }
 </style>
 
