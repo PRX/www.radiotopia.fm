@@ -3,6 +3,11 @@
     display: none;
   }
 
+  #header,
+  .transparent-header #header {
+    position: static;
+  }
+
   #prx-podcast-grid {
     --size: 220px;
 
