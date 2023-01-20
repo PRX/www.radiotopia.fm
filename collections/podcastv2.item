@@ -592,6 +592,7 @@
 
       #prx-podcast-carousel .sqs-row h1,
       #prx-podcast-carousel .sqs-row h1 strong {
+        font-size: 40px;
         font-weight: 700;
       }
 
