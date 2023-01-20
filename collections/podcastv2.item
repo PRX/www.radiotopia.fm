@@ -487,6 +487,7 @@
 
       #prx-podcast-hosts > div.sqs-layout h1 {
         color: #8087af;
+        font-size: 40px;
         font-weight: 600;
       }
 
