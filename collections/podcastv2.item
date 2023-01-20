@@ -25,10 +25,14 @@
   <section id=prx-podcast-banner>
     <style>
       #prx-podcast-banner {
+        --banner-height: 500px;
+        --social-padding-right: 50px;
+        --social-padding-bottom: 30px;
+
         background-image: url('{customContent.bannerImage.assetUrl}');
         background-position: top center;
         background-size: cover;
-        height: 500px;
+        height: var(--banner-height);
         margin-left: 50%;
         position: relative;
         transform: translateX(-50%);
@@ -47,7 +51,7 @@
         justify-content: end;
         list-style: none;
         margin: 0;
-        padding: 0 50px 30px 0;
+        padding: 0 var(--social-padding-right) var(--social-padding-bottom) 0;
       }
 
       #prx-podcast-banner ul li a {
@@ -62,11 +66,23 @@
         width: 100%;
       }
 
-      @media screen and (max-width: 640px) {
-        #prx-podcast-banner ul {
-          padding: 0 15px 10px 0;
-        }
-      }
+      @media screen and (max-width: 1024px) { #prx-podcast-banner {
+        --banner-height: 440px;
+      }}
+
+      @media screen and (max-width: 768px) { #prx-podcast-banner {
+        --banner-height: 320px;
+      }}
+
+      @media screen and (max-width: 640px) { #prx-podcast-banner {
+        --banner-height: 250px;
+        --social-padding-right: 15px;
+        --social-padding-bottom: 10px;
+      }}
+
+      @media screen and (max-width: 480px) { #prx-podcast-banner {
+        --banner-height: 180px;
+      }}
     </style>
 
     <ul>
@@ -82,8 +98,11 @@
     <style>
       /* Busts out of the default Squarespace center column, for full bleed bg */
       #prx-podcast-intro {
+        --desc-font-size: 22px;
+        --pattern-bg-size: 300%;
+
         background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.88) 100%), url('/assets/zag-pattern.svg');
-        background-size: 100%, 300%;
+        background-size: 100%, var(--pattern-bg-size);
         background-position: top center, top center;
         margin: 0 auto;
         margin-left: 50%;
@@ -117,7 +136,7 @@
       }
 
       #prx-podcast-intro .description p {
-        font-size: 22px;
+        font-size: var(--desc-font-size);
         font-weight: 500;
       }
 
@@ -128,32 +147,14 @@
         width: 100%;
       }
 
-      @media screen and (max-width: 768px) {
-        #prx-platform-links {
-          gap: 12px;
-        }
+      @media screen and (max-width: 768px) { #prx-podcast-intro {
+        --desc-font-size: 18px;
+        --pattern-bg-size: 600%;
+      }}
 
-        #prx-platform-links li a {
-          height: 36px;
-          width: 36px;
-        }
-
-        #prx-podcast-intro .description p {
-          font-size: 18px;
-        }
-      }
-
-      @media screen and (max-width: 768px) {
-        #prx-podcast-intro {
-          background-size: 100%, 600%;
-        }
-      }
-
-      @media screen and (max-width: 640px) {
-        #prx-podcast-intro .description p {
-          font-size: 16px;
-        }
-      }
+      @media screen and (max-width: 640px) { #prx-podcast-intro {
+        --desc-font-size: 16px;
+      }}
     </style>
 
     <div>
@@ -163,28 +164,34 @@
       <ul id=prx-platform-links>
         <style>
           #prx-platform-links {
-          border: 0;
-          display: flex;
-          flex-wrap: wrap;
-          gap: 6px;
-          justify-content: left;
-          list-style: none;
-          margin: 30px 0 20px;
-          padding: 0;
-        }
+            --icon-gap: 6px;
+            --icon-size: 23px;
 
-        #prx-platform-links li a {
-          display: block;
-          margin: 0;
-        }
+            border: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--icon-gap);
+            justify-content: left;
+            list-style: none;
+            margin: 30px 0 20px;
+            padding: 0;
+          }
 
-        #prx-platform-links li a img {
-          --size: 23px;
+          #prx-platform-links li a {
+            display: block;
+            margin: 0;
+          }
 
-          display: block;
-          height: var(--size);
-          width: var(--size);
-        }
+          #prx-platform-links li a img {
+            display: block;
+            height: var(--icon-size);
+            width: var(--icon-size);
+          }
+
+          @media screen and (max-width: 768px) { #prx-platform-links {
+            --icon-gap: 12px;
+            --icon-size: 36px;
+          }}
         </style>
 
         {.if customContent.podcastItunesUrl}<li><a href="{customContent.podcastItunesUrl}"><img src="/assets/platforms/apple.svg"></a></li>{.end}
@@ -293,14 +300,25 @@
       #prx-podcast-starter {
         --bg-alpha: 0.7; /* 0 = full pattern, 1 = no pattern */
 
+        --margin-bottom: 85px;
+        --margin-top: 65px;
+        --padding-bottom: 90px;
+        --header-font-size: 100px;
+        --header-letter-spacing: 5px;
+        --players-padding-top: 40px;
+        --player-width: 450px;
+        --player-title-font-size: 22px;
+        --player-subtitle-font-size: 20px;
+        --player-subtitle-margin-top: 5px;
+
         background: linear-gradient(0deg, rgba(9,44,88,var(--bg-alpha)) 0%, rgba(9,44,88,var(--bg-alpha)) 100%), url('/assets/boltline-stagger.svg'), #092c58;
         background-position: top center, top center, top center;
         background-size: 100%, 140%, 100%;
         color: white;
-        margin-bottom: 85px;
+        margin-bottom: var(--margin-bottom);
         margin-left: 50%;
-        margin-top: 65px;
-        padding: 35px 0 90px;
+        margin-top: var(--margin-top);
+        padding: 35px 0 var(--padding-bottom);
         transform: translateX(-50%);
         width: 100vw;
       }
@@ -316,7 +334,7 @@
 
       #prx-podcast-starter .sqs-row h1 {
         color: white;
-        font-size: 100px;
+        font-size: var(--header-font-size);
         font-weight: 600;
         letter-spacing: 5px;
       }
@@ -331,7 +349,7 @@
         list-style: none;
         margin: 0 auto;
         max-width: 80%;
-        padding: 40px 0 0;
+        padding: var(--players-padding-top) 0 0;
       }
 
       #prx-podcast-starter > ul li {
@@ -339,7 +357,7 @@
         border-radius: 50px;
         color: #092c58;
         cursor: pointer;
-        flex-basis: 450px;
+        flex-basis: var(--player-width);
         padding: 22px 30px;
       }
       #prx-podcast-starter > ul li:hover { background: #ff446a; color: white; }
@@ -351,7 +369,7 @@
       }
 
       #prx-podcast-starter > ul li h4 {
-        font-size: 22px;
+        font-size: var(--player-title-font-size);
         font-weight: 500;
         margin: 0;
         padding: 0;
@@ -362,7 +380,7 @@
         color: #ff446a;
         font-size: 20px;
         font-weight: 600;
-        margin: 5px 0 0 0;
+        margin: var(--player-subtitle-margin-top) 0 0 0;
         padding: 0;
         text-align: center;
       }
@@ -372,23 +390,18 @@
         display: none;
       }
 
-      @media screen and (max-width: 768px) {
-        #prx-podcast-starter {
-          margin-bottom: 60px;
-          margin-top: 10px;
-          padding-bottom: 60px;
-        }
-
-        #prx-podcast-starter .sqs-row h1 {
-          font-size: 38px;
-          letter-spacing: 2px;
-        }
-
-        #prx-podcast-starter > ul li { flex-basis: 380px; }
-
-        #prx-podcast-starter > ul li h4 { font-size: 18px; }
-        #prx-podcast-starter > ul li h5 { font-size: 14px; margin-top: 2px; }
-      }
+      @media screen and (max-width: 768px) { #prx-podcast-starter {
+        --margin-bottom: 60px;
+        --margin-top: 10px;
+        --padding-bottom: 60px;
+        --header-font-size: 38px;
+        --header-letter-spacing: 2px;
+        --players-padding-top: 20px;
+        --player-width: 380px;
+        --player-title-font-size: 18px;
+        --player-subtitle-font-size: 14px;
+        --player-subtitle-margin-top: 2px;
+      }}
 
       /* Only show this block field in the CMS */
       .prx-podcast-starter-meta {
@@ -456,6 +469,9 @@
   <section id=prx-podcast-hosts>
     <style>
       #prx-podcast-hosts {
+        --host-image-size: 200px;
+        --copy-font-size: 18px;
+
         background: url('/assets/boltline-block.svg');
         background-repeat: no-repeat;
         background-position: top center;
@@ -475,7 +491,11 @@
       }
 
       #prx-podcast-hosts ul li img {
-        width: 200px;
+        width: var(--host-image-size);
+      }
+
+      #prx-podcast-hosts p {
+        font-size: var(--copy-font-size);
       }
 
       #prx-podcast-hosts > div {
@@ -491,15 +511,10 @@
         font-weight: 600;
       }
 
-      @media screen and (max-width: 640px) {
-        #prx-podcast-hosts ul li img {
-          width: 145px;
-        }
-
-        #prx-podcast-hosts p {
-          font-size: 16px;
-        }
-      }
+      @media screen and (max-width: 640px) { #prx-podcast-hosts {
+        --host-image-size: 145px;
+        --copy-font-size: 16px;
+      }}
     </style>
 
   <squarespace:block-field id="shared-podcast-hosts-header" columns="12" label="Shared Hosts Header" />
@@ -519,12 +534,14 @@
   <section id=prx-podcast-cta>
     <style>
       #prx-podcast-cta {
+        --margin-vertical: 125px;
+
         display: flex;
         gap: 75px;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 125px auto;
+        margin: var(--margin-vertical) auto;
         width: 100%;
       }
 
@@ -553,12 +570,9 @@
         font-size: 18px;
       }
 
-      @media screen and (max-width: 768px) {
-        #prx-podcast-cta {
-          margin-bottom: 75px;
-          margin-top: 75px;
-        }
-      }
+      @media screen and (max-width: 768px) { #prx-podcast-cta {
+        --margin-vertical: 75px;
+      }}
     </style>
 
     <div>
