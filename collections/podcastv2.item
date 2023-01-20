@@ -25,7 +25,7 @@
   <section id=prx-podcast-banner>
     <style>
       #prx-podcast-banner {
-        background-image: url('{customContent.podcastBannerArtwork.assetUrl}');
+        background-image: url('{customContent.bannerImage.assetUrl}');
         background-position: top center;
         background-size: cover;
         height: 500px;
@@ -562,12 +562,12 @@
     </style>
 
     <div>
-      <a href="#">Support {customContent.podcastTitle}</a>
+      <a href="#">support {customContent.podcastTitle}</a>
       <squarespace:block-field id="shared-podcast-support-copy" columns="12" label="Shared Support Copy" />
     </div>
 
     <div>
-      <a href="#">Become a Sponsor</a>
+      <a href="#">become a sponsor</a>
       <squarespace:block-field id="shared-podcast-sponsor-copy" columns="12" label="Shared Sponsor Copy" />
     </div>
   </section>
