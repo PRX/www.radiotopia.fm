@@ -2,7 +2,8 @@
 {@|apply donate-embed-modal.block}
 
 <style>
-  .footer-inner {
+  #footer,
+  #footer label {
     color: white !important;
   }
 </style>
