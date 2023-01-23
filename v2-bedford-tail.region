@@ -13,7 +13,7 @@
           padding: 0 40px;
         }
 
-        #temp-prx-footer div {
+        #temp-prx-footer > div {
           padding-right: 100px;
           flex-grow: 1;
           flex-basis: 450px;
@@ -26,7 +26,7 @@
           max-width: 322px;
         }
 
-        #temp-prx-footer ul {
+        #temp-prx-footer > ul {
           list-style: none;
           border: 0;
           padding: 0;
@@ -61,8 +61,8 @@
             font-size: 16px;
           }
 
-          #temp-prx-footer div,
-          #temp-prx-footer ul {
+          #temp-prx-footer > div,
+          #temp-prx-footer > ul {
             flex-basis: 100%;
             padding-right: 0px;
           }
@@ -76,32 +76,9 @@
       <div id="temp-prx-footer">
         <div>
           <img src="/assets/wordmark-blue.svg" style="width: 200px;">
-          <p>Radiotopia is a proud member of the Pro-Democracy Podcast Coalition.</p>
-          <p>Registered 501(c)(3). EIN: 26-3347402</p>
+          <squarespace:block-field id="footerBlocks" columns="12" label="{localizedStrings.footerBlocks}" />
         </div>
-        <ul>
-          <li><b>Radiotopia</b></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Press</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Brand&nbsp;Assets</a></li>
-        </ul>
-        <ul>
-          <li><b>Support</b></li>
-          <li><a href="#">Learn&nbsp;About&nbsp;Sponsorship</a></li>
-          <li><a href="#">Sponsor a Show</a></li>
-          <li><a href="#">Buy Radiotopia Merch</a></li>
-          <li><a href="#">Make a Donation</a></li>
-        </ul>
-        <ul>
-          <li><b>Connect</b></li>
-          <li><a href="#">Newsletter</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-        </ul>
+        <squarespace:navigation navigationId="secondaryNav" template="secondary-navigation-prx" />
       </div>
 
       <!-- <footer id="footer" role="contentinfo">

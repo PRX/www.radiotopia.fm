@@ -1,0 +1,15 @@
+{.section items}
+  {.repeated section @}
+    {.folder?}
+      <ul>
+        <li><b>{collection.navigationTitle}</b></li>
+
+        {.repeated section items}
+          {.section externalLink}
+            <li><a href="#">{title}</a></li>
+          {.end}
+        {.end}
+      </ul>
+    {.end}
+  {.end}
+{.end}
