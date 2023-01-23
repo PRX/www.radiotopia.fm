@@ -6,7 +6,7 @@
 
         {.repeated section items}
           {.section externalLink}
-            <li><a href="#">{title}</a></li>
+            <li><a href="{url}">{title}</a></li>
           {.end}
         {.end}
       </ul>
