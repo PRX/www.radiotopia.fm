@@ -53,94 +53,10 @@
     {.or}
       <div>
         <a href="{baseUrl}{fullUrl}">
-          <img class="podcast-artwork-image" src={customContent.podcastCoverArtwork.assetUrl} />
+          <img class="podcast-artwork-image" data-src={customContent.podcastCoverArtwork.assetUrl} />
           <p>{customContent.podcastTitle}</p>
         </a>
       </div>
     {.end}
   {.end}
-
-
-
-  {.repeated section items}
-    {.if customContent.podcastHidden}
-    {.or}
-      <div>
-        <a href="{baseUrl}{fullUrl}">
-          <img class="podcast-artwork-image" src={customContent.podcastCoverArtwork.assetUrl} />
-          <p>{customContent.podcastTitle}</p>
-        </a>
-      </div>
-    {.end}
-  {.end}
-  {.repeated section items}
-    {.if customContent.podcastHidden}
-    {.or}
-      <div>
-        <a href="{baseUrl}{fullUrl}">
-          <img class="podcast-artwork-image" src={customContent.podcastCoverArtwork.assetUrl} />
-          <p>{customContent.podcastTitle}</p>
-        </a>
-      </div>
-    {.end}
-  {.end}
-  {.repeated section items}
-    {.if customContent.podcastHidden}
-    {.or}
-      <div>
-        <a href="{baseUrl}{fullUrl}">
-          <img class="podcast-artwork-image" src={customContent.podcastCoverArtwork.assetUrl} />
-          <p>{customContent.podcastTitle}</p>
-        </a>
-      </div>
-    {.end}
-  {.end}
-  {.repeated section items}
-    {.if customContent.podcastHidden}
-    {.or}
-      <div>
-        <a href="{baseUrl}{fullUrl}">
-          <img class="podcast-artwork-image" src={customContent.podcastCoverArtwork.assetUrl} />
-          <p>{customContent.podcastTitle}</p>
-        </a>
-      </div>
-    {.end}
-  {.end}
-  {.repeated section items}
-    {.if customContent.podcastHidden}
-    {.or}
-      <div>
-        <a href="{baseUrl}{fullUrl}">
-          <img class="podcast-artwork-image" src={customContent.podcastCoverArtwork.assetUrl} />
-          <p>{customContent.podcastTitle}</p>
-        </a>
-      </div>
-    {.end}
-  {.end}
-  {.repeated section items}
-    {.if customContent.podcastHidden}
-    {.or}
-      <div>
-        <a href="{baseUrl}{fullUrl}">
-          <img class="podcast-artwork-image" src={customContent.podcastCoverArtwork.assetUrl} />
-          <p>{customContent.podcastTitle}</p>
-        </a>
-      </div>
-    {.end}
-  {.end}
-  {.repeated section items}
-    {.if customContent.podcastHidden}
-    {.or}
-      <div>
-        <a href="{baseUrl}{fullUrl}">
-          <img class="podcast-artwork-image" src={customContent.podcastCoverArtwork.assetUrl} />
-          <p>{customContent.podcastTitle}</p>
-        </a>
-      </div>
-    {.end}
-  {.end}
-
-
-
-
 </section>
