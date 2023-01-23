@@ -1,7 +1,48 @@
+{#  This custom navigation block is used in place of the original Bedford
+    `secondary-navigation.block`  }
+
+<style>
+  ul#prx-footer-nav {
+    --basis: auto;
+
+    list-style: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    flex-basis: var(--basis);
+  }
+
+  ul#prx-footer-nav li {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2em;
+  }
+
+  ul#prx-footer-nav li b {
+    color: #8087af;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  ul#prx-footer-nav li a {
+    font-weight: 600;
+    text-transform: lowercase;
+  }
+  ul#prx-footer-nav li a:hover { color: #ff446a; }
+
+  @media screen and (max-width: 900px) {
+    ul#prx-footer-nav {
+      --basis: 100%;
+    }
+  }
+</style>
+
 {.section items}
   {.repeated section @}
     {.folder?}
-      <ul>
+      <ul id=prx-footer-nav>
         <li><b>{collection.navigationTitle}</b></li>
 
         {.repeated section items}
