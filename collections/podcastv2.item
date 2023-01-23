@@ -4,6 +4,11 @@
     display: none;
   }
 
+  #header,
+  .transparent-header #header {
+    position: static;
+  }
+
   /* Reorder the logo/nav grid for the podcast page special case */
   .prx-v2 #header .header-inner {
     position: relative;
