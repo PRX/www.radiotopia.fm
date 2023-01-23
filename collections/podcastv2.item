@@ -201,7 +201,16 @@
 
     <div>
       <h1>{customContent.podcastTitle}</h1>
-      <a href="{customContent.podcastLink}">{customContent.podcastUrlTitle}</a>
+
+      {.if customContent.podcastLink}
+        <a href="{customContent.podcastLink}">
+          {.if customContent.podcastUrlTitle}
+            {customContent.podcastUrlTitle}
+          {.or}
+            Listen at {customContent.podcastLink}
+          {.end}
+        </a>
+      {.end}
 
       <ul id=prx-platform-links>
         <style>
