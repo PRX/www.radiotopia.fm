@@ -44,10 +44,12 @@
         #temp-prx-footer ul li b {
           color: #8087af;
           font-weight: 600;
+          text-transform: uppercase;
         }
 
         #temp-prx-footer ul li a {
           font-weight: 600;
+          text-transform: lowercase;
         }
         #temp-prx-footer ul li a:hover { color: #ff446a; }
 
