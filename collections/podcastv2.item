@@ -66,6 +66,20 @@
       imgEl.setAttribute('src', '/assets/play.svg')
     }
   }
+
+  (function () {
+    document.addEventListener("DOMContentLoaded", _ => {
+      const audioEls = document.querySelectorAll('audio');
+      for (const audioEl of audioEls) {
+        audioEl.addEventListener('ended', e => {
+          const imgEls = document.querySelectorAll("img[src='/assets/pause.svg']");
+          for (const imgEl of imgEls) {
+            imgEl.setAttribute('src', '/assets/play.svg')
+          }
+        });
+      }
+    });
+  })();
 </script>
 
 {.section item}
