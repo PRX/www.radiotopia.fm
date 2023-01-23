@@ -33,7 +33,13 @@
               </h1>
               <div class="podcast-link-container">
                 {.if customContent.podcastLink}
-                <a href="{customContent.podcastLink}">Listen at {customContent.podcastLink}</a>
+                <a href="{customContent.podcastLink}">
+                  {.if customContent.podcastUrlTitle}
+                    {customContent.podcastUrlTitle}
+                  {.or}
+                    Listen at {customContent.podcastLink}
+                  {.end}
+                </a>
                 {.end}
               </div>
               <div class="podcast-description">
