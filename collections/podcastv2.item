@@ -216,7 +216,7 @@
         <style>
           #prx-platform-links {
             --icon-gap: 6px;
-            --icon-size: 23px;
+            --icon-size: 28px;
 
             border: 0;
             display: flex;
