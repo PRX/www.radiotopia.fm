@@ -53,8 +53,12 @@
     {.or}
       <div>
         <a href="{baseUrl}{fullUrl}">
-          <img class="podcast-artwork-image" data-src={customContent.podcastCoverArtwork.assetUrl} />
-          <p>{customContent.podcastTitle}</p>
+          <img
+            class="podcast-artwork-image"
+            data-src={customContent.podcastCoverArtwork.assetUrl}
+            alt="{title} podcast information"
+            />
+          <p>{title}</p>
         </a>
       </div>
     {.end}
