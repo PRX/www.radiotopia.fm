@@ -627,12 +627,12 @@
     </style>
 
     <div>
-      <a href="#">support {title}</a>
+      <a href="{customContent.podcastDonateFormUrl}">support {title}</a>
       <squarespace:block-field id="shared-podcast-support-copy" columns="12" label="Shared Support Copy" />
     </div>
 
     <div>
-      <a href="#">become a sponsor</a>
+      <a href="{customContent.podcastSponsorEmail}">become a sponsor</a>
       <squarespace:block-field id="shared-podcast-sponsor-copy" columns="12" label="Shared Sponsor Copy" />
     </div>
   </section>
