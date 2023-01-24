@@ -117,10 +117,6 @@ body {
   background-color: fade(@footerBgColor, 100%);
 }
 
-.sqs-widgets-audio-player.playing .action .pause {
-  width: 13px;
-  margin-right: 2px;
-}
 
 // Typography
 
@@ -139,6 +135,7 @@ body {
 .twitter-block,
 .foursquare-block,
 .rss-block,
+.sqs-block-accordion .accordion-item__description,
 .layout-caption-below .image-caption,
 .summary-excerpt,
 .album-description,
@@ -479,16 +476,23 @@ body:not(.has-banner-image),
       border-bottom: 1px solid @footerTextColor;
     }
   }
-  nav:not(.social-account-list) {
+  nav:not(.sqs-svg-icon--list) {
     .footer-nav-font;
     a,
     a:visited,
-    label {
+    .folder-toggle {
       text-decoration: none;
       line-height: 1.25em;
       color: @footerNavLinkColor;
       border: none;
       &.active, &:hover {
+        color: @footerNavActiveColor;
+      }
+    }
+    .active {
+      > a,
+      > a:visited,
+      > .folder-toggle {
         color: @footerNavActiveColor;
       }
     }
@@ -663,6 +667,17 @@ li.filter {
 
 // PROMOTED SLIDESHOW PAGE STYLES
 
+// [TMP-5518]
+// Index pages with only promoted gallery will not have annotations because they
+// lack a height. As a workaround, we set min-height on that section.
+
+[data-authenticated-account] .promoted-gallery-wrapper {
+  ~ .index-section-wrapper .sqs-layout,
+  ~ #page .sqs-layout {
+    min-height: 100px;
+  }
+}
+
 .collection-type-page,
 .collection-type-index {
   &.has-promoted-gallery {
@@ -671,6 +686,11 @@ li.filter {
     .promoted-gallery-wrapper {
       .sqs-block {
         padding: 0 !important;
+
+        // [TMP-5301] Overriding floated gallery block styles
+        width: 100%;
+        float: none;
+        margin: 0;
       }
       .sqs-gallery-block-slideshow {
         width: 100%;
@@ -880,7 +900,7 @@ li.filter {
           background-color: fade(@bannerButtonColor, 80%);
         }
       }
-      .meta-description p:empty {
+      .meta-description p:empty:not([data-rte-preserve-empty]) {
         display: none;
       }
     }
@@ -1041,7 +1061,7 @@ li.filter {
     }
   }
   p:last-child > a + a { margin-left: 1em; }
-  p:empty {
+  p:empty:not([data-rte-preserve-empty]) {
     display: none;
   }
 }
@@ -1103,7 +1123,7 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
 #sidecarNav nav {
   a,
   a:visited,
-  label {
+  .folder-toggle {
     .nav-font;
     line-height: 1em;
     color: @navColor;
@@ -1114,7 +1134,7 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
   .active{
     > a,
     > a:visited,
-    > label{
+    > .folder-toggle{
       color:@navActiveColor;
     }
   }
@@ -1159,17 +1179,17 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
         vertical-align: middle;
         margin: 0;
         a,
-        label {
+        .folder-toggle {
           .transition(color 0.1s 0s ease-in-out);
         }
         > a,
-        label {
+        .folder-toggle {
           display: block;
           padding: 0.75em 1em;
         }
         &:last-child {
           > a,
-          label {
+          .folder-toggle {
             padding-right: 0;
           }
         }
@@ -1243,14 +1263,14 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
 }
 
 // folder indicator everywhere in mobile style nav
-#sidecarNav .folder label:before {
+#sidecarNav .folder .folder-toggle:before {
   content: '+';
   padding-right: 0.25em;
   width: 0.75em;
   display: inline-block;
 }
 
-#sidecarNav .folder .folder-toggle-box:checked ~ label:before {
+#sidecarNav .folder .folder-toggle.active:before {
   content:'–'
 }
 
@@ -1259,7 +1279,7 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
   .folder {
     position: relative;
   }
-  .folder-toggle-label ~ .subnav {
+  .folder-toggle ~ .subnav {
     height: 0;
     max-height: 0;
     overflow: hidden;
@@ -1270,12 +1290,13 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
       padding: 1em 0 0;
     }
   }
-  .folder-toggle-box:checked ~ .subnav {
+  .folder-toggle.active ~ .subnav {
     height: auto;
     max-height: 999px;
     padding: 0 1em 1em;
   }
-  #header .folder-toggle-label ~ .subnav {
+  #header .folder-toggle ~ .subnav,
+  #footer .folder-toggle ~ .subnav {
     position: absolute;
     left: 0;
   }
@@ -1288,7 +1309,7 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
 
 // Folders on desktop in mobile nav
 .force-mobile-nav #sidecarNav {
-  .folder-toggle-label ~ .subnav {
+  .folder-toggle ~ .subnav {
     height: 0;
     max-height: 0;
     overflow: hidden;
@@ -1298,7 +1319,7 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
       padding: 0.5em 0;
     }
   }
-  .folder-toggle-box:checked ~ .subnav {
+  .folder-toggle.active ~ .subnav {
     height: auto;
     max-height: 999px;
     padding: 0 1em 1em;
@@ -1314,13 +1335,13 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
       vertical-align: middle;
       margin: 0;
       > a,
-      label {
+      .folder-toggle {
         display: block;
         padding: 0.75em 1em;
       }
       &:first-child {
         > a,
-        label {
+        .folder-toggle {
           padding-left: 0;
         }
       }
@@ -1380,7 +1401,7 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
   position: relative;
 }
 
-.folder-toggle-label {
+.folder-toggle {
   cursor: pointer;
 }
 
@@ -1391,8 +1412,8 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
 
 /* MOBILE NAV */
 
-#mobileNavToggle:checked{
-  ~ .body-overlay{
+.mobile-nav-open {
+  .body-overlay{
     position:absolute;
     top:0;
     bottom:0;
@@ -1415,6 +1436,8 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
   line-height: 1em;
   text-align: left;
   overflow: auto;
+  // we toggle visibility here when it's closed, otherwise
+  // the sidecar will stick out below the footer on short pages
   visibility: hidden;
   background-color: fade(@headerBgColor, 100%);
   .font-smoothing(@headerBgColor);
@@ -1425,7 +1448,7 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
     div {
       .border-box;
       a,
-      label {
+      .folder-toggle {
         display: block;
         padding: 0.75em 0;
       }
@@ -1448,8 +1471,8 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
     vertical-align: middle;
   }
 
-  .mobile-nav-toggle-label {
-    display: none;
+  .mobile-nav-toggle {
+    display: block;
     .border-box;
     z-index: 100;
     width: 10%;
@@ -1528,7 +1551,7 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
       div {
         .border-box;
         a,
-        label {
+        .folder-toggle {
           display: block;
           padding: 0.75em 0;
         }
@@ -1551,8 +1574,8 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
               transition: transform 0.2s ease-in-out;
   }
 
-  #mobileNavToggle:checked {
-    ~ #siteWrapper {
+  &.mobile-nav-open {
+    #siteWrapper {
       position: fixed;
       -webkit-transform: translatex(-260px);
       -webkit-transform: translate3d(-260px,0,0);
@@ -1564,7 +1587,7 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
            -o-transform: translate3d(-260px,0,0);
               transform: translatex(-260px) translatez(0);
               transform: translate3d(-260px,0,0);
-      .mobile-nav-toggle-label {
+      .mobile-nav-toggle {
         .top-bar,
         .bottom-bar {
           -webkit-transition: top 0.1s 0.1s ease-in-out, -webkit-transform 0.1s 0.2s ease-in-out;
@@ -1595,7 +1618,7 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
       }
     }
 
-    ~ #sidecarNav {
+    #sidecarNav {
       height: 100%;
       visibility: visible;
       .transition2(height 0s 0.14s linear, visibility 0s 0s linear);
@@ -1609,25 +1632,12 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
     padding: 1em 1.5em;
   }
 
-  .folder-toggle-box:checked ~ .subnav {
+  .folder-toggle.active ~ .subnav {
     padding: 0.25em 0 0.5em;
   }
 }
 
-
-@media only screen and (min-width: 641px) {
-  .sqs-style-mode.dialog-open.force-mobile-nav #mobileNavToggle:checked {
-    ~ #siteWrapper {
-      -webkit-transform: translate3d(-480px, 0, 0);
-         -moz-transform: translate3d(-480px, 0, 0);
-          -ms-transform: translate3d(-480px, 0, 0);
-           -o-transform: translate3d(-480px, 0, 0);
-              transform: translate3d(-480px, 0, 0);
-    }
-  }
-}
-
-.mobile-nav-toggle-label {
+.mobile-nav-toggle {
   display: none;
 }
 
@@ -1708,7 +1718,7 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
   nav > div {
     &:first-child {
       > a,
-      label {
+      .folder-toggle {
         padding-left: 0;
       }
     }
@@ -1758,8 +1768,8 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
 
 // FOLDER SIDEBAR NAV
 
-.folder-nav-toggle-label,
-.category-nav-toggle-label {
+.folder-nav-toggle,
+.category-nav-toggle {
   display: none;
 }
 
@@ -1976,7 +1986,7 @@ html.touch {
 // TEMP Social Icon Fix
 #preFooter,
 #footer {
-  nav:not(.social-icons-style-border) {
+  .sqs-svg-icon--outer:not(.social-icons-style-border) {
     a,
     a:visited {
       border-bottom: none;

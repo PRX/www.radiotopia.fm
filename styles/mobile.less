@@ -1,6 +1,10 @@
 /* BEDFORD MOBILE STYLES */
 
 
+.mobile-nav-open {
+  .sqs-announcement-bar-dropzone { display: none; }
+}
+
 @media only screen and (max-width: 1024px) {
 
 	// kills the background color on tapped links
@@ -424,15 +428,6 @@
 
 	/* MOBILE NAV */
 
-	// fixes checkbox hack for android < 4.1.2
-	body {
-		-webkit-animation: bugfix infinite 1s;
-	}
-	@-webkit-keyframes bugfix {
-	  from { padding: 0; }
-	  to { padding: 0; }
-	}
-
 	#headerNav {
 		display: none;
 	}
@@ -447,8 +442,8 @@
 		display: none;
 	}
 
-	.mobile-nav-toggle-label {
-		display: none;
+	.mobile-nav-toggle {
+		display: block;
 		.border-box;
 		z-index: 100;
 		width: 10%;
@@ -495,7 +490,7 @@
     }
 	}
 
-	.mobile-nav-toggle-label.fixed-nav-toggle-label {
+	.mobile-nav-toggle.fixed-nav-toggle {
 		position: fixed;
 		top: 5px;
 		right: 5px;
@@ -516,14 +511,14 @@
 		}
 	}
 
-	.fix-header-nav .mobile-nav-toggle-label.fixed-nav-toggle-label {
+	.fix-header-nav .mobile-nav-toggle.fixed-nav-toggle {
 		visibility: visible;
 		opacity: 1;
 	}
 
 	#sidecarNav,
 	#secondaryNavWrapper {
-	  .folder-toggle-label ~ .subnav {
+	  .folder-toggle ~ .subnav {
 	    height: 0;
 	    max-height: 0;
 	    overflow: hidden;
@@ -533,7 +528,7 @@
 	      padding: 0.5em 0;
 	    }
 	  }
-	  .folder-toggle-box:checked ~ .subnav {
+	  .folder-toggle.active ~ .subnav {
 	    height: auto;
 	    max-height: 999px;
 	    padding: 0 1em 1em;
@@ -550,14 +545,13 @@
 		transition: transform 0.14s ease-in-out;
 	}
 
-	#mobileNavToggle:checked {
+	&.mobile-nav-open {
 
-		~ #sidecarNav {
+		#sidecarNav {
 	    visibility: visible;
       .transition2(height 0s 0.14s linear, visibility 0s 0s linear);
 		}
-	  ~ .sqs-announcement-bar-dropzone { display: none; }
-		~ #siteWrapper {
+		#siteWrapper {
 				position: fixed;
 				height: 100%;
 				-webkit-transform: translate3d(-260px, 0, 0);
@@ -566,7 +560,7 @@
 				-o-transform: translate3d(-260px, 0, 0);
 				transform: translate3d(-260px, 0, 0);
 
-				.mobile-nav-toggle-label {
+				.mobile-nav-toggle {
 	        .top-bar,
 	        .bottom-bar {
 						-webkit-transition: top 0.15s 0.15s ease-in-out, -webkit-transform 0.15s 0.3s ease-in-out;
@@ -607,7 +601,7 @@
 	  padding: 1em 1.5em;
 	}
 
-	.folder-toggle-box:checked ~ .subnav {
+	.folder-toggle.active ~ .subnav {
     padding: 0.25em 0 0.5em;
   }
 
@@ -634,7 +628,7 @@
 		  	.border-box;
 	  		display: block;
  		  	a,
-		  	label {
+		  	.folder-toggle {
 		  		display: block;
 		  		padding: 0.7em 0;
 		  	}
@@ -657,8 +651,8 @@
 
 	// folder sidebar nav
 
-	.folder-nav-toggle-label,
-	.category-nav-toggle-label {
+	.folder-nav-toggle,
+	.category-nav-toggle {
 		display: block;
 		width: 100%;
 		z-index: 2;
@@ -725,14 +719,14 @@
 		}
 	}
 
-	#folderNav #folderNavToggle:checked {
-		+ .folder-nav-toggle-label {
+	#folderNav.expanded {
+		.folder-nav-toggle {
 			z-index: 0;
 			&:after {
 				content: '–';
 			}
 		}
-		~ .folder-nav {
+		.folder-nav {
 			li:not(.active-link) {
 				display: block;
 				&.nav-section-label {
@@ -742,14 +736,14 @@
 		}
 	}
 
-	#categoryNav #categoryNavToggle:checked {
-		+ .category-nav-toggle-label {
+	#categoryNav.expanded {
+		.category-nav-toggle {
 			z-index: 0;
 			&:after {
 				content: '–';
 			}
 		}
-		~ .category-nav {
+		.category-nav {
 			li:not(.filter) {
 				display: block;
 				&.nav-section-label {
