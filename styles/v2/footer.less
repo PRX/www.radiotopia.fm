@@ -1,5 +1,5 @@
-// tweak: { "type" : "color", "title" : "Footer Nav Link (Hover)", "label" : "Footer Nav Link (Hover)", "category" : "Footer", "target" : "#footer, #secondaryNavigation", "showOnlyWhenPresent" : "#secondaryNavigation" }
-@footerNavHoverColor: #FFF;
+// tweak: { "type" : "color", "title" : "Footer Nav Header Color", "label" : "Footer Nav Header Color", "category" : "Footer", "target" : "#footer, #secondaryNavigation", "showOnlyWhenPresent" : "#secondaryNavigation" }
+@footerNavHeaderColor: #FFF;
 
 // tweak: { "type" : "font", "title" : "Footer Nav Header Font", "label" : "Footer Nav Header Font", "category" : "Footer", "target" : "#footer, #secondaryNavigation", "showOnlyWhenPresent" : "#secondaryNavigation" }
 .footer-nav-header-font {
@@ -13,9 +13,20 @@
   line-height: 1.2em;
 }
 
-// tweak: { "type" : "color", "title" : "Footer Nav Header Color", "label" : "Footer Nav Header Color", "category" : "Footer", "target" : "#footer, #secondaryNavigation", "showOnlyWhenPresent" : "#secondaryNavigation" }
-@footerNavHeaderColor: #FFF;
+// tweak: { "type" : "color", "title" : "Footer Nav Link (Hover)", "label" : "Footer Nav Link (Hover)", "category" : "Footer", "target" : "#footer, #secondaryNavigation", "showOnlyWhenPresent" : "#secondaryNavigation" }
+@footerNavHoverColor: #FFF;
 
+// tweak: { "type" : "font", "title" : "Footer Copy Font", "label" : "Footer Copy Font", "category" : "Footer", "target" : "#footer", "showOnlyWhenPresent" : "#footer" }
+.footer-copy-font {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.2em;
+}
 
 #footer {
   --basis: auto;
@@ -27,14 +38,14 @@
   padding: 0 40px;
 
   > section {
+    .footer-copy-font;
+
     flex-grow: 1;
     flex-basis: 450px;
     padding-right: 100px;
 
     p {
-      font-weight: 600;
       margin-bottom: 0;
-      line-height: 1.1em;
       max-width: 322px;
     }
   }
