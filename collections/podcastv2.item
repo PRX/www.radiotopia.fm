@@ -146,6 +146,14 @@
       }}
     </style>
 
+    {.if customContent.podcastBannerOverlayCssFilter}
+      <style>
+        #prx-podcast-banner ul li a img {
+          filter: {customContent.podcastBannerOverlayCssFilter};
+        }
+      </style>
+    {.end}
+
     <ul>
       {.if customContent.podcastInstagramUrl}<li><a href="{customContent.podcastInstagramUrl}" title="Instagram"><img src="/assets/social/instagram.svg" alt="{title} on Instagram"></a></li>{.end}
       {.if customContent.podcastFacebookUrl}<li><a href="{customContent.podcastFacebookUrl}" title="Facebook"><img src="/assets/social/facebook.svg" alt="{title} on Facebook"></a></li>{.end}
