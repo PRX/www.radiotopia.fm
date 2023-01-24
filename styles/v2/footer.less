@@ -13,9 +13,6 @@
   line-height: 1.2em;
 }
 
-// tweak: { "type" : "color", "title" : "Footer Nav Link (Hover)", "label" : "Footer Nav Link (Hover)", "category" : "Footer", "target" : "#footer, #secondaryNavigation", "showOnlyWhenPresent" : "#secondaryNavigation" }
-@footerNavHoverColor: #FFF;
-
 // tweak: { "type" : "font", "title" : "Footer Copy Font", "label" : "Footer Copy Font", "category" : "Footer", "target" : "#footer", "showOnlyWhenPresent" : "#footer" }
 .footer-copy-font {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -30,24 +27,41 @@
 
 #footer {
   --basis: auto;
+  --copy-align: left;
+  --h-gap: 30px;
+  --v-gap: 30px;
+  --section-padding: 100px;
+  --para-max-width: 322px;
+  --wrap: nowrap;
 
   display: flex;
-  gap: 10px 30px;
+  flex-wrap: var(--wrap);
+  gap: var(--v-gap) var(--h-gap);
   margin: 0 auto 80px;
   max-width: 1000px;
   padding: 0 40px;
+  text-align: var(--copy-align);
 
   > section {
     .footer-copy-font;
 
     flex-grow: 1;
     flex-basis: 450px;
-    padding-right: 100px;
+    padding-right: var(--section-padding);
 
     p {
       margin-bottom: 0;
-      max-width: 322px;
+      max-width: var(--para-max-width);
     }
+  }
+
+  @media screen and (max-width: 900px) {
+    --h-gap: 0;
+    --basis: 100%;
+    --section-padding: 0;
+    --para-max-width: none;
+    --copy-align: center;
+    --wrap: wrap;
   }
 }
 
@@ -56,6 +70,12 @@
   // blocks/secondary-navigation-prx.block
 
   display: flex;
+  flex-basis: var(--basis);
+  flex-wrap: var(--wrap);
+  gap: var(--v-gap) var(--h-gap);
+
+  ul {
+    flex-basis: var(--basis);
 
     li {
       // The first list item of each list in the nav is a header that comes
@@ -72,9 +92,7 @@
 
         color: @footerNavLinkColor;
         display: block;
-
-        &:hover { color: @footerNavHoverColor; }
-        &:active { color: @footerNavActiveColor; }
       }
     }
+  }
 }
