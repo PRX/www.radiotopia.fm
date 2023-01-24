@@ -1,0 +1,17 @@
+//
+// This file adds tweaks to the Site Styles that control layout aspects of the
+// main content element (<main id=page>) that wraps content on all pages.
+//
+//
+//
+
+// tweak: { "type" : "value", "category" : "Page Layout", "title" : "Top Spacing", "min" : 0, "max" : 100, "step" : 2 }
+@prxPagePaddingTop: 0px;
+
+// tweak: { "type" : "value", "category" : "Page Layout", "title" : "Bottom Spacing", "min" : 0, "max" : 100, "step" : 2 }
+@prxPagePaddingBottom: 0px;
+
+.prx-v2 #page {
+  padding-top: @prxPagePaddingTop;
+  padding-bottom: @prxPagePaddingBottom;
+}
