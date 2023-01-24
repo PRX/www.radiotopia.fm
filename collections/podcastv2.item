@@ -147,11 +147,11 @@
     </style>
 
     <ul>
-      {.if customContent.podcastInstagramUrl}<li><a href="#"><img src="/assets/social/instagram.svg"></a></li>{.end}
-      {.if customContent.podcastFacebookUrl}<li><a href="#"><img src="/assets/social/facebook.svg"></a></li>{.end}
-      {.if customContent.podcastTwitterUrl}<li><a href="#"><img src="/assets/social/twitter.svg"></a></li>{.end}
-      {.if customContent.podcastMastodonUrl}<li><a href="#"><img src="/assets/social/mastodon.svg"></a></li>{.end}
-      {.if customContent.podcastNewsletterUrl}<li><a href="#"><img src="/assets/social/email.svg"></a></li>{.end}
+      {.if customContent.podcastInstagramUrl}<li><a href="{customContent.podcastInstagramUrl}" title="Instagram"><img src="/assets/social/instagram.svg" alt="{title} on Instagram"></a></li>{.end}
+      {.if customContent.podcastFacebookUrl}<li><a href="{customContent.podcastFacebookUrl}" title="Facebook"><img src="/assets/social/facebook.svg" alt="{title} on Facebook"></a></li>{.end}
+      {.if customContent.podcastTwitterUrl}<li><a href="{customContent.podcastTwitterUrl}" title="Twitter"><img src="/assets/social/twitter.svg" alt="{title} on Twitter"></a></li>{.end}
+      {.if customContent.podcastMastodonUrl}<li><a href="{customContent.podcastMastodonUrl}" title="Mastodon"><img src="/assets/social/mastodon.svg" alt="{title} on Mastodon"></a></li>{.end}
+      {.if customContent.podcastNewsletterUrl}<li><a href="{customContent.podcastNewsletterUrl}" title="Newsletter"><img src="/assets/social/email.svg" alt="{title}'s newsletter"></a></li>{.end}
     </ul>
   </section>
 
@@ -264,21 +264,21 @@
           }}
         </style>
 
-        {.if customContent.podcastItunesUrl}<li><a href="{customContent.podcastItunesUrl}"><img src="/assets/platforms/apple.svg"></a></li>{.end}
-        {.if customContent.podcastSpotifyUrl}<li><a href="{customContent.podcastSpotifyUrl}"><img src="/assets/platforms/spotify.svg"></a></li>{.end}
-        {.if customContent.podcastOvercastUrl}<li><a href="{customContent.podcastOvercastUrl}"><img src="/assets/platforms/overcast.svg"></a></li>{.end}
-        {.if customContent.podcastCastboxUrl}<li><a href="{customContent.podcastCastboxUrl}"><img src="/assets/platforms/castbox.svg"></a></li>{.end}
-        {.if customContent.podcastPocketCastsUrl}<li><a href="{customContent.podcastPocketCastsUrl}"><img src="/assets/platforms/pocket-casts.svg"></a></li>{.end}
-        {.if customContent.podcastStitcherUrl}<li><a href="{customContent.podcastStitcherUrl}"><img src="/assets/platforms/stitcher.svg"></a></li>{.end}
-        {.if customContent.podcastPandoraUrl}<li><a href="{customContent.podcastPandoraUrl}"><img src="/assets/platforms/pandora.svg"></a></li>{.end}
-        {.if customContent.podcastGooglePlayUrl}<li><a href="{customContent.podcastGooglePlayUrl}"><img src="/assets/platforms/google.png"></a></li>{.end}
-        {.if customContent.podcastAmazonMusicUrl}<li><a href="{customContent.podcastAmazonMusicUrl}"><img src="/assets/platforms/amazon.svg"></a></li>{.end}
-        {.if customContent.podcastFeedUrl}<li><a href="{customContent.podcastFeedUrl}"><img src="/assets/platforms/rss.svg"></a></li>{.end}
+        {.if customContent.podcastItunesUrl}<li><a href="{customContent.podcastItunesUrl}" title="Apple Podcasts"><img src="/assets/platforms/apple.svg" alt="{title} on Apple Podcasts"></a></li>{.end}
+        {.if customContent.podcastSpotifyUrl}<li><a href="{customContent.podcastSpotifyUrl}" title="Spotify"><img src="/assets/platforms/spotify.svg" alt="{title} on Spotify"></a></li>{.end}
+        {.if customContent.podcastOvercastUrl}<li><a href="{customContent.podcastOvercastUrl}" title="Overcast"><img src="/assets/platforms/overcast.svg" alt="{title} on Overcast"></a></li>{.end}
+        {.if customContent.podcastCastboxUrl}<li><a href="{customContent.podcastCastboxUrl}" title="Castbox"><img src="/assets/platforms/castbox.svg" alt="{title} on Castbox"></a></li>{.end}
+        {.if customContent.podcastPocketCastsUrl}<li><a href="{customContent.podcastPocketCastsUrl}" title="Pocket Casts"><img src="/assets/platforms/pocket-casts.svg" alt="{title} on Pocket Casts"></a></li>{.end}
+        {.if customContent.podcastStitcherUrl}<li><a href="{customContent.podcastStitcherUrl}" title="Stitcher"><img src="/assets/platforms/stitcher.svg" alt="{title} on Stitcher"></a></li>{.end}
+        {.if customContent.podcastPandoraUrl}<li><a href="{customContent.podcastPandoraUrl}" title="Pandora"><img src="/assets/platforms/pandora.svg" alt="{title} on Pandora"></a></li>{.end}
+        {.if customContent.podcastGooglePlayUrl}<li><a href="{customContent.podcastGooglePlayUrl}" title="Google Podcasts"><img src="/assets/platforms/google.png" alt="{title} on Google"></a></li>{.end}
+        {.if customContent.podcastAmazonMusicUrl}<li><a href="{customContent.podcastAmazonMusicUrl}" title="Amazon"><img src="/assets/platforms/amazon.svg" alt="{title} on Amazon"></a></li>{.end}
+        {.if customContent.podcastFeedUrl}<li><a href="{customContent.podcastFeedUrl}" title="RSS feed"><img src="/assets/platforms/rss.svg" alt="{title}'s RSS feed"></a></li>{.end}
       </ul>
 
       <div class=description>{customContent.podcastDescription.html}</div>
 
-      <img class=boltline src=/assets/boltline.svg>
+      <img class=boltline src=/assets/boltline.svg alt="">
 
       <div id=prx-trailer-player>
         <style>
@@ -351,7 +351,7 @@
           })();
         </script>
 
-        <img src=/assets/play.svg>
+        <img src=/assets/play.svg alt="Audio trailer play button">
         <h4>listen to the trailer</h4>
 
         <!-- The file loaded into this player is extracted from the first
@@ -493,6 +493,7 @@
 
             const img = document.createElement('img');
             img.setAttribute('src', '/assets/play.svg');
+            img.setAttribute('alt', `Play button for ${meta.getAttribute('data-title')}`);
             li.appendChild(img)
 
             const h4 = document.createElement('h4');
