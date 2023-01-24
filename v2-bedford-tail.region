@@ -17,11 +17,13 @@
       <!-- The following is a custome footer. It resuses the `footerBlocks` block field
             from the original Bedford footer, but uses a new, custom navigation block. -->
       <footer id="footer" role="contentinfo">
-        <section>
-          <img src="/assets/wordmark-associated-blue.svg" style="width: 200px;" alt="Radiotopia wordmark">
-          <squarespace:block-field id="footerBlocks" columns="12" label="{localizedStrings.footerBlocks}" />
-        </section>
-        <squarespace:navigation navigationId="secondaryNav" template="secondary-navigation-prx" />
+        <div class="footer-inner">
+          <section>
+            <img src="/assets/wordmark-associated-blue.svg" style="width: 200px;" alt="Radiotopia wordmark">
+            <squarespace:block-field id="footerBlocks" columns="12" label="{localizedStrings.footerBlocks}" />
+          </section>
+          <squarespace:navigation navigationId="secondaryNav" template="secondary-navigation-prx" />
+        </div>
       </footer>
 
     </div>

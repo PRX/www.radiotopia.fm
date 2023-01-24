@@ -34,24 +34,26 @@
   --para-max-width: 322px;
   --wrap: nowrap;
 
-  display: flex;
-  flex-wrap: var(--wrap);
-  gap: var(--v-gap) var(--h-gap);
-  margin: 0 auto 80px;
-  max-width: 1000px;
-  padding: 0 40px;
-  text-align: var(--copy-align);
+  .footer-inner {
+    display: flex;
+    flex-wrap: var(--wrap);
+    gap: var(--v-gap) var(--h-gap);
+    margin: 0 auto 80px;
+    max-width: 1000px;
+    padding: 0 40px;
+    text-align: var(--copy-align);
 
-  > section {
-    .footer-copy-font;
+    > section {
+      .footer-copy-font;
 
-    flex-grow: 1;
-    flex-basis: 450px;
-    padding-right: var(--section-padding);
+      flex-grow: 1;
+      flex-basis: 450px;
+      padding-right: var(--section-padding);
 
-    p {
-      margin-bottom: 0;
-      max-width: var(--para-max-width);
+      p {
+        margin-bottom: 0;
+        max-width: var(--para-max-width);
+      }
     }
   }
 
