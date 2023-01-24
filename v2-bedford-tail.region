@@ -16,7 +16,7 @@
 
       <!-- The following is a custome footer. It resuses the `footerBlocks` block field
             from the original Bedford footer, but uses a new, custom navigation block. -->
-      <div id="prx-footer">
+      <footer id="prx-footer">
         <style>
           #prx-footer {
             display: flex;
@@ -63,7 +63,7 @@
           <squarespace:block-field id="footerBlocks" columns="12" label="{localizedStrings.footerBlocks}" />
         </section>
         <squarespace:navigation navigationId="secondaryNav" template="secondary-navigation-prx" />
-      </div>
+      </footer>
 
     </div>
 
