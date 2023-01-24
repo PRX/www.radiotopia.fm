@@ -1,8 +1,8 @@
 // tweak: { "type" : "color", "title" : "Footer Nav Header Color", "label" : "Footer Nav Header Color", "category" : "Footer", "target" : "#footer, #secondaryNavigation", "showOnlyWhenPresent" : "#secondaryNavigation" }
-@footerNavHeaderColor: #FFF;
+@prxFooterNavHeaderColor: #FFF;
 
 // tweak: { "type" : "font", "title" : "Footer Nav Header Font", "label" : "Footer Nav Header Font", "category" : "Footer", "target" : "#footer, #secondaryNavigation", "showOnlyWhenPresent" : "#secondaryNavigation" }
-.footer-nav-header-font {
+.prx-footer-nav-header-font {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -14,7 +14,7 @@
 }
 
 // tweak: { "type" : "font", "title" : "Footer Copy Font", "label" : "Footer Copy Font", "category" : "Footer", "target" : "#footer", "showOnlyWhenPresent" : "#footer" }
-.footer-copy-font {
+.prx-footer-copy-font {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -46,7 +46,7 @@
     text-align: var(--copy-align);
 
     > section {
-      .footer-copy-font;
+      .prx-footer-copy-font;
 
       flex-grow: 1;
       flex-basis: 450px;
@@ -85,9 +85,9 @@
       // The first list item of each list in the nav is a header that comes
       // from the name of the folder
       &:first-child {
-        .footer-nav-header-font;
+        .prx-footer-nav-header-font;
 
-        color: @footerNavHeaderColor;
+        color: @prxFooterNavHeaderColor;
       }
 
       // All other list items are the links found in folders
