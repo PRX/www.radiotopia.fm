@@ -59,7 +59,7 @@
         </style>
 
         <section>
-          <img src="/assets/wordmark-associated-blue.svg" style="width: 200px;">
+          <img src="/assets/wordmark-associated-blue.svg" style="width: 200px;" alt="Radiotopia wordmark">
           <squarespace:block-field id="footerBlocks" columns="12" label="{localizedStrings.footerBlocks}" />
         </section>
         <squarespace:navigation navigationId="secondaryNav" template="secondary-navigation-prx" />
