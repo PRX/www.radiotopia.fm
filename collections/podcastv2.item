@@ -590,12 +590,12 @@
   <squarespace:block-field id="shared-podcast-hosts-header" columns="12" label="Shared Hosts Header" />
 
     <ul>
-      {.if customContent.hostPhoto1}<li><img src="{customContent.hostPhoto1.assetUrl}"></li>{.end}
-      {.if customContent.hostPhoto2}<li><img src="{customContent.hostPhoto2.assetUrl}"></li>{.end}
-      {.if customContent.hostPhoto3}<li><img src="{customContent.hostPhoto3.assetUrl}"></li>{.end}
-      {.if customContent.hostPhoto4}<li><img src="{customContent.hostPhoto4.assetUrl}"></li>{.end}
-      {.if customContent.hostPhoto5}<li><img src="{customContent.hostPhoto5.assetUrl}"></li>{.end}
-      {.if customContent.hostPhoto6}<li><img src="{customContent.hostPhoto6.assetUrl}"></li>{.end}
+      {.if customContent.hostPhoto1}<li><img src="{customContent.hostPhoto1.assetUrl}" alt="{customContent.hostPhoto1altText}"></li>{.end}
+      {.if customContent.hostPhoto2}<li><img src="{customContent.hostPhoto2.assetUrl}" alt="{customContent.hostPhoto2altText}"></li>{.end}
+      {.if customContent.hostPhoto3}<li><img src="{customContent.hostPhoto3.assetUrl}" alt="{customContent.hostPhoto3altText}"></li>{.end}
+      {.if customContent.hostPhoto4}<li><img src="{customContent.hostPhoto4.assetUrl}" alt="{customContent.hostPhoto4altText}"></li>{.end}
+      {.if customContent.hostPhoto5}<li><img src="{customContent.hostPhoto5.assetUrl}" alt="{customContent.hostPhoto5altText}"></li>{.end}
+      {.if customContent.hostPhoto6}<li><img src="{customContent.hostPhoto6.assetUrl}" alt="{customContent.hostPhoto6altText}"></li>{.end}
     </ul>
 
     <div>{customContent.podcastMeetTheHosts.html}</div>
