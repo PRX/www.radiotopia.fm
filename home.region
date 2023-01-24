@@ -36,8 +36,8 @@
             {.or}
               <h1 id="siteTitle" class="site-title"><a href="/">{siteTitle}</a></h1>
             {.end}
-          </div>{.end}<!-- comment the linebreak between these two elements because science
-          --><label for="mobileNavToggle" class="mobile-nav-toggle-label"><div class="top-bar"></div><div class="middle-bar"></div><div class="bottom-bar"></div></label><label for="mobileNavToggle" class="mobile-nav-toggle-label fixed-nav-toggle-label"><div class="top-bar"></div><div class="middle-bar"></div><div class="bottom-bar"></div></label><!-- comment the linebreak between these two elements because science
+          </div>{.end}<!--
+          --><div class="mobile-nav-toggle"><div class="top-bar"></div><div class="middle-bar"></div><div class="bottom-bar"></div></div><div class="mobile-nav-toggle fixed-nav-toggle"><div class="top-bar"></div><div class="middle-bar"></div><div class="bottom-bar"></div></div><!--
           --><div id="headerNav"><squarespace:navigation navigationId="mainNav" template="navigation" /></div>
         </div>
       </header>
