@@ -18,7 +18,7 @@
   }
 
   #prx-podcast-grid a img {
-
+    display: block;
     height: var(--size);
     outline: 0px solid #ff8b2c;
     outline-offset: -4px;
@@ -38,7 +38,7 @@
 
     .sqs-layout p {
       font-size: 14px !important; /* Clean up this selector once `.sqs-block-html p` in Custom CSS is moved to Site Styles */
-      line-height: 1.2em;
+      line-height: 1.2em !important;
     }
   }
 </style>
