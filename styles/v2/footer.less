@@ -16,10 +16,36 @@
 // tweak: { "type" : "color", "title" : "Footer Nav Header Color", "label" : "Footer Nav Header Color", "category" : "Footer", "target" : "#footer, #secondaryNavigation", "showOnlyWhenPresent" : "#secondaryNavigation" }
 @footerNavHeaderColor: #FFF;
 
+
+#footer {
+  --basis: auto;
+
+  display: flex;
+  gap: 10px 30px;
+  margin: 0 auto 80px;
+  max-width: 1000px;
+  padding: 0 40px;
+
+  > section {
+    flex-grow: 1;
+    flex-basis: 450px;
+    padding-right: 100px;
+
+    p {
+      font-weight: 600;
+      margin-bottom: 0;
+      line-height: 1.1em;
+      max-width: 322px;
+    }
+  }
+}
+
 #secondaryNavigation {
   // This is intended to style the custom footer nav found in
   // blocks/secondary-navigation-prx.block
-  ul {
+
+  display: flex;
+
     li {
       // The first list item of each list in the nav is a header that comes
       // from the name of the folder
@@ -40,5 +66,4 @@
         &:active { color: @footerNavActiveColor; }
       }
     }
-  }
 }

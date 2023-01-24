@@ -16,48 +16,7 @@
 
       <!-- The following is a custome footer. It resuses the `footerBlocks` block field
             from the original Bedford footer, but uses a new, custom navigation block. -->
-      <footer id="prx-footer">
-        <style>
-          #prx-footer {
-            display: flex;
-            gap: 10px 30px;
-            margin: 0 auto 80px;
-            max-width: 1000px;
-            padding: 0 40px;
-          }
-
-          #prx-footer > section {
-            flex-grow: 1;
-            flex-basis: 450px;
-            padding-right: 100px;
-          }
-
-          #prx-footer > section p {
-            font-weight: 600;
-            margin-bottom: 0;
-            line-height: 1.1em;
-            max-width: 322px;
-          }
-
-          @media screen and (max-width: 900px) {
-            #prx-footer {
-              flex-wrap: wrap;
-              text-align: center;
-              gap: 30px 0;
-              font-size: 16px;
-            }
-
-            #prx-footer > section {
-              flex-basis: 100%;
-              padding-right: 0px;
-            }
-
-            #prx-footer > section p {
-              max-width: none;
-            }
-          }
-        </style>
-
+      <footer id="footer" role="contentinfo">
         <section>
           <img src="/assets/wordmark-associated-blue.svg" style="width: 200px;" alt="Radiotopia wordmark">
           <squarespace:block-field id="footerBlocks" columns="12" label="{localizedStrings.footerBlocks}" />

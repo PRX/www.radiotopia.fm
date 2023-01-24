@@ -1,37 +1,13 @@
 {#  This custom navigation block is used in place of the original Bedford
     `secondary-navigation.block`  }
 
-<style>
-  ul#prx-footer-nav {
-    --basis: auto;
-
-    list-style: none;
-    border: 0;
-    padding: 0;
-    margin: 0;
-    flex-grow: 1;
-    flex-basis: var(--basis);
-  }
-
-  ul#prx-footer-nav li {
-    border: 0;
-    margin: 0;
-    padding: 0;
-  }
-
-  @media screen and (max-width: 900px) {
-    ul#prx-footer-nav {
-      --basis: 100%;
-    }
-  }
-</style>
-
+{#  An id of `secondaryNavigation` is required to play nice with tweaks  }
 <nav id="secondaryNavigation" data-content-field="navigation-secondaryNav">
   {.section items}
     {.repeated section @}
       {.folder?}
-        <ul id=prx-footer-nav>
-          <li><b>{collection.navigationTitle}</b></li>
+        <ul>
+          <li>{collection.navigationTitle}</li>
 
           {.repeated section items}
             {.section externalLink}
