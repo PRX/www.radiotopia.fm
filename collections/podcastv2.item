@@ -191,6 +191,7 @@
         color: #ff446a;
         font-size: 40px;
         font-weight: 600;
+        line-height: 0.96em;
         margin-bottom: 4px;
       }
 
@@ -637,6 +638,7 @@
         color: white;
         display: block;
         margin: 0 auto 15px;
+        max-width: 250px;
         padding: 10px 20px;
         text-align: center;
         width: fit-content;
