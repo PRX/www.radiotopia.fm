@@ -15,16 +15,3 @@
   padding-top: @prxPagePaddingTop;
   padding-bottom: @prxPagePaddingBottom;
 }
-
-
-// tweak: { "type" : "color", "title" : "Nav Link Underline", "category" : "PRX Site Navigation", "target" : "body:not(.force-mobile-nav) #mainNavWrapper, #sidecarNav" } }
-@prxNavDecorationColor: #fff;
-
-// tweak: { "type" : "value", "min" : 0, "max" : 10, "step" : 1 "title" : "Nav Link Underline Width", "category" : "PRX Site Navigation", "target" : "body:not(.force-mobile-nav) #mainNavWrapper, #sidecarNav" } }
-@prxNavDecorationThickness: 4px;
-
-.prx-v2 #header .header-inner #headerNav nav a:hover {
-  text-decoration: underline;
-  text-decoration-color: @prxNavDecorationColor;
-  text-decoration-thickness: @prxNavDecorationThickness;
-}
