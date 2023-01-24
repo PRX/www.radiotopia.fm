@@ -39,18 +39,20 @@
   }
 </style>
 
-{.section items}
-  {.repeated section @}
-    {.folder?}
-      <ul id=prx-footer-nav>
-        <li><b>{collection.navigationTitle}</b></li>
+<nav id="secondaryNavigation" data-content-field="navigation-secondaryNav">
+  {.section items}
+    {.repeated section @}
+      {.folder?}
+        <ul id=prx-footer-nav>
+          <li><b>{collection.navigationTitle}</b></li>
 
-        {.repeated section items}
-          {.section externalLink}
-            <li><a href="{url}">{title}</a></li>
+          {.repeated section items}
+            {.section externalLink}
+              <li><a href="{url}">{title}</a></li>
+            {.end}
           {.end}
-        {.end}
-      </ul>
+        </ul>
+      {.end}
     {.end}
   {.end}
-{.end}
+</nav>
