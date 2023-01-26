@@ -340,22 +340,26 @@
             document.addEventListener("DOMContentLoaded", _ => {
               const trailerMeta = document.querySelector('.prx-podcast-trailer-meta .sqs-audio-embed');
 
-              const trailerAudio = document.querySelector('#prx-trailer-player audio');
-              trailerAudio.setAttribute('src', trailerMeta.getAttribute('data-url'));
+              if (!trailerMeta.getAttribute('data-url')) {
+                document.getElementById('prx-trailer-player').style.display = 'none';
+              } else {
+                const trailerAudio = document.querySelector('#prx-trailer-player audio');
+                trailerAudio.setAttribute('src', trailerMeta.getAttribute('data-url'));
 
-              const trailerControl = document.querySelector('#prx-trailer-player');
-              const trailerControlIndicator = document.querySelector('#prx-trailer-player img');
+                const trailerControl = document.querySelector('#prx-trailer-player');
+                const trailerControlIndicator = document.querySelector('#prx-trailer-player img');
 
-              trailerControl.addEventListener('click', e => {
-                if (trailerAudio.paused) {
-                  pauseAllAudio();
-                  trailerAudio.play();
-                  trailerControlIndicator.src = '/assets/pause.svg';
-                } else {
-                  trailerControlIndicator.src = '/assets/play.svg';
-                  trailerAudio.pause();
-                }
-              });
+                trailerControl.addEventListener('click', e => {
+                  if (trailerAudio.paused) {
+                    pauseAllAudio();
+                    trailerAudio.play();
+                    trailerControlIndicator.src = '/assets/pause.svg';
+                  } else {
+                    trailerControlIndicator.src = '/assets/play.svg';
+                    trailerAudio.pause();
+                  }
+                });
+              }
             });
           })();
         </script>
