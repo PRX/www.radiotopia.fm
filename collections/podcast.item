@@ -23,7 +23,7 @@
                 <img src="{customContent.showArt.assetUrl}">
               </div>
               <div class="trailer-button">
-                <squarespace:block-field class="podcast-trailer-player" id="{customContent.podcastUrlTitle}-podcast-trailer-player" columns="12" label="Trailer Player" />
+                <squarespace:block-field class="podcast-trailer-player" id="{customContent.podcastV1Slug}-podcast-trailer-player" columns="12" label="Trailer Player" />
               </div>
             </div>
 
@@ -86,18 +86,18 @@
                 {.end}
               </div>
               <div class="extra-metadata">
-                <squarespace:block-field class="podcast-extra-metadata" id="{customContent.podcastUrlTitle}-podcast-extra-metadata" columns="1" label="Extra Metadata" />
+                <squarespace:block-field class="podcast-extra-metadata" id="{customContent.podcastV1Slug}-podcast-extra-metadata" columns="1" label="Extra Metadata" />
               </div>
             </div>
           </div>
 
           <div class="podcast-starter-episodes-container">
-            <squarespace:block-field class="podcast-starter-episodes-header" id="{customContent.podcastUrlTitle}-podcast-starter-episodes-header" columns="12" label="Starter Episodes Header" />
-            <squarespace:block-field class="podcast-starter-episodes" id="{customContent.podcastUrlTitle}-podcast-starter-episodes" columns="12" label="Starter Episodes" />
+            <squarespace:block-field class="podcast-starter-episodes-header" id="{customContent.podcastV1Slug}-podcast-starter-episodes-header" columns="12" label="Starter Episodes Header" />
+            <squarespace:block-field class="podcast-starter-episodes" id="{customContent.podcastV1Slug}-podcast-starter-episodes" columns="12" label="Starter Episodes" />
           </div>
 
           <div class="hosts-header" name="podcast-hosts">
-            <squarespace:block-field class="{customContent.podcastUrlTitle}-hosts-header-block" id="{customContent.podcastUrlTitle}-hosts-header-block" columns="12" label="Hosts Header" />
+            <squarespace:block-field class="{customContent.podcastV1Slug}-hosts-header-block" id="{customContent.podcastV1Slug}-hosts-header-block" columns="12" label="Hosts Header" />
           </div>
 
           <div class="hosts-container" id="podcast-hosts">
@@ -112,7 +112,7 @@
           </div>
 
           <div class="misc1-container" id="misc1-container">
-            <squarespace:block-field id="{customContent.podcastUrlTitle}-misc1" columns="12" label="Misc Content 1" />
+            <squarespace:block-field id="{customContent.podcastV1Slug}-misc1" columns="12" label="Misc Content 1" />
           </div>
 
           <div class="support-container" id="support-container">
@@ -121,7 +121,7 @@
                 <div class="support-left-icon">
                   <squarespace:block-field class="support-podcast" id="support-podcast" columns="12" label="Template Support Podcast Icon" />
                 </div>
-                <squarespace:block-field class="{customContent.podcastUrlTitle}-support-podcast" id="{customContent.podcastUrlTitle}-support-podcast" columns="12" label="Unique Support Podcast Title Block" />
+                <squarespace:block-field class="{customContent.podcastV1Slug}-support-podcast" id="{customContent.podcastV1Slug}-support-podcast" columns="12" label="Unique Support Podcast Title Block" />
                 <squarespace:block-field class="support-podcast-description" id="support-podcast-description" columns="12" label="Template Support Podcast Description" />
 
                 <!-- TODO Make this show-specific -->
@@ -144,11 +144,11 @@
           </div>
 
           <div class="sponsor-logos">
-            <squarespace:block-field class="{customContent.podcastUrlTitle}-podcast-sponsor-logos" id="{customContent.podcastUrlTitle}-podcast-sponsor-logos" columns="12" label="Unique Podcast Sponsor Logos" />
+            <squarespace:block-field class="{customContent.podcastV1Slug}-podcast-sponsor-logos" id="{customContent.podcastV1Slug}-podcast-sponsor-logos" columns="12" label="Unique Podcast Sponsor Logos" />
           </div>
 
           <div class="recent-tweets">
-            <squarespace:block-field class="{customContent.podcastUrlTitle}-recent-tweets" id="{customContent.podcastUrlTitle}-recent-tweets" columns="12" label="Recent Tweets" />
+            <squarespace:block-field class="{customContent.podcastV1Slug}-recent-tweets" id="{customContent.podcastV1Slug}-recent-tweets" columns="12" label="Recent Tweets" />
           </div>
         </div>
       </div>
