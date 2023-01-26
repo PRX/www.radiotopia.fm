@@ -28,6 +28,21 @@
             </div>
 
             <div class="podcast-column podcast-center-column">
+              <div class="prx-sqs-cms-only">
+                <style>
+                  .prx-sqs-cms-only {
+                    display: none;
+                  }
+                  .sqs-edit-mode .prx-sqs-cms-only {
+                    display: block;
+                  }
+                </style>
+                <squarespace:block-field id="prx-podcast-{id}-trailer-meta" class="prx-podcast-trailer-meta" columns="12" label="Audio Trailer Helper" />
+                <squarespace:block-field id="prx-podcast-{id}-starter-meta" class="prx-podcast-starter-meta" columns="12" label="Starter Audio Helper" />
+              </div>
+
+
+
               <h1 class="title">
                 {customContent.podcastTitle}
               </h1>
