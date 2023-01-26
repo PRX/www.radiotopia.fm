@@ -340,7 +340,7 @@
             document.addEventListener("DOMContentLoaded", _ => {
               const trailerMeta = document.querySelector('.prx-podcast-trailer-meta .sqs-audio-embed');
 
-              if (!trailerMeta.getAttribute('data-url')) {
+              if (!trailerMeta || !trailerMeta.getAttribute('data-url')) {
                 document.getElementById('prx-trailer-player').style.display = 'none';
               } else {
                 const trailerAudio = document.querySelector('#prx-trailer-player audio');
