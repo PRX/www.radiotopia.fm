@@ -44,7 +44,7 @@
 
 
               <h1 class="title">
-                {customContent.podcastTitle}
+                {title}
               </h1>
               <div class="podcast-link-container">
                 {.if customContent.podcastLink}
@@ -162,14 +162,14 @@
                 <h2>Subscribe To</h2>
               </div>
               <div class="subscribe-body">
-                <p>{customContent.podcastTitle}</p>
+                <p>{title}</p>
               </div>
             </div>
 
             <ol class="subscribe-options">
               {.if customContent.podcastItunesUrl}
                 <li>
-                  <a href="{customContent.podcastItunesUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Apple">
+                  <a href="{customContent.podcastItunesUrl}" data-trk-podcast="{title}" data-trk-platform="Apple">
                     <img src="https://media.radiotopia.fm/www/apple-podcasts.svg">
                   </a>
                 </li>
@@ -177,7 +177,7 @@
 
               {.if customContent.podcastSpotifyUrl}
                 <li>
-                  <a href="{customContent.podcastSpotifyUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Spotify">
+                  <a href="{customContent.podcastSpotifyUrl}" data-trk-podcast="{title}" data-trk-platform="Spotify">
                     <img src="https://media.radiotopia.fm/www/spotify.svg">
                   </a>
                 </li>
@@ -185,7 +185,7 @@
 
               {.if customContent.podcastStitcherUrl}
                 <li>
-                  <a href="{customContent.podcastStitcherUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Stitcher">
+                  <a href="{customContent.podcastStitcherUrl}" data-trk-podcast="{title}" data-trk-platform="Stitcher">
                     <img src="https://media.radiotopia.fm/www/stitcher.png">
                   </a>
                 </li>
@@ -193,7 +193,7 @@
 
               {.if customContent.podcastOvercastUrl}
                 <li>
-                  <a href="{customContent.podcastOvercastUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Overcast">
+                  <a href="{customContent.podcastOvercastUrl}" data-trk-podcast="{title}" data-trk-platform="Overcast">
                     <img src="https://media.radiotopia.fm/www/overcast.svg">
                   </a>
                 </li>
@@ -201,7 +201,7 @@
 
               {.if customContent.podcastPocketCastsUrl}
                 <li>
-                  <a href="{customContent.podcastPocketCastsUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Pocket Casts">
+                  <a href="{customContent.podcastPocketCastsUrl}" data-trk-podcast="{title}" data-trk-platform="Pocket Casts">
                     <img src="https://media.radiotopia.fm/www/pocket-casts.svg">
                   </a>
                 </li>
@@ -209,7 +209,7 @@
 
               {.if customContent.podcastGooglePlayUrl}
                 <li>
-                  <a href="{customContent.podcastGooglePlayUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Google Podcasts">
+                  <a href="{customContent.podcastGooglePlayUrl}" data-trk-podcast="{title}" data-trk-platform="Google Podcasts">
                     <img src="https://media.radiotopia.fm/www/google.svg">
                   </a>
                 </li>
@@ -217,7 +217,7 @@
 
               {.if customContent.podcastRPUrl}
                 <li>
-                  <a href="{customContent.podcastRPUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Radio Public">
+                  <a href="{customContent.podcastRPUrl}" data-trk-podcast="{title}" data-trk-platform="Radio Public">
                     <img src="/assets/radio-public-big.png">
                   </a>
                 </li>
@@ -225,7 +225,7 @@
 
               {.if customContent.podcastPandoraUrl}
                 <li>
-                  <a href="{customContent.podcastPandoraUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Pandora">
+                  <a href="{customContent.podcastPandoraUrl}" data-trk-podcast="{title}" data-trk-platform="Pandora">
                     <img src="https://media.radiotopia.fm/www/pandora.png">
                   </a>
                 </li>
@@ -233,7 +233,7 @@
 
               {.if customContent.podcastAmazonMusicUrl}
                 <li>
-                  <a href="{customContent.podcastAmazonMusicUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="Amazon">
+                  <a href="{customContent.podcastAmazonMusicUrl}" data-trk-podcast="{title}" data-trk-platform="Amazon">
                     <img src="https://media.radiotopia.fm/www/amazon.png">
                   </a>
                 </li>
@@ -241,7 +241,7 @@
 
               {.if customContent.podcastFeedUrl}
                 <li>
-                  <a href="{customContent.podcastFeedUrl}" data-trk-podcast="{customContent.podcastTitle}" data-trk-platform="RSS">
+                  <a href="{customContent.podcastFeedUrl}" data-trk-podcast="{title}" data-trk-platform="RSS">
                     <img src="https://media.radiotopia.fm/www/rss.svg">
                   </a>
                 </li>
