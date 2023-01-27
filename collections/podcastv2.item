@@ -565,8 +565,8 @@
     -->
     <!-- This block field is only visible in the Squarespace -->
     <div style="opacity: 50%; margin-top: 30px;">
-      <squarespace:block-field class="prx-legacy-podcast-starter-meta-header prx-sqs-edit-mode-only" id="{customContent.podcastV1Slug}-podcast-starter-episodes-header" columns="12" label="Starter Episodes Header" />
-      <squarespace:block-field class="prx-legacy-podcast-starter-meta prx-sqs-edit-mode-only" id="{customContent.podcastV1Slug}-podcast-starter-episodes" columns="12" label="Starter Episodes" />
+      <squarespace:block-field class="prx-legacy-podcast-starter-meta-header prx-sqs-edit-mode-only" id="{customContent.podcastV1Slug}-podcast-starter-episodes-header" columns="12" label="Legacy Starter Audio Helper (Do Not Use)" />
+      <squarespace:block-field class="prx-legacy-podcast-starter-meta prx-sqs-edit-mode-only" id="{customContent.podcastV1Slug}-podcast-starter-episodes" columns="12" label="Legacy Starter Audio Helper 2 (Do Not Use)" />
     </div>
   </section>
 
