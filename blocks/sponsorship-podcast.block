@@ -14,7 +14,7 @@
             <div class="podcast-host-image-wrapper">
               <img class="podcast-host-image" src={customContent.hostsImage.assetUrl} />
             </div>
-            <h2 class="podcast-title">{customContent.podcastTitle}</h2>
+            <h2 class="podcast-title">{title}</h2>
             <p class="podcast-host">{customContent.podcastHosts}</p>
             <div class="sponsorship-links">
               <a href="{customContent.podcastSponsorEmail}" target="_blank">Sponsor Contact</a>
