@@ -267,14 +267,15 @@
           #prx-platform-links li a {
             display: block;
             margin: 0;
+            position: relative;
           }
           #prx-platform-links li a::after {
             content: '';
             position: absolute;
-            bottom: 0;
+            bottom: -8px;
             left: 0;
             width: 100%;
-            height: 0.1em;
+            height: 3px;
             background-color: #ff446a;
             opacity: 0;
             transition: opacity 300ms, transform 300ms;
