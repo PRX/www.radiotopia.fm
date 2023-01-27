@@ -338,7 +338,7 @@
         <script>
           (function () {
             document.addEventListener("DOMContentLoaded", _ => {
-              const trailerMeta = document.querySelector('.prx-podcast-trailer-meta .sqs-audio-embed');
+              const trailerMeta = document.querySelector('.prx-podcast-trailer-meta .sqs-audio-embed, .prx-legacy-podcast-trailer-meta .sqs-audio-embed');
 
               if (!trailerMeta || !trailerMeta.getAttribute('data-url')) {
                 document.getElementById('prx-trailer-player').style.display = 'none';
@@ -381,8 +381,9 @@
         It's included only to give the page access to trailers that haven't
         been migrated to the modern block field above.
       -->
+      <!-- This block field is only visible in the Squarespace -->
       <div style="opacity: 50%; margin-top: 30px;">
-        <squarespace:block-field class="podcast-trailer-player prx-sqs-edit-mode-only" id="{customContent.podcastV1Slug}-podcast-trailer-player" columns="12" label="Legacy Audio Trailer (Do Not Use)" />
+        <squarespace:block-field class="prx-legacy-podcast-trailer-meta prx-sqs-edit-mode-only" id="{customContent.podcastV1Slug}-podcast-trailer-player" columns="12" label="Legacy Audio Trailer (Do Not Use)" />
       </div>
     </div>
   </section>
@@ -547,8 +548,20 @@
       in an item in the list, whose content is based on data associated with the block. -->
     <ul></ul>
 
-    <!-- Ths block field is only visible in the Squarespace -->
+    <!-- This block field is only visible in the Squarespace -->
     <squarespace:block-field id="prx-podcast-{id}-starter-meta" class="prx-podcast-starter-meta prx-sqs-edit-mode-only" columns="12" label="Starter Audio Helper" />
+
+    <!--
+      These are legacy block fields so the page will include starter episodes
+      that weren't migrated to the new field explicitly. Some starter episodes
+      were added to the "header" block field, instead of the correct block
+      field, so both are included.
+    -->
+    <!-- This block field is only visible in the Squarespace -->
+    <div style="opacity: 50%; margin-top: 30px;">
+      <squarespace:block-field class="prx-legacy-podcast-starter-meta-header prx-sqs-edit-mode-only" id="{customContent.podcastV1Slug}-podcast-starter-episodes-header" columns="12" label="Starter Episodes Header" />
+      <squarespace:block-field class="prx-legacy-podcast-starter-meta prx-sqs-edit-mode-only" id="{customContent.podcastV1Slug}-podcast-starter-episodes" columns="12" label="Starter Episodes" />
+    </div>
   </section>
 
   <section id=prx-podcast-hosts>
