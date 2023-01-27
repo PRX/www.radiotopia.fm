@@ -1,4 +1,12 @@
 <style>
+  /* Only show this block field in the CMS */
+  .prx-sqs-edit-mode-only {
+    display: none;
+  }
+  .sqs-edit-mode .prx-sqs-edit-mode-only {
+    display: block;
+  }
+
   /* Get rid of the default background banner */
   #siteWrapper .banner-thumbnail-wrapper {
     display: none;
@@ -325,14 +333,6 @@
             #prx-trailer-player img { width: 38px; }
             #prx-trailer-player h4 { font-size: 23px; }
           }
-
-          /* Only show this block field in the CMS */
-          .prx-podcast-trailer-meta {
-            display: none;
-          }
-          .sqs-edit-mode .prx-podcast-trailer-meta {
-            display: block;
-          }
         </style>
 
         <script>
@@ -373,8 +373,15 @@
         <audio preload="none"></audio>
       </div>
 
-      <!-- Ths block field is only visible in the Squarespace CMS -->
-      <squarespace:block-field id="prx-podcast-{id}-trailer-meta" class="prx-podcast-trailer-meta" columns="12" label="Audio Trailer Helper" />
+      <!-- This block field is only visible in the Squarespace CMS -->
+      <squarespace:block-field id="prx-podcast-{id}-trailer-meta" class="prx-podcast-trailer-meta prx-sqs-edit-mode-only" columns="12" label="Audio Trailer Helper" />
+
+      <!--
+        This is the block field that was used for the old version of the site.
+        It's included only to give the page access to trailers that haven't
+        been migrated to the modern block field above.
+      -->
+      <squarespace:block-field class="podcast-trailer-player prx-sqs-edit-mode-only" id="{customContent.podcastV1Slug}-podcast-trailer-player" columns="12" label="Legacy Audio Trailer (Do Not Use)" />
     </div>
   </section>
 
@@ -485,14 +492,6 @@
         --player-subtitle-font-size: 14px;
         --player-subtitle-margin-top: 2px;
       }}
-
-      /* Only show this block field in the CMS */
-      .prx-podcast-starter-meta {
-        display: none;
-      }
-      .sqs-edit-mode .prx-podcast-starter-meta {
-        display: block;
-      }
     </style>
 
     <script>
@@ -547,7 +546,7 @@
     <ul></ul>
 
     <!-- Ths block field is only visible in the Squarespace -->
-    <squarespace:block-field id="prx-podcast-{id}-starter-meta" class="prx-podcast-starter-meta" columns="12" label="Starter Audio Helper" />
+    <squarespace:block-field id="prx-podcast-{id}-starter-meta" class="prx-podcast-starter-meta prx-sqs-edit-mode-only" columns="12" label="Starter Audio Helper" />
   </section>
 
   <section id=prx-podcast-hosts>
