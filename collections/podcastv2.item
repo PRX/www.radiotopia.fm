@@ -381,7 +381,7 @@
         It's included only to give the page access to trailers that haven't
         been migrated to the modern block field above.
       -->
-      <squarespace:block-field class="podcast-trailer-player prx-sqs-edit-mode-only" id="{customContent.podcastV1Slug}-podcast-trailer-player" columns="12" label="Legacy Audio Trailer (Do Not Use)" />
+      <squarespace:block-field class="podcast-trailer-player prx-sqs-edit-mode-only" id="{customContent.podcastV1Slug}-podcast-trailer-player" columns="12" label="Legacy Audio Trailer (Do Not Use)" style="opacity: 50%; margin-top: 30px;" />
     </div>
   </section>
 
