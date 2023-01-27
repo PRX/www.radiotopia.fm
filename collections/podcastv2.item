@@ -268,7 +268,7 @@
             display: block;
             margin: 0;
           }
-          a::after {
+          #prx-platform-links li a::after {
             content: '';
             position: absolute;
             bottom: 0;
@@ -282,7 +282,7 @@
             transform: scale(0);
             transform-origin: center;
           }
-          a:hover::after { transform: scale(1); }
+          #prx-platform-links li a:hover::after { transform: scale(1); }
 
           #prx-platform-links li a img {
             display: block;
