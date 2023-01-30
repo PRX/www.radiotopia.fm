@@ -677,6 +677,8 @@
         border-radius: 999px;
         color: white;
         display: block;
+        font-size: 18px;
+        letter-spacing: 0.5px;
         margin: 0 auto 15px;
         max-width: 250px;
         padding: 10px 20px;
