@@ -29,6 +29,7 @@
 
   #prx-podcast-grid a p {
     font-weight: 600;
+    line-height: 1.2em;
     margin: 0;
   }
 
