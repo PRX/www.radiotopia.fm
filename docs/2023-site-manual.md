@@ -2,7 +2,7 @@
 
 - Sigmund Pro is installed from Adobe via `Settings > Advanced > Code Injection`.
 - Sigmund Pro is activated under `Design > Custom CSS`.
-- By default, all text is dark blue (defined in Site Styles), except for links which are light blue.
+- By default, all text is dark blue (defined in `Design > Site Styles`), except for links which are light blue.
 - **Header 1** in text blocks turns pink when both bold and italic.
     - Defined in `Design > Custom CSS`
 - **Header 2** in text blocks turns light blue when bold.
