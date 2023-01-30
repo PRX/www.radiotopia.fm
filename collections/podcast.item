@@ -1,255 +1,752 @@
+<style>
+  /* Only show this block field in the CMS */
+  .prx-sqs-edit-mode-only {
+    display: none;
+  }
+  .sqs-edit-mode .prx-sqs-edit-mode-only {
+    display: block;
+  }
+
+  /* Get rid of the default background banner */
+  #siteWrapper .banner-thumbnail-wrapper {
+    display: none;
+  }
+
+  #header,
+  .transparent-header #header {
+    position: static;
+  }
+
+  /* Reorder the logo/nav grid for the podcast page special case */
+  .prx-v2 #header .header-inner {
+    position: relative;
+  }
+
+  .prx-v2 #header .header-inner #logoWrapper {
+    position: absolute;
+    grid-area: initial;
+  }
+
+  .prx-v2 #header .header-inner {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav";
+    padding: 0;
+  }
+
+  .prx-v2 #header .header-inner #headerNav {
+    padding: 36px 0;
+  }
+
+  .prx-v2 #header .header-inner #logoWrapper #logoImage a::after {
+    height: 45px;
+    background-position: left top;
+    margin-top: 25px;
+  }
+
+  .prx-v2 #page {
+    padding-top: 0;
+  }
+
+  @media screen and (max-width: 640px) {
+    .prx-v2 #page {
+      padding-top: 95px;
+    }
+
+    .prx-v2 #header .header-inner #logoWrapper #logoImage a::after {
+      background-position: top center;
+    }
+  }
+</style>
+
+<script>
+  // Pause all audio elements on the page, and set all controls back to the
+  // "Play" button
+  function pauseAllAudio() {
+    const audioEls = document.querySelectorAll('audio');
+
+    for (const audioEl of audioEls) {
+      audioEl.pause();
+    }
+
+    const imgEls = document.querySelectorAll("img[src='/assets/pause.svg']");
+    for (const imgEl of imgEls) {
+      imgEl.setAttribute('src', '/assets/play.svg')
+    }
+  }
+
+  (function () {
+    document.addEventListener("DOMContentLoaded", _ => {
+      const audioEls = document.querySelectorAll('audio');
+      for (const audioEl of audioEls) {
+        audioEl.addEventListener('ended', e => {
+          const imgEls = document.querySelectorAll("img[src='/assets/pause.svg']");
+          for (const imgEl of imgEls) {
+            imgEl.setAttribute('src', '/assets/play.svg')
+          }
+        });
+      }
+    });
+  })();
+</script>
+
 {.section item}
+  <section id=prx-podcast-banner>
+    <style>
+      #prx-podcast-banner {
+        --banner-height: 500px;
+        --social-padding-right: 50px;
+        --social-padding-bottom: 30px;
 
-  <!--WRAPPER-->
+        background-image: url('{customContent.bannerImage.assetUrl}');
+        background-position: top center;
+        background-size: cover;
+        height: var(--banner-height);
+        margin-left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+        width: 100vw;
+      }
 
-  <article id="post-{id}" class="{@|item-classes}" data-item-id="{id}">
+      #prx-podcast-banner ul {
+        align-content: flex-end;
+        align-items: flex-end;
+        border: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+        gap: 12px;
+        justify-content: end;
+        list-style: none;
+        margin: 0;
+        padding: 0 var(--social-padding-right) var(--social-padding-bottom) 0;
+      }
 
-    <!--POST TILE-->
+      #prx-podcast-banner ul li a {
+        height: 38px;
+        display: block;
+        overflow: hidden;
+        width: 38px;
+      }
 
+      #prx-podcast-banner ul li a img {
+        display: block;
+        width: 100%;
+      }
 
+      @media screen and (max-width: 1024px) { #prx-podcast-banner {
+        --banner-height: 440px;
+      }}
 
-    <!--MAIN CONTENT-->
-    <section>
+      @media screen and (max-width: 768px) { #prx-podcast-banner {
+        --banner-height: 320px;
+      }}
 
-    <div class="banner-image-container">
-      <img src="{customContent.bannerImage.assetUrl}">
+      @media screen and (max-width: 640px) { #prx-podcast-banner {
+        --banner-height: 250px;
+        --social-padding-right: 15px;
+        --social-padding-bottom: 10px;
+      }}
+
+      @media screen and (max-width: 480px) { #prx-podcast-banner {
+        --banner-height: 180px;
+      }}
+    </style>
+
+    {.if customContent.podcastBannerOverlayCssFilter}
+      <style>
+        #prx-podcast-banner ul li a img {
+          filter: {customContent.podcastBannerOverlayCssFilter};
+        }
+      </style>
+    {.end}
+
+    <ul>
+      {.if customContent.podcastInstagramUrl}<li><a href="{customContent.podcastInstagramUrl}" title="Instagram"><img src="/assets/social/instagram.svg" alt="{title} on Instagram"></a></li>{.end}
+      {.if customContent.podcastFacebookUrl}<li><a href="{customContent.podcastFacebookUrl}" title="Facebook"><img src="/assets/social/facebook.svg" alt="{title} on Facebook"></a></li>{.end}
+      {.if customContent.podcastTwitterUrl}<li><a href="{customContent.podcastTwitterUrl}" title="Twitter"><img src="/assets/social/twitter.svg" alt="{title} on Twitter"></a></li>{.end}
+      {.if customContent.podcastMastodonUrl}<li><a href="{customContent.podcastMastodonUrl}" title="Mastodon"><img src="/assets/social/mastodon.svg" alt="{title} on Mastodon"></a></li>{.end}
+      {.if customContent.podcastNewsletterUrl}<li><a href="{customContent.podcastNewsletterUrl}" title="Newsletter"><img src="/assets/social/email.svg" alt="{title}'s newsletter"></a></li>{.end}
+    </ul>
+  </section>
+
+  <section id=prx-podcast-intro>
+    <style>
+      /* Busts out of the default Squarespace center column, for full bleed bg */
+      #prx-podcast-intro {
+        --desc-font-size: 22px;
+        --pattern-bg-size: 300%;
+
+        background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.88) 100%), url('/assets/zag-pattern.svg');
+        background-size: 100%, var(--pattern-bg-size);
+        background-position: top center, top center;
+        margin: 0 auto;
+        margin-left: 50%;
+        padding: 50px 0 30px;
+        transform: translateX(-50%);
+        width: 100vw;
+      }
+
+      #prx-podcast-intro > div {
+        box-sizing: border-box;
+        margin: 0 auto;
+        max-width: 500px;
+        padding: 0 32px;
+      }
+
+      #prx-podcast-intro h1 {
+        color: #ff446a;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 0.96em;
+        margin-bottom: 4px;
+      }
+
+      #prx-podcast-intro h1 + a {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      #prx-podcast-intro h1 + a:hover { color: #8087af; }
+
+      #prx-podcast-intro .description {
+        margin-bottom: 30px;
+      }
+
+      #prx-podcast-intro .description p {
+        font-size: var(--desc-font-size);
+        font-weight: 500;
+      }
+
+      .boltline {
+        display: block;
+        margin: 0 auto;
+        max-width: 480px;
+        width: 100%;
+      }
+
+      @media screen and (max-width: 768px) { #prx-podcast-intro {
+        --desc-font-size: 18px;
+        --pattern-bg-size: 600%;
+      }}
+
+      @media screen and (max-width: 640px) { #prx-podcast-intro {
+        --desc-font-size: 16px;
+      }}
+    </style>
+
+    <div>
+      <h1>{title}</h1>
+
+      {.if customContent.podcastLink}
+        <a href="{customContent.podcastLink}">
+          {.if customContent.podcastUrlTitle}
+            {customContent.podcastUrlTitle}
+          {.or}
+            Listen at {customContent.podcastLink}
+          {.end}
+        </a>
+      {.end}
+
+      <ul id=prx-platform-links>
+        <style>
+          #prx-platform-links {
+            --icon-gap: 6px;
+            --icon-size: 28px;
+
+            border: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--icon-gap);
+            justify-content: left;
+            list-style: none;
+            margin: 30px 0 20px;
+            padding: 0;
+          }
+
+          #prx-platform-links li a {
+            display: block;
+            margin: 0;
+            position: relative;
+          }
+          #prx-platform-links li a::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #ff446a;
+            opacity: 0;
+            transition: opacity 300ms, transform 300ms;
+            opacity: 1;
+            transform: scale(0);
+            transform-origin: center;
+          }
+          #prx-platform-links li a:hover::after { transform: scale(1); }
+
+          #prx-platform-links li a img {
+            display: block;
+            height: var(--icon-size);
+            width: var(--icon-size);
+          }
+
+          @media screen and (max-width: 768px) { #prx-platform-links {
+            --icon-gap: 12px;
+            --icon-size: 36px;
+          }}
+        </style>
+
+        {.if customContent.podcastItunesUrl}<li><a href="{customContent.podcastItunesUrl}" title="Apple Podcasts"><img src="/assets/platforms/apple.svg" alt="{title} on Apple Podcasts"></a></li>{.end}
+        {.if customContent.podcastSpotifyUrl}<li><a href="{customContent.podcastSpotifyUrl}" title="Spotify"><img src="/assets/platforms/spotify.svg" alt="{title} on Spotify"></a></li>{.end}
+        {.if customContent.podcastOvercastUrl}<li><a href="{customContent.podcastOvercastUrl}" title="Overcast"><img src="/assets/platforms/overcast.svg" alt="{title} on Overcast"></a></li>{.end}
+        {.if customContent.podcastCastboxUrl}<li><a href="{customContent.podcastCastboxUrl}" title="Castbox"><img src="/assets/platforms/castbox.svg" alt="{title} on Castbox"></a></li>{.end}
+        {.if customContent.podcastPocketCastsUrl}<li><a href="{customContent.podcastPocketCastsUrl}" title="Pocket Casts"><img src="/assets/platforms/pocket-casts.svg" alt="{title} on Pocket Casts"></a></li>{.end}
+        {.if customContent.podcastStitcherUrl}<li><a href="{customContent.podcastStitcherUrl}" title="Stitcher"><img src="/assets/platforms/stitcher.svg" alt="{title} on Stitcher"></a></li>{.end}
+        {.if customContent.podcastPandoraUrl}<li><a href="{customContent.podcastPandoraUrl}" title="Pandora"><img src="/assets/platforms/pandora.svg" alt="{title} on Pandora"></a></li>{.end}
+        {.if customContent.podcastGooglePlayUrl}<li><a href="{customContent.podcastGooglePlayUrl}" title="Google Podcasts"><img src="/assets/platforms/google.png" alt="{title} on Google"></a></li>{.end}
+        {.if customContent.podcastAmazonMusicUrl}<li><a href="{customContent.podcastAmazonMusicUrl}" title="Amazon"><img src="/assets/platforms/amazon.svg" alt="{title} on Amazon"></a></li>{.end}
+        {.if customContent.podcastFeedUrl}<li><a href="{customContent.podcastFeedUrl}" title="RSS feed"><img src="/assets/platforms/rss.svg" alt="{title}'s RSS feed"></a></li>{.end}
+      </ul>
+
+      <div class=description>{customContent.podcastDescription.html}</div>
+
+      <img class=boltline src=/assets/boltline.svg alt="">
+
+      <div id=prx-trailer-player>
+        <style>
+          #prx-trailer-player {
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 30px auto 0;
+          }
+
+          #prx-trailer-player img {
+            display: block;
+            width: 65px;
+          }
+          #prx-trailer-player:hover img {
+            filter: brightness(0) saturate(100%) invert(43%) sepia(54%) saturate(5140%) hue-rotate(326deg) brightness(109%) contrast(101%);
+          }
+
+          #prx-trailer-player h4 {
+            font-size: 32px;
+            font-weight: 600;
+            letter-spacing: 2px;
+          }
+          #prx-trailer-player:hover h4 { color: #ff446a; }
+
+          #prx-trailer-player > audio {
+            display: none;
+          }
+
+          @media screen and (max-width: 480px) {
+            #prx-trailer-player { gap: 10px; }
+            #prx-trailer-player img { width: 38px; }
+            #prx-trailer-player h4 { font-size: 23px; }
+          }
+        </style>
+
+        <script>
+          // Look through the relevent block field(s) for any native
+          // Squarespace audio player. The first one that's found will be used
+          // to configure the custom player.
+          (function () {
+            document.addEventListener("DOMContentLoaded", _ => {
+              const trailerMeta = document.querySelector('.prx-podcast-trailer-meta .sqs-audio-embed, .prx-legacy-podcast-trailer-meta .sqs-audio-embed');
+
+              if (!trailerMeta || !trailerMeta.getAttribute('data-url')) {
+                document.getElementById('prx-trailer-player').style.display = 'none';
+              } else {
+                const trailerAudio = document.querySelector('#prx-trailer-player audio');
+                trailerAudio.setAttribute('src', trailerMeta.getAttribute('data-url'));
+
+                const trailerControl = document.querySelector('#prx-trailer-player');
+                const trailerControlIndicator = document.querySelector('#prx-trailer-player img');
+
+                trailerControl.addEventListener('click', e => {
+                  if (trailerAudio.paused) {
+                    pauseAllAudio();
+                    trailerAudio.play();
+                    trailerControlIndicator.src = '/assets/pause.svg';
+                  } else {
+                    trailerControlIndicator.src = '/assets/play.svg';
+                    trailerAudio.pause();
+                  }
+                });
+              }
+            });
+          })();
+        </script>
+
+        <img src=/assets/play.svg alt="Audio trailer play button">
+        <h4>listen to the trailer</h4>
+
+        <!-- The file loaded into this player is extracted from the first
+        `.sqs-audio-embed` found within `.prx-podcast-trailer-meta`. The URL
+        is contained in the `data-url` attribute -->
+        <audio preload="none"></audio>
+      </div>
+
+      <!-- This block field is only visible in the Squarespace CMS -->
+      <squarespace:block-field id="prx-podcast-{id}-trailer-meta" class="prx-podcast-trailer-meta prx-sqs-edit-mode-only" columns="12" label="Audio Trailer Helper" />
+
+      <!--
+        This is the block field that was used for the old version of the site.
+        It's included only to give the page access to trailers that haven't
+        been migrated to the modern block field above.
+      -->
+      <!-- This block field is only visible in the Squarespace -->
+      <div style="opacity: 50%; margin-top: 30px;">
+        <squarespace:block-field class="prx-legacy-podcast-trailer-meta prx-sqs-edit-mode-only" id="{customContent.podcastV1Slug}-podcast-trailer-player" columns="12" label="Legacy Audio Trailer (Do Not Use)" />
+      </div>
+    </div>
+  </section>
+
+  <section id=prx-podcast-starter>
+    <style>
+      #prx-podcast-starter {
+        --bg-alpha: 0.7; /* 0 = full pattern, 1 = no pattern */
+
+        --margin-bottom: 85px;
+        --margin-top: 65px;
+        --padding-bottom: 90px;
+        --header-font-size: 100px;
+        --header-letter-spacing: 5px;
+        --players-padding-top: 40px;
+        --player-width: 450px;
+        --player-title-font-size: 22px;
+        --player-subtitle-font-size: 20px;
+        --player-subtitle-margin-top: 5px;
+
+        background: linear-gradient(0deg, rgba(9,44,88,var(--bg-alpha)) 0%, rgba(9,44,88,var(--bg-alpha)) 100%), url('/assets/boltline-stagger.svg'), #092c58;
+        background-position: top center, top center, top center;
+        background-size: 100%, 140%, 100%;
+        color: white;
+        margin-bottom: var(--margin-bottom);
+        margin-left: 50%;
+        margin-top: var(--margin-top);
+        padding: 35px 0 var(--padding-bottom);
+        transform: translateX(-50%);
+        width: 100vw;
+      }
+
+      /* Make internal wrapper follow the default Squarespace center column layout */
+      #prx-podcast-starter > div {
+        box-sizing: border-box;
+        width: auto;
+        margin: auto;
+        max-width: 1020px;
+        padding: 0 32px;
+      }
+
+      #prx-podcast-starter .sqs-row h1 {
+        color: white;
+        font-size: var(--header-font-size) !important;
+        font-weight: 600 !important;
+        letter-spacing: 5px;
+      }
+
+      #prx-podcast-starter > ul {
+        border: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 45px;
+        justify-content: center;
+        list-style: none;
+        margin: 0 auto;
+        max-width: 80%;
+        padding: var(--players-padding-top) 0 0;
+      }
+
+      #prx-podcast-starter > ul li {
+        background-color: white;
+        border-radius: 50px;
+        color: #092c58;
+        cursor: pointer;
+        flex-basis: var(--player-width);
+        padding: 22px 30px;
+      }
+      #prx-podcast-starter > ul li:hover { background: #ff446a; color: white; }
+
+      #prx-podcast-starter > ul li img {
+        display: block;
+        float: left;
+        width: 65px;
+      }
+
+      #prx-podcast-starter > ul li h4 {
+        font-size: var(--player-title-font-size);
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      #prx-podcast-starter > ul li h5 {
+        color: #ff446a;
+        font-size: 20px;
+        font-weight: 600;
+        margin: var(--player-subtitle-margin-top) 0 0 0;
+        padding: 0;
+        text-align: center;
+      }
+      #prx-podcast-starter > ul li:hover h5 { color: white; }
+
+      #prx-podcast-starter > ul li audio {
+        display: none;
+      }
+
+      @media screen and (max-width: 768px) { #prx-podcast-starter {
+        --margin-bottom: 60px;
+        --margin-top: 10px;
+        --padding-bottom: 60px;
+        --header-font-size: 38px;
+        --header-letter-spacing: 2px;
+        --players-padding-top: 20px;
+        --player-width: 380px;
+        --player-title-font-size: 18px;
+        --player-subtitle-font-size: 14px;
+        --player-subtitle-margin-top: 2px;
+      }}
+    </style>
+
+    <script>
+      (function () {
+        // Look through the relevent block field(s) for any native Squarespace
+        // audio players. Each one that's found will be added as a custom audio
+        // player to the page.
+        document.addEventListener("DOMContentLoaded", _ => {
+          const starterMeta = document.querySelectorAll('.prx-podcast-starter-meta .sqs-audio-embed, .prx-legacy-podcast-starter-meta-header .sqs-audio-embed, .prx-legacy-podcast-starter-meta .sqs-audio-embed');
+          const episodeList = document.querySelector('#prx-podcast-starter > ul');
+
+          for (const meta of starterMeta) {
+            const li = document.createElement('li');
+
+            const img = document.createElement('img');
+            img.setAttribute('src', '/assets/play.svg');
+            img.setAttribute('alt', `Play button for ${meta.getAttribute('data-title')}`);
+            li.appendChild(img)
+
+            const h4 = document.createElement('h4');
+            h4.innerText = meta.getAttribute('data-title');
+            li.appendChild(h4);
+
+            const h5 = document.createElement('h5');
+            h5.innerText = meta.getAttribute('data-author');
+            li.appendChild(h5);
+
+            const audio = document.createElement('audio');
+            audio.setAttribute('preload', 'none');
+            audio.setAttribute('src', meta.getAttribute('data-url'));
+            li.appendChild(audio);
+
+            li.addEventListener('click', e => {
+              if (audio.paused) {
+                pauseAllAudio();
+                audio.play();
+                img.src = '/assets/pause.svg';
+              } else {
+                img.src = '/assets/play.svg';
+                audio.pause();
+              }
+            });
+
+            episodeList.appendChild(li);
+          }
+        });
+      })();
+    </script>
+
+    <squarespace:block-field id="shared-podcast-starter" columns="12" label="Shared Starter" />
+
+    <!-- This list is populated with items derived from the following block field.
+      Each native Squarespace audio block that's found in the block field will result
+      in an item in the list, whose content is based on data associated with the block. -->
+    <ul></ul>
+
+    <!-- This block field is only visible in the Squarespace -->
+    <squarespace:block-field id="prx-podcast-{id}-starter-meta" class="prx-podcast-starter-meta prx-sqs-edit-mode-only" columns="12" label="Starter Audio Helper" />
+
+    <!--
+      These are legacy block fields so the page will include starter episodes
+      that weren't migrated to the new field explicitly. Some starter episodes
+      were added to the "header" block field, instead of the correct block
+      field, so both are included.
+    -->
+    <!-- This block field is only visible in the Squarespace -->
+    <div style="opacity: 50%; margin-top: 30px;">
+      <squarespace:block-field class="prx-legacy-podcast-starter-meta-header prx-sqs-edit-mode-only" id="{customContent.podcastV1Slug}-podcast-starter-episodes-header" columns="12" label="Legacy Starter Audio Helper (Do Not Use)" />
+      <squarespace:block-field class="prx-legacy-podcast-starter-meta prx-sqs-edit-mode-only" id="{customContent.podcastV1Slug}-podcast-starter-episodes" columns="12" label="Legacy Starter Audio Helper 2 (Do Not Use)" />
+    </div>
+  </section>
+
+  <section id=prx-podcast-hosts>
+    <style>
+      #prx-podcast-hosts {
+        --host-image-size: 200px;
+        --copy-font-size: 18px;
+
+        background: url('/assets/boltline-block.svg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        margin: 0 auto;
+      }
+
+      #prx-podcast-hosts ul {
+        border: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 20px 0 30px;
+      }
+
+      #prx-podcast-hosts ul li img {
+        width: var(--host-image-size);
+      }
+
+      #prx-podcast-hosts p {
+        font-size: var(--copy-font-size);
+      }
+
+      #prx-podcast-hosts > div {
+        margin: 0 auto;
+        max-width: 650px;
+      }
+
+      #prx-podcast-hosts > div.sqs-layout { max-width: initial; }
+
+      #prx-podcast-hosts > div.sqs-layout h1 {
+        color: #8087af;
+        font-size: 40px !important;
+        font-weight: 600 !important;
+      }
+
+      @media screen and (max-width: 640px) { #prx-podcast-hosts {
+        --host-image-size: 145px;
+        --copy-font-size: 16px;
+      }}
+    </style>
+
+  <squarespace:block-field id="shared-podcast-hosts-header" columns="12" label="Shared Hosts Header" />
+
+    <ul>
+      {.if customContent.hostPhoto1}<li><img src="{customContent.hostPhoto1.assetUrl}" alt="{customContent.hostPhoto1altText}"></li>{.end}
+      {.if customContent.hostPhoto2}<li><img src="{customContent.hostPhoto2.assetUrl}" alt="{customContent.hostPhoto2altText}"></li>{.end}
+      {.if customContent.hostPhoto3}<li><img src="{customContent.hostPhoto3.assetUrl}" alt="{customContent.hostPhoto3altText}"></li>{.end}
+      {.if customContent.hostPhoto4}<li><img src="{customContent.hostPhoto4.assetUrl}" alt="{customContent.hostPhoto4altText}"></li>{.end}
+      {.if customContent.hostPhoto5}<li><img src="{customContent.hostPhoto5.assetUrl}" alt="{customContent.hostPhoto5altText}"></li>{.end}
+      {.if customContent.hostPhoto6}<li><img src="{customContent.hostPhoto6.assetUrl}" alt="{customContent.hostPhoto6altText}"></li>{.end}
+    </ul>
+
+    <div>{customContent.podcastMeetTheHosts.html}</div>
+  </section>
+
+  <section id=prx-podcast-cta>
+    <style>
+      #prx-podcast-cta {
+        --margin-vertical: 125px;
+
+        display: flex;
+        gap: 75px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: var(--margin-vertical) auto;
+        width: 100%;
+      }
+
+      /* Each CTA */
+      #prx-podcast-cta > div {
+        max-width: 320px;
+      }
+
+      /* CTA buttons */
+      #prx-podcast-cta > div > a {
+        background: #ff446a;
+        border: 1px solid #ff446a;
+        border-radius: 999px;
+        color: white;
+        display: block;
+        margin: 0 auto 15px;
+        max-width: 250px;
+        padding: 10px 20px;
+        text-align: center;
+        width: fit-content;
+        transition: all 0.1s ease-out
+      }
+      #prx-podcast-cta > div > a:hover { background: white; color: #ff446a; }
+
+      /* Paragraphs within the Squarespace CMS block field */
+      #prx-podcast-cta > div div.sqs-row p {
+        font-size: 18px !important;
+      }
+
+      @media screen and (max-width: 768px) { #prx-podcast-cta {
+        --margin-vertical: 75px;
+      }}
+    </style>
+
+    <div>
+      <a href="{customContent.podcastDonateFormUrl}">support {title}</a>
+      <squarespace:block-field id="shared-podcast-support-copy" columns="12" label="Shared Support Copy" />
     </div>
 
-      <div class="background-wrapper">
-        <div class="podcast-wrapper">
-          <div class="header-container">
-            <div class="podcast-column podcast-left-column">
-              <div class="podcast-artwork">
-                <img src="{customContent.showArt.assetUrl}">
-              </div>
-              <div class="trailer-button">
-                <squarespace:block-field class="podcast-trailer-player" id="{customContent.podcastV1Slug}-podcast-trailer-player" columns="12" label="Trailer Player" />
-              </div>
-            </div>
+    <div>
+      <a href="{customContent.podcastSponsorEmail}">become a sponsor</a>
+      <squarespace:block-field id="shared-podcast-sponsor-copy" columns="12" label="Shared Sponsor Copy" />
+    </div>
+  </section>
 
-            <div class="podcast-column podcast-center-column">
-              <div class="prx-sqs-cms-only">
-                <style>
-                  .prx-sqs-cms-only {
-                    display: none;
-                  }
-                  .sqs-edit-mode .prx-sqs-cms-only {
-                    display: block;
-                  }
-                </style>
-                <squarespace:block-field id="prx-podcast-{id}-trailer-meta" class="prx-podcast-trailer-meta" columns="12" label="Audio Trailer Helper" />
-                <squarespace:block-field id="prx-podcast-{id}-starter-meta" class="prx-podcast-starter-meta" columns="12" label="Starter Audio Helper" />
-              </div>
+  <section id=prx-podcast-carousel>
+    <style>
+      /* Busts out of the default Squarespace center column, for full bleed bg */
+      #prx-podcast-carousel {
+        background-color: #F6F6F6;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+      }
 
+      /* Make internal wrapper follow the default Squarespace center column layout */
+      #prx-podcast-carousel > div {
+        box-sizing: border-box;
+        width: auto;
+        margin: auto;
+        max-width: 1020px;
+        padding: 40px 32px;
+      }
 
+      #prx-podcast-carousel .sqs-row h1,
+      #prx-podcast-carousel .sqs-row h1 strong {
+        font-size: 40px;
+        font-weight: 700;
+      }
 
-              <h1 class="title">
-                {title}
-              </h1>
-              <div class="podcast-link-container">
-                {.if customContent.podcastLink}
-                <a href="{customContent.podcastLink}">
-                  {.if customContent.podcastUrlTitle}
-                    {customContent.podcastUrlTitle}
-                  {.or}
-                    Listen at {customContent.podcastLink}
-                  {.end}
-                </a>
-                {.end}
-              </div>
-              <div class="podcast-description">
-                {customContent.podcastDescription.html}
-              </div>
-            </div>
+      #prx-podcast-carousel a.sqs-block-button-element {
+        background: #092c58;
+        border: 1px solid #092c58;
+        border-radius: 999px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        padding: 8px 30px;
+        text-transform: initial;
+        transition: all 0.1s ease-out
+      }
+      #prx-podcast-carousel a.sqs-block-button-element:hover { background: white; color: #092c58; opacity: 1; }
+    </style>
 
-            <div class="podcast-column podcast-right-column">
-              <div class="podcast-subscribe">
-                <p class="podcast-listen">Listen</p>
-                <a href="#" class="podcast-subscribe-button" data-behavior="open-modal" data-target="subscribe">Subscribe</a>
-              </div>
-              <div class="social-buttons">
-                <p class="podcast-connect">Connect</p>
-                {.if customContent.podcastFacebookUrl}
-                  <div class="facebook-button icon">
-                    <a href="{customContent.podcastFacebookUrl}"><img src="/assets/facebook.png"></a>
-                  </div>
-                {.end}
-                {.if customContent.podcastTwitterUrl}
-                  <div class="twitter-button icon">
-                    <a href="{customContent.podcastTwitterUrl}"><img src="/assets/twitter.png"></a>
-                  </div>
-                {.end}
-                {.if customContent.podcastInstagramUrl}
-                  <div class="instagram-button icon">
-                    <a href="{customContent.podcastInstagramUrl}"><img src="/assets/instagram.png"></a>
-                  </div>
-                {.end}
-              </div>
-              <div class="extra-metadata">
-                <squarespace:block-field class="podcast-extra-metadata" id="{customContent.podcastV1Slug}-podcast-extra-metadata" columns="1" label="Extra Metadata" />
-              </div>
-            </div>
-          </div>
-
-          <div class="podcast-starter-episodes-container">
-            <squarespace:block-field class="podcast-starter-episodes-header" id="{customContent.podcastV1Slug}-podcast-starter-episodes-header" columns="12" label="Starter Episodes Header" />
-            <squarespace:block-field class="podcast-starter-episodes" id="{customContent.podcastV1Slug}-podcast-starter-episodes" columns="12" label="Starter Episodes" />
-          </div>
-
-          <div class="hosts-header" name="podcast-hosts">
-            <squarespace:block-field class="{customContent.podcastV1Slug}-hosts-header-block" id="{customContent.podcastV1Slug}-hosts-header-block" columns="12" label="Hosts Header" />
-          </div>
-
-          <div class="hosts-container" id="podcast-hosts">
-            <img src="{customContent.hostsImage.assetUrl}" class="hosts-image">
-            <div class="hosts-content">
-              <div class="hosts">
-                <p>{customContent.podcastHosts}</p>
-                <p class="hosts-title">{customContent.podcastHostsTitle}</p>
-              </div>
-              <div class="hosts-description">{customContent.podcastMeetTheHosts.html}</div>
-            </div>
-          </div>
-
-          <div class="misc1-container" id="misc1-container">
-            <squarespace:block-field id="{customContent.podcastV1Slug}-misc1" columns="12" label="Misc Content 1" />
-          </div>
-
-          <div class="support-container" id="support-container">
-            <div class="inner" id="make-a-donation" name="make-a-donation">
-              <div class="support-left-column">
-                <div class="support-left-icon">
-                  <squarespace:block-field class="support-podcast" id="support-podcast" columns="12" label="Template Support Podcast Icon" />
-                </div>
-                <squarespace:block-field class="{customContent.podcastV1Slug}-support-podcast" id="{customContent.podcastV1Slug}-support-podcast" columns="12" label="Unique Support Podcast Title Block" />
-                <squarespace:block-field class="support-podcast-description" id="support-podcast-description" columns="12" label="Template Support Podcast Description" />
-
-                <!-- TODO Make this show-specific -->
-                <a href="{customContent.podcastDonateFormUrl}">Donate Now</a>
-              </div>
-
-              <div class="support-right-column">
-                <squarespace:block-field class="sponsor-podcast" id="sponsor-podcast" columns="12" label="Template Become a Sponsor Block" />
-                <div class="row sqs-row" style="padding-top: 14px;">
-                  <div class="sqs-block button-block sqs-block-button">
-                    <div class="sqs-block-content">
-                      <div class="sqs-block-button-container--center" data-alignment="center" data-button-size="medium" id="yui_3_17_2_1_1538079083875_159">
-                        <a href="{customContent.podcastSponsorEmail}" class="sqs-block-button-element--medium sqs-block-button-element">Become a Sponsor</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="sponsor-logos">
-            <squarespace:block-field class="{customContent.podcastV1Slug}-podcast-sponsor-logos" id="{customContent.podcastV1Slug}-podcast-sponsor-logos" columns="12" label="Unique Podcast Sponsor Logos" />
-          </div>
-
-          <div class="recent-tweets">
-            <squarespace:block-field class="{customContent.podcastV1Slug}-recent-tweets" id="{customContent.podcastV1Slug}-recent-tweets" columns="12" label="Recent Tweets" />
-          </div>
-        </div>
-      </div>
-
-      <div class="modal-wrapper subscribe">
-        <div class="inner">
-          <div class="subscribe-modal">
-            <div class="close-modal" data-behavior="close-modal"></div>
-            <div class="modal-words">
-              <div class="subscribe-header">
-                <h2>Subscribe To</h2>
-              </div>
-              <div class="subscribe-body">
-                <p>{title}</p>
-              </div>
-            </div>
-
-            <ol class="subscribe-options">
-              {.if customContent.podcastItunesUrl}
-                <li>
-                  <a href="{customContent.podcastItunesUrl}" data-trk-podcast="{title}" data-trk-platform="Apple">
-                    <img src="https://media.radiotopia.fm/www/apple-podcasts.svg">
-                  </a>
-                </li>
-              {.end}
-
-              {.if customContent.podcastSpotifyUrl}
-                <li>
-                  <a href="{customContent.podcastSpotifyUrl}" data-trk-podcast="{title}" data-trk-platform="Spotify">
-                    <img src="https://media.radiotopia.fm/www/spotify.svg">
-                  </a>
-                </li>
-              {.end}
-
-              {.if customContent.podcastStitcherUrl}
-                <li>
-                  <a href="{customContent.podcastStitcherUrl}" data-trk-podcast="{title}" data-trk-platform="Stitcher">
-                    <img src="https://media.radiotopia.fm/www/stitcher.png">
-                  </a>
-                </li>
-              {.end}
-
-              {.if customContent.podcastOvercastUrl}
-                <li>
-                  <a href="{customContent.podcastOvercastUrl}" data-trk-podcast="{title}" data-trk-platform="Overcast">
-                    <img src="https://media.radiotopia.fm/www/overcast.svg">
-                  </a>
-                </li>
-              {.end}
-
-              {.if customContent.podcastPocketCastsUrl}
-                <li>
-                  <a href="{customContent.podcastPocketCastsUrl}" data-trk-podcast="{title}" data-trk-platform="Pocket Casts">
-                    <img src="https://media.radiotopia.fm/www/pocket-casts.svg">
-                  </a>
-                </li>
-              {.end}
-
-              {.if customContent.podcastGooglePlayUrl}
-                <li>
-                  <a href="{customContent.podcastGooglePlayUrl}" data-trk-podcast="{title}" data-trk-platform="Google Podcasts">
-                    <img src="https://media.radiotopia.fm/www/google.svg">
-                  </a>
-                </li>
-              {.end}
-
-              {.if customContent.podcastRPUrl}
-                <li>
-                  <a href="{customContent.podcastRPUrl}" data-trk-podcast="{title}" data-trk-platform="Radio Public">
-                    <img src="/assets/radio-public-big.png">
-                  </a>
-                </li>
-              {.end}
-
-              {.if customContent.podcastPandoraUrl}
-                <li>
-                  <a href="{customContent.podcastPandoraUrl}" data-trk-podcast="{title}" data-trk-platform="Pandora">
-                    <img src="https://media.radiotopia.fm/www/pandora.png">
-                  </a>
-                </li>
-              {.end}
-
-              {.if customContent.podcastAmazonMusicUrl}
-                <li>
-                  <a href="{customContent.podcastAmazonMusicUrl}" data-trk-podcast="{title}" data-trk-platform="Amazon">
-                    <img src="https://media.radiotopia.fm/www/amazon.png">
-                  </a>
-                </li>
-              {.end}
-
-              {.if customContent.podcastFeedUrl}
-                <li>
-                  <a href="{customContent.podcastFeedUrl}" data-trk-podcast="{title}" data-trk-platform="RSS">
-                    <img src="https://media.radiotopia.fm/www/rss.svg">
-                  </a>
-                </li>
-              {.end}
-            </ol>
-          </div>
-        </div>
-      </div>
-    </section>
-  </article>
+    <div>
+      <squarespace:block-field id="shared-podcast-carousel" columns="12" label="Shared Carousel" />
+    </div>
+  </section>
 {.end}

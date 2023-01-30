@@ -1,0 +1,255 @@
+{.section item}
+
+  <!--WRAPPER-->
+
+  <article id="post-{id}" class="{@|item-classes}" data-item-id="{id}">
+
+    <!--POST TILE-->
+
+
+
+    <!--MAIN CONTENT-->
+    <section>
+
+    <div class="banner-image-container">
+      <img src="{customContent.bannerImage.assetUrl}">
+    </div>
+
+      <div class="background-wrapper">
+        <div class="podcast-wrapper">
+          <div class="header-container">
+            <div class="podcast-column podcast-left-column">
+              <div class="podcast-artwork">
+                <img src="{customContent.showArt.assetUrl}">
+              </div>
+              <div class="trailer-button">
+                <squarespace:block-field class="podcast-trailer-player" id="{customContent.podcastV1Slug}-podcast-trailer-player" columns="12" label="Trailer Player" />
+              </div>
+            </div>
+
+            <div class="podcast-column podcast-center-column">
+              <div class="prx-sqs-cms-only">
+                <style>
+                  .prx-sqs-cms-only {
+                    display: none;
+                  }
+                  .sqs-edit-mode .prx-sqs-cms-only {
+                    display: block;
+                  }
+                </style>
+                <squarespace:block-field id="prx-podcast-{id}-trailer-meta" class="prx-podcast-trailer-meta" columns="12" label="Audio Trailer Helper" />
+                <squarespace:block-field id="prx-podcast-{id}-starter-meta" class="prx-podcast-starter-meta" columns="12" label="Starter Audio Helper" />
+              </div>
+
+
+
+              <h1 class="title">
+                {title}
+              </h1>
+              <div class="podcast-link-container">
+                {.if customContent.podcastLink}
+                <a href="{customContent.podcastLink}">
+                  {.if customContent.podcastUrlTitle}
+                    {customContent.podcastUrlTitle}
+                  {.or}
+                    Listen at {customContent.podcastLink}
+                  {.end}
+                </a>
+                {.end}
+              </div>
+              <div class="podcast-description">
+                {customContent.podcastDescription.html}
+              </div>
+            </div>
+
+            <div class="podcast-column podcast-right-column">
+              <div class="podcast-subscribe">
+                <p class="podcast-listen">Listen</p>
+                <a href="#" class="podcast-subscribe-button" data-behavior="open-modal" data-target="subscribe">Subscribe</a>
+              </div>
+              <div class="social-buttons">
+                <p class="podcast-connect">Connect</p>
+                {.if customContent.podcastFacebookUrl}
+                  <div class="facebook-button icon">
+                    <a href="{customContent.podcastFacebookUrl}"><img src="/assets/facebook.png"></a>
+                  </div>
+                {.end}
+                {.if customContent.podcastTwitterUrl}
+                  <div class="twitter-button icon">
+                    <a href="{customContent.podcastTwitterUrl}"><img src="/assets/twitter.png"></a>
+                  </div>
+                {.end}
+                {.if customContent.podcastInstagramUrl}
+                  <div class="instagram-button icon">
+                    <a href="{customContent.podcastInstagramUrl}"><img src="/assets/instagram.png"></a>
+                  </div>
+                {.end}
+              </div>
+              <div class="extra-metadata">
+                <squarespace:block-field class="podcast-extra-metadata" id="{customContent.podcastV1Slug}-podcast-extra-metadata" columns="1" label="Extra Metadata" />
+              </div>
+            </div>
+          </div>
+
+          <div class="podcast-starter-episodes-container">
+            <squarespace:block-field class="podcast-starter-episodes-header" id="{customContent.podcastV1Slug}-podcast-starter-episodes-header" columns="12" label="Starter Episodes Header" />
+            <squarespace:block-field class="podcast-starter-episodes" id="{customContent.podcastV1Slug}-podcast-starter-episodes" columns="12" label="Starter Episodes" />
+          </div>
+
+          <div class="hosts-header" name="podcast-hosts">
+            <squarespace:block-field class="{customContent.podcastV1Slug}-hosts-header-block" id="{customContent.podcastV1Slug}-hosts-header-block" columns="12" label="Hosts Header" />
+          </div>
+
+          <div class="hosts-container" id="podcast-hosts">
+            <img src="{customContent.hostsImage.assetUrl}" class="hosts-image">
+            <div class="hosts-content">
+              <div class="hosts">
+                <p>{customContent.podcastHosts}</p>
+                <p class="hosts-title">{customContent.podcastHostsTitle}</p>
+              </div>
+              <div class="hosts-description">{customContent.podcastMeetTheHosts.html}</div>
+            </div>
+          </div>
+
+          <div class="misc1-container" id="misc1-container">
+            <squarespace:block-field id="{customContent.podcastV1Slug}-misc1" columns="12" label="Misc Content 1" />
+          </div>
+
+          <div class="support-container" id="support-container">
+            <div class="inner" id="make-a-donation" name="make-a-donation">
+              <div class="support-left-column">
+                <div class="support-left-icon">
+                  <squarespace:block-field class="support-podcast" id="support-podcast" columns="12" label="Template Support Podcast Icon" />
+                </div>
+                <squarespace:block-field class="{customContent.podcastV1Slug}-support-podcast" id="{customContent.podcastV1Slug}-support-podcast" columns="12" label="Unique Support Podcast Title Block" />
+                <squarespace:block-field class="support-podcast-description" id="support-podcast-description" columns="12" label="Template Support Podcast Description" />
+
+                <!-- TODO Make this show-specific -->
+                <a href="{customContent.podcastDonateFormUrl}">Donate Now</a>
+              </div>
+
+              <div class="support-right-column">
+                <squarespace:block-field class="sponsor-podcast" id="sponsor-podcast" columns="12" label="Template Become a Sponsor Block" />
+                <div class="row sqs-row" style="padding-top: 14px;">
+                  <div class="sqs-block button-block sqs-block-button">
+                    <div class="sqs-block-content">
+                      <div class="sqs-block-button-container--center" data-alignment="center" data-button-size="medium" id="yui_3_17_2_1_1538079083875_159">
+                        <a href="{customContent.podcastSponsorEmail}" class="sqs-block-button-element--medium sqs-block-button-element">Become a Sponsor</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sponsor-logos">
+            <squarespace:block-field class="{customContent.podcastV1Slug}-podcast-sponsor-logos" id="{customContent.podcastV1Slug}-podcast-sponsor-logos" columns="12" label="Unique Podcast Sponsor Logos" />
+          </div>
+
+          <div class="recent-tweets">
+            <squarespace:block-field class="{customContent.podcastV1Slug}-recent-tweets" id="{customContent.podcastV1Slug}-recent-tweets" columns="12" label="Recent Tweets" />
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-wrapper subscribe">
+        <div class="inner">
+          <div class="subscribe-modal">
+            <div class="close-modal" data-behavior="close-modal"></div>
+            <div class="modal-words">
+              <div class="subscribe-header">
+                <h2>Subscribe To</h2>
+              </div>
+              <div class="subscribe-body">
+                <p>{title}</p>
+              </div>
+            </div>
+
+            <ol class="subscribe-options">
+              {.if customContent.podcastItunesUrl}
+                <li>
+                  <a href="{customContent.podcastItunesUrl}" data-trk-podcast="{title}" data-trk-platform="Apple">
+                    <img src="https://media.radiotopia.fm/www/apple-podcasts.svg">
+                  </a>
+                </li>
+              {.end}
+
+              {.if customContent.podcastSpotifyUrl}
+                <li>
+                  <a href="{customContent.podcastSpotifyUrl}" data-trk-podcast="{title}" data-trk-platform="Spotify">
+                    <img src="https://media.radiotopia.fm/www/spotify.svg">
+                  </a>
+                </li>
+              {.end}
+
+              {.if customContent.podcastStitcherUrl}
+                <li>
+                  <a href="{customContent.podcastStitcherUrl}" data-trk-podcast="{title}" data-trk-platform="Stitcher">
+                    <img src="https://media.radiotopia.fm/www/stitcher.png">
+                  </a>
+                </li>
+              {.end}
+
+              {.if customContent.podcastOvercastUrl}
+                <li>
+                  <a href="{customContent.podcastOvercastUrl}" data-trk-podcast="{title}" data-trk-platform="Overcast">
+                    <img src="https://media.radiotopia.fm/www/overcast.svg">
+                  </a>
+                </li>
+              {.end}
+
+              {.if customContent.podcastPocketCastsUrl}
+                <li>
+                  <a href="{customContent.podcastPocketCastsUrl}" data-trk-podcast="{title}" data-trk-platform="Pocket Casts">
+                    <img src="https://media.radiotopia.fm/www/pocket-casts.svg">
+                  </a>
+                </li>
+              {.end}
+
+              {.if customContent.podcastGooglePlayUrl}
+                <li>
+                  <a href="{customContent.podcastGooglePlayUrl}" data-trk-podcast="{title}" data-trk-platform="Google Podcasts">
+                    <img src="https://media.radiotopia.fm/www/google.svg">
+                  </a>
+                </li>
+              {.end}
+
+              {.if customContent.podcastRPUrl}
+                <li>
+                  <a href="{customContent.podcastRPUrl}" data-trk-podcast="{title}" data-trk-platform="Radio Public">
+                    <img src="/assets/radio-public-big.png">
+                  </a>
+                </li>
+              {.end}
+
+              {.if customContent.podcastPandoraUrl}
+                <li>
+                  <a href="{customContent.podcastPandoraUrl}" data-trk-podcast="{title}" data-trk-platform="Pandora">
+                    <img src="https://media.radiotopia.fm/www/pandora.png">
+                  </a>
+                </li>
+              {.end}
+
+              {.if customContent.podcastAmazonMusicUrl}
+                <li>
+                  <a href="{customContent.podcastAmazonMusicUrl}" data-trk-podcast="{title}" data-trk-platform="Amazon">
+                    <img src="https://media.radiotopia.fm/www/amazon.png">
+                  </a>
+                </li>
+              {.end}
+
+              {.if customContent.podcastFeedUrl}
+                <li>
+                  <a href="{customContent.podcastFeedUrl}" data-trk-podcast="{title}" data-trk-platform="RSS">
+                    <img src="https://media.radiotopia.fm/www/rss.svg">
+                  </a>
+                </li>
+              {.end}
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+{.end}
