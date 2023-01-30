@@ -55,7 +55,7 @@
         <a href="{baseUrl}{fullUrl}">
           <img
             class="podcast-artwork-image"
-            data-src={customContent.podcastCoverArtwork.assetUrl}
+            data-src={assetUrl}
             alt="{title} podcast information"
             />
           <p>{title}</p>
