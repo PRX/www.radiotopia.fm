@@ -357,7 +357,10 @@
           // to configure the custom player.
           (function () {
             document.addEventListener("DOMContentLoaded", _ => {
-              const trailerMeta = document.querySelector('.prx-podcast-trailer-meta .sqs-audio-embed[data-url]:not([data-url=""]), .prx-legacy-podcast-trailer-meta .sqs-audio-embed[data-url]:not([data-url=""])');
+              const trailerMeta = document.querySelector([
+                '.prx-podcast-trailer-meta .sqs-audio-embed[data-url]:not([data-url=""])',
+                '.prx-legacy-podcast-trailer-meta .sqs-audio-embed[data-url]:not([data-url=""])',
+              ].join(','));
 
               if (!trailerMeta || !trailerMeta.getAttribute('data-url')) {
                 document.getElementById('prx-trailer-player').style.display = 'none';
@@ -522,7 +525,11 @@
         // audio players. Each one that's found will be added as a custom audio
         // player to the page.
         document.addEventListener("DOMContentLoaded", _ => {
-          const starterMeta = document.querySelectorAll('.prx-podcast-starter-meta .sqs-audio-embed[data-url]:not([data-url=""]), .prx-legacy-podcast-starter-meta-header .sqs-audio-embed[data-url]:not([data-url=""]), .prx-legacy-podcast-starter-meta .sqs-audio-embed[data-url]:not([data-url=""])');
+          const starterMeta = document.querySelectorAll([
+            '.prx-podcast-starter-meta .sqs-audio-embed[data-url]:not([data-url=""])',
+            '.prx-legacy-podcast-starter-meta-header .sqs-audio-embed[data-url]:not([data-url=""])',
+            '.prx-legacy-podcast-starter-meta .sqs-audio-embed[data-url]:not([data-url=""])',
+          ].join(','));
           const episodeList = document.querySelector('#prx-podcast-starter > ul');
 
           for (const meta of starterMeta) {
