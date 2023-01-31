@@ -26,7 +26,7 @@
         </div>
       </footer>
 
-    </div>
+    </div> <!-- end of #siteWrapper -->
 
     <squarespace:script src="site-bundle.js" combo="false" />
     {squarespace-footers}
