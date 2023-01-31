@@ -29,20 +29,13 @@
 
   #prx-podcast-grid a p {
     font-weight: 600;
-    font-size: 18px;
-    line-height: 1.2em;
+    font-size: 0.7em;
+    line-height: 1.4em;
     margin: 0;
   }
 
   @media screen and (max-width: 820px) { #prx-podcast-grid { --per-row: 3; } }
   @media screen and (max-width: 460px) { #prx-podcast-grid { --per-row: 2; } }
-  @media screen and (max-width: 768px) {
-
-    .sqs-layout p {
-      font-size: 14px !important; /* Clean up this selector once `.sqs-block-html p` in Custom CSS is moved to Site Styles */
-      line-height: 1.2em !important;
-    }
-  }
 </style>
 
 <section>
