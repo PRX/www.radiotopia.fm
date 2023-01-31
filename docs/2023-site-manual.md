@@ -1,3 +1,23 @@
+# Podcast Data
+
+- The podcast name should be entered on the Content tab.
+- The show artwork (show tile) should be entered on the Options tab as the `Featured Image`.
+- The `Podcast Website Link URL` and `Podcast Website Link Text` fields on Podcast collection items are optional.
+    - If a URL is entered, the link will appear on the individual podcast page, under the show’s name
+        - This URL should be a **complete** URL: e.g., `https://some-podcast.com/`
+    - If text is entered, that text will be used for for the link, and it will link to the URL
+        - Otherwise, the link will default to `Listen at <the URL>`
+- The `Social Icon CSS Filter` accepts one or more CSS filters which can be used to change the color of the social icons at the top of each podcast page.
+    - The icons are black by default (i.e., the icon images are actually black).
+    - [This utility](https://codepen.io/sosuke/pen/Pjoqqp) can take a “Target color” and return the CSS filter that should be applied to make the icons that color.
+    - The value entered into the podcast data form should **NOT** include `filter:`, it should start with `invert(50%)`
+- The podcast trailer and “where to start” episodes are derived from native Squarespace audio players that are managed on each podcast page, in a block field below the custom players. These native players will not be visible on the public-facing website.
+    - For the trailer, only the first player in the block field is used.
+    - For “where to start” episodes, a custom player will be added for each native player found in the block field.
+    - The native players can be configured to use either an “external file” or an “upload file”.
+    - The “Title” and “Artist” set on the native player will be displayed in the corresponding custom player.
+    - In order to migrate old data, there are additional “legacy” block fields that appear. No new audio should be added to these block fields. They should be phased out over time, and all audio should be added to the new block fields.
+
 # Styles and CSS Stylesheets
 
 - Sigmund Pro is installed from Adobe via `Settings > Advanced > Code Injection`.
@@ -40,22 +60,14 @@
         - The intended style will only appear if the text within the block field is formatted to match the custom CSS. If the CSS styles “Heading 1”, only “Heading 1” text in the block field will receive the style. Changing the text to “Heading 2”, for example, is permitted, but it would use the general “Heading 2” style for the site, and may diverge from the intended design.
         - These block field-specific CSS overrides are maintained in the custom template code, and are not editable via the Squarespace CMS at this time.
 
-# Podcast Data
+## Advanced
 
-- The podcast name should be entered on the Content tab.
-- The show artwork (show tile) should be entered on the Options tab as the `Featured Image`.
-- The `Podcast Website Link URL` and `Podcast Website Link Text` fields on Podcast collection items are optional.
-    - If a URL is entered, the link will appear on the individual podcast page, under the show’s name
-        - This URL should be a **complete** URL: e.g., `https://some-podcast.com/`
-    - If text is entered, that text will be used for for the link, and it will link to the URL
-        - Otherwise, the link will default to `Listen at <the URL>`
-- The `Social Icon CSS Filter` accepts one or more CSS filters which can be used to change the color of the social icons at the top of each podcast page.
-    - The icons are black by default (i.e., the icon images are actually black).
-    - [This utility](https://codepen.io/sosuke/pen/Pjoqqp) can take a “Target color” and return the CSS filter that should be applied to make the icons that color.
-    - The value entered into the podcast data form should **NOT** include `filter:`, it should start with `invert(50%)`
-- The podcast trailer and “where to start” episodes are derived from native Squarespace audio players that are managed on each podcast page, in a block field below the custom players. These native players will not be visible on the public-facing website.
-    - For the trailer, only the first player in the block field is used.
-    - For “where to start” episodes, a custom player will be added for each native player found in the block field.
-    - The native players can be configured to use either an “external file” or an “upload file”.
-    - The “Title” and “Artist” set on the native player will be displayed in the corresponding custom player.
-    - In order to migrate old data, there are additional “legacy” block fields that appear. No new audio should be added to these block fields. They should be phased out over time, and all audio should be added to the new block fields.
+_This section is intended for developers._
+
+The `Page Text Font` and `Page Text Color` tweaks in **Site Style** are applied to `#siteWrapper` (1,0,0). The `div` with that ID wraps nearly everything on the page, and all properties of those two tweaks are inheritable. So essentially all elements on all pages will inherit these font/color properties.
+
+This includes all basic `p` tags that Squarespace generates from text and markdown blocks. There is no explicit styling of basic `p` tags; they are simply inheriting all the way from `#siteWrapper`.
+
+`h1`, `h2`, and `h3` tags have thier own tweaks in **Site Styles** for font and color, which are applied to the tag types (0,0,1). The native Squarespace stylesheets include some additonal styles for heading tags which are not controlled in **Site Styles**.
+
+Some elements of complex Squarespace block types use `em` units. For example, the captions of image blocks (`.sqs-block.image-block .image-caption-wrapper p`) have `font-size: .875em`. It is very uncommon for the parents of these sorts of elements to have an explicit font size, so in most cases these units will be relative to the font size of `#siteWrapper`. In other words, the `Page Text Font` font size has fairly ranging effects, including font sizes as well as spacing between and within numerous elements.
