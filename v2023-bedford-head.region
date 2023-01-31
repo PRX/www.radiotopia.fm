@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="prx-v2 prx-v2023 touch-styles"{.if authenticatedAccount} data-authenticated-account{.end}>
+<html class="prx-v2023 touch-styles"{.if authenticatedAccount} data-authenticated-account{.end}>
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     {.if template.mobileStylesEnabled}
