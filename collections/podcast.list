@@ -47,7 +47,7 @@
     {.if customContent.podcastHidden}
     {.or}
       <div>
-        <a href="{baseUrl}{fullUrl}">
+        <a href="{.if sourceUrl}{sourceUrl}{.or}{baseUrl}{fullUrl}{.end}">
           <img
             class="podcast-artwork-image"
             data-src={assetUrl}
