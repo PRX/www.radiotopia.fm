@@ -1,0 +1,76 @@
+
+{.if items || userAccountsContext.showSignInLink}
+  <div id="mainNavWrapper" class="nav-wrapper" data-content-field="navigation-mainNav">
+    <nav id="mainNavigation" data-content-field="navigation-mainNav">
+      {.if userAccountsContext.showSignInLink}
+        <div class="user-account-link">
+          <a href="#">
+            <span class="unauth">{localizedStrings.signIn}</span>
+            <span class="auth">{localizedStrings.myAccount}</span>
+          </a>
+        </div>
+      {.end}
+
+      {.repeated section items}
+        {.collection?}
+          {.index?}
+          <div class="index{.if active} active{.end}{.section collection}{.if homepage} homepage{.end}{.end}">
+            <a href="{collection.fullUrl}">
+              {collection.navigationTitle}
+            </a>
+          </div>
+          {.or}
+
+          {.folder?}
+          <div class="folder{.if folderActive} active{.end}{.section collection}{.if homepage} homepage{.end}{.end}">
+            <div class="folder-toggle" data-href="{collection.fullUrl}">{collection.navigationTitle}</div>
+            <div class="subnav">
+            {.repeated section items}
+
+              {.collection?}
+              <div class="collection{.if active} active{.end}">
+                <a href="{collection.fullUrl}">
+                  {collection.navigationTitle}
+                </a>
+              </div>
+              {.end}
+              {.section externalLink}
+              <div class="external">
+                <a href="{url}"{.section newWindow} target="_blank"{.end}>
+                  {title}
+                </a>
+              </div>
+              {.end}
+            {.end}
+            </div>
+          </div>
+          {.or}
+
+            {.section collection}
+            <div class="collection{.if active} active{.end}{.if homepage} homepage{.end}">
+              <a href="{fullUrl}">
+                {navigationTitle}
+              </a>
+            </div>
+            {.end}
+
+          {.end}
+        {.end}
+        {.or}
+          {.section externalLink}
+          <div class="external">
+            <a href="{url}"{.section newWindow} target="_blank"{.end}>
+              {title}
+            </a>
+          </div>
+          {.end}
+
+        {.end}
+
+      {.end}
+    </nav>
+  </div>
+  <!-- style below blocks out the mobile nav toggle only when nav is loaded -->
+  <style>.mobile-nav-toggle-label { display: inline-block !important; }</style>
+{.end}
+

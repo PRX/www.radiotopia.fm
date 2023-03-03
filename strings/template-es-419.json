@@ -1,0 +1,15 @@
+{
+  "source" : "Fuente:",
+  "tagged" : "Etiquetado:",
+  "newerPost" : "Publicación más reciente",
+  "olderPost" : "Publicación anterior",
+  "newerPosts" : "Publicaciones más recientes",
+  "olderPosts" : "Publicaciones más antiguas",
+  "Filter" : "Filtro",
+  "allCategories" : "Todo",
+  "signIn" : "Iniciar sesión",
+  "myAccount" : "Mi Cuenta",
+  "backToTop" : "Volver arriba",
+  "readMore" : "Leer más",
+  "viewPost" : "Ver publicación"
+}

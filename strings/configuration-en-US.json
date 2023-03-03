@@ -1,0 +1,38 @@
+{
+  "template": {
+    "Main Navigation": "Main Navigation",
+    "Secondary Navigation": "Secondary Navigation",
+    "Default": "Default"
+  },
+  "album": {
+    "Album": "Album",
+    "Add Track": "Add Track",
+    "New Album": "New Album"
+  },
+  "blog": {
+    "Blog": "Blog",
+    "Add Post": "Add Post",
+    "New Blog": "New Blog"
+  },
+  "events": {
+    "Events": "Events",
+    "Add Event": "Add Event",
+    "New Events": "New Events"
+  },
+  "folders": {
+    "Folder": "Folder",
+    "New Folder": "New Folder",
+    "Add Page": "Add Page"
+  },
+  "index": {
+    "Index": "Index",
+    "Add Section": "Add Section",
+    "New Index": "New Index"
+  },
+  "products": {
+    "Store": "Store",
+    "Products": "Products",
+    "Add Product": "Add Product",
+    "New Products": "New Products"
+  }
+}

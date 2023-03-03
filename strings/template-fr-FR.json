@@ -1,0 +1,15 @@
+{
+  "source" : "Source :",
+  "tagged" : "Avec le(s) tag(s) :",
+  "newerPost" : "Billet plus récent",
+  "olderPost" : "Billet plus ancien",
+  "newerPosts" : "Billets plus récents",
+  "olderPosts" : "Billets plus anciens",
+  "Filter" : "Filtrer",
+  "allCategories" : "Tous",
+  "signIn" : "Se connecter",
+  "myAccount" : "Mon Compte",
+  "backToTop" : "Haut de page",
+  "readMore" : "Lire la suite",
+  "viewPost" : "Consulter l'Article"
+}
